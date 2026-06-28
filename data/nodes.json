@@ -32,14 +32,15 @@
       "type": "n",
       "label": "くじら島・出発",
       "kind": "event",
-      "description": "ゴン=フリークスが、二つ星ハンターの父ジンを追ってクジラ島を旅立つ。すべての物語の起点。",
+      "description": "ゴン＝フリークスが、二つ星ハンターの父ジンを追ってクジラ島を旅立つ。すべての物語の起点。",
       "gitMeta": "<code>main</code> 最初のコミット。ここから全分岐が伸びる根。",
       "episode": 1,
       "arcs": [
         "序章"
       ],
       "participants": [
-        "n_gon"
+        "n_gon",
+        "n_ging"
       ]
     },
     {
@@ -111,7 +112,7 @@
       "id": "n_ging",
       "branchId": "ging",
       "type": "n",
-      "label": "ジン=フリークス",
+      "label": "ジン＝フリークス",
       "kind": "character",
       "description": "ゴンの父にして規格外の凄腕ハンター。会うこと自体が物語のゴール。",
       "gitMeta": "最初期に <code>main</code> から分岐し、終盤の「親子再会」まで一度も merge されない超長期ブランチ。",
@@ -177,7 +178,8 @@
       "participants": [
         "n_kite",
         "n_w_chimera_ant_queen",
-        "n_gon"
+        "n_gon",
+        "n_ging"
       ]
     },
     {
@@ -243,7 +245,8 @@
       ],
       "participants": [
         "n_gon",
-        "n_mito"
+        "n_mito",
+        "n_ging"
       ]
     },
     {
@@ -321,7 +324,8 @@
       "episode": 5,
       "arcs": [
         "試験"
-      ]
+      ],
+      "participants": []
     },
     {
       "id": "n_w_amori",
@@ -1287,7 +1291,8 @@
         "試験"
       ],
       "participants": [
-        "n_gon"
+        "n_gon",
+        "n_hisoka"
       ]
     },
     {
@@ -1630,7 +1635,8 @@
         "ゾルディック家"
       ],
       "participants": [
-        "n_killua"
+        "n_killua",
+        "n_silva"
       ]
     },
     {
@@ -1881,7 +1887,7 @@
       "id": "n_nen",
       "branchId": "gon",
       "type": "m",
-      "label": "念=開眼",
+      "label": "念＝開眼",
       "kind": "event",
       "description": "ゴンとキルアが念に目覚め、実力の階梯を一段上がる。",
       "gitMeta": "<code>merge wing</code>（HIGHLIGHT/tag:念開眼)＝師から力を受け継ぐ。",
@@ -2011,7 +2017,8 @@
         "天空闘技場"
       ],
       "participants": [
-        "n_w_kastro"
+        "n_w_kastro",
+        "n_hisoka"
       ]
     },
     {
@@ -2044,7 +2051,8 @@
         "天空闘技場"
       ],
       "participants": [
-        "n_gon"
+        "n_gon",
+        "n_hisoka"
       ]
     },
     {
@@ -2114,7 +2122,7 @@
       "id": "n_neon",
       "branchId": "nostrade",
       "type": "n",
-      "label": "ネオン=ノストラード",
+      "label": "ネオン＝ノストラード",
       "kind": "character",
       "description": "マフィア「ノストラード組」の令嬢。未来を綴る念能力を持つ。クラピカが護衛に就く。",
       "gitMeta": "<code>kurapika</code> から分岐＝雇用関係。",
@@ -2218,7 +2226,7 @@
       "type": "m",
       "label": "ノストラード組加入",
       "kind": "event",
-      "description": "クラピカがノストラード家ボディガードに採用される。緋の眼奪還への足がかり。",
+      "description": "クラピカがノストラード組ボディガードに採用される。緋の眼奪還への足がかり。",
       "gitMeta": "<code>merge kurapika -> nostrade</code>＝復讐の枝が組に合流。",
       "episode": 65,
       "arcs": [
@@ -2226,7 +2234,8 @@
       ],
       "participants": [
         "n_w_nostrade",
-        "n_kura"
+        "n_kura",
+        "n_neon"
       ]
     },
     {
@@ -2327,7 +2336,8 @@
         "ヨークシン"
       ],
       "participants": [
-        "n_kura"
+        "n_kura",
+        "n_izunavi"
       ]
     },
     {
@@ -2449,7 +2459,7 @@
       "type": "n",
       "label": "ノストラードの執事",
       "kind": "character",
-      "description": "ノストラード家の執事。",
+      "description": "ノストラード組の執事。",
       "gitMeta": "<code>nostrade</code>",
       "episode": 67,
       "arcs": [
@@ -2635,7 +2645,7 @@
         "abilities": [
           {
             "name": "戦闘円舞曲",
-            "code": "バト=レ・カンタービレ",
+            "code": "バト＝レ・カンタービレ",
             "description": "体中の穴に楽器(ジェミューマ)を装着し、奏でる音楽の種類に応じて様々な攻撃や能力(無音の刃、巨大撃、変身)を発動する。"
           }
         ]
@@ -2778,6 +2788,10 @@
       "episode": 96,
       "arcs": [
         "ヨークシン"
+      ],
+      "participants": [
+        "n_neon",
+        "n_chrollo"
       ]
     },
     {
@@ -2793,7 +2807,8 @@
         "ヨークシン"
       ],
       "participants": [
-        "n_w_shadow_beasts"
+        "n_w_shadow_beasts",
+        "n_uvo"
       ]
     },
     {
@@ -2880,7 +2895,8 @@
         "ヨークシン"
       ],
       "participants": [
-        "n_kura"
+        "n_kura",
+        "n_uvo"
       ]
     },
     {
@@ -2896,7 +2912,8 @@
         "ヨークシン"
       ],
       "participants": [
-        "n_kura"
+        "n_kura",
+        "n_chrollo"
       ]
     },
     {
@@ -2913,14 +2930,15 @@
       ],
       "participants": [
         "n_squala",
-        "n_w_eliza"
+        "n_w_eliza",
+        "n_nobunaga"
       ]
     },
     {
       "id": "n_zeno_york",
       "branchId": "zoldyck",
       "type": "h",
-      "label": "ゼノ=ゾルディック介入",
+      "label": "ゼノ＝ゾルディック介入",
       "kind": "event",
       "description": "雇われ人としてゼノとシルバが旅団と戦う。クラピカの封印を解く契機にもなる。",
       "gitMeta": "<code>zoldyck</code> 枝が本流へ一時介入（tag:ゼノ介入)。",
@@ -2929,7 +2947,8 @@
         "ヨークシン"
       ],
       "participants": [
-        "n_kura"
+        "n_kura",
+        "n_silva"
       ]
     },
     {
@@ -2976,7 +2995,10 @@
         "n_paku",
         "n_kortopi",
         "n_killua",
-        "n_gon"
+        "n_gon",
+        "n_nobunaga",
+        "n_chrollo",
+        "n_k_worio_bay"
       ]
     },
     {
@@ -2992,7 +3014,8 @@
         "ヨークシン"
       ],
       "participants": [
-        "n_kura"
+        "n_kura",
+        "n_chrollo"
       ]
     },
     {
@@ -3191,6 +3214,10 @@
       "episode": 99,
       "arcs": [
         "ヨークシン"
+      ],
+      "participants": [
+        "n_chrollo",
+        "n_silva"
       ]
     },
     {
@@ -3275,7 +3302,9 @@
         "ヨークシン"
       ],
       "participants": [
-        "n_w_nostrade"
+        "n_w_nostrade",
+        "n_neon",
+        "n_chrollo"
       ]
     },
     {
@@ -3533,7 +3562,8 @@
         "n_kura",
         "n_paku",
         "n_killua",
-        "n_gon"
+        "n_gon",
+        "n_chrollo"
       ]
     },
     {
@@ -3547,6 +3577,10 @@
       "episode": 100,
       "arcs": [
         "ヨークシン"
+      ],
+      "participants": [
+        "n_hisoka",
+        "n_chrollo"
       ]
     },
     {
@@ -3560,6 +3594,10 @@
       "episode": 102,
       "arcs": [
         "ヨークシン"
+      ],
+      "participants": [
+        "n_hisoka",
+        "n_chrollo"
       ]
     },
     {
@@ -3607,6 +3645,9 @@
       "episode": 106,
       "arcs": [
         "グリードアイランド"
+      ],
+      "participants": [
+        "n_ging"
       ]
     },
     {
@@ -3892,7 +3933,8 @@
       ],
       "participants": [
         "n_killua",
-        "n_gon"
+        "n_gon",
+        "n_ging"
       ]
     },
     {
@@ -5303,7 +5345,8 @@
       ],
       "participants": [
         "n_gon",
-        "n_w_sengi_guild_agent"
+        "n_w_sengi_guild_agent",
+        "n_razor"
       ]
     },
     {
@@ -5355,7 +5398,8 @@
         "n_bisky",
         "n_gon",
         "n_bara",
-        "n_sub"
+        "n_sub",
+        "n_genthru"
       ]
     },
     {
@@ -5371,7 +5415,8 @@
         "グリードアイランド"
       ],
       "participants": [
-        "n_gon"
+        "n_gon",
+        "n_genthru"
       ]
     },
     {
@@ -5531,7 +5576,8 @@
       ],
       "participants": [
         "n_kite",
-        "n_gon"
+        "n_gon",
+        "n_ging"
       ]
     },
     {
@@ -5684,7 +5730,8 @@
       ],
       "participants": [
         "n_kite",
-        "n_gon"
+        "n_gon",
+        "n_ging"
       ]
     },
     {
@@ -6668,7 +6715,12 @@
         "キメラアント"
       ],
       "participants": [
-        "n_knov"
+        "n_knov",
+        "n_knuckle",
+        "n_shoot",
+        "n_morel",
+        "n_netero",
+        "n_palm"
       ]
     },
     {
@@ -6890,7 +6942,8 @@
         "キメラアント"
       ],
       "participants": [
-        "n_w_chimera_ant_queen"
+        "n_w_chimera_ant_queen",
+        "n_palm"
       ]
     },
     {
@@ -7015,7 +7068,11 @@
       ],
       "participants": [
         "n_killua",
-        "n_gon"
+        "n_gon",
+        "n_knuckle",
+        "n_morel",
+        "n_netero",
+        "n_silva"
       ]
     },
     {
@@ -7095,6 +7152,9 @@
       "episode": 305,
       "arcs": [
         "キメラアント"
+      ],
+      "participants": [
+        "n_komugi"
       ]
     },
     {
@@ -7108,6 +7168,9 @@
       "episode": 308,
       "arcs": [
         "キメラアント"
+      ],
+      "participants": [
+        "n_netero"
       ]
     },
     {
@@ -7172,6 +7235,9 @@
       "episode": 310,
       "arcs": [
         "キメラアント"
+      ],
+      "participants": [
+        "n_netero"
       ]
     },
     {
@@ -7187,6 +7253,9 @@
       "episode": 318,
       "arcs": [
         "キメラアント"
+      ],
+      "participants": [
+        "n_komugi"
       ]
     },
     {
@@ -7200,6 +7269,9 @@
       "episode": 318,
       "arcs": [
         "キメラアント"
+      ],
+      "participants": [
+        "n_komugi"
       ]
     },
     {
@@ -7490,6 +7562,9 @@
       "episode": 319,
       "arcs": [
         "選挙"
+      ],
+      "participants": [
+        "n_netero"
       ]
     },
     {
@@ -7843,7 +7918,8 @@
       "participants": [
         "n_w_zoldyck",
         "n_killua",
-        "n_gon"
+        "n_gon",
+        "n_alluka"
       ]
     },
     {
@@ -7859,7 +7935,8 @@
         "選挙"
       ],
       "participants": [
-        "n_killua"
+        "n_killua",
+        "n_alluka"
       ]
     },
     {
@@ -7907,6 +7984,9 @@
       "episode": 331,
       "arcs": [
         "選挙"
+      ],
+      "participants": [
+        "n_alluka"
       ]
     },
     {
@@ -7956,7 +8036,8 @@
         "選挙"
       ],
       "participants": [
-        "n_gon"
+        "n_gon",
+        "n_ging"
       ]
     },
     {
@@ -7987,7 +8068,8 @@
       ],
       "participants": [
         "n_leorio",
-        "n_gon"
+        "n_gon",
+        "n_ging"
       ]
     },
     {
@@ -8003,7 +8085,8 @@
         "選挙"
       ],
       "participants": [
-        "n_gon"
+        "n_gon",
+        "n_ging"
       ]
     },
     {
@@ -8021,7 +8104,8 @@
         "選挙"
       ],
       "participants": [
-        "n_gon"
+        "n_gon",
+        "n_alluka"
       ]
     },
     {
@@ -8037,14 +8121,15 @@
         "選挙"
       ],
       "participants": [
-        "n_killua"
+        "n_killua",
+        "n_alluka"
       ]
     },
     {
       "id": "n_alluka",
       "branchId": "alluka",
       "type": "n",
-      "label": "アルカ=ナニカ",
+      "label": "アルカ＝ナニカ",
       "kind": "character",
       "description": "キルアの妹と、その中に宿る願いを叶える存在ナニカ。",
       "gitMeta": "<code>killua</code> から分岐＝家族の絆。",
@@ -8178,9 +8263,9 @@
       "id": "n_knuckle",
       "branchId": "extermination",
       "type": "n",
-      "label": "ナックル=バスター",
+      "label": "ナックル＝バスター",
       "kind": "character",
-      "description": "獣ハンターのナックル=バスター。「左手の弾丸銀行(ハコワレ)」でAPR(利息)を取り立てる強化系念能力者。モラウ門下でゴン・キルアと並ぶ討伐隊員。",
+      "description": "獣ハンターのナックル＝バスター。「左手の弾丸銀行(ハコワレ)」でAPR(利息)を取り立てる強化系念能力者。モラウ門下でゴン・キルアと並ぶ討伐隊員。",
       "gitMeta": "<code>extermination</code> コミット。",
       "episode": 339,
       "arcs": [
@@ -8266,7 +8351,7 @@
       "id": "n_morel",
       "branchId": "extermination",
       "type": "n",
-      "label": "モラウ=コナツ",
+      "label": "モラウ＝コナツ",
       "kind": "character",
       "description": "喫煙でオーラを増幅する系統。討伐隊リーダー格のベテランハンター。",
       "gitMeta": "<code>extermination</code> ブランチ。討伐隊グループノードから分岐。",
@@ -8324,7 +8409,7 @@
       "id": "n_palm",
       "branchId": "extermination",
       "type": "n",
-      "label": "パーム=シベル",
+      "label": "パーム＝シベル",
       "kind": "character",
       "description": "石像化の念能力者。のちにプフの鱗粉で蟻側に傾くが、意志を取り戻す。",
       "gitMeta": "<code>extermination</code> コミット。プフ戦で <code>HIGHLIGHT</code> 級の局面あり。",
@@ -8474,7 +8559,7 @@
       "id": "n_shoot",
       "branchId": "extermination",
       "type": "n",
-      "label": "シュート=マクマホン",
+      "label": "シュート＝マクマホン",
       "kind": "character",
       "description": "敵の肢体を念獣で「欠落」させる変化系。ピトー戦で大きく貢献。",
       "gitMeta": "<code>extermination</code> コミット。",
@@ -8526,7 +8611,8 @@
         "選挙"
       ],
       "participants": [
-        "n_gon"
+        "n_gon",
+        "n_ging"
       ]
     },
     {
@@ -8567,7 +8653,7 @@
       "type": "n",
       "label": "ノストラード",
       "kind": "character",
-      "description": "ノストラード家当主。緋の眼を含む奇異コレクションを集めるマフィア・カポ。",
+      "description": "ノストラード組当主。緋の眼を含む奇異コレクションを集めるマフィア・カポ。",
       "gitMeta": "<code>nostrade</code>",
       "episode": 339,
       "arcs": [
@@ -8924,7 +9010,7 @@
       "type": "n",
       "label": "暗黒大陸探検隊",
       "kind": "group",
-      "description": "ビヨンド=ネテロが率いる暗黒大陸遠征チーム。臨時ハンターと傭兵で構成される。",
+      "description": "ビヨンド＝ネテロが率いる暗黒大陸遠征チーム。臨時ハンターと傭兵で構成される。",
       "gitMeta": "<code>beyond</code> コミット（Pixiv: 暗黒大陸探検隊）。",
       "episode": 340,
       "arcs": [
@@ -8967,10 +9053,10 @@
       "id": "n_nasubi",
       "branchId": "kakin",
       "type": "n",
-      "label": "ナスビ=ホイコーロ",
+      "label": "ナスビ＝ホイコーロ",
       "kind": "character",
-      "description": "カキン帝国国王。暗黒大陸遠征を宣言し、ビヨンド探検隊の後援者でもある。",
-      "gitMeta": "<code>kakin</code> コミット（Pixiv: カキン帝国一族）。",
+      "description": "カキン王国国王。暗黒大陸遠征を宣言し、ビヨンド探検隊の後援者でもある。",
+      "gitMeta": "<code>kakin</code> コミット（Pixiv: カキン王国一族）。",
       "episode": 340,
       "arcs": [
         "暗黒大陸"
@@ -8997,7 +9083,8 @@
       ],
       "participants": [
         "n_kite",
-        "n_gon"
+        "n_gon",
+        "n_alluka"
       ]
     },
     {
@@ -9011,6 +9098,10 @@
       "episode": 340,
       "arcs": [
         "暗黒大陸"
+      ],
+      "participants": [
+        "n_beyond",
+        "n_nasubi"
       ]
     },
     {
@@ -9026,7 +9117,9 @@
         "暗黒大陸"
       ],
       "participants": [
-        "n_gon"
+        "n_gon",
+        "n_beyond",
+        "n_ging"
       ]
     },
     {
@@ -9061,7 +9154,9 @@
       "participants": [
         "n_w_botobai_gigante",
         "n_w_muherr",
-        "n_w_list"
+        "n_w_list",
+        "n_beyond",
+        "n_ging"
       ]
     },
     {
@@ -9099,7 +9194,7 @@
       "id": "n_beyond",
       "branchId": "beyond",
       "type": "n",
-      "label": "ビヨンド=ネテロ",
+      "label": "ビヨンド＝ネテロ",
       "kind": "character",
       "description": "ネテロ会長の息子。暗黒大陸遠征を率いる野心家。",
       "gitMeta": "<code>beyond</code> ブランチ。",
@@ -9224,6 +9319,10 @@
       "episode": 346,
       "arcs": [
         "暗黒大陸"
+      ],
+      "participants": [
+        "n_hisoka",
+        "n_chrollo"
       ]
     },
     {
@@ -9241,7 +9340,8 @@
       "participants": [
         "n_w_mizaistom_nana",
         "n_kura",
-        "n_w_saiyu"
+        "n_w_saiyu",
+        "n_beyond"
       ]
     },
     {
@@ -9355,7 +9455,11 @@
       "arcs": [
         "継承戦"
       ],
-      "mergeFromBranch": "illumi"
+      "mergeFromBranch": "illumi",
+      "participants": [
+        "n_uvo",
+        "n_hisoka"
+      ]
     },
     {
       "id": "n_succession_arc",
@@ -9364,7 +9468,7 @@
       "label": "王位継承戦編",
       "kind": "event",
       "description": "カキン14王子による船上の密室殺人ゲーム。暗黒大陸への2か月の船旅と並行して進行する。",
-      "gitMeta": "<code>main</code> コミット（Pixiv: カキン帝国王位継承戦編）。",
+      "gitMeta": "<code>main</code> コミット（Pixiv: カキン王国王位継承戦編）。",
       "episode": 349,
       "arcs": [
         "継承戦"
@@ -9382,6 +9486,9 @@
       "episode": 349,
       "arcs": [
         "継承戦"
+      ],
+      "participants": [
+        "n_nasubi"
       ]
     },
     {
@@ -9559,6 +9666,9 @@
       "episode": 349,
       "arcs": [
         "継承戦"
+      ],
+      "participants": [
+        "n_beyond"
       ]
     },
     {
@@ -9634,7 +9744,9 @@
         "継承戦"
       ],
       "participants": [
-        "n_w_masta"
+        "n_w_masta",
+        "n_hisoka",
+        "n_chrollo"
       ]
     },
     {
@@ -9756,6 +9868,10 @@
       "episode": 356,
       "arcs": [
         "継承戦"
+      ],
+      "participants": [
+        "n_hisoka",
+        "n_chrollo"
       ]
     },
     {
@@ -9800,6 +9916,10 @@
       "episode": 357,
       "arcs": [
         "継承戦"
+      ],
+      "participants": [
+        "n_hisoka",
+        "n_chrollo"
       ]
     },
     {
@@ -9870,7 +9990,10 @@
         "継承戦"
       ],
       "participants": [
-        "n_kortopi"
+        "n_kortopi",
+        "n_shalnark",
+        "n_hisoka",
+        "n_chrollo"
       ]
     },
     {
@@ -9884,6 +10007,9 @@
       "episode": 358,
       "arcs": [
         "継承戦"
+      ],
+      "participants": [
+        "n_hisoka"
       ]
     },
     {
@@ -9926,7 +10052,10 @@
         "継承戦"
       ],
       "participants": [
-        "n_kortopi"
+        "n_kortopi",
+        "n_hisoka",
+        "n_chrollo",
+        "n_machi"
       ]
     },
     {
@@ -10230,6 +10359,9 @@
       "episode": 358,
       "arcs": [
         "継承戦"
+      ],
+      "participants": [
+        "n_hisoka"
       ]
     },
     {
@@ -12852,7 +12984,8 @@
         "継承戦"
       ],
       "participants": [
-        "n_halkenburg"
+        "n_halkenburg",
+        "n_nasubi"
       ]
     },
     {
@@ -13811,6 +13944,9 @@
       "episode": 395,
       "arcs": [
         "継承戦"
+      ],
+      "participants": [
+        "n_chrollo"
       ]
     },
     {
@@ -13844,7 +13980,8 @@
         "継承戦"
       ],
       "participants": [
-        "n_w_list"
+        "n_w_list",
+        "n_beyond"
       ]
     },
     {
@@ -13981,7 +14118,8 @@
         "n_kura",
         "n_melody",
         "n_bisky",
-        "n_woble"
+        "n_woble",
+        "n_izunavi"
       ]
     },
     {
@@ -14133,6 +14271,10 @@
       "episode": 405,
       "arcs": [
         "継承戦"
+      ],
+      "participants": [
+        "n_hisoka",
+        "n_chrollo"
       ]
     },
     {
@@ -14403,7 +14545,7 @@
       "type": "n",
       "label": "カキン王立軍",
       "kind": "group",
-      "description": "カキン帝国の正規軍。継承戦中、王族の警護・船内秩序維持にあたる。各王子の私設兵団とは別組織。",
+      "description": "カキン王国の正規軍。継承戦中、王族の警護・船内秩序維持にあたる。各王子の私設兵団とは別組織。",
       "gitMeta": "<code>kakin</code> 正規軍。",
       "episode": 358,
       "arcs": [

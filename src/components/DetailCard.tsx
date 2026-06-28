@@ -133,7 +133,7 @@ export function DetailCard({ node, branch, branches, meta, nodesById, groupsByMe
           const directSeenStr = new Set<string>();
           const direct: Item[] = [];
           for (const a of node.affiliations ?? []) {
-            const gid = groupIdByLabel[a];
+            const gid = groupIdByLabel[a] ?? groupIdByLabel[a.replace(/[＝=]/g, '')];
             if (gid && gid !== node.id) {
               if (directSeenGid.has(gid)) continue;
               directSeenGid.add(gid);
