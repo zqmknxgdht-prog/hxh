@@ -2841,8 +2841,8 @@
       "description": "The Hunter Association takes Beyond into custody. New Chairman Cheadle assumes oversight, with the Zodiacs rotating watch duty."
     },
     "n_beyond_interrogation": {
-      "label": "Beyond Interrogated",
-      "description": "In the detention room aboard the ship, interrogations of Beyond continue. Pariston and others approach him, seeking information on the Dark Continent."
+      "label": "Beyond Requests a Meeting",
+      "description": "In the detention cell on Tier 1, Beyond finishes a book and asks the guard Kanzai to arrange a meeting with a third party (ch 401). Saiyu, Saccho, and Kanzai are on guard duty."
     },
     "n_pariston_resign": {
       "label": "Pariston Resigns as Vice-Chairman",

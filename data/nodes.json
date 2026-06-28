@@ -15203,17 +15203,19 @@
       "id": "n_beyond_interrogation",
       "branchId": "beyond",
       "type": "n",
-      "label": "ビヨンド審問",
+      "label": "ビヨンド面会要請",
       "kind": "event",
-      "description": "船内拘束室でビヨンドへの聴取が継続。パリストンらが接触し、暗黒大陸の情報を引き出そうとする駆け引きが続く。",
-      "gitMeta": "<code>beyond</code> 拘束室シーン (No.401付近)。",
+      "description": "船内第1層の拘束室でビヨンドが読書を終え、見張りのカンザイに第三者との面会の手配を依頼する (ch 401)。サイユウ・サッチョウ・カンザイが警護担当。",
+      "gitMeta": "<code>beyond</code> 拘束室シーン (No.401)。",
       "episode": 401,
       "arcs": [
         "継承戦"
       ],
       "participants": [
-        "n_w_list",
-        "n_beyond"
+        "n_beyond",
+        "n_w_kanzai",
+        "n_w_saiyu",
+        "n_w_saccho_kobayakawa"
       ],
       "tags": [
         "拘束"
