@@ -33,9 +33,11 @@ interface DetailCardProps {
   open: boolean;
   onClose: () => void;
   onSelectNode: (id: string) => void;
+  /** When provided, render a "back to list" button (mobile, came-from-list flow). */
+  onBackToList?: () => void;
 }
 
-export function DetailCard({ node, branch, meta, nodesById, open, onClose, onSelectNode }: DetailCardProps) {
+export function DetailCard({ node, branch, meta, nodesById, open, onClose, onSelectNode, onBackToList }: DetailCardProps) {
   const kindLabel = bilingualInline(
     meta.labels.kind[node.kind] ?? node.kind,
     meta.labelsEn?.kind[node.kind],
@@ -55,6 +57,11 @@ export function DetailCard({ node, branch, meta, nodesById, open, onClose, onSel
     <div id="card" className={open ? 'open' : ''}>
       <div className="card-top">
         <div className="swatch" style={{ background: branch.color }} />
+        {onBackToList && (
+          <button type="button" className="back-to-list" onClick={onBackToList} aria-label="一覧へ戻る / Back to list">
+            ← 一覧
+          </button>
+        )}
         <button type="button" className="close" onClick={onClose} aria-label="閉じる / Close">
           ✕
         </button>

@@ -5,12 +5,10 @@ interface BottomSheetProps {
   onClose: () => void;
   title: string;
   children: ReactNode;
-  /** Maximum height (CSS value). Defaults to 70vh. */
-  maxHeight?: string;
 }
 
 /** Mobile-oriented slide-up sheet with backdrop. Desktop should not render this. */
-export function BottomSheet({ open, onClose, title, children, maxHeight = '70vh' }: BottomSheetProps) {
+export function BottomSheet({ open, onClose, title, children }: BottomSheetProps) {
   useEffect(() => {
     if (!open) return;
     const onKey = (e: KeyboardEvent) => {
@@ -27,7 +25,7 @@ export function BottomSheet({ open, onClose, title, children, maxHeight = '70vh'
         onClick={onClose}
         aria-hidden
       />
-      <div className={`bottom-sheet${open ? ' open' : ''}`} role="dialog" aria-label={title} style={{ maxHeight }}>
+      <div className={`bottom-sheet${open ? ' open' : ''}`} role="dialog" aria-label={title}>
         <div className="sheet-handle" onClick={onClose} aria-hidden>
           <span />
         </div>

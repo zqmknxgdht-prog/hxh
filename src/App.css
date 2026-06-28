@@ -29,6 +29,16 @@ body,
   overflow: hidden;
 }
 
+/* Use dynamic viewport height on supporting browsers so iOS Safari
+   chrome (top URL bar / bottom toolbar) doesn't clip our fixed UI. */
+@supports (height: 100dvh) {
+  html,
+  body,
+  #root {
+    height: 100dvh;
+  }
+}
+
 header {
   position: absolute;
   top: 0;
@@ -425,7 +435,8 @@ header {
     font-size: 12px;
   }
 
-  /* NodeListPanel inside the bottom sheet — fill its container, no overlay positioning */
+  /* NodeListPanel inside the bottom sheet — fill its container, no overlay positioning
+     and let the sheet body be the single scroll container (no nested inner scroll). */
   .bottom-sheet .node-lists {
     position: static;
     width: 100%;
@@ -435,7 +446,8 @@ header {
   }
 
   .bottom-sheet .node-list-body {
-    max-height: 50vh;
+    max-height: none;
+    overflow: visible;
   }
 
   .hint {
@@ -518,7 +530,9 @@ header {
   transition: transform 0.22s cubic-bezier(.2,.8,.2,1);
   display: flex;
   flex-direction: column;
-  padding-bottom: env(safe-area-inset-bottom);
+  /* IMPORTANT: explicit height (not just max-height) so the flex body
+     has a real container to fill. inline `height` from React overrides. */
+  height: 70dvh;
 }
 
 .bottom-sheet.open {
@@ -578,12 +592,12 @@ header {
 @media (max-width: 759px) {
   /* Push the bottom sheet above the bottom bar */
   .bottom-sheet {
-    bottom: 64px;
+    bottom: calc(56px + env(safe-area-inset-bottom));
   }
 
   /* Lift detail card above bottom bar */
   #card {
-    bottom: 64px;
+    bottom: calc(56px + env(safe-area-inset-bottom));
   }
 }
 
@@ -929,15 +943,33 @@ svg {
   #card {
     left: 0;
     right: 0;
-    bottom: 0;
+    /* sit just above the mobile bar + iOS safe area */
+    bottom: calc(56px + env(safe-area-inset-bottom));
+    /* use dvh so iOS Safari chrome doesn't cause the visible area to
+       collapse below what we computed */
+    height: 70dvh;
+    max-height: 70dvh;
     border-radius: 18px 18px 0 0;
-    max-height: 62%;
-    overflow: auto;
-    transform: translateY(110%);
+    overflow: hidden;          /* outer is the visual frame */
+    display: flex;
+    flex-direction: column;
+    transform: translateY(120%);
   }
 
   #card.open {
     transform: none;
+  }
+
+  /* On mobile, the card-body is the scroll container */
+  #card .card-top {
+    flex: 0 0 auto;
+  }
+
+  #card .card-body {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }
 
@@ -982,6 +1014,10 @@ svg {
 
 .card-avatar svg {
   display: block;
+  /* Override the global svg { width:100%; height:100% } so the avatar
+     keeps the explicit width/height it was rendered at (72×72). */
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   box-shadow: 0 2px 10px rgba(26, 35, 50, 0.1);
 }
@@ -1086,6 +1122,28 @@ svg {
 .close:hover {
   color: var(--fg);
   border-color: var(--accent);
+}
+
+.back-to-list {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  height: 30px;
+  padding: 0 12px;
+  border-radius: 15px;
+  background: #eef1f6;
+  border: 1px solid var(--edge);
+  color: var(--fg);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.back-to-list:hover,
+.back-to-list:active {
+  background: #fff5f6;
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .hint {

@@ -42,6 +42,7 @@ export default function App() {
   const [hover, setHover] = useState<HoverPayload | null>(null);
   const [hoverPos, setHoverPos] = useState({ x: 0, y: 0 });
   const [openSheet, setOpenSheet] = useState<SheetId>(null);
+  const [cameFromList, setCameFromList] = useState(false);
   const initializedRef = useRef(false);
   const isMobile = useIsMobile();
 
@@ -252,10 +253,18 @@ export default function App() {
   const handleNavigateAndClose = useCallback(
     (id: string) => {
       navigateToNode(id);
-      if (isMobile) setOpenSheet(null);
+      if (isMobile) {
+        setOpenSheet(null);
+        setCameFromList(true);
+      }
     },
     [navigateToNode, isMobile],
   );
+
+  const handleBackToList = useCallback(() => {
+    setSelectedId(null);
+    setOpenSheet('list');
+  }, []);
 
   return (
     <>
@@ -352,8 +361,9 @@ export default function App() {
           meta={meta}
           nodesById={nodesById}
           open={selectedId !== null}
-          onClose={deselect}
+          onClose={() => { deselect(); setCameFromList(false); }}
           onSelectNode={navigateToNode}
+          onBackToList={isMobile && cameFromList ? handleBackToList : undefined}
         />
       )}
 
@@ -366,7 +376,7 @@ export default function App() {
             onZoomOut={panZoom.zoomOut}
             onFit={() => { deselect(); fit(); }}
           />
-          <BottomSheet open={openSheet === 'list'} onClose={() => setOpenSheet(null)} title="ノード一覧 / Nodes" maxHeight="75vh">
+          <BottomSheet open={openSheet === 'list'} onClose={() => setOpenSheet(null)} title="ノード一覧 / Nodes">
             <NodeListPanel
               nodes={positionedNodes}
               branches={branches}
@@ -377,7 +387,7 @@ export default function App() {
               onSelectNode={handleNavigateAndClose}
             />
           </BottomSheet>
-          <BottomSheet open={openSheet === 'episodes'} onClose={() => setOpenSheet(null)} title="話数 / アーク" maxHeight="60vh">
+          <BottomSheet open={openSheet === 'episodes'} onClose={() => setOpenSheet(null)} title="話数 / アーク">
             {episodeArcsBlock}
           </BottomSheet>
         </>
