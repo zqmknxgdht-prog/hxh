@@ -68,6 +68,9 @@ export interface GraphNode {
   parents?: string[];
   /** For kind='event': list of character node ids that appear in the event. */
   participants?: string[];
+  /** Closed-vocabulary tags from meta.tagsCatalog. Cross-cutting attribute labels
+   *  (e.g. 死亡, 念能力者, スパイ) that span the kind/type/arcs/affiliations axes. */
+  tags?: string[];
 }
 
 export type AvatarPrimitive =
@@ -135,6 +138,9 @@ export interface GraphMeta {
   arcEpisodes: Record<string, ArcEpisodeRange>;
   /** Map of chapter number → canonical Japanese chapter title. */
   chapterTitles?: Record<number, string>;
+  /** Closed-vocabulary tag catalog grouped by category. Tags in node.tags must
+   *  exist in this catalog or CI lint rejects. */
+  tagsCatalog?: Record<string, string[]>;
 }
 
 export interface GraphData {

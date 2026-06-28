@@ -125,6 +125,16 @@ export function DetailCard({ node, branch, branches, meta, nodesById, groupsByMe
           <h4>{whoLabel}</h4>
           <p className="bilingual">{bilingualBlock(node.description, node.descriptionEn)}</p>
         </div>
+        {node.tags && node.tags.length > 0 && (
+          <div className="sec attrs tags">
+            <h4>タグ / Tags <span className="count">{node.tags.length}</span></h4>
+            <ul className="tag-list">
+              {node.tags.map((t) => (
+                <li key={t} className="tag-chip">#{t}</li>
+              ))}
+            </ul>
+          </div>
+        )}
         {(() => {
           // Direct affiliations: from node.affiliations strings + reverse-lookup memberships.
           // Inherited: transitive parents of direct groups, not already in direct.
