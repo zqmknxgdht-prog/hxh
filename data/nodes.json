@@ -50,6 +50,9 @@
       "episode": 1,
       "arcs": [
         "序章"
+      ],
+      "affiliations": [
+        "クジラ島"
       ]
     },
     {
@@ -78,7 +81,10 @@
       "arcs": [
         "序章"
       ],
-      "occupation": "Resident of Whale Island"
+      "occupation": "Resident of Whale Island",
+      "affiliations": [
+        "クジラ島"
+      ]
     },
     {
       "id": "n_kurta_clan",
@@ -192,7 +198,9 @@
       "arcs": [
         "序章"
       ],
-      "affiliations": [],
+      "affiliations": [
+        "ハンター試験参加者"
+      ],
       "occupation": "Crewman"
     },
     {
@@ -207,7 +215,11 @@
       "arcs": [
         "序章"
       ],
-      "occupation": "Bartender (1999) / Fishmonger (2011)"
+      "occupation": "Bartender (1999) / Fishmonger (2011)",
+      "affiliations": [
+        "ハンター試験参加者",
+        "クジラ島"
+      ]
     },
     {
       "id": "n_mito_truth",
@@ -233,6 +245,9 @@
       "episode": 3,
       "arcs": [
         "序章"
+      ],
+      "affiliations": [
+        "ハンター試験参加者"
       ]
     },
     {
@@ -246,6 +261,9 @@
       "episode": 3,
       "arcs": [
         "序章"
+      ],
+      "affiliations": [
+        "ハンター試験参加者"
       ]
     },
     {
@@ -272,6 +290,9 @@
       "episode": 4,
       "arcs": [
         "序章"
+      ],
+      "affiliations": [
+        "ハンター試験参加者"
       ]
     },
     {
@@ -335,6 +356,9 @@
       "episode": 5,
       "arcs": [
         "試験"
+      ],
+      "affiliations": [
+        "ハンター試験参加者"
       ]
     },
     {
@@ -348,6 +372,9 @@
       "episode": 5,
       "arcs": [
         "試験"
+      ],
+      "affiliations": [
+        "ハンター試験参加者"
       ]
     },
     {
@@ -687,6 +714,9 @@
       "episode": 14,
       "arcs": [
         "試験"
+      ],
+      "affiliations": [
+        "ハンター試験参加者"
       ]
     },
     {
@@ -804,6 +834,9 @@
       "episode": 16,
       "arcs": [
         "試験"
+      ],
+      "affiliations": [
+        "死刑囚"
       ]
     },
     {
@@ -897,7 +930,10 @@
       "arcs": [
         "試験"
       ],
-      "occupation": "Rookie Crusher"
+      "occupation": "Rookie Crusher",
+      "affiliations": [
+        "ハンター試験参加者"
+      ]
     },
     {
       "id": "n_satotz",
@@ -930,6 +966,9 @@
       "episode": 22,
       "arcs": [
         "試験"
+      ],
+      "affiliations": [
+        "ハンター試験参加者"
       ]
     },
     {
@@ -943,6 +982,9 @@
       "episode": 22,
       "arcs": [
         "試験"
+      ],
+      "affiliations": [
+        "ハンター試験参加者"
       ]
     },
     {
@@ -956,6 +998,9 @@
       "episode": 22,
       "arcs": [
         "試験"
+      ],
+      "affiliations": [
+        "ハンター試験参加者"
       ]
     },
     {
@@ -969,6 +1014,9 @@
       "episode": 22,
       "arcs": [
         "試験"
+      ],
+      "affiliations": [
+        "ハンター試験参加者"
       ]
     },
     {
@@ -982,6 +1030,9 @@
       "episode": 22,
       "arcs": [
         "試験"
+      ],
+      "affiliations": [
+        "ハンター試験参加者"
       ]
     },
     {
@@ -1012,6 +1063,9 @@
       "episode": 23,
       "arcs": [
         "試験"
+      ],
+      "affiliations": [
+        "ハンター試験参加者"
       ]
     },
     {
@@ -1045,6 +1099,9 @@
       "episode": 23,
       "arcs": [
         "試験"
+      ],
+      "affiliations": [
+        "ハンター試験参加者"
       ]
     },
     {
@@ -1058,6 +1115,9 @@
       "episode": 23,
       "arcs": [
         "試験"
+      ],
+      "affiliations": [
+        "ハンター試験参加者"
       ]
     },
     {
@@ -1094,7 +1154,10 @@
             "description": "7色のオーラ矢を撃ち分ける具現化系の弓。色ごとに異なる効果を持つ。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "NGL自治国"
+      ]
     },
     {
       "id": "n_ponzu",
@@ -1117,7 +1180,10 @@
             "description": "香水で蜂を引き寄せ操る操作系。NGLでラモットに襲われ命を落とす。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "NGL自治国"
+      ]
     },
     {
       "id": "n_phase4_zevil",
@@ -1143,6 +1209,9 @@
       "episode": 28,
       "arcs": [
         "試験"
+      ],
+      "affiliations": [
+        "ハンター試験参加者"
       ]
     },
     {
@@ -1156,6 +1225,9 @@
       "episode": 29,
       "arcs": [
         "試験"
+      ],
+      "affiliations": [
+        "ハンター試験参加者"
       ]
     },
     {
@@ -1335,7 +1407,10 @@
       "arcs": [
         "ゾルディック家"
       ],
-      "occupation": "Lamentation Tours' Guide"
+      "occupation": "Lamentation Tours' Guide",
+      "affiliations": [
+        "ヨークシン編関係者"
+      ]
     },
     {
       "id": "n_w_maha_zoldyck",
@@ -1412,7 +1487,10 @@
             "description": "コインを高速で連射する放出系。アルカ脱走時にヒソカと対峙し敗死する。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "ゾルディック家"
+      ]
     },
     {
       "id": "n_w_seaquant",
@@ -1512,7 +1590,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "ゾルディック家"
+      ]
     },
     {
       "id": "n_rescue",
@@ -1552,6 +1633,9 @@
       "episode": 45,
       "arcs": [
         "ゾルディック家"
+      ],
+      "affiliations": [
+        "天空闘技場"
       ]
     },
     {
@@ -1565,6 +1649,9 @@
       "episode": 45,
       "arcs": [
         "ゾルディック家"
+      ],
+      "affiliations": [
+        "天空闘技場"
       ]
     },
     {
@@ -1606,7 +1693,10 @@
             "description": "回転する独楽を念で操る念能力者。天空闘技場でゴンと戦う。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "天空闘技場"
+      ]
     },
     {
       "id": "n_w_riehlvelt",
@@ -1630,7 +1720,10 @@
             "description": "オーラを爆発的に放出して鞭の動きを加速させる強化系。天空闘技場でゴンと戦う。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "天空闘技場"
+      ]
     },
     {
       "id": "n_w_sadaso",
@@ -1643,6 +1736,9 @@
       "episode": 48,
       "arcs": [
         "ゾルディック家"
+      ],
+      "affiliations": [
+        "天空闘技場"
       ]
     },
     {
@@ -1789,7 +1885,10 @@
             "description": "具現化系で自身の分身を作る。実体化に絶大な制約を負い、実質1体限定で「腕を斬り落とす」「分身の存在を秘匿する」など重い誓約を要する。ヒソカ戦で破綻し敗死。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "天空闘技場"
+      ]
     },
     {
       "id": "n_izunavi",
@@ -1876,7 +1975,10 @@
       "arcs": [
         "天空闘技場"
       ],
-      "occupation": "Guest Announcer"
+      "occupation": "Guest Announcer",
+      "affiliations": [
+        "天空闘技場"
+      ]
     },
     {
       "id": "n_kurapika_flashback",
@@ -1997,7 +2099,10 @@
             "description": "飼育する犬たちを操る操作系。エリザとともにノストラード組に雇われ、ノブナガの尋問下で命を落とす。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "ノストラード組"
+      ]
     },
     {
       "id": "n_york_meet",
@@ -2195,7 +2300,10 @@
             "description": "対象とキスをすることで180分間、相手を絶対服従の恋人状態にする操作系。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "ヨークシンマフィア"
+      ]
     },
     {
       "id": "n_w_dalzollene",
@@ -2211,7 +2319,11 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "ノストラード組",
+        "幻影旅団"
+      ]
     },
     {
       "id": "n_w_eliza",
@@ -2225,7 +2337,10 @@
       "arcs": [
         "ヨークシン"
       ],
-      "occupation": "Neon's Attendant"
+      "occupation": "Neon's Attendant",
+      "affiliations": [
+        "ノストラード組"
+      ]
     },
     {
       "id": "n_w_nostrade_butler",
@@ -2238,6 +2353,9 @@
       "episode": 67,
       "arcs": [
         "ヨークシン"
+      ],
+      "affiliations": [
+        "ノストラード組"
       ]
     },
     {
@@ -2261,7 +2379,10 @@
             "description": "具現化した11体の黒い子供達の念獣に質問させ、結果を集計する具現化系。「予知者」と偽る場面で使用された。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "ヨークシンマフィア"
+      ]
     },
     {
       "id": "n_feitan",
@@ -2386,7 +2507,10 @@
       "arcs": [
         "ヨークシン"
       ],
-      "occupation": "Multi-billionaire Investor"
+      "occupation": "Multi-billionaire Investor",
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_bonolenov",
@@ -2468,7 +2592,10 @@
       "arcs": [
         "ヨークシン"
       ],
-      "occupation": "Bartender / \"Hunter Association Worker\""
+      "occupation": "Bartender / \"Hunter Association Worker\"",
+      "affiliations": [
+        "ハンター協会"
+      ]
     },
     {
       "id": "n_paku",
@@ -2522,7 +2649,17 @@
         "ヨークシンマフィア"
       ],
       "members": [
-        "n_w_owl"
+        "n_w_owl",
+        "n_w_assassin_a",
+        "n_w_assassin_b",
+        "n_w_assassin_c",
+        "n_w_assassin_d",
+        "n_w_assassin_e",
+        "n_w_assassin_f",
+        "n_w_leech",
+        "n_w_porcupine",
+        "n_w_rabid_dog",
+        "n_w_worm"
       ]
     },
     {
@@ -2566,7 +2703,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "マフィア"
+      ]
     },
     {
       "id": "n_w_light_nostrade",
@@ -2749,6 +2889,9 @@
       "episode": 74,
       "arcs": [
         "ヨークシン"
+      ],
+      "affiliations": [
+        "ヨークシンマフィア"
       ]
     },
     {
@@ -2785,6 +2928,10 @@
       "episode": 74,
       "arcs": [
         "ヨークシン"
+      ],
+      "affiliations": [
+        "十老頭",
+        "幻影旅団"
       ]
     },
     {
@@ -2798,6 +2945,9 @@
       "episode": 74,
       "arcs": [
         "ヨークシン"
+      ],
+      "members": [
+        "n_w_shadow_beasts"
       ]
     },
     {
@@ -2825,6 +2975,9 @@
       "episode": 75,
       "arcs": [
         "ヨークシン"
+      ],
+      "affiliations": [
+        "陰獣"
       ]
     },
     {
@@ -2838,6 +2991,9 @@
       "episode": 75,
       "arcs": [
         "ヨークシン"
+      ],
+      "affiliations": [
+        "陰獣"
       ]
     },
     {
@@ -2851,6 +3007,9 @@
       "episode": 75,
       "arcs": [
         "ヨークシン"
+      ],
+      "affiliations": [
+        "陰獣"
       ]
     },
     {
@@ -2864,6 +3023,9 @@
       "episode": 75,
       "arcs": [
         "ヨークシン"
+      ],
+      "affiliations": [
+        "陰獣"
       ]
     },
     {
@@ -2919,7 +3081,13 @@
         "n_uvo",
         "n_kalluto",
         "n_hisoka",
-        "n_illumi"
+        "n_illumi",
+        "n_w_dalzollene",
+        "n_w_shadow_beasts",
+        "n_w_kurt",
+        "n_k_risnorth",
+        "n_k_sarasa",
+        "n_w_moritonio"
       ]
     },
     {
@@ -2997,7 +3165,10 @@
       "occupation": "Antiques Trader",
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "ヨークシン編関係者"
+      ]
     },
     {
       "id": "n_w_taloon",
@@ -3043,7 +3214,11 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "陰獣",
+        "マフィア"
+      ]
     },
     {
       "id": "n_w_assassin_b",
@@ -3059,7 +3234,11 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "陰獣",
+        "マフィア"
+      ]
     },
     {
       "id": "n_w_assassin_c",
@@ -3075,7 +3254,11 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "陰獣",
+        "マフィア"
+      ]
     },
     {
       "id": "n_w_assassin_d",
@@ -3091,7 +3274,11 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "陰獣",
+        "マフィア"
+      ]
     },
     {
       "id": "n_w_assassin_e",
@@ -3107,7 +3294,11 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "陰獣",
+        "マフィア"
+      ]
     },
     {
       "id": "n_w_assassin_f",
@@ -3123,7 +3314,11 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "陰獣",
+        "マフィア"
+      ]
     },
     {
       "id": "n_w_freelance_assassins",
@@ -3167,7 +3362,10 @@
       "arcs": [
         "ヨークシン"
       ],
-      "occupation": "Convict"
+      "occupation": "Convict",
+      "affiliations": [
+        "死刑囚"
+      ]
     },
     {
       "id": "n_hostage_swap",
@@ -3379,7 +3577,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_train",
@@ -3416,7 +3617,10 @@
             "description": "ゲンスルー一味「サブ&バラ」の片割れ。本人固有の念能力詳細は未公開。コンビ攻撃が主体。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_genthru",
@@ -3444,7 +3648,10 @@
             "description": "握手した相手に時限爆弾の念をしかける。条件を達成しないと一定時間後に爆破する具現化系。「サブ&バラ」と組んだチームプレイで威力を増す。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_sub",
@@ -3480,6 +3687,9 @@
       "episode": 117,
       "arcs": [
         "グリードアイランド"
+      ],
+      "affiliations": [
+        "クルタ族"
       ]
     },
     {
@@ -3593,7 +3803,10 @@
       "occupation": "Nen Exorcist",
       "nen": {
         "type": "具現化系"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_gashta_bellam",
@@ -3629,7 +3842,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_puhat",
@@ -3645,7 +3861,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_zetsk_bellam",
@@ -3701,7 +3920,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_sakisuke_njiji",
@@ -3718,7 +3940,10 @@
       "occupation": "Greed Island Player",
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_zenju",
@@ -3774,7 +3999,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_cat_diner_npc",
@@ -3786,6 +4014,9 @@
       "gitMeta": "<code>gi_cast</code>",
       "episode": 129,
       "arcs": [
+        "グリードアイランド"
+      ],
+      "affiliations": [
         "グリードアイランド"
       ]
     },
@@ -3803,7 +4034,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_assam",
@@ -3819,7 +4053,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_isaac",
@@ -3835,7 +4072,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_nomdieu",
@@ -3851,7 +4091,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_binolt_arc",
@@ -3880,7 +4123,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_kosofftro",
@@ -3896,7 +4142,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_pisac",
@@ -3912,7 +4161,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_redwood",
@@ -3928,7 +4180,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "ハンター協会"
+      ]
     },
     {
       "id": "n_w_shihael",
@@ -3944,7 +4199,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_arka",
@@ -3961,7 +4219,10 @@
       "occupation": "Greed Island Player",
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_asta",
@@ -3977,7 +4238,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_degiro",
@@ -3994,7 +4258,10 @@
       "occupation": "Greed Island Player",
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_erbier_mano",
@@ -4011,7 +4278,10 @@
       "occupation": "Greed Island Player",
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_jikono",
@@ -4028,7 +4298,10 @@
       "occupation": "Greed Island Player",
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_kazsule",
@@ -4044,7 +4317,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_linn",
@@ -4068,7 +4344,10 @@
             "description": "対象に質問してから殴ることで心の声を聞ける放出系。シュウ＝ウ家リンチ＝フルボッコと同名(同系統)能力で、ヨークシン時代のリンが原型。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_luciart",
@@ -4085,7 +4364,10 @@
       "occupation": "Greed Island Player",
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_motaricke",
@@ -4102,7 +4384,10 @@
       "occupation": "Greed Island Player",
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_mukanaki",
@@ -4119,7 +4404,10 @@
       "occupation": "Greed Island Player",
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_pongo",
@@ -4136,7 +4424,10 @@
       "occupation": "Greed Island Player",
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_soffman",
@@ -4153,7 +4444,10 @@
       "occupation": "Greed Island Player",
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_vice",
@@ -4170,7 +4464,10 @@
       "occupation": "Greed Island Player",
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_antokiba_trade_shop_npc",
@@ -4182,6 +4479,9 @@
       "gitMeta": "<code>gi_cast</code>",
       "episode": 134,
       "arcs": [
+        "グリードアイランド"
+      ],
+      "affiliations": [
         "グリードアイランド"
       ]
     },
@@ -4196,6 +4496,9 @@
       "episode": 134,
       "arcs": [
         "グリードアイランド"
+      ],
+      "affiliations": [
+        "グリードアイランド"
       ]
     },
     {
@@ -4208,6 +4511,9 @@
       "gitMeta": "<code>gi_cast</code>",
       "episode": 134,
       "arcs": [
+        "グリードアイランド"
+      ],
+      "affiliations": [
         "グリードアイランド"
       ]
     },
@@ -4223,7 +4529,9 @@
       "arcs": [
         "グリードアイランド"
       ],
-      "affiliations": [],
+      "affiliations": [
+        "死刑囚"
+      ],
       "nen": {
         "type": "不明",
         "abilities": [
@@ -4284,6 +4592,9 @@
       "episode": 146,
       "arcs": [
         "グリードアイランド"
+      ],
+      "affiliations": [
+        "グリードアイランド"
       ]
     },
     {
@@ -4296,6 +4607,9 @@
       "gitMeta": "<code>gi_cast</code>",
       "episode": 147,
       "arcs": [
+        "グリードアイランド"
+      ],
+      "affiliations": [
         "グリードアイランド"
       ]
     },
@@ -4310,6 +4624,9 @@
       "episode": 148,
       "arcs": [
         "グリードアイランド"
+      ],
+      "affiliations": [
+        "グリードアイランド"
       ]
     },
     {
@@ -4322,6 +4639,9 @@
       "gitMeta": "<code>gi_cast</code>",
       "episode": 150,
       "arcs": [
+        "グリードアイランド"
+      ],
+      "affiliations": [
         "グリードアイランド"
       ]
     },
@@ -4336,6 +4656,9 @@
       "episode": 150,
       "arcs": [
         "グリードアイランド"
+      ],
+      "affiliations": [
+        "グリードアイランド"
       ]
     },
     {
@@ -4348,6 +4671,9 @@
       "gitMeta": "<code>gi_cast</code>",
       "episode": 151,
       "arcs": [
+        "グリードアイランド"
+      ],
+      "affiliations": [
         "グリードアイランド"
       ]
     },
@@ -4365,7 +4691,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_nick_cue",
@@ -4381,7 +4710,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_richard_hackett",
@@ -4397,7 +4729,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_souheil",
@@ -4413,7 +4748,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_wong_ho",
@@ -4429,7 +4767,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_hagakushi",
@@ -4510,7 +4851,9 @@
       "arcs": [
         "グリードアイランド"
       ],
-      "affiliations": [],
+      "affiliations": [
+        "グリードアイランド"
+      ],
       "occupation": "Greed Island Player / Leader of Team Tokharone",
       "nen": {
         "type": "不明"
@@ -4551,7 +4894,10 @@
       "occupation": "Greed Island Player",
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_amana",
@@ -4567,7 +4913,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_hanse",
@@ -4583,7 +4932,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_manheim",
@@ -4599,7 +4951,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_montreux",
@@ -4622,7 +4977,10 @@
             "description": "殴ったオーラを離れた対象へ飛ばす放出系。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_wong_li",
@@ -4638,7 +4996,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_yabibi",
@@ -4654,7 +5015,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_zeho",
@@ -4670,7 +5034,10 @@
       ],
       "nen": {
         "type": "強化系"
-      }
+      },
+      "affiliations": [
+        "グリードアイランド"
+      ]
     },
     {
       "id": "n_w_plot_of_beach_npc",
@@ -4682,6 +5049,9 @@
       "gitMeta": "<code>gi_cast</code>",
       "episode": 155,
       "arcs": [
+        "グリードアイランド"
+      ],
+      "affiliations": [
         "グリードアイランド"
       ]
     },
@@ -4758,6 +5128,9 @@
       "episode": 173,
       "arcs": [
         "グリードアイランド"
+      ],
+      "affiliations": [
+        "ヨークシン編関係者"
       ]
     },
     {
@@ -4770,6 +5143,9 @@
       "gitMeta": "<code>hisoka</code>",
       "episode": 174,
       "arcs": [
+        "グリードアイランド"
+      ],
+      "affiliations": [
         "グリードアイランド"
       ]
     },
@@ -4868,7 +5244,17 @@
       ],
       "members": [
         "n_w_gyro",
-        "n_gyro_debut"
+        "n_gyro_debut",
+        "n_pokkle",
+        "n_ponzu",
+        "n_w_chimera_ant_queen",
+        "n_w_crab",
+        "n_w_kurt",
+        "n_w_reina",
+        "n_w_ngl_interpreter",
+        "n_w_leol",
+        "n_w_gyro_s_father",
+        "n_peggy"
       ]
     },
     {
@@ -4886,7 +5272,14 @@
       "members": [
         "n_w_ming_jol_ik",
         "n_w_bizeff",
-        "n_w_ming_jol_ik_s_double"
+        "n_w_ming_jol_ik_s_double",
+        "n_w_leol",
+        "n_w_baital",
+        "n_w_east_gorteau_nen_using_soldier",
+        "n_w_lead_east_gorteau_dancer",
+        "n_w_east_gorteau_go_champion",
+        "n_w_east_gorteau_shogi_champion",
+        "n_komugi"
       ]
     },
     {
@@ -4939,6 +5332,10 @@
       "episode": 185,
       "arcs": [
         "グリードアイランド"
+      ],
+      "affiliations": [
+        "キメラ＝アント",
+        "NGL自治国"
       ]
     },
     {
@@ -4970,7 +5367,9 @@
       "arcs": [
         "キメラアント"
       ],
-      "affiliations": [],
+      "affiliations": [
+        "カイト隊"
+      ],
       "occupation": "Amateur Hunter"
     },
     {
@@ -4985,7 +5384,9 @@
       "arcs": [
         "キメラアント"
       ],
-      "affiliations": [],
+      "affiliations": [
+        "カイト隊"
+      ],
       "occupation": "Amateur Hunter"
     },
     {
@@ -5000,7 +5401,9 @@
       "arcs": [
         "キメラアント"
       ],
-      "affiliations": [],
+      "affiliations": [
+        "カイト隊"
+      ],
       "occupation": "Amateur Hunter"
     },
     {
@@ -5015,7 +5418,9 @@
       "arcs": [
         "キメラアント"
       ],
-      "affiliations": [],
+      "affiliations": [
+        "カイト隊"
+      ],
       "occupation": "Amateur Hunter"
     },
     {
@@ -5030,7 +5435,9 @@
       "arcs": [
         "キメラアント"
       ],
-      "affiliations": [],
+      "affiliations": [
+        "カイト隊"
+      ],
       "occupation": "Amateur Hunter"
     },
     {
@@ -5070,6 +5477,10 @@
       "episode": 187,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "キメラ＝アント",
+        "NGL自治国"
       ]
     },
     {
@@ -5083,6 +5494,10 @@
       "episode": 187,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "幻影旅団",
+        "NGL自治国"
       ]
     },
     {
@@ -5096,6 +5511,10 @@
       "episode": 187,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "キメラ＝アント",
+        "NGL自治国"
       ]
     },
     {
@@ -5142,7 +5561,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "キメラ＝アント"
+      ]
     },
     {
       "id": "n_w_bihorn",
@@ -5158,7 +5580,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "キメラ＝アント"
+      ]
     },
     {
       "id": "n_w_bloster",
@@ -5171,6 +5596,9 @@
       "episode": 188,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "キメラ＝アント"
       ]
     },
     {
@@ -5184,6 +5612,9 @@
       "episode": 188,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "キメラ＝アント"
       ]
     },
     {
@@ -5200,7 +5631,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "キメラ＝アント"
+      ]
     },
     {
       "id": "n_w_octopus",
@@ -5216,7 +5650,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "キメラ＝アント"
+      ]
     },
     {
       "id": "n_w_royal_guards",
@@ -5250,7 +5687,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "キメラ＝アント"
+      ]
     },
     {
       "id": "n_w_squadron_leaders",
@@ -5275,7 +5715,12 @@
         "n_w_pekuba",
         "n_w_pell",
         "n_w_bihorn",
-        "n_w_bloster"
+        "n_w_bloster",
+        "n_w_yunju",
+        "n_meleoron",
+        "n_peggy",
+        "n_rammot",
+        "n_welfin"
       ]
     },
     {
@@ -5292,7 +5737,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "キメラ＝アント"
+      ]
     },
     {
       "id": "n_kortopi",
@@ -5315,7 +5763,10 @@
             "description": "具現化系。両手で触れた物を48時間限定で完全コピーする。コピーは見た目だけでなく対象の念をある程度反映する。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "幻影旅団"
+      ]
     },
     {
       "id": "n_queen",
@@ -5345,6 +5796,9 @@
       "episode": 189,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "キメラ＝アント"
       ]
     },
     {
@@ -5358,6 +5812,11 @@
       "episode": 189,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "師団長",
+        "討伐隊",
+        "キメラ＝アント"
       ]
     },
     {
@@ -5372,7 +5831,9 @@
       "arcs": [
         "キメラアント"
       ],
-      "affiliations": [],
+      "affiliations": [
+        "キメラ＝アント"
+      ],
       "occupation": "Kite's Companion",
       "nen": {
         "type": "不明"
@@ -5390,7 +5851,9 @@
       "arcs": [
         "キメラアント"
       ],
-      "affiliations": [],
+      "affiliations": [
+        "NGL自治国"
+      ],
       "occupation": "Interpreter"
     },
     {
@@ -5404,6 +5867,9 @@
       "episode": 189,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "キメラ＝アント"
       ]
     },
     {
@@ -5427,7 +5893,11 @@
             "description": "能力詳細は限定的に披露された蜘蛛型キメラアント師団長。射程半径20m。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "師団長",
+        "キメラ＝アント"
+      ]
     },
     {
       "id": "n_w_centipede",
@@ -5440,6 +5910,9 @@
       "episode": 192,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "キメラ＝アント"
       ]
     },
     {
@@ -5463,7 +5936,10 @@
             "description": "羽根を持つキメラアント幹部の偵察能力。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "キメラ＝アント"
+      ]
     },
     {
       "id": "n_w_gyro",
@@ -5476,6 +5952,10 @@
       "episode": 192,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "NGL自治国",
+        "キメラ＝アント"
       ]
     },
     {
@@ -5489,6 +5969,9 @@
       "episode": 192,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "キメラ＝アント"
       ]
     },
     {
@@ -5512,7 +5995,13 @@
             "description": "特質系。他者の念能力を借り受けて自分のものとして使用する。グラチャンから借りた稲叢/ビッグウォール、サテライトンボ、超目などを併用していた。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "師団長",
+        "キメラ＝アント",
+        "NGL自治国",
+        "東ゴルトー共和国"
+      ]
     },
     {
       "id": "n_w_mosquito",
@@ -5525,6 +6014,9 @@
       "episode": 192,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "キメラ＝アント"
       ]
     },
     {
@@ -5538,6 +6030,10 @@
       "episode": 192,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "師団長",
+        "キメラ＝アント"
       ]
     },
     {
@@ -5560,7 +6056,8 @@
         "n_palm",
         "n_gon",
         "n_killua",
-        "n_silva"
+        "n_silva",
+        "n_w_cheetu"
       ]
     },
     {
@@ -5587,6 +6084,9 @@
       "episode": 195,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "キメラ＝アント"
       ]
     },
     {
@@ -5600,6 +6100,9 @@
       "episode": 195,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "キメラ＝アント"
       ]
     },
     {
@@ -5626,6 +6129,9 @@
       "episode": 197,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "キメラ＝アント"
       ]
     },
     {
@@ -5652,6 +6158,9 @@
       "episode": 204,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "NGL自治国"
       ]
     },
     {
@@ -5668,7 +6177,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "東ゴルトー共和国"
+      ]
     },
     {
       "id": "n_colt_turn",
@@ -5739,7 +6251,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "東ゴルトー共和国"
+      ]
     },
     {
       "id": "n_w_lead_east_gorteau_dancer",
@@ -5752,6 +6267,9 @@
       "episode": 216,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "東ゴルトー共和国"
       ]
     },
     {
@@ -5765,6 +6283,9 @@
       "episode": 216,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "東ゴルトー共和国"
       ]
     },
     {
@@ -5817,6 +6338,9 @@
       "episode": 224,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "キメラ＝アント"
       ]
     },
     {
@@ -5830,6 +6354,9 @@
       "episode": 224,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "会長選挙関係者"
       ]
     },
     {
@@ -5846,7 +6373,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "キメラ＝アント"
+      ]
     },
     {
       "id": "n_w_pell",
@@ -5862,7 +6392,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "キメラ＝アント"
+      ]
     },
     {
       "id": "n_extermination_form",
@@ -5898,7 +6431,10 @@
             "description": "操作系の触手で対象をジョイスティックのように操る能力。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "キメラ＝アント"
+      ]
     },
     {
       "id": "n_w_small_beetle",
@@ -5911,6 +6447,9 @@
       "episode": 226,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "キメラ＝アント"
       ]
     },
     {
@@ -5934,7 +6473,10 @@
             "description": "不快な高音を発するコウモリ型キメラアントの音響能力。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "キメラ＝アント"
+      ]
     },
     {
       "id": "n_w_hollow",
@@ -5957,7 +6499,10 @@
             "description": "巨大化して怪力を発揮する強化系。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "会長選挙関係者"
+      ]
     },
     {
       "id": "n_w_marcos",
@@ -5970,6 +6515,9 @@
       "episode": 231,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "キメラ＝アント"
       ]
     },
     {
@@ -5986,7 +6534,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "キメラ＝アント"
+      ]
     },
     {
       "id": "n_w_carabid_beetle",
@@ -6002,7 +6553,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "キメラ＝アント"
+      ]
     },
     {
       "id": "n_w_ortho_sister",
@@ -6025,7 +6579,10 @@
             "description": "兄妹で連携する念能力。妹側の運用詳細。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "キメラ＝アント"
+      ]
     },
     {
       "id": "n_w_remora",
@@ -6038,6 +6595,9 @@
       "episode": 238,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "キメラ＝アント"
       ]
     },
     {
@@ -6051,6 +6611,9 @@
       "episode": 238,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "キメラ＝アント"
       ]
     },
     {
@@ -6077,6 +6640,9 @@
       "episode": 243,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "東ゴルトー共和国"
       ]
     },
     {
@@ -6090,6 +6656,9 @@
       "episode": 243,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "東ゴルトー共和国"
       ]
     },
     {
@@ -6103,6 +6672,9 @@
       "episode": 250,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "東ゴルトー共和国"
       ]
     },
     {
@@ -6129,6 +6701,9 @@
       "episode": 251,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "キメラ＝アント"
       ]
     },
     {
@@ -6186,6 +6761,9 @@
       "episode": 261,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "会長選挙関係者"
       ]
     },
     {
@@ -6199,6 +6777,9 @@
       "episode": 261,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "会長選挙関係者"
       ]
     },
     {
@@ -6212,6 +6793,9 @@
       "episode": 261,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "会長選挙関係者"
       ]
     },
     {
@@ -6278,6 +6862,9 @@
       "episode": 315,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "東ゴルトー共和国"
       ]
     },
     {
@@ -6605,7 +7192,12 @@
       "members": [
         "n_netero",
         "n_cheadle",
-        "n_pariston"
+        "n_pariston",
+        "n_w_hunter_website_bartender",
+        "n_w_redwood",
+        "n_w_kurton",
+        "n_hanzo2",
+        "n_w_teradein_neutral"
       ]
     },
     {
@@ -6649,7 +7241,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "十二支ん"
+      ]
     },
     {
       "id": "n_w_cutie_beauty",
@@ -6766,7 +7361,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "ハンター協会"
+      ]
     },
     {
       "id": "n_w_death_row_convicts",
@@ -6778,6 +7376,9 @@
       "gitMeta": "<code>gi_cast</code>",
       "episode": 322,
       "arcs": [
+        "グリードアイランド"
+      ],
+      "affiliations": [
         "グリードアイランド"
       ]
     },
@@ -6808,7 +7409,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "ゾルディック家"
+      ]
     },
     {
       "id": "n_w_mitsuba",
@@ -6824,7 +7428,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "ゾルディック家"
+      ]
     },
     {
       "id": "n_w_yasuha",
@@ -6840,7 +7447,10 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "ゾルディック家"
+      ]
     },
     {
       "id": "n_w_muna",
@@ -6853,6 +7463,9 @@
       "episode": 323,
       "arcs": [
         "選挙"
+      ],
+      "affiliations": [
+        "会長選挙関係者"
       ]
     },
     {
@@ -6981,7 +7594,9 @@
         "n_cheadle",
         "n_ging",
         "n_leorio",
-        "n_kura"
+        "n_kura",
+        "n_w_bushidora_ambitious",
+        "n_w_provisional_hunters"
       ]
     },
     {
@@ -7163,7 +7778,10 @@
       "occupation": "Kite's Caretaker",
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "師団長"
+      ]
     },
     {
       "id": "n_ikalgo",
@@ -7191,7 +7809,10 @@
             "description": "死体に潜り込み、外見も声もそのまま完全に成り代わる具現化/操作系の擬態能力。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "キメラ＝アント"
+      ]
     },
     {
       "id": "n_kannon",
@@ -7274,7 +7895,10 @@
       ],
       "nen": {
         "type": "強化系"
-      }
+      },
+      "affiliations": [
+        "東ゴルトー共和国"
+      ]
     },
     {
       "id": "n_meleoron",
@@ -7287,6 +7911,9 @@
       "episode": 339,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "師団長"
       ]
     },
     {
@@ -7310,7 +7937,10 @@
             "description": "食らった念能力者の力・記憶・性格を取り込み、自身の血肉とする。王として圧倒的なオーラ量を持つ。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "キメラ＝アント"
+      ]
     },
     {
       "id": "n_morel",
@@ -7365,7 +7995,10 @@
             "description": "背後に観音菩薩像を顕現させ、第一式〜第百式の連続打撃を放つ強化系の念能力。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "ハンター協会"
+      ]
     },
     {
       "id": "n_palm",
@@ -7429,7 +8062,11 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "師団長",
+        "NGL自治国"
+      ]
     },
     {
       "id": "n_pitou",
@@ -7508,7 +8145,10 @@
             "description": "体の羽根を刃のように振るって攻撃するキメラアント。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "師団長"
+      ]
     },
     {
       "id": "n_shoot",
@@ -7590,7 +8230,10 @@
       ],
       "nen": {
         "type": "変化系"
-      }
+      },
+      "affiliations": [
+        "幻影旅団"
+      ]
     },
     {
       "id": "n_w_nostrade",
@@ -7603,6 +8246,9 @@
       "episode": 339,
       "arcs": [
         "ヨークシン"
+      ],
+      "affiliations": [
+        "ノストラード組"
       ]
     },
     {
@@ -7626,7 +8272,10 @@
             "description": "兄妹で連携する念能力。兄側の運用詳細。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "キメラ＝アント"
+      ]
     },
     {
       "id": "n_w_provisional_hunters",
@@ -7639,6 +8288,9 @@
       "episode": 339,
       "arcs": [
         "選挙"
+      ],
+      "affiliations": [
+        "十二支ん"
       ]
     },
     {
@@ -7653,7 +8305,10 @@
       "arcs": [
         "ヨークシン"
       ],
-      "occupation": "Adventurer (Alias) / Purple Cleaner (actress role)"
+      "occupation": "Adventurer (Alias) / Purple Cleaner (actress role)",
+      "affiliations": [
+        "流星街"
+      ]
     },
     {
       "id": "n_w_whale_island_inhabitants",
@@ -7666,6 +8321,9 @@
       "episode": 339,
       "arcs": [
         "序章"
+      ],
+      "affiliations": [
+        "クジラ島"
       ]
     },
     {
@@ -7678,6 +8336,9 @@
       "gitMeta": "<code>zoldyck</code>",
       "episode": 339,
       "arcs": [
+        "ゾルディック家"
+      ],
+      "affiliations": [
         "ゾルディック家"
       ]
     },
@@ -7692,6 +8353,9 @@
       "episode": 339,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "師団長"
       ]
     },
     {
@@ -7728,6 +8392,9 @@
       "episode": 339,
       "arcs": [
         "キメラアント"
+      ],
+      "affiliations": [
+        "師団長"
       ]
     },
     {
@@ -8029,7 +8696,10 @@
       "arcs": [
         "暗黒大陸"
       ],
-      "occupation": "冒険家 / 著述家"
+      "occupation": "冒険家 / 著述家",
+      "affiliations": [
+        "暗黒大陸関係者"
+      ]
     },
     {
       "id": "n_dc_team",
@@ -8249,6 +8919,9 @@
       "episode": 348,
       "arcs": [
         "暗黒大陸"
+      ],
+      "affiliations": [
+        "第四王子ツェリードニヒ"
       ]
     },
     {
@@ -8307,7 +8980,10 @@
       "arcs": [
         "暗黒大陸"
       ],
-      "occupation": "生化学者"
+      "occupation": "生化学者",
+      "affiliations": [
+        "暗黒大陸関係者"
+      ]
     },
     {
       "id": "n_illumi_troupe",
@@ -8775,7 +9451,11 @@
             "description": "自身を最大5人乗りの船または車に変形させる具現化系。ワブル王子の脱出手段として期待されていた。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "第十四王子ワブル",
+        "ハンター協会"
+      ]
     },
     {
       "id": "n_w_sayird",
@@ -9010,6 +9690,10 @@
       "episode": 358,
       "arcs": [
         "継承戦"
+      ],
+      "affiliations": [
+        "オイト王妃",
+        "第一王子ベンジャミン"
       ]
     },
     {
@@ -9078,7 +9762,11 @@
             "description": "片手から発動する能力。クラピカの妨害により不発に終わったため詳細は不明。ビンセント殉職に伴いベンジャミンに継承される。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "第一王子ベンジャミン",
+        "第十四王子ワブル"
+      ]
     },
     {
       "id": "n_k_woody",
@@ -9091,6 +9779,9 @@
       "episode": 358,
       "arcs": [
         "継承戦"
+      ],
+      "affiliations": [
+        "第十四王子ワブル"
       ]
     },
     {
@@ -9790,7 +10481,11 @@
             "description": "諜報目的の3種類の鳥型念獣。ミミズクは対象に触れることで発動し、術者にしか視えず対象の言動全てをテレパシーで伝える。他2種は未公開。ムッセ殉職に伴いベンジャミンに継承される。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "第一王子ベンジャミン",
+        "第二王子カミーラ"
+      ]
     },
     {
       "id": "n_k_sarahell",
@@ -9842,7 +10537,11 @@
             "description": "操作系念能力。自身の前にカード状のシールドを張る。詳細は不明だが、セリフから敵の念能力をカード化できる模様。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "第一王子ベンジャミン",
+        "第九王子ハルケンブルク"
+      ]
     },
     {
       "id": "n_k_tenftory",
@@ -10142,7 +10841,11 @@
             "description": "自身の分身を生み出す操作系。ハンゾーと同タイプ。モモゼ暗殺の実行に使用。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "スィンコスィンコ王妃",
+        "第十二王子モモゼ"
+      ]
     },
     {
       "id": "n_k_yuri",
@@ -10185,7 +10888,10 @@
             "description": "操作系・誘導型。形態詳細未公開。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "第八王子サレサレ"
+      ]
     },
     {
       "id": "n_nen_grant",
@@ -10284,6 +10990,10 @@
       "episode": 368,
       "arcs": [
         "継承戦"
+      ],
+      "affiliations": [
+        "セヴァンチ王妃",
+        "第十二王子モモゼ"
       ]
     },
     {
@@ -10474,7 +11184,10 @@
             "description": "カチョウの守護霊獣。フウゲツとの関係性が起動条件に絡む。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "第十王子カチョウ"
+      ]
     },
     {
       "id": "n_k_kaiser",
@@ -10633,6 +11346,10 @@
       "episode": 373,
       "arcs": [
         "継承戦"
+      ],
+      "affiliations": [
+        "第二王子カミーラ",
+        "ウンマ王妃"
       ]
     },
     {
@@ -10676,7 +11393,11 @@
       ],
       "nen": {
         "type": "不明"
-      }
+      },
+      "affiliations": [
+        "第十王子カチョウ",
+        "第十一王子フウゲツ"
+      ]
     },
     {
       "id": "n_k_koroabde",
@@ -10878,7 +11599,10 @@
             "description": "半強制型。大きなぬいぐるみ状の形態。「ヒマか？」と語りかける性質を持つ。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "第十二王子モモゼ"
+      ]
     },
     {
       "id": "n_k_orzny",
@@ -11201,7 +11925,10 @@
             "description": "モレナの『サイキンオセン』発症後にレベル上げで発覚した放出系の空間移動能力。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "エイ＝イ一家"
+      ]
     },
     {
       "id": "n_k_matvere",
@@ -11356,7 +12083,10 @@
             "description": "凶器を具現化する念能力。パドイユのもの。"
           }
         ]
-      }
+      },
+      "affiliations": [
+        "カキン王国"
+      ]
     },
     {
       "id": "n_k_perigord",
@@ -11616,6 +12346,9 @@
       "episode": 380,
       "arcs": [
         "継承戦"
+      ],
+      "affiliations": [
+        "カキン王国"
       ]
     },
     {
@@ -11956,6 +12689,9 @@
       "episode": 388,
       "arcs": [
         "継承戦"
+      ],
+      "affiliations": [
+        "第十四王子ワブル"
       ]
     },
     {
@@ -12413,6 +13149,9 @@
       "episode": 392,
       "arcs": [
         "継承戦"
+      ],
+      "affiliations": [
+        "カキン王国"
       ]
     },
     {
@@ -12443,6 +13182,9 @@
       "episode": 393,
       "arcs": [
         "継承戦"
+      ],
+      "affiliations": [
+        "第六王子タイソン"
       ]
     },
     {
@@ -12530,6 +13272,9 @@
       "episode": 394,
       "arcs": [
         "継承戦"
+      ],
+      "affiliations": [
+        "カキン王国"
       ]
     },
     {
@@ -12544,7 +13289,9 @@
       "arcs": [
         "継承戦"
       ],
-      "affiliations": [],
+      "affiliations": [
+        "カキン王国"
+      ],
       "occupation": "|type ="
     },
     {
@@ -12558,6 +13305,9 @@
       "episode": 395,
       "arcs": [
         "継承戦"
+      ],
+      "affiliations": [
+        "幻影旅団"
       ]
     },
     {
@@ -12571,6 +13321,9 @@
       "episode": 395,
       "arcs": [
         "継承戦"
+      ],
+      "affiliations": [
+        "幻影旅団"
       ]
     },
     {
@@ -12584,6 +13337,10 @@
       "episode": 395,
       "arcs": [
         "継承戦"
+      ],
+      "affiliations": [
+        "ハンター協会",
+        "第十四王子ワブル"
       ]
     },
     {
@@ -12723,7 +13480,9 @@
       "arcs": [
         "継承戦"
       ],
-      "affiliations": [],
+      "affiliations": [
+        "流星街"
+      ],
       "occupation": "葬儀屋",
       "nen": {
         "type": "特質系",
@@ -12907,7 +13666,9 @@
       "arcs": [
         "継承戦"
       ],
-      "affiliations": [],
+      "affiliations": [
+        "カキン王国"
+      ],
       "occupation": "|type = Unknown",
       "nen": {
         "type": "不明",
@@ -12954,7 +13715,13 @@
         "n_w_milluki_zoldyck",
         "n_w_zebro",
         "n_w_amane",
-        "n_w_tsubone"
+        "n_w_tsubone",
+        "n_w_gotoh",
+        "n_w_hishita",
+        "n_w_kasuga",
+        "n_w_mitsuba",
+        "n_w_yasuha",
+        "n_w_zoldyck"
       ]
     },
     {
@@ -12975,7 +13742,12 @@
         "n_kura",
         "n_melody",
         "n_basho_york",
-        "n_w_linssen"
+        "n_w_linssen",
+        "n_w_dalzollene",
+        "n_w_nostrade_butler",
+        "n_w_nostrade",
+        "n_squala",
+        "n_w_eliza"
       ]
     },
     {
@@ -13074,7 +13846,65 @@
         "n_w_eta",
         "n_w_elena",
         "n_w_pirate_boxer",
-        "n_w_pirate_footballer"
+        "n_w_pirate_footballer",
+        "n_bopobo",
+        "n_bara",
+        "n_genthru",
+        "n_w_jeet",
+        "n_w_puhat",
+        "n_w_mikli",
+        "n_w_sakisuke_njiji",
+        "n_w_latarza",
+        "n_w_cat_diner_npc",
+        "n_w_nickes",
+        "n_w_assam",
+        "n_w_isaac",
+        "n_w_nomdieu",
+        "n_w_jispa",
+        "n_w_kosofftro",
+        "n_w_pisac",
+        "n_w_shihael",
+        "n_w_arka",
+        "n_w_asta",
+        "n_w_degiro",
+        "n_w_erbier_mano",
+        "n_w_jikono",
+        "n_w_kazsule",
+        "n_w_linn",
+        "n_w_luciart",
+        "n_w_motaricke",
+        "n_w_mukanaki",
+        "n_w_pongo",
+        "n_w_soffman",
+        "n_w_vice",
+        "n_w_antokiba_trade_shop_npc",
+        "n_w_g_i_game_masters",
+        "n_w_sick_villagers",
+        "n_w_masadora_trade_shop_npc",
+        "n_w_spell_card_shop_npc",
+        "n_w_michael",
+        "n_w_gold_dust_girl",
+        "n_w_gold_dust_girl_guard",
+        "n_w_casino_king",
+        "n_w_ivona_kawski",
+        "n_w_nick_cue",
+        "n_w_richard_hackett",
+        "n_w_souheil",
+        "n_w_wong_ho",
+        "n_w_tokharone",
+        "n_w_michiro",
+        "n_w_amana",
+        "n_w_hanse",
+        "n_w_manheim",
+        "n_w_montreux",
+        "n_w_wong_li",
+        "n_w_yabibi",
+        "n_w_zeho",
+        "n_w_plot_of_beach_npc",
+        "n_w_battera_s_lover",
+        "n_w_death_row_convicts",
+        "n_w_battera",
+        "n_w_abengane"
       ]
     },
     {
@@ -13203,7 +14033,8 @@
         "n_k_tevelares",
         "n_k_voconte",
         "n_k_yokotani",
-        "n_k_badoyu"
+        "n_k_badoyu",
+        "n_k_luini"
       ]
     },
     {
