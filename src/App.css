@@ -453,6 +453,65 @@ header {
   .hint {
     display: none;
   }
+
+  /* Mobile touch-target enlargement: range slider thumb ~ 44px */
+  .episode-range-pair input[type='range'] {
+    height: 28px;
+  }
+  .episode-range-pair input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 2px solid var(--surface);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  .episode-range-pair input[type='range']::-moz-range-thumb {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 2px solid var(--surface);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+
+  /* Arc chips wider on mobile (>=36px tap height) */
+  .chip {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+
+  /* Prevent bottom-sheet content from scrolling the body (jitter prevention) */
+  .bottom-sheet,
+  .bottom-sheet .body {
+    overscroll-behavior: contain;
+  }
+
+  /* Landscape orientation: shrink header further so graph has more vertical space */
+  @media (orientation: landscape) {
+    header.compact {
+      padding: 4px 12px 6px;
+    }
+    header.compact .ttl .hi {
+      font-size: 13px;
+    }
+    header.compact .ttl .hi-en {
+      font-size: 10px;
+    }
+    /* Bottom sheet covers less of the screen in landscape so user still sees graph */
+    .bottom-sheet {
+      max-height: 80dvh;
+    }
+  }
+}
+
+/* Stage perf: hint compositor for smoother pan/zoom on mobile */
+.scene {
+  will-change: transform;
 }
 
 /* Mobile bottom toolbar */
@@ -794,6 +853,41 @@ svg {
   padding: 2px 8px;
   border-radius: 10px;
   border: 1px solid rgba(120, 140, 180, 0.3);
+}
+
+.group-breadcrumb {
+  font-size: 11px;
+  margin: 0 0 12px;
+  padding: 6px 10px;
+  background: rgba(120, 140, 180, 0.08);
+  border-left: 3px solid var(--accent, #4a7bd0);
+  border-radius: 2px;
+  line-height: 1.6;
+}
+.group-breadcrumb .bc-segment {
+  display: inline;
+}
+.group-breadcrumb .bc-link {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--accent, #4a7bd0);
+  cursor: pointer;
+  font-size: inherit;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 2px;
+}
+.group-breadcrumb .bc-link:hover {
+  color: var(--fg);
+}
+.group-breadcrumb .bc-sep {
+  margin: 0 4px;
+  color: var(--mut);
+}
+.group-breadcrumb .bc-current {
+  color: var(--fg);
+  font-weight: 600;
 }
 
 .sec.attrs .member-list {
