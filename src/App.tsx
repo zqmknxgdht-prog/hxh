@@ -83,14 +83,22 @@ const eventsByParticipantId: Record<string, string[]> = (() => {
   return m;
 })();
 
+/** Normalize a label / affiliation string for fuzzy matching: strip `＝` and `=`
+ *  so that「キメラ＝アント」 ≡ 「キメラアント」 and 「ヒソカ＝モロウ」 ≡ 「ヒソカモロウ」. */
+function normalizeLabel(s: string): string {
+  return s.replace(/[＝=]/g, '');
+}
+
 /**
  * Resolve an affiliation string to a navigable node id (group or character).
  * Priority (later wins):
- *  1. Character whose label starts with the affiliation followed by `＝`
- *     (e.g. `第十四王子ワブル` -> `第十四王子ワブル＝ホイコーロ`)
- *  2. Queen alias: `◯◯王妃` -> character whose label starts with `◯◯＝`
- *  3. Exact match on a character label
- *  4. Exact match on a group label
+ *  1. Character prefix-before-`＝` match (normalized)
+ *  2. Queen alias: `◯◯王妃` -> character starting with `◯◯＝`
+ *  3. Exact character label (normalized — so 「キメラアント」 matches 「キメラ＝アント」)
+ *  4. Exact group label (normalized)
+ *
+ * Exposed as a plain { label -> id } map; consumer normalizes the lookup key
+ * via `normalizeLabel` before access.
  */
 const groupIdByLabel: Record<string, string> = (() => {
   const byGroupExact: Record<string, string> = {};
@@ -99,13 +107,18 @@ const groupIdByLabel: Record<string, string> = (() => {
   const byQueenAlias: Record<string, string> = {};
   for (const node of rawNodes) {
     if (!node.label) continue;
-    if (node.kind === 'group') byGroupExact[node.label] = node.id;
-    else if (node.kind === 'character') {
+    const norm = normalizeLabel(node.label);
+    if (node.kind === 'group') {
+      byGroupExact[node.label] = node.id;
+      byGroupExact[norm] = node.id;
+    } else if (node.kind === 'character') {
       byCharExact[node.label] = node.id;
+      byCharExact[norm] = node.id;
       const sep = node.label.indexOf('＝');
       if (sep > 0) {
         const prefix = node.label.slice(0, sep);
         byCharPrefix[prefix] = node.id;
+        byCharPrefix[normalizeLabel(prefix)] = node.id;
         if ((node.description || '').match(/第[一二三四五六七八九]王妃/)) {
           byQueenAlias[`${prefix}王妃`] = node.id;
         }
@@ -114,6 +127,8 @@ const groupIdByLabel: Record<string, string> = (() => {
   }
   return { ...byCharPrefix, ...byQueenAlias, ...byCharExact, ...byGroupExact };
 })();
+
+export { normalizeLabel };
 
 export default function App() {
   const [selectedId, setSelectedId] = useState<string | null>(null);
