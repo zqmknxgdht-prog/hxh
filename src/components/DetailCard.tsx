@@ -121,6 +121,27 @@ export function DetailCard({ node, branch, branches, meta, nodesById, groupsByMe
         </div>
       </div>
       <div className="card-body">
+        {node.kind === 'group' && (groupAncestors[node.id]?.length ?? 0) > 0 && (
+          <nav className="group-breadcrumb" aria-label="Group hierarchy">
+            {[...(groupAncestors[node.id] ?? [])].reverse().map((aid, i, arr) => {
+              const a = nodesById[aid];
+              if (!a) return null;
+              return (
+                <span key={aid} className="bc-segment">
+                  <button
+                    type="button"
+                    className="bc-link"
+                    onClick={() => onSelectNode(aid)}
+                  >
+                    {a.label}
+                  </button>
+                  <span className="bc-sep" aria-hidden>›</span>
+                  {i === arr.length - 1 && <span className="bc-current">{node.label}</span>}
+                </span>
+              );
+            })}
+          </nav>
+        )}
         <div className="sec">
           <h4>{whoLabel}</h4>
           <p className="bilingual">{bilingualBlock(node.description, node.descriptionEn)}</p>
