@@ -73,6 +73,16 @@ const subgroupsByGroupId: Record<string, string[]> = (() => {
   return m;
 })();
 
+/** characterId -> list of event node ids in which they participate (reverse of event.participants). */
+const eventsByParticipantId: Record<string, string[]> = (() => {
+  const m: Record<string, string[]> = {};
+  for (const node of rawNodes) {
+    if (node.kind !== 'event' || !node.participants) continue;
+    for (const cid of node.participants) (m[cid] ??= []).push(node.id);
+  }
+  return m;
+})();
+
 /**
  * Resolve an affiliation string to a navigable node id (group or character).
  * Priority (later wins):
@@ -437,6 +447,7 @@ export default function App() {
           groupIdByLabel={groupIdByLabel}
           groupAncestors={groupAncestors}
           subgroupsByGroupId={subgroupsByGroupId}
+          eventsByParticipantId={eventsByParticipantId}
           open={selectedId !== null}
           onClose={() => { deselect(); setCameFromList(false); }}
           onSelectNode={navigateToNode}

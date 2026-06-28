@@ -46,6 +46,8 @@ interface DetailCardProps {
   groupAncestors: Record<string, string[]>;
   /** groupId -> direct subgroup ids. */
   subgroupsByGroupId: Record<string, string[]>;
+  /** characterId -> list of event ids in which they participate. */
+  eventsByParticipantId: Record<string, string[]>;
   open: boolean;
   onClose: () => void;
   onSelectNode: (id: string) => void;
@@ -53,7 +55,7 @@ interface DetailCardProps {
   onBackToList?: () => void;
 }
 
-export function DetailCard({ node, branch, branches, meta, nodesById, groupsByMemberId, groupIdByLabel, groupAncestors, subgroupsByGroupId, open, onClose, onSelectNode, onBackToList }: DetailCardProps) {
+export function DetailCard({ node, branch, branches, meta, nodesById, groupsByMemberId, groupIdByLabel, groupAncestors, subgroupsByGroupId, eventsByParticipantId, open, onClose, onSelectNode, onBackToList }: DetailCardProps) {
   const kindLabel = bilingualInline(
     meta.labels.kind[node.kind] ?? node.kind,
     meta.labelsEn?.kind[node.kind],
@@ -287,6 +289,48 @@ export function DetailCard({ node, branch, branches, meta, nodesById, groupsByMe
                       <span className="member-ja">{m.label}</span>
                       {m.labelEn && m.labelEn !== m.label && (
                         <span className="member-en">{m.labelEn}</span>
+                      )}
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        )}
+        {node.kind === 'event' && node.participants && node.participants.length > 0 && (
+          <div className="sec attrs members participants">
+            <h4>登場人物 / Participants <span className="count">{node.participants.length}</span></h4>
+            <ul className="member-list">
+              {node.participants.map((pid) => {
+                const p = nodesById[pid];
+                if (!p) return <li key={pid}><span className="member-missing">{pid}</span></li>;
+                return (
+                  <li key={pid}>
+                    <button type="button" className="member-link" onClick={() => onSelectNode(pid)}>
+                      <span className="member-ja">{p.label}</span>
+                      {p.labelEn && p.labelEn !== p.label && (
+                        <span className="member-en">{p.labelEn}</span>
+                      )}
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        )}
+        {node.kind === 'character' && (eventsByParticipantId[node.id]?.length ?? 0) > 0 && (
+          <div className="sec attrs members appears-in">
+            <h4>登場イベント / Appears In <span className="count">{eventsByParticipantId[node.id].length}</span></h4>
+            <ul className="member-list">
+              {eventsByParticipantId[node.id].map((eid) => {
+                const e = nodesById[eid];
+                if (!e) return <li key={eid}><span className="member-missing">{eid}</span></li>;
+                return (
+                  <li key={eid}>
+                    <button type="button" className="member-link" onClick={() => onSelectNode(eid)}>
+                      <span className="member-ja">{e.label}</span>
+                      {e.labelEn && e.labelEn !== e.label && (
+                        <span className="member-en">{e.labelEn}</span>
                       )}
                     </button>
                   </li>
