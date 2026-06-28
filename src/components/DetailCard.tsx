@@ -40,6 +40,8 @@ interface DetailCardProps {
   nodesById: Record<string, GraphNode>;
   /** Reverse lookup: memberId -> list of group node ids that contain it. */
   groupsByMemberId: Record<string, string[]>;
+  /** group label -> group node id. Used to make affiliation strings clickable. */
+  groupIdByLabel: Record<string, string>;
   open: boolean;
   onClose: () => void;
   onSelectNode: (id: string) => void;
@@ -47,7 +49,7 @@ interface DetailCardProps {
   onBackToList?: () => void;
 }
 
-export function DetailCard({ node, branch, branches, meta, nodesById, groupsByMemberId, open, onClose, onSelectNode, onBackToList }: DetailCardProps) {
+export function DetailCard({ node, branch, branches, meta, nodesById, groupsByMemberId, groupIdByLabel, open, onClose, onSelectNode, onBackToList }: DetailCardProps) {
   const kindLabel = bilingualInline(
     meta.labels.kind[node.kind] ?? node.kind,
     meta.labelsEn?.kind[node.kind],
@@ -121,9 +123,23 @@ export function DetailCard({ node, branch, branches, meta, nodesById, groupsByMe
           <div className="sec attrs">
             <h4>所属 / Affiliation</h4>
             <ul className="attr-list">
-              {node.affiliations.map((a, i) => (
-                <li key={i}>{a}</li>
-              ))}
+              {node.affiliations.map((a, i) => {
+                const gid = groupIdByLabel[a];
+                if (gid && gid !== node.id) {
+                  return (
+                    <li key={i}>
+                      <button
+                        type="button"
+                        className="member-link affiliation-link"
+                        onClick={() => onSelectNode(gid)}
+                      >
+                        <span className="member-ja">{a}</span>
+                      </button>
+                    </li>
+                  );
+                }
+                return <li key={i}>{a}</li>;
+              })}
             </ul>
           </div>
         )}
