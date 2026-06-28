@@ -33,12 +33,42 @@ const layout = meta.layout;
 
 const positionedNodes: PositionedNode[] = computeLayout(rawNodes, branches, layout);
 
-/** memberId -> list of group node ids that contain it */
+/** memberId -> list of group node ids that contain it (direct only). */
 const groupsByMemberId: Record<string, string[]> = (() => {
   const m: Record<string, string[]> = {};
   for (const node of rawNodes) {
     if (node.kind !== 'group' || !node.members) continue;
     for (const mid of node.members) (m[mid] ??= []).push(node.id);
+  }
+  return m;
+})();
+
+/** groupId -> ordered list of ancestor group ids (transitive parents). */
+const groupAncestors: Record<string, string[]> = (() => {
+  const m: Record<string, string[]> = {};
+  const visit = (gid: string, seen: Set<string>): string[] => {
+    if (m[gid]) return m[gid];
+    if (seen.has(gid)) return [];
+    seen.add(gid);
+    const g = rawNodes.find((x) => x.id === gid);
+    if (!g || g.kind !== 'group') return (m[gid] = []);
+    const out: string[] = [];
+    for (const p of g.parents ?? []) {
+      if (!out.includes(p)) out.push(p);
+      for (const a of visit(p, seen)) if (!out.includes(a)) out.push(a);
+    }
+    return (m[gid] = out);
+  };
+  for (const node of rawNodes) if (node.kind === 'group') visit(node.id, new Set());
+  return m;
+})();
+
+/** groupId -> direct child group ids (reverse of parents). */
+const subgroupsByGroupId: Record<string, string[]> = (() => {
+  const m: Record<string, string[]> = {};
+  for (const node of rawNodes) {
+    if (node.kind !== 'group') continue;
+    for (const p of node.parents ?? []) (m[p] ??= []).push(node.id);
   }
   return m;
 })();
@@ -405,6 +435,8 @@ export default function App() {
           nodesById={nodesById}
           groupsByMemberId={groupsByMemberId}
           groupIdByLabel={groupIdByLabel}
+          groupAncestors={groupAncestors}
+          subgroupsByGroupId={subgroupsByGroupId}
           open={selectedId !== null}
           onClose={() => { deselect(); setCameFromList(false); }}
           onSelectNode={navigateToNode}

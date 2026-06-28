@@ -2660,6 +2660,9 @@
         "n_w_porcupine",
         "n_w_rabid_dog",
         "n_w_worm"
+      ],
+      "parents": [
+        "n_w_ten_dons"
       ]
     },
     {
@@ -5671,6 +5674,9 @@
         "n_pitou",
         "n_pouf",
         "n_youpi"
+      ],
+      "parents": [
+        "n_kimera_ants"
       ]
     },
     {
@@ -5721,6 +5727,9 @@
         "n_peggy",
         "n_rammot",
         "n_welfin"
+      ],
+      "parents": [
+        "n_kimera_ants"
       ]
     },
     {
@@ -5783,6 +5792,9 @@
       "members": [
         "n_w_chimera_ant_queen",
         "n_w_squadron_leaders"
+      ],
+      "parents": [
+        "n_kimera_ants"
       ]
     },
     {
@@ -7597,6 +7609,9 @@
         "n_kura",
         "n_w_bushidora_ambitious",
         "n_w_provisional_hunters"
+      ],
+      "parents": [
+        "n_hunter_assoc"
       ]
     },
     {
@@ -8188,6 +8203,9 @@
         "n_gon",
         "n_killua",
         "n_kite"
+      ],
+      "parents": [
+        "n_w_extermination_team"
       ]
     },
     {
@@ -8438,6 +8456,9 @@
       "members": [
         "n_zazan",
         "n_w_centipede"
+      ],
+      "parents": [
+        "n_w_squadron_leaders"
       ]
     },
     {
@@ -8610,6 +8631,9 @@
         "n_w_golem",
         "n_w_usamen",
         "n_w_curly"
+      ],
+      "parents": [
+        "n_hunter_assoc"
       ]
     },
     {
@@ -8623,6 +8647,9 @@
       "episode": 340,
       "arcs": [
         "暗黒大陸"
+      ],
+      "parents": [
+        "n_hunter_assoc"
       ]
     },
     {
@@ -8838,6 +8865,9 @@
         "n_w_golem",
         "n_w_usamen",
         "n_w_curly"
+      ],
+      "parents": [
+        "n_dark_expedition"
       ]
     },
     {
@@ -9227,6 +9257,9 @@
         "n_k_seiko_hui_guo_rou",
         "n_k_sevanti_hui_guo_rou",
         "n_k_oito_hui_guo_rou"
+      ],
+      "parents": [
+        "n_kakin_kingdom"
       ]
     },
     {
@@ -9300,6 +9333,9 @@
         "n_momoze",
         "n_marayair",
         "n_woble"
+      ],
+      "parents": [
+        "n_kakin_kingdom"
       ]
     },
     {
@@ -9881,6 +9917,9 @@
         "n_k_tajao",
         "n_k_sun_bin",
         "n_k_tsudonke"
+      ],
+      "parents": [
+        "n_kakin_kingdom"
       ]
     },
     {
@@ -9915,6 +9954,9 @@
         "n_k_vict",
         "n_k_wolfe",
         "n_k_orzny"
+      ],
+      "parents": [
+        "n_princes"
       ]
     },
     {
@@ -10956,6 +10998,9 @@
         "n_k_cavic",
         "n_k_kako",
         "n_k_taler"
+      ],
+      "parents": [
+        "n_princes"
       ]
     },
     {
@@ -13453,6 +13498,9 @@
         "n_k_naik_ru",
         "n_k_r_uen",
         "n_k_tagenpaku"
+      ],
+      "parents": [
+        "n_princes"
       ]
     },
     {
@@ -13598,6 +13646,9 @@
         "n_regalia_seedurn",
         "n_regalia_lotus",
         "n_regalia_sword"
+      ],
+      "parents": [
+        "n_kakin_kingdom"
       ]
     },
     {
@@ -13786,6 +13837,9 @@
         "n_kura",
         "n_w_pyon",
         "n_w_saccho_kobayakawa"
+      ],
+      "parents": [
+        "n_zodiac_twelve"
       ]
     },
     {
@@ -13805,6 +13859,9 @@
         "n_cheadle",
         "n_w_gel",
         "n_leorio"
+      ],
+      "parents": [
+        "n_zodiac_twelve"
       ]
     },
     {
@@ -13824,6 +13881,9 @@
         "n_w_botobai_gigante",
         "n_w_kanzai",
         "n_w_saiyu"
+      ],
+      "parents": [
+        "n_zodiac_twelve"
       ]
     },
     {
@@ -13925,6 +13985,9 @@
         "n_w_borksen",
         "n_k_gipper",
         "n_k_shejell"
+      ],
+      "parents": [
+        "n_kakin_kingdom"
       ]
     },
     {
@@ -13955,6 +14018,9 @@
         "n_k_fukataki",
         "n_k_kako",
         "n_k_taler"
+      ],
+      "parents": [
+        "n_kakin_kingdom"
       ]
     },
     {
@@ -13976,6 +14042,9 @@
         "n_k_hinrigh_biganduffno",
         "n_k_zakuro_custard",
         "n_k_misha_hao"
+      ],
+      "parents": [
+        "n_three_mafia"
       ]
     },
     {
@@ -13998,6 +14067,9 @@
         "n_k_ittoku",
         "n_k_tsudonke",
         "n_k_tajao"
+      ],
+      "parents": [
+        "n_three_mafia"
       ]
     },
     {
@@ -14035,6 +14107,9 @@
         "n_k_yokotani",
         "n_k_badoyu",
         "n_k_luini"
+      ],
+      "parents": [
+        "n_three_mafia"
       ]
     },
     {
@@ -14055,6 +14130,9 @@
         "n_k_worio_bay",
         "n_k_steiner",
         "n_k_peuckert"
+      ],
+      "parents": [
+        "n_kakin_kingdom"
       ]
     },
     {
@@ -14113,6 +14191,20 @@
         "n_meruem",
         "n_w_ortho_brother"
       ]
+    },
+    {
+      "id": "n_kakin_kingdom",
+      "branchId": "kakin",
+      "type": "h",
+      "label": "カキン王国",
+      "kind": "group",
+      "description": "東洋的な君主制国家。継承戦・暗黒大陸渡航計画の起点。8人の王妃 / 14人の王子 / 王立軍 / 司法局 / 3大マフィア / 三神器など複数階層の組織を内包する。",
+      "gitMeta": "<code>kakin</code> 国家全体。",
+      "episode": 349,
+      "arcs": [
+        "継承戦"
+      ],
+      "members": []
     }
   ]
 }

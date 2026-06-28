@@ -3031,6 +3031,10 @@
     "n_kimera_ants": {
       "label": "Chimera Ants",
       "description": "A species originating in NGL Autonomous Region that, in East Gorteau, raised a massive army including the King. Hierarchically structured into Queen, King, Royal Guards, Squadron Leaders, and soldiers."
+    },
+    "n_kakin_kingdom": {
+      "label": "Kakin Empire",
+      "description": "An Oriental-style monarchy. Origin point of the succession contest and the Dark Continent expedition. Contains multiple layered organizations: 8 Queens, 14 Princes, Royal Army, Justice Bureau, three great mafia families, the three regalia, and more."
     }
   }
 }

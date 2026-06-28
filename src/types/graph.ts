@@ -63,6 +63,9 @@ export interface GraphNode {
   nen?: { type: NenType; abilities?: NenAbility[] };
   /** For kind='group': list of member node ids (rendered as links in DetailCard). */
   members?: string[];
+  /** For kind='group': list of parent group node ids. Defines a DAG so a member
+   *  of a child group is transitively a member of its ancestors. */
+  parents?: string[];
 }
 
 export type AvatarPrimitive =
