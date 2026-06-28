@@ -2765,8 +2765,24 @@
       "description": "Mafia families Heil-Ly and Sha-A clash inside the ship, widening the war."
     },
     "n_halken_followers": {
-      "label": "Halkenburg's Faction",
-      "description": "Halkenburg gathers Nen users; his commitment to the contest itself wavers."
+      "label": "Halkenburg's Conviction Resonates",
+      "description": "Through Halkenburg's Nen ability 'The Boy Shoots a Cruel Bow', Nen users who resonate with his will begin to gather around him."
+    },
+    "n_regalia": {
+      "label": "Kakin's Three Regalia",
+      "description": "Kakin's three sacred treasures: Seed Urn, Lotus Anchorite, and Sword of Good Omens. In Chapter 406 'Regalia', Chrollo reveals he targets the three as the source of the powerful Nen underpinning the succession contest."
+    },
+    "n_regalia_seedurn": {
+      "label": "Seed Urn (Kochūran)",
+      "description": "One of Kakin's three regalia. A ritual urn said to have been conjured by Kakin's First King, inspired by 'Worm Toxin' (Kodoku). In the succession rite, participants focus their desire for the crown, offer a drop of blood, and insert a hand into the urn's mouth, receiving an egg that later hatches into a Guardian Spirit Beast."
+    },
+    "n_regalia_lotus": {
+      "label": "Lotus Anchorite (Gizazen Butsu)",
+      "description": "One of Kakin's three regalia. A divine mummy said to oversee the succession contest. Mentioned in Chapter 406; its specific role in the contest has not yet been revealed."
+    },
+    "n_regalia_sword": {
+      "label": "Sword of Good Omens (Kitchōmaru)",
+      "description": "One of Kakin's three regalia. A sword of accession passed on to the new king. Mentioned in Chapter 406; its specific role in the contest has not yet been revealed."
     },
     "n_chrollo_arrange": {
       "label": "Chrollo–Hisoka Setup",
