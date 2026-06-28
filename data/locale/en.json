@@ -1018,7 +1018,7 @@
     },
     "n_w_floor_masters": {
       "label": "Floor Masters",
-      "description": "The elite of Heavens Arena's 200th-floor class. Their ranks include Hisoka and Kastro."
+      "description": "The elite of Heavens Arena's 200th-floor class. Hisoka is one of them."
     },
     "n_w_flutter": {
       "label": "Flutter",
@@ -1026,7 +1026,7 @@
     },
     "n_w_freelance_assassins": {
       "label": "Freelance Assassins",
-      "description": "Freelance killers hired by the Yorknew mafia to secure the Scarlet Eyes, filling in for the fallen Shadow Beasts."
+      "description": "Freelance killers mobilised by the Yorknew mafia around the Phantom Troupe / Scarlet Eyes operations."
     },
     "n_w_fumi": {
       "label": "Fumi",
@@ -2282,7 +2282,7 @@
     },
     "n_k_peuckert": {
       "label": "Peuckert",
-      "description": "Peuckert. A character in the Kakin succession contest."
+      "description": "An investigator on the V5's International Permit Agency Special Task Force. Together with Steiner, he boards the B/W as a Beyond monitor."
     },
     "n_k_quorolle": {
       "label": "Quorolle",
@@ -2366,7 +2366,7 @@
     },
     "n_k_steiner": {
       "label": "Steiner",
-      "description": "Steiner. A character in the Kakin succession contest."
+      "description": "A bespectacled young deputy section chief assigned to the Special Task Force of the V5's International Permit Agency. Sharp-minded with an exceptional memory. On his first day he learns of the Dark Continent's calamities and gives a presentation to the V5 leadership. He boards the B/W as Beyond's monitor under Hunter Association protection and is placed within the Kakin Justice Bureau, having memorised the entire Travels in the New World book for his mission."
     },
     "n_k_sumidori": {
       "label": "Sumidori",
@@ -2906,7 +2906,7 @@
     },
     "n_kurta_clan": {
       "label": "Kurta Clan",
-      "description": "A reclusive people whose eyes turn scarlet with rage; those eyes are reckoned among the world's seven great treasures. Annihilated by the Phantom Troupe. Kurapika is the sole survivor."
+      "description": "A reclusive people whose eyes turn scarlet with rage; those eyes are counted among the world's seven greatest hues of beauty. Annihilated by the Phantom Troupe — Kurapika is the sole survivor."
     },
     "n_ngl_state": {
       "label": "NGL (Neo-Green Life Autonomous Region)",
@@ -2934,7 +2934,7 @@
     },
     "n_camilla_army": {
       "label": "Camilla's Private Soldiers",
-      "description": "Prince Camilla's fourteen-member private guard, all drawn from the persecuted \"untouchables\" caste, wearing a distinctive uniform. Headed by Sarahell, with eleven curse-bearers assigned one per other prince plus a single exorcist. All bear the shared curse ability Yomotsu Hegui (\"Born to Mend Wrongs\")."
+      "description": "Prince Camilla's 14-member private guard: Sarahell and Moswana as the leadership pair, eleven curse-bearers each assigned to one of Princes 3rd–13th, and a single exorcist. All come from the persecuted \"Untouchables\" caste, wearing a distinctive uniform. All bear the shared curse ability Yomotsu Hegui (\"Born to Mend Wrongs\")."
     },
     "n_halken_legion": {
       "label": "Halkenburg's Private Soldiers",
@@ -2946,11 +2946,15 @@
     },
     "n_melody_concert": {
       "label": "Melody's Concert",
-      "description": "At the ship's banquet Melody performs on flute, her music stirring deep feeling in many listeners—Justice Bureau agent Kaiser is utterly smitten. The performance also intersects with the unfolding Kacho/Fugetsu escape plan."
+      "description": "At the ship's banquet Melody performs on flute; her music stirs deep feeling in many listeners — Justice Bureau agent Kaiser is utterly smitten."
     },
     "n_saiyu_revealed": {
       "label": "Saiyu Exposed as the Beyond Informant",
       "description": "Mizaistom confronts all Zodiacs about a traitor in their ranks and discloses his own ability. Watching via a hidden camera from a separate room, Kurapika identifies Saiyu as Beyond's informant."
+    },
+    "n_ipa": {
+      "label": "International Permit Agency (IPA)",
+      "description": "A V5-side international body that, in effect, regulates expeditions to the Dark Continent. Its Special Task Force handles operations and is involved in surveilling and constraining Beyond. Steiner and Peuckert are sent aboard the B/W under the Hunter Association's protection."
     }
   }
 }
