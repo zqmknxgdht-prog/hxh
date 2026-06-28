@@ -2948,9 +2948,9 @@
       "label": "Melody's Concert",
       "description": "At the ship's banquet Melody performs on flute, her music stirring deep feeling in many listeners—Justice Bureau agent Kaiser is utterly smitten. The performance also intersects with the unfolding Kacho/Fugetsu escape plan."
     },
-    "n_saiyu_volunteer": {
-      "label": "Inside-Spy Doubt and Saiyu's Volunteering",
-      "description": "At the Zodiac meeting Kurapika raises the suspicion that Beyond must have allies within the Association. Saiyu promptly volunteers to monitor Beyond alone — the first hint of the inside-man role later confirmed."
+    "n_saiyu_revealed": {
+      "label": "Saiyu Exposed as the Beyond Informant",
+      "description": "Mizaistom confronts all Zodiacs about a traitor in their ranks and discloses his own ability. Watching via a hidden camera from a separate room, Kurapika identifies Saiyu as Beyond's informant."
     }
   }
 }
