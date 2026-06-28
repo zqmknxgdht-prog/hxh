@@ -11204,16 +11204,17 @@
       "id": "n_illumi_pact",
       "branchId": "illumi",
       "type": "h",
-      "label": "ヒソカ＝イルミ密約",
+      "label": "イルミ旅団加入(ヒソカ依頼)",
       "kind": "event",
-      "description": "ヒソカが旅団狩りの協力者としてイルミを雇い、船内で旅団員暗殺計画を進める。ヒソカは「旅団員全員」を標的としており、旅団に加わるイルミ自身も契約上の標的に含まれる。",
-      "gitMeta": "<code>illumi</code> 継承戦編 旅団狩りの裏。",
+      "description": "クロロとの死闘から蘇生したヒソカが旅団員全員を標的とする殺し合いを宣言。ヒソカからの依頼でイルミ＝ゾルディックが旅団 No.11(ウボォーギンの欠員)として加入し、ヒソカを討つ任を負う。船内で旅団 vs ヒソカの相互探索が進行する。",
+      "gitMeta": "<code>illumi</code> 継承戦編 旅団 No.11 加入。",
       "episode": 358,
       "arcs": [
         "継承戦"
       ],
       "participants": [
-        "n_hisoka"
+        "n_hisoka",
+        "n_illumi"
       ]
     },
     {
@@ -14172,18 +14173,19 @@
       "id": "n_kacho_fugetsu",
       "branchId": "kakin",
       "type": "n",
-      "label": "カチョウ・フウゲツ計画",
+      "label": "カチョウ・フウゲツ脱出計画",
       "kind": "event",
-      "description": "双子のカチョウとフウゲツがビル、ハルケンブルクと協力し継承戦からの脱出計画を進める。",
+      "description": "双子のカチョウとフウゲツがセンリツ・キーニら陣営内協力者と共に救命ボートでの離脱を計画する (ch 381-383)。",
       "gitMeta": "<code>commit twins-plan</code>＝双子枝の運命。",
       "episode": 384,
       "arcs": [
         "継承戦"
       ],
       "participants": [
-        "n_halkenburg",
         "n_kacho",
-        "n_fugetsu"
+        "n_fugetsu",
+        "n_melody",
+        "n_w_keeney"
       ]
     },
     {
