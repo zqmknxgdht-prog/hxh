@@ -2596,8 +2596,7 @@
         "type": "不明"
       },
       "affiliations": [
-        "ノストラード組",
-        "幻影旅団"
+        "ノストラード組"
       ],
       "tags": [
         "念未覚醒",
@@ -3463,13 +3462,7 @@
         "n_uvo",
         "n_kalluto",
         "n_hisoka",
-        "n_illumi",
-        "n_w_dalzollene",
-        "n_w_shadow_beasts",
-        "n_w_kurt",
-        "n_k_risnorth",
-        "n_k_sarasa",
-        "n_w_moritonio"
+        "n_illumi"
       ]
     },
     {
@@ -6238,7 +6231,6 @@
         "キメラアント"
       ],
       "affiliations": [
-        "幻影旅団",
         "NGL自治国"
       ],
       "tags": [
@@ -9304,9 +9296,7 @@
       "nen": {
         "type": "変化系"
       },
-      "affiliations": [
-        "幻影旅団"
-      ],
+      "affiliations": [],
       "tags": [
         "念能力者"
       ]
@@ -15066,14 +15056,14 @@
       "type": "n",
       "label": "リスノース",
       "kind": "character",
-      "description": "幻影旅団関連の登場人物。",
+      "description": "慈善団体『Mom's Help』の会長を装う人身売買者。流星街の子供だったサラサを誘拐・殺害し snuff 映像を制作した張本人。後年、復讐に来たクロロらに討たれる。",
       "gitMeta": "<code>genei_ryodan</code> · 継承戦ギャラリー（Risnorth）",
       "episode": 395,
       "arcs": [
         "継承戦"
       ],
       "affiliations": [
-        "幻影旅団"
+        "Mom's Help"
       ]
     },
     {
@@ -15089,7 +15079,7 @@
         "継承戦"
       ],
       "affiliations": [
-        "幻影旅団"
+        "流星街"
       ],
       "tags": [
         "死亡"
