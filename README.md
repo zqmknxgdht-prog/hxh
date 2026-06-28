@@ -197,21 +197,60 @@ EN 側 (`data/locale/en.json`):
 
 ```jsonc
 {
-  "affiliations": ["エイ＝イ一家"],        // 所属 (複数可)
+  "affiliations": ["エイ＝イ一家"],        // 所属 (複数可、leaf subgroup 名で)
   "occupation": "悪専弁護士 / 法律顧問",   // 職業
   "nen": {
     "type": "具現化系",                    // 強化/放出/変化/具現化/操作/特質/不明
     "abilities": [
       { "name": "墨攻", "code": "LSDF" }   // 正式 JA 名 + 漫画併記 acronym
     ]
-  }
+  },
+  "tags": ["念能力者", "暗殺者"]            // closed vocabulary (meta.json#tagsCatalog)
 }
 ```
-詳細は [CONTRIBUTING.md](./CONTRIBUTING.md) の「キャラ属性フィールド」節。
+詳細は [CONTRIBUTING.md](./CONTRIBUTING.md) の「キャラ属性フィールド」「グループ階層」「タグカタログ」節。
 
 ### アバター
 
 `data/avatar-svg.json` に登録済みのキャラのみ抽象アバター (円+三角形) で描画。未登録キャラは branch 色の単純な円。アバター追加は現状 PR 反映 (リポジトリ内に生成パイプラインは無し)。
+
+### イベントに登場人物を紐付ける
+
+event ノードに `participants?: string[]` を追加すると、event ↔ character 間で双方向リンクが張られる:
+
+```jsonc
+{
+  "id": "n_my_event",
+  "kind": "event",
+  "participants": ["n_gon", "n_killua"]   // 登場 character の node id
+}
+```
+
+DetailCard で event 側に「登場人物」、character 側に「登場イベント」セクションが表示。
+
+---
+
+## グループ (group) を追加する
+
+複数 character / 下位 group をまとめる集合ノード。
+
+```jsonc
+{
+  "id": "n_my_group",
+  "branchId": "kakin",
+  "type": "n",
+  "label": "新グループ",
+  "kind": "group",
+  "description": "...",
+  "gitMeta": "<code>kakin</code> 新規勢力。",
+  "episode": 350,
+  "arcs": ["継承戦"],
+  "members": ["n_char_a", "n_char_b"],    // 直接登録される character の id
+  "parents": ["n_kakin_kingdom"]          // 任意: 親 group の id (DAG)
+}
+```
+
+**重要**: メンバーは leaf subgroup に書く。親 group は `parents[]` で繋ぎ、UI が transitive に親階層を表示する。詳細は [CONTRIBUTING.md](./CONTRIBUTING.md) の「グループ階層」節。
 
 ---
 
