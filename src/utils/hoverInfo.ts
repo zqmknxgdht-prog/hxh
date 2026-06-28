@@ -37,11 +37,13 @@ export function buildNodeHoverInfo(
   branch: Branch,
   meta: GraphMeta,
 ): NodeHoverInfo {
+  const baseEp = formatEpisodeBilingual(meta.version, meta.versionEn, node.episode);
+  const chapterTitle = meta.chapterTitles?.[node.episode];
   return {
     nodeId: node.id,
     title: bilingualInline(node.label, node.labelEn),
     detail: bilingualBlock(node.description, node.descriptionEn),
-    episodeLabel: formatEpisodeBilingual(meta.version, meta.versionEn, node.episode),
+    episodeLabel: chapterTitle ? `${baseEp} ${chapterTitle}` : baseEp,
     branchName: bilingualInline(branch.name, branch.nameEn),
     kindLabel: kindLabel(meta, node.kind),
     typeLabel: typeLabel(meta, node.type),

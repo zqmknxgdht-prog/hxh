@@ -1002,6 +1002,12 @@ svg {
   margin-top: 4px;
 }
 
+.version .chapter-title {
+  font-weight: 700;
+  color: var(--fg);
+  margin-left: 4px;
+}
+
 .branch {
   font-size: 11px;
   color: var(--mut);

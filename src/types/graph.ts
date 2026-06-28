@@ -128,6 +128,8 @@ export interface GraphMeta {
   versionEn?: VersionLabelConfig;
   arcLabelsEn?: Record<string, string>;
   arcEpisodes: Record<string, ArcEpisodeRange>;
+  /** Map of chapter number → canonical Japanese chapter title. */
+  chapterTitles?: Record<number, string>;
 }
 
 export interface GraphData {

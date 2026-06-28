@@ -47,6 +47,7 @@ export function DetailCard({ node, branch, meta, nodesById, open, onClose, onSel
     meta.labelsEn?.type[node.type],
   );
   const episodeLabel = formatEpisodeBilingual(meta.version, meta.versionEn, node.episode);
+  const chapterTitle = meta.chapterTitles?.[node.episode];
   const arcLabel = node.arcs
     .map((arc) => bilingualInline(arc, meta.arcLabelsEn?.[arc]))
     .join(' / ');
@@ -66,7 +67,10 @@ export function DetailCard({ node, branch, meta, nodesById, open, onClose, onSel
           ✕
         </button>
         <div className="eyebrow">{arcLabel}</div>
-        <div className="version">{episodeLabel}</div>
+        <div className="version">
+          {episodeLabel}
+          {chapterTitle && <span className="chapter-title"> {chapterTitle}</span>}
+        </div>
         <div className="branch">
           {bilingualInline('系譜', 'Branch')}: {bilingualInline(branch.name, branch.nameEn)}
         </div>
