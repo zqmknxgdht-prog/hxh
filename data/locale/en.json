@@ -2774,15 +2774,15 @@
     },
     "n_regalia_seedurn": {
       "label": "Seed Urn (Kochūran)",
-      "description": "One of Kakin's three regalia. A ritual urn said to have been conjured by Kakin's First King, inspired by 'Worm Toxin' (Kodoku). In the succession rite, participants focus their desire for the crown, offer a drop of blood, and insert a hand into the urn's mouth, receiving an egg that later hatches into a Guardian Spirit Beast."
+      "description": "One of Kakin's three regalia. A ritual urn used by succession contest participants. In the rite, the participant offers a drop of blood and inserts their hand into the urn's mouth, receiving an egg that later hatches into a Guardian Spirit Beast (ch 349)."
     },
     "n_regalia_lotus": {
       "label": "Lotus Anchorite (Gizazen Butsu)",
-      "description": "One of Kakin's three regalia. A divine mummy said to oversee the succession contest. Mentioned in Chapter 406; its specific role in the contest has not yet been revealed."
+      "description": "One of Kakin's three regalia. A sacred object (御神体) that watches over the succession contest."
     },
     "n_regalia_sword": {
       "label": "Sword of Good Omens (Kitchōmaru)",
-      "description": "One of Kakin's three regalia. A sword of accession passed on to the new king. Mentioned in Chapter 406; its specific role in the contest has not yet been revealed."
+      "description": "One of Kakin's three regalia. The sacred sword of succession passed on to the next king."
     },
     "n_chrollo_arrange": {
       "label": "Chrollo–Hisoka Setup",
