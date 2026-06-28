@@ -119,54 +119,56 @@ export function DetailCard({ node, branch, branches, meta, nodesById, groupsByMe
           <h4>{whoLabel}</h4>
           <p className="bilingual">{bilingualBlock(node.description, node.descriptionEn)}</p>
         </div>
-        {node.affiliations && node.affiliations.length > 0 && (
-          <div className="sec attrs">
-            <h4>所属 / Affiliation</h4>
-            <ul className="attr-list">
-              {node.affiliations.map((a, i) => {
-                const gid = groupIdByLabel[a];
-                if (gid && gid !== node.id) {
-                  return (
-                    <li key={i}>
+        {(() => {
+          // Union of affiliation strings and group nodes that contain this node as a member.
+          // Render clickable when resolvable to a group node; deduplicate by group id (when known)
+          // and by string label otherwise.
+          const seenGid = new Set<string>();
+          const seenStr = new Set<string>();
+          const items: { key: string; label: string; labelEn?: string; gid?: string }[] = [];
+          for (const a of node.affiliations ?? []) {
+            const gid = groupIdByLabel[a];
+            if (gid && gid !== node.id) {
+              if (seenGid.has(gid)) continue;
+              seenGid.add(gid);
+              const g = nodesById[gid];
+              items.push({ key: gid, label: a, labelEn: g?.labelEn, gid });
+            } else {
+              if (seenStr.has(a)) continue;
+              seenStr.add(a);
+              items.push({ key: `s:${a}`, label: a });
+            }
+          }
+          for (const gid of groupsByMemberId[node.id] ?? []) {
+            if (seenGid.has(gid)) continue;
+            const g = nodesById[gid];
+            if (!g) continue;
+            seenGid.add(gid);
+            items.push({ key: gid, label: g.label, labelEn: g.labelEn, gid });
+          }
+          if (items.length === 0) return null;
+          return (
+            <div className="sec attrs members">
+              <h4>所属 / Affiliation <span className="count">{items.length}</span></h4>
+              <ul className="member-list">
+                {items.map((it) => (
+                  <li key={it.key}>
+                    {it.gid ? (
                       <button
                         type="button"
                         className="member-link affiliation-link"
-                        onClick={() => onSelectNode(gid)}
+                        onClick={() => onSelectNode(it.gid!)}
                       >
-                        <span className="member-ja">{a}</span>
-                      </button>
-                    </li>
-                  );
-                }
-                return <li key={i}>{a}</li>;
-              })}
-            </ul>
-          </div>
-        )}
-        {(() => {
-          const memberOf = (groupsByMemberId[node.id] ?? []).filter((gid) => nodesById[gid]);
-          if (memberOf.length === 0) return null;
-          return (
-            <div className="sec attrs members">
-              <h4>所属グループ / Groups <span className="count">{memberOf.length}</span></h4>
-              <ul className="member-list">
-                {memberOf.map((gid) => {
-                  const g = nodesById[gid];
-                  return (
-                    <li key={gid}>
-                      <button
-                        type="button"
-                        className="member-link"
-                        onClick={() => onSelectNode(gid)}
-                      >
-                        <span className="member-ja">{g.label}</span>
-                        {g.labelEn && g.labelEn !== g.label && (
-                          <span className="member-en">{g.labelEn}</span>
+                        <span className="member-ja">{it.label}</span>
+                        {it.labelEn && it.labelEn !== it.label && (
+                          <span className="member-en">{it.labelEn}</span>
                         )}
                       </button>
-                    </li>
-                  );
-                })}
+                    ) : (
+                      <span className="affiliation-plain">{it.label}</span>
+                    )}
+                  </li>
+                ))}
               </ul>
             </div>
           );
