@@ -85,6 +85,17 @@ const INJECTION_RE = /\b(ignore (?:previous|prior|all) instructions?|disregard (
 function validateNodes() {
   const file = 'data/nodes.json';
   const data = JSON.parse(fs.readFileSync(file, 'utf8'));
+  // Build allowed-tags set from meta.tagsCatalog (closed vocabulary)
+  let allowedTags = null;
+  try {
+    const meta = JSON.parse(fs.readFileSync('data/meta.json', 'utf8'));
+    if (meta.tagsCatalog) {
+      allowedTags = new Set();
+      for (const arr of Object.values(meta.tagsCatalog)) for (const t of arr) allowedTags.add(t);
+    }
+  } catch (e) {
+    // meta.json read failure handled elsewhere
+  }
   const ids = new Set();
   for (const n of data.nodes) {
     if (!ID_PATTERN.test(n.id)) issue(file, `bad id pattern: ${n.id}`);
@@ -113,6 +124,13 @@ function validateNodes() {
     }
     if (n.occupation && (typeof n.occupation !== 'string' || n.occupation.length > 80))
       issue(file, `${n.id}: bad occupation`);
+    if (n.tags) {
+      if (!Array.isArray(n.tags)) issue(file, `${n.id}: tags must be array`);
+      else for (const t of n.tags) {
+        if (typeof t !== 'string') issue(file, `${n.id}: tag must be string`);
+        else if (allowedTags && !allowedTags.has(t)) issue(file, `${n.id}: tag "${t}" not in meta.tagsCatalog`);
+      }
+    }
     if (n.nen) {
       const NEN_TYPES = ['強化系', '放出系', '変化系', '具現化系', '操作系', '特質系', '不明'];
       if (!NEN_TYPES.includes(n.nen.type)) issue(file, `${n.id}: bad nen type ${n.nen.type}`);
