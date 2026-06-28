@@ -8,9 +8,11 @@ import { formatEpisodeBilingual } from '../utils/formatEpisode';
 /**
  * Whitelist renderer for `gitMeta`: parses only `<code>...</code>` and
  * renders the rest as plain text. Avoids dangerouslySetInnerHTML so a
- * contributor cannot inject `<script>` via a PR.
+ * contributor cannot inject `<script>` via a PR. When the code content
+ * matches a known branch id, appends the JA branch name in parens for
+ * readability (e.g. `<code>zodiac</code>(十二支ん)`).
  */
-function renderGitMeta(input: string): ReactNode[] {
+function renderGitMeta(input: string, branches: Record<string, Branch>): ReactNode[] {
   const parts: ReactNode[] = [];
   const re = /<code>([\s\S]*?)<\/code>/g;
   let last = 0;
@@ -18,7 +20,12 @@ function renderGitMeta(input: string): ReactNode[] {
   let key = 0;
   while ((m = re.exec(input))) {
     if (m.index > last) parts.push(<Fragment key={key++}>{input.slice(last, m.index)}</Fragment>);
-    parts.push(<code key={key++}>{m[1]}</code>);
+    const codeText = m[1];
+    parts.push(<code key={key++}>{codeText}</code>);
+    const branch = branches[codeText];
+    if (branch && branch.name && branch.name !== codeText) {
+      parts.push(<Fragment key={key++}>（{branch.name}）</Fragment>);
+    }
     last = m.index + m[0].length;
   }
   if (last < input.length) parts.push(<Fragment key={key++}>{input.slice(last)}</Fragment>);
@@ -28,6 +35,7 @@ function renderGitMeta(input: string): ReactNode[] {
 interface DetailCardProps {
   node: GraphNode;
   branch: Branch;
+  branches: Record<string, Branch>;
   meta: GraphMeta;
   nodesById: Record<string, GraphNode>;
   open: boolean;
@@ -37,7 +45,7 @@ interface DetailCardProps {
   onBackToList?: () => void;
 }
 
-export function DetailCard({ node, branch, meta, nodesById, open, onClose, onSelectNode, onBackToList }: DetailCardProps) {
+export function DetailCard({ node, branch, branches, meta, nodesById, open, onClose, onSelectNode, onBackToList }: DetailCardProps) {
   const kindLabel = bilingualInline(
     meta.labels.kind[node.kind] ?? node.kind,
     meta.labelsEn?.kind[node.kind],
@@ -173,7 +181,7 @@ export function DetailCard({ node, branch, meta, nodesById, open, onClose, onSel
         )}
         <div className="sec git">
           <h4>{memoLabel}</h4>
-          <p>{renderGitMeta(node.gitMeta)}</p>
+          <p>{renderGitMeta(node.gitMeta, branches)}</p>
         </div>
       </div>
     </div>
