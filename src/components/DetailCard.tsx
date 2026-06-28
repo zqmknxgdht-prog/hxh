@@ -38,6 +38,8 @@ interface DetailCardProps {
   branches: Record<string, Branch>;
   meta: GraphMeta;
   nodesById: Record<string, GraphNode>;
+  /** Reverse lookup: memberId -> list of group node ids that contain it. */
+  groupsByMemberId: Record<string, string[]>;
   open: boolean;
   onClose: () => void;
   onSelectNode: (id: string) => void;
@@ -45,7 +47,7 @@ interface DetailCardProps {
   onBackToList?: () => void;
 }
 
-export function DetailCard({ node, branch, branches, meta, nodesById, open, onClose, onSelectNode, onBackToList }: DetailCardProps) {
+export function DetailCard({ node, branch, branches, meta, nodesById, groupsByMemberId, open, onClose, onSelectNode, onBackToList }: DetailCardProps) {
   const kindLabel = bilingualInline(
     meta.labels.kind[node.kind] ?? node.kind,
     meta.labelsEn?.kind[node.kind],
@@ -125,6 +127,34 @@ export function DetailCard({ node, branch, branches, meta, nodesById, open, onCl
             </ul>
           </div>
         )}
+        {(() => {
+          const memberOf = (groupsByMemberId[node.id] ?? []).filter((gid) => nodesById[gid]);
+          if (memberOf.length === 0) return null;
+          return (
+            <div className="sec attrs members">
+              <h4>所属グループ / Groups <span className="count">{memberOf.length}</span></h4>
+              <ul className="member-list">
+                {memberOf.map((gid) => {
+                  const g = nodesById[gid];
+                  return (
+                    <li key={gid}>
+                      <button
+                        type="button"
+                        className="member-link"
+                        onClick={() => onSelectNode(gid)}
+                      >
+                        <span className="member-ja">{g.label}</span>
+                        {g.labelEn && g.labelEn !== g.label && (
+                          <span className="member-en">{g.labelEn}</span>
+                        )}
+                      </button>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          );
+        })()}
         {node.occupation && (
           <div className="sec attrs">
             <h4>職業 / Occupation</h4>

@@ -33,6 +33,16 @@ const layout = meta.layout;
 
 const positionedNodes: PositionedNode[] = computeLayout(rawNodes, branches, layout);
 
+/** memberId -> list of group node ids that contain it */
+const groupsByMemberId: Record<string, string[]> = (() => {
+  const m: Record<string, string[]> = {};
+  for (const node of rawNodes) {
+    if (node.kind !== 'group' || !node.members) continue;
+    for (const mid of node.members) (m[mid] ??= []).push(node.id);
+  }
+  return m;
+})();
+
 export default function App() {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [activeArc, setActiveArc] = useState<string | null>(null);
@@ -361,6 +371,7 @@ export default function App() {
           branches={branches}
           meta={meta}
           nodesById={nodesById}
+          groupsByMemberId={groupsByMemberId}
           open={selectedId !== null}
           onClose={() => { deselect(); setCameFromList(false); }}
           onSelectNode={navigateToNode}
