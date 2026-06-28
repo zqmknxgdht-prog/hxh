@@ -8619,6 +8619,19 @@
       ]
     },
     {
+      "id": "n_regalia_seedurn",
+      "branchId": "kakin",
+      "type": "n",
+      "label": "壺中卵",
+      "kind": "ability",
+      "description": "カキン三神器のひとつ。カキン初代王が「蠱毒」に着想を得て具現化したとされる儀礼用の壺。継承の儀において参加者は王冠への欲を念じ血を一滴捧げ、開口部に手を入れることで卵を授かり、後に守護霊獣を得る。",
+      "gitMeta": "<code>kakin</code> 三神器の儀礼壺。",
+      "episode": 349,
+      "arcs": [
+        "継承戦"
+      ]
+    },
+    {
       "id": "n_hisoka_chrollo",
       "branchId": "wing",
       "type": "n",
@@ -12830,13 +12843,57 @@
       "id": "n_halken_followers",
       "branchId": "kakin",
       "type": "n",
-      "label": "神器顕現",
+      "label": "ハルケンブルク信念共鳴",
       "kind": "event",
       "description": "ハルケンブルクの念能力『少年は残酷な弓を射る』により、彼の意思に共鳴した念使い達が集い始める。",
       "gitMeta": "<code>commit halken-faction</code>＝独自勢力の形成。",
       "episode": 406,
       "arcs": [
         "継承戦"
+      ]
+    },
+    {
+      "id": "n_regalia_lotus",
+      "branchId": "kakin",
+      "type": "n",
+      "label": "儀座禅仏",
+      "kind": "ability",
+      "description": "カキン三神器のひとつ。継承戦を司るとされる神聖なミイラ。第406話で言及されたが、継承戦における用途は未だ明かされていない。",
+      "gitMeta": "<code>kakin</code> 三神器の神聖なミイラ。",
+      "episode": 406,
+      "arcs": [
+        "継承戦"
+      ]
+    },
+    {
+      "id": "n_regalia_sword",
+      "branchId": "kakin",
+      "type": "n",
+      "label": "吉兆丸",
+      "kind": "ability",
+      "description": "カキン三神器のひとつ。新王に継承される即位の剣。第406話で言及。継承戦における用途は未だ明かされていない。",
+      "gitMeta": "<code>kakin</code> 三神器の即位剣。",
+      "episode": 406,
+      "arcs": [
+        "継承戦"
+      ]
+    },
+    {
+      "id": "n_regalia",
+      "branchId": "kakin",
+      "type": "h",
+      "label": "カキン三神器",
+      "kind": "group",
+      "description": "カキン王国に伝わる三つの神器（壺中卵・儀座禅仏・吉兆丸）。第406話「神器」で、クロロが継承戦の根幹を成すこれらの強力な念の源として三神器を狙うことを明かす。",
+      "gitMeta": "<code>kakin</code> 三神器グループ。",
+      "episode": 406,
+      "arcs": [
+        "継承戦"
+      ],
+      "members": [
+        "n_regalia_seedurn",
+        "n_regalia_lotus",
+        "n_regalia_sword"
       ]
     },
     {
