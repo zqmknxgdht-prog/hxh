@@ -12420,8 +12420,21 @@
       "type": "r",
       "label": "カチョウ死",
       "kind": "event",
-      "description": "カチョウが双子妹フウゲツを逃がし、自身は脱出の犠牲となる。",
+      "description": "救命ボートで離脱を図った際、無数の手のような念に襲われ、フウゲツを庇って死亡。遺体は発見される。",
       "gitMeta": "<code>commit kacho-die</code>＝姉妹の片方が散る。",
+      "episode": 391,
+      "arcs": [
+        "継承戦"
+      ]
+    },
+    {
+      "id": "n_kacho_beast",
+      "branchId": "kakin",
+      "type": "h",
+      "label": "霊獣カチョウ起動",
+      "kind": "event",
+      "description": "カチョウの守護霊獣『2人セゾン（キミガイナイ）』が発動し、死亡したカチョウの姿となる。霊獣カチョウはフウゲツを勝たせるべく動き始める。",
+      "gitMeta": "<code>commit kacho-beast</code>＝姉の意志を継ぐ念獣。",
       "episode": 391,
       "arcs": [
         "継承戦"
