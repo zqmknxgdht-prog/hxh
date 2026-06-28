@@ -66,6 +66,8 @@ export interface GraphNode {
   /** For kind='group': list of parent group node ids. Defines a DAG so a member
    *  of a child group is transitively a member of its ancestors. */
   parents?: string[];
+  /** For kind='event': list of character node ids that appear in the event. */
+  participants?: string[];
 }
 
 export type AvatarPrimitive =
