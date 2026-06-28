@@ -86,7 +86,7 @@
       "type": "h",
       "label": "クルタ族",
       "kind": "group",
-      "description": "人目を忍んで隠れ住んでいた一族。怒ると目が緋色に変じる特殊体質を持ち、その眼球は世界七大珍宝級の価値を持つ。幻影旅団に襲撃され滅亡。生き残りはクラピカのみ。",
+      "description": "人目を忍んで隠れ住んでいた一族。怒ると目が緋色に変じる特殊体質を持ち、その眼球は「世界七大美色」の一つに数えられる。幻影旅団に襲撃され滅亡し、生き残りはクラピカのみ。",
       "gitMeta": "<code>kurapika</code> 全ての発端となる滅亡部族。",
       "episode": 1,
       "arcs": [
@@ -1673,7 +1673,7 @@
       "type": "n",
       "label": "フロアマスター",
       "kind": "group",
-      "description": "天空闘技場の最上位帯「フロアマスター」たち。200階級の頂点に立つ実力者で、ヒソカやカストロもその一角を担う。",
+      "description": "天空闘技場の最上位帯「フロアマスター」たち。200階級の頂点に立つ実力者。ヒソカもその一人。",
       "gitMeta": "<code>wing</code>",
       "episode": 49,
       "arcs": [
@@ -3143,7 +3143,7 @@
       "type": "n",
       "label": "フリーランス暗殺者",
       "kind": "group",
-      "description": "ヨークシンマフィアが緋の眼確保のため雇ったフリーランス暗殺者集団。陰獣が陥落した穴を埋める形で投入された。",
+      "description": "ヨークシンマフィアが幻影旅団・緋の眼絡みの局面で動員した雇われ暗殺者集団。",
       "gitMeta": "<code>nostrade</code>",
       "episode": 95,
       "arcs": [
@@ -8104,7 +8104,7 @@
       "type": "n",
       "label": "シュタイナー",
       "kind": "character",
-      "description": "カキン王国・王位継承戦の登場人物。",
+      "description": "V5側の国際渡航許可庁・特務課に配属された眼鏡の青年で課長補佐。記憶力に優れた頭脳明晰な人物。出勤初日に暗黒大陸からの厄災・奇病を知り、V5首脳陣にプレゼンテーションを行う。ビヨンドの監視役としてハンター協会警護のもとBW号に乗船しカキン司法局に籍を置く。任務のため『新世界紀行』を丸暗記している。",
       "gitMeta": "<code>kakin</code> · 継承戦ギャラリー（Steiner）",
       "episode": 341,
       "arcs": [
@@ -8114,8 +8114,11 @@
         "V6",
         "IPA特別任務班",
         "RVAs",
-        "Kakin Justice Bureau Investigation Department"
-      ]
+        "Kakin Justice Bureau Investigation Department",
+        "国際渡航許可庁",
+        "V5"
+      ],
+      "occupation": "国際渡航許可庁 特務課 課長補佐"
     },
     {
       "id": "n_beyond",
@@ -8593,6 +8596,26 @@
         "n_k_seiko_hui_guo_rou",
         "n_k_sevanti_hui_guo_rou",
         "n_k_oito_hui_guo_rou"
+      ]
+    },
+    {
+      "id": "n_ipa",
+      "branchId": "beyond",
+      "type": "h",
+      "label": "国際渡航許可庁",
+      "kind": "group",
+      "description": "暗黒大陸への渡航を事実上規制するV5側の国際機関。特務課が実務を担い、ビヨンドの監視・規制に関与する。BW号にはシュタイナーらが派遣されハンター協会の警護下で乗船する。",
+      "gitMeta": "<code>beyond</code> V5側の規制当局。",
+      "episode": 349,
+      "arcs": [
+        "暗黒大陸"
+      ],
+      "affiliations": [
+        "V5"
+      ],
+      "members": [
+        "n_k_steiner",
+        "n_k_peuckert"
       ]
     },
     {
@@ -9272,7 +9295,7 @@
       "type": "n",
       "label": "ポイケルト",
       "kind": "character",
-      "description": "V5側の国際渡航許可庁特別任務班員(課長補佐ポイケルト)。シュタイナーと共にビヨンド監視としてBW1号に乗船。",
+      "description": "V5側の国際渡航許可庁・特務課所属の捜査員。シュタイナーと共にビヨンド監視としてBW号に乗船する。",
       "gitMeta": "<code>kakin</code> · 継承戦ギャラリー（Peuckert）",
       "episode": 359,
       "arcs": [
@@ -9281,7 +9304,9 @@
       "affiliations": [
         "IPA特別任務班",
         "RVAs",
-        "Kakin Justice Bureau Investigation Department"
+        "Kakin Justice Bureau Investigation Department",
+        "国際渡航許可庁",
+        "V5"
       ],
       "occupation": "Restricted Travel Permit Agency's Special Task Force Member"
     },
@@ -10238,7 +10263,7 @@
       "type": "h",
       "label": "カミーラ私設兵団",
       "kind": "group",
-      "description": "第2王子カミーラ直属の私設兵14名。全員が不可持民と呼ばれる被差別民出身で、独自の軍服を着用。隊長サラヘル以下、各王子への呪殺担当11名と除念師1名で構成。共通の念能力『つじつま合わせに生まれた僕等(ヨモツヘグイ)』を保有。",
+      "description": "第2王子カミーラ直属の私設兵14名(隊長サラヘル+モスワナの計2名、第3-第13王子への呪詛担当11名、除念師1名)。全員が不可持民と呼ばれる被差別民出身で、独自の軍服を着用。共通の念能力『つじつま合わせに生まれた僕等(ヨモツヘグイ)』を保有。",
       "gitMeta": "<code>kakin</code> 第2王子陣営の呪い部隊。",
       "episode": 366,
       "arcs": [
@@ -11652,7 +11677,7 @@
         "abilities": [
           {
             "name": "守護霊獣",
-            "description": "系統不明。形態詳細未公開。クラピカが「ステルスドルフィン」で媒介・観測する。"
+            "description": "系統不明。姿・能力ともに本編未発現で、宿主ワブルが赤ん坊であることもあり、まだ発動条件・形態とも明らかになっていない。"
           }
         ]
       }
@@ -11805,7 +11830,7 @@
       "type": "h",
       "label": "センリツ演奏会",
       "kind": "event",
-      "description": "船内晩餐会でメロディがフルート演奏を披露。深い感情を呼び起こす音色で多くの聴衆を魅了し、司法局エージェント・カイザルが彼女に心を奪われる。後にこの晩餐会の演奏はカチョー・フウゲツ脱出計画の流れにも影響する。",
+      "description": "船内晩餐会でメロディがフルート演奏を披露。深い感情を呼び起こす音色で多くの聴衆を魅了し、司法局エージェント・カイザルが彼女に心を奪われる。",
       "gitMeta": "<code>senritsu</code> No.385「警告」付近の演奏。",
       "episode": 385,
       "arcs": [
