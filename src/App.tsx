@@ -358,6 +358,7 @@ export default function App() {
         <DetailCard
           node={selectedNode}
           branch={selectedBranch}
+          branches={branches}
           meta={meta}
           nodesById={nodesById}
           open={selectedId !== null}
