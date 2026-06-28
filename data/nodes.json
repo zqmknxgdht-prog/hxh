@@ -5954,7 +5954,7 @@
         "n_ponzu",
         "n_w_chimera_ant_queen",
         "n_w_crab",
-        "n_w_kurt",
+        "n_colt",
         "n_w_reina",
         "n_w_ngl_interpreter",
         "n_w_leol",
@@ -6219,38 +6219,18 @@
       ]
     },
     {
-      "id": "n_w_kurt",
-      "branchId": "kimera_ant",
-      "type": "n",
-      "label": "クルト",
-      "kind": "character",
-      "description": "NGL の少年(9歳)。母ハルナ・妹レイナと暮らす。妹想いの兄で、釣りの帰り道で兵隊蟻(蟹型)に遭遇、レイナを庇って釣竿で抵抗するも妹と共に殺害される。二人は女王に喰われ、後にコルトとシドレとして転生する。",
-      "gitMeta": "<code>kimera_ant</code>",
-      "episode": 187,
-      "arcs": [
-        "キメラアント"
-      ],
-      "affiliations": [
-        "NGL自治国"
-      ],
-      "tags": [
-        "死亡"
-      ]
-    },
-    {
       "id": "n_w_reina",
       "branchId": "kimera_ant",
       "type": "n",
       "label": "レイナ",
       "kind": "character",
-      "description": "NGLの幼児レイナ。コルトの妹で、蟻化転生後は赤子としてコルトに保護される。",
+      "description": "NGL の幼児。人間時のコルトの妹で、釣りの帰りに兄と共に兵隊蟻に襲われ女王に喰われる。蟻として再生したのがシドレ。",
       "gitMeta": "<code>kimera_ant</code>",
       "episode": 187,
       "arcs": [
         "キメラアント"
       ],
       "affiliations": [
-        "キメラ＝アント",
         "NGL自治国"
       ]
     },
@@ -8782,7 +8762,7 @@
       "type": "n",
       "label": "コルト",
       "kind": "character",
-      "description": "人型化した師団長の一人。のちに人間側へ寝返り、ゴンを救う。",
+      "description": "元は NGL の少年(9歳)。母ハルナ・妹レイナと暮らしていたが、釣りの帰りに兵隊蟻(蟹型)に襲撃され、レイナを庇って共に殺害され女王に喰われる。蟻として再生した姿が師団長コルト。女王の死後は最後の子(後のメルエム妹)を守るため人間側へ寝返り、討伐隊と協力する。",
       "gitMeta": "<code>squadron</code> ブランチ。",
       "episode": 339,
       "arcs": [
@@ -8793,7 +8773,8 @@
         "type": "不明"
       },
       "affiliations": [
-        "師団長"
+        "師団長",
+        "NGL自治国"
       ],
       "tags": [
         "念未覚醒"
