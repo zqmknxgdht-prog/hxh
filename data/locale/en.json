@@ -2975,6 +2975,54 @@
     "n_ipa": {
       "label": "International Permit Agency (IPA)",
       "description": "A V5-side international body that, in effect, regulates expeditions to the Dark Continent. Its Special Task Force handles operations and is involved in surveilling and constraining Beyond. Steiner and Peuckert are sent aboard the B/W under the Hunter Association's protection."
+    },
+    "n_zoldyck_family": {
+      "label": "Zoldyck Family",
+      "description": "One of the world's most renowned assassin families, practicing assassination for generations."
+    },
+    "n_nostrade_org": {
+      "label": "Nostrade Syndicate",
+      "description": "A mafia organization based in York Shin. Its rise is fueled by the future-divination ability of Light Nostrade's daughter Neon. Hires Kurapika and other Nen users as her bodyguard team."
+    },
+    "n_shingenryu": {
+      "label": "Shingen-ryu",
+      "description": "A martial arts school that teaches Nen. Both Wing and Biscuit Krueger are disciples of this lineage."
+    },
+    "n_zodiac_info": {
+      "label": "Zodiacs (Intelligence Squad)",
+      "description": "The intelligence division of the Zodiacs. Gathers intel on the succession war and the Dark Continent expedition."
+    },
+    "n_zodiac_science": {
+      "label": "Zodiacs (Science Squad)",
+      "description": "The science / medical division of the Zodiacs, led by the new chairman Cheadle."
+    },
+    "n_zodiac_defense": {
+      "label": "Zodiacs (Defense Squad)",
+      "description": "The defense / combat division of the Zodiacs, led by Botobai Gigante."
+    },
+    "n_greed_island": {
+      "label": "Greed Island Cast",
+      "description": "Parties connected to 'Greed Island', the Nen-based game made by Ging and the other ten Game Masters. Includes creators, players, and in-game NPCs."
+    },
+    "n_kakin_royal_army": {
+      "label": "Kakin Royal Army",
+      "description": "The regular army of the Kakin Empire. During the succession contest, it guards the royal family and maintains order aboard the ship. Distinct from each prince's private soldier units."
+    },
+    "n_have_nots": {
+      "label": "The Have-Nots",
+      "description": "A discriminated caste in the Kakin Empire. The bulk of Second Prince Camilla's private army is drawn from them, and they show absolute loyalty to her."
+    },
+    "n_mafia_shu_u": {
+      "label": "Xi-Yu Family",
+      "description": "One of Kakin's three great mafia families. Boss: Onior Longbao. Close to Third Prince Zhang Lei. Effectively controls the lower tiers of the ship during the succession war, and plots to capture Hisoka and eliminate Morena."
+    },
+    "n_mafia_sha_a": {
+      "label": "Cha-R Family",
+      "description": "One of Kakin's three great mafia families. Boss: Brocco Li. Close to Seventh Prince Luzurus."
+    },
+    "n_mafia_aii": {
+      "label": "Heil-Ly Family",
+      "description": "One of Kakin's three great mafia families. Boss Morena Prudo's betrayal ties them to Fourth Prince Tserriednich. Triggers the on-board 'Happy Sad New Year' Nen-fueled mass killing they call the Carnival."
     }
   }
 }

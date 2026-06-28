@@ -8112,7 +8112,7 @@
       ],
       "affiliations": [
         "V6",
-        "IPA特別任務班",
+        "国際渡航許可庁",
         "RVAs",
         "Kakin Justice Bureau Investigation Department",
         "国際渡航許可庁",
@@ -9315,7 +9315,7 @@
         "継承戦"
       ],
       "affiliations": [
-        "IPA特別任務班",
+        "国際渡航許可庁",
         "RVAs",
         "Kakin Justice Bureau Investigation Department",
         "国際渡航許可庁",
@@ -12988,6 +12988,251 @@
       "episode": 410,
       "arcs": [
         "継承戦"
+      ]
+    },
+    {
+      "id": "n_zoldyck_family",
+      "branchId": "zoldyck",
+      "type": "h",
+      "label": "ゾルディック家",
+      "kind": "group",
+      "description": "世界屈指の暗殺一家。先祖代々暗殺を生業とする。",
+      "gitMeta": "<code>zoldyck</code> 暗殺一族。",
+      "episode": 10,
+      "arcs": ["試験"],
+      "members": [
+        "n_silva",
+        "n_illumi",
+        "n_w_zigg_zoldyck",
+        "n_w_maha_zoldyck",
+        "n_w_kikyo_zoldyck",
+        "n_w_milluki_zoldyck",
+        "n_w_zebro",
+        "n_w_amane",
+        "n_w_tsubone"
+      ]
+    },
+    {
+      "id": "n_nostrade_org",
+      "branchId": "nostrade",
+      "type": "h",
+      "label": "ノストラード組",
+      "kind": "group",
+      "description": "ヨークシン拠点のマフィア組織。組長ライト＝ノストラードの娘ネオンの未来予知能力で勢力を伸ばす。クラピカら念能力者を護衛隊として雇う。",
+      "gitMeta": "<code>nostrade</code> マフィア組織。",
+      "episode": 16,
+      "arcs": ["ヨークシン"],
+      "members": [
+        "n_w_light_nostrade",
+        "n_neon",
+        "n_kura",
+        "n_melody",
+        "n_basho_york",
+        "n_w_linssen"
+      ]
+    },
+    {
+      "id": "n_shingenryu",
+      "branchId": "wing",
+      "type": "n",
+      "label": "心源流",
+      "kind": "group",
+      "description": "念を教える武術流派。ウイングとビスケはこの流派の門下。",
+      "gitMeta": "<code>wing</code> 念武術流派。",
+      "episode": 51,
+      "arcs": ["天空闘技場"],
+      "members": [
+        "n_wing",
+        "n_bisky"
+      ]
+    },
+    {
+      "id": "n_zodiac_info",
+      "branchId": "zodiac",
+      "type": "n",
+      "label": "十二支ん（情報班）",
+      "kind": "group",
+      "description": "十二支んの情報担当班。継承戦・暗黒大陸渡航計画に関する情報収集を担う。",
+      "gitMeta": "<code>zodiac</code> 情報班。",
+      "episode": 16,
+      "arcs": ["ヨークシン", "選挙", "継承戦"],
+      "members": [
+        "n_w_mizaistom_nana",
+        "n_kura",
+        "n_w_pyon",
+        "n_w_saccho_kobayakawa"
+      ]
+    },
+    {
+      "id": "n_zodiac_science",
+      "branchId": "zodiac",
+      "type": "n",
+      "label": "十二支ん（科学班）",
+      "kind": "group",
+      "description": "十二支んの科学・医療担当班。チードル新会長を中心とする。",
+      "gitMeta": "<code>zodiac</code> 科学班。",
+      "episode": 19,
+      "arcs": ["選挙", "暗黒大陸"],
+      "members": [
+        "n_cheadle",
+        "n_w_gel",
+        "n_leorio"
+      ]
+    },
+    {
+      "id": "n_zodiac_defense",
+      "branchId": "zodiac",
+      "type": "n",
+      "label": "十二支ん（防衛班）",
+      "kind": "group",
+      "description": "十二支んの防衛・戦闘担当班。ボトバイ ギガンテを長とする実力派。",
+      "gitMeta": "<code>zodiac</code> 防衛班。",
+      "episode": 318,
+      "arcs": ["選挙", "暗黒大陸"],
+      "members": [
+        "n_w_botobai_gigante",
+        "n_w_kanzai",
+        "n_w_saiyu"
+      ]
+    },
+    {
+      "id": "n_greed_island",
+      "branchId": "gi_cast",
+      "type": "h",
+      "label": "G・I 関係者",
+      "kind": "group",
+      "description": "ジンら11人のゲームマスターが制作した念能力のゲーム『グリードアイランド』を巡る関係者群。制作者・プレイヤー・島内NPCを含む。",
+      "gitMeta": "<code>gi_cast</code> G・I 関係者。",
+      "episode": 2,
+      "arcs": ["G・I"],
+      "members": [
+        "n_ging",
+        "n_w_dwun",
+        "n_w_list",
+        "n_razor",
+        "n_w_eta",
+        "n_w_elena",
+        "n_w_pirate_boxer",
+        "n_w_pirate_footballer"
+      ]
+    },
+    {
+      "id": "n_kakin_royal_army",
+      "branchId": "kakin",
+      "type": "n",
+      "label": "カキン王立軍",
+      "kind": "group",
+      "description": "カキン帝国の正規軍。継承戦中、王族の警護・船内秩序維持にあたる。各王子の私設兵団とは別組織。",
+      "gitMeta": "<code>kakin</code> 正規軍。",
+      "episode": 358,
+      "arcs": ["継承戦"],
+      "members": [
+        "n_k_mizuri",
+        "n_k_maizan",
+        "n_w_borksen",
+        "n_k_gipper",
+        "n_k_shejell"
+      ]
+    },
+    {
+      "id": "n_have_nots",
+      "branchId": "kakin",
+      "type": "n",
+      "label": "持たざる者",
+      "kind": "group",
+      "description": "カキン王国の被差別カースト（不可持民）。第二王子カミーラの私設兵団の主体を成し、彼女に絶大な忠誠を示す。",
+      "gitMeta": "<code>kakin</code> 被差別カースト。",
+      "episode": 363,
+      "arcs": ["継承戦"],
+      "members": [
+        "n_k_sarahell",
+        "n_k_moswana",
+        "n_k_bucket",
+        "n_k_hignori",
+        "n_k_nukuocon",
+        "n_k_umanma",
+        "n_w_gidal",
+        "n_w_lisamsetta",
+        "n_w_meshush",
+        "n_w_mozbe",
+        "n_k_burvena",
+        "n_k_cavic",
+        "n_k_fukataki",
+        "n_k_kako",
+        "n_k_taler"
+      ]
+    },
+    {
+      "id": "n_mafia_shu_u",
+      "branchId": "kakin",
+      "type": "n",
+      "label": "シュウ＝ウ一家",
+      "kind": "group",
+      "description": "カキン三大マフィアの一つ。組長オニオール＝ロンポウ。第三王子チョウライと懇意。継承戦の下層を実質統制し、ヒソカ確保とモレナ抹殺を企てる。",
+      "gitMeta": "<code>kakin</code> 三大マフィア・シュウ＝ウ。",
+      "episode": 358,
+      "arcs": ["継承戦"],
+      "members": [
+        "n_k_onior_longbao",
+        "n_zhang",
+        "n_k_connelly",
+        "n_k_hinrigh_biganduffno",
+        "n_k_zakuro_custard",
+        "n_k_misha_hao"
+      ]
+    },
+    {
+      "id": "n_mafia_sha_a",
+      "branchId": "kakin",
+      "type": "n",
+      "label": "シャア＝ア一家",
+      "kind": "group",
+      "description": "カキン三大マフィアの一つ。組長ブロッコ＝リー。第七王子ルズールスと懇意。",
+      "gitMeta": "<code>kakin</code> 三大マフィア・シャア＝ア。",
+      "episode": 364,
+      "arcs": ["継承戦"],
+      "members": [
+        "n_k_brocco_li",
+        "n_luzurus",
+        "n_k_sun_bin",
+        "n_k_ken_i_wang",
+        "n_k_ittoku",
+        "n_k_tsudonke",
+        "n_k_tajao"
+      ]
+    },
+    {
+      "id": "n_mafia_aii",
+      "branchId": "kakin",
+      "type": "h",
+      "label": "エイ＝イ一家",
+      "kind": "group",
+      "description": "カキン三大マフィアの一つ。組長モレナ＝プルードの裏切りで第四王子ツェリードニヒと結託し、船内で『恋のエチュード（サイキンオセン）』を介した謝肉祭（大量殺戮）の引き金を引く。",
+      "gitMeta": "<code>kakin</code> 三大マフィア・エイ＝イ。",
+      "episode": 378,
+      "arcs": ["継承戦"],
+      "members": [
+        "n_k_morena_prudo",
+        "n_k_bille",
+        "n_k_cashew",
+        "n_k_chiffon_toto",
+        "n_k_daemon",
+        "n_k_dogman",
+        "n_k_gateaume",
+        "n_k_gelato",
+        "n_k_matvere",
+        "n_k_montblanc_toto",
+        "n_k_notre",
+        "n_k_orarge",
+        "n_k_perigord",
+        "n_k_quorolle",
+        "n_k_sodom",
+        "n_k_souffl",
+        "n_k_terebellum",
+        "n_k_tevelares",
+        "n_k_voconte",
+        "n_k_yokotani",
+        "n_k_badoyu"
       ]
     }
   ]
