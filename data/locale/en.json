@@ -3027,6 +3027,10 @@
     "n_kakin_justice": {
       "label": "Kakin Justice Bureau",
       "description": "The judicial branch of the Kakin Empire. Headed by Supreme Magistrate Cleapatro, with investigators and prosecutors handling incidents during the succession contest."
+    },
+    "n_kimera_ants": {
+      "label": "Chimera Ants",
+      "description": "A species originating in NGL Autonomous Region that, in East Gorteau, raised a massive army including the King. Hierarchically structured into Queen, King, Royal Guards, Squadron Leaders, and soldiers."
     }
   }
 }

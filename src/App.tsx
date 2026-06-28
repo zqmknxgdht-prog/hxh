@@ -43,13 +43,36 @@ const groupsByMemberId: Record<string, string[]> = (() => {
   return m;
 })();
 
-/** group label -> group node id (for resolving affiliation strings to clickable links) */
+/**
+ * Resolve an affiliation string to a navigable node id (group or character).
+ * Priority (later wins):
+ *  1. Character whose label starts with the affiliation followed by `＝`
+ *     (e.g. `第十四王子ワブル` -> `第十四王子ワブル＝ホイコーロ`)
+ *  2. Queen alias: `◯◯王妃` -> character whose label starts with `◯◯＝`
+ *  3. Exact match on a character label
+ *  4. Exact match on a group label
+ */
 const groupIdByLabel: Record<string, string> = (() => {
-  const m: Record<string, string> = {};
+  const byGroupExact: Record<string, string> = {};
+  const byCharExact: Record<string, string> = {};
+  const byCharPrefix: Record<string, string> = {};
+  const byQueenAlias: Record<string, string> = {};
   for (const node of rawNodes) {
-    if (node.kind === 'group' && node.label) m[node.label] = node.id;
+    if (!node.label) continue;
+    if (node.kind === 'group') byGroupExact[node.label] = node.id;
+    else if (node.kind === 'character') {
+      byCharExact[node.label] = node.id;
+      const sep = node.label.indexOf('＝');
+      if (sep > 0) {
+        const prefix = node.label.slice(0, sep);
+        byCharPrefix[prefix] = node.id;
+        if ((node.description || '').match(/第[一二三四五六七八九]王妃/)) {
+          byQueenAlias[`${prefix}王妃`] = node.id;
+        }
+      }
+    }
   }
-  return m;
+  return { ...byCharPrefix, ...byQueenAlias, ...byCharExact, ...byGroupExact };
 })();
 
 export default function App() {

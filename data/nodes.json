@@ -321,7 +321,7 @@
         "試験"
       ],
       "affiliations": [
-        "アモリ三兄弟"
+        "アモリ兄弟"
       ],
       "occupation": "Heavens Arena Fighter (1999)"
     },
@@ -390,7 +390,7 @@
         "試験"
       ],
       "affiliations": [
-        "アモリ三兄弟"
+        "アモリ兄弟"
       ],
       "occupation": "Heavens Arena Fighter (1999)"
     },
@@ -435,7 +435,7 @@
         "試験"
       ],
       "affiliations": [
-        "アモリ三兄弟"
+        "アモリ兄弟"
       ]
     },
     {
@@ -14055,6 +14055,63 @@
         "n_k_worio_bay",
         "n_k_steiner",
         "n_k_peuckert"
+      ]
+    },
+    {
+      "id": "n_kimera_ants",
+      "branchId": "kimera_ant",
+      "type": "h",
+      "label": "キメラ＝アント",
+      "kind": "group",
+      "description": "NGL自治国を起点に大量発生し、東ゴルトーで王を含む大規模軍を擁したキメラアントの一族。女王・王・直属護衛軍・師団長・兵士で階層化された。",
+      "gitMeta": "<code>kimera_ant</code> 種族グループ。",
+      "episode": 185,
+      "arcs": [
+        "キメラアント"
+      ],
+      "members": [
+        "n_w_chimera_ant_queen",
+        "n_w_crab",
+        "n_w_reina",
+        "n_w_alligator",
+        "n_w_bihorn",
+        "n_w_bloster",
+        "n_w_frog",
+        "n_w_mantis",
+        "n_w_octopus",
+        "n_w_small_bear",
+        "n_w_turtle",
+        "n_w_balda",
+        "n_w_cheetu",
+        "n_w_koala",
+        "n_w_pekuba",
+        "n_w_pike",
+        "n_w_centipede",
+        "n_w_flutter",
+        "n_w_gyro",
+        "n_w_hina",
+        "n_w_leol",
+        "n_w_mosquito",
+        "n_w_yunju",
+        "n_w_baro",
+        "n_w_rhino",
+        "n_w_pig",
+        "n_w_dog",
+        "n_w_gorilla",
+        "n_w_pell",
+        "n_w_boki",
+        "n_w_small_beetle",
+        "n_w_bat",
+        "n_w_marcos",
+        "n_w_snake",
+        "n_w_carabid_beetle",
+        "n_w_ortho_sister",
+        "n_w_remora",
+        "n_w_shark",
+        "n_w_taragetter",
+        "n_ikalgo",
+        "n_meruem",
+        "n_w_ortho_brother"
       ]
     }
   ]
