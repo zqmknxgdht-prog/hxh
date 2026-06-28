@@ -622,7 +622,7 @@
     },
     "n_camilla": {
       "label": "Second Prince Camilla",
-      "description": "A prince who favors curses and assassination. She uses aberrant Nen beasts."
+      "description": "Second Prince of Kakin. A beautiful, haughty woman who cannot tolerate things not going her way. She recruits the Have-Nots caste as her private soldiers. Separate from her Guardian Spirit Beast, she possesses her own Nen ability 'The Cat That Lived a Million Times'."
     },
     "n_zhang": {
       "label": "Third Prince Zhang Lei",
@@ -2709,8 +2709,8 @@
       "description": "Heil-Ly's Morena debuts; her 'Happy Sad New Year' triggers mass on-board killing."
     },
     "n_camilla_return": {
-      "label": "Camilla Resurrected by Nen Beast",
-      "description": "Camilla's guardian beast 'The Cat That Lived a Million Times' (Neko no Namae) kneads the killer's life energy to revive her — the death-proof prince. Actual resurrection in ch 373."
+      "label": "Camilla Resurrected",
+      "description": "After being shot dead by Musse, Camilla's personal Nen ability 'The Cat That Lived a Million Times' (Neko no Namae) activates: a giant black cat Nen beast manifests, crushes her killer Musse, and uses his life to resurrect her (ch 373)."
     },
     "n_princes_intro": {
       "label": "Princes Introduced",
@@ -2885,8 +2885,8 @@
       "description": "On his way to confront his father King Nasubi, Prince Halkenburg's Nen ability 'A Lonely Boy Shoots a Cruel Bow' manifests—altering the early succession war's strategy."
     },
     "n_halken_curse": {
-      "label": "Curse of the Nen Arrows",
-      "description": "Halkenburg's ability 'A Lonely Boy Shoots a Cruel Bow' forces those struck by his arrows—starting with Benjamin's private soldier Shikaku—into successive suicides."
+      "label": "Halkenburg's Nen Tested",
+      "description": "To verify the mechanism of Halkenburg's ability 'A Lonely Boy Shoots a Cruel Bow', Sumidori (possessing Shikaku's body) proclaims 'Benjamin' and shoots himself in the head. By observing the soul's behavior after death, they progress their understanding of the ability."
     },
     "n_chrollo_kidnap_plan": {
       "label": "Operation: Kidnap Chrollo",
