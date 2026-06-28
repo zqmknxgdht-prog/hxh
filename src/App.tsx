@@ -201,8 +201,13 @@ export default function App() {
     if (!stage) return;
     const bounds = getVisibleBounds(positionedNodes, branches, layout, minEpisode, maxEpisode);
     if (!bounds) return;
-    panZoom.applyTransform(computeFitTransform(bounds, stage.clientWidth, stage.clientHeight, 118, 'right'));
-  }, [panZoom, minEpisode, maxEpisode]);
+    // On mobile, when a bottom sheet is open it covers ~70dvh; subtract that
+    // so right-anchored content lands in the visible upper portion.
+    const footerH = isMobile && openSheet ? Math.round(stage.clientHeight * 0.7) : 0;
+    panZoom.applyTransform(
+      computeFitTransform(bounds, stage.clientWidth, stage.clientHeight, 118, 'right', footerH),
+    );
+  }, [panZoom, minEpisode, maxEpisode, isMobile, openSheet]);
 
   useEffect(() => {
     const stage = panZoom.stageRef.current;
@@ -221,13 +226,14 @@ export default function App() {
   }, [fit]);
 
   // Re-anchor latest episode to the right edge when the episode range slider
-  // moves (after initial fit).
+  // moves or when the mobile bottom sheet opens/closes (the visible viewport
+  // changes shape, so the right-anchor target shifts).
   useEffect(() => {
     if (!initializedRef.current) return;
     fit();
-    // intentionally omit `fit` to avoid loops; fit() reads latest min/maxEpisode via closure.
+    // intentionally omit `fit` to avoid loops; fit() reads latest state via closure.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [minEpisode, maxEpisode]);
+  }, [minEpisode, maxEpisode, openSheet]);
 
   useEffect(() => {
     if (!selectedId) return;

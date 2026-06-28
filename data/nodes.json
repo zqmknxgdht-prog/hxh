@@ -3317,9 +3317,7 @@
       "arcs": [
         "ヨークシン"
       ],
-      "members": [
-        "n_w_shadow_beasts"
-      ]
+      "members": []
     },
     {
       "id": "n_kallutojoin",
@@ -6600,7 +6598,6 @@
       ],
       "affiliations": [
         "師団長",
-        "討伐隊",
         "キメラ＝アント"
       ],
       "tags": [
@@ -6850,15 +6847,7 @@
         "キメラアント"
       ],
       "members": [
-        "n_netero",
-        "n_morel",
-        "n_knov",
-        "n_knuckle",
-        "n_palm",
-        "n_gon",
-        "n_killua",
-        "n_silva",
-        "n_w_cheetu"
+        "n_silva"
       ]
     },
     {
@@ -8130,8 +8119,6 @@
       ],
       "members": [
         "n_netero",
-        "n_cheadle",
-        "n_pariston",
         "n_w_hunter_website_bartender",
         "n_w_redwood",
         "n_w_kurton",
@@ -8583,19 +8570,9 @@
       ],
       "members": [
         "n_pariston",
-        "n_w_mizaistom_nana",
-        "n_w_kanzai",
-        "n_w_pyon",
-        "n_w_botobai_gigante",
-        "n_w_gel",
-        "n_w_saccho_kobayakawa",
         "n_w_ginta",
-        "n_w_saiyu",
         "n_w_cluck",
-        "n_cheadle",
         "n_ging",
-        "n_leorio",
-        "n_kura",
         "n_w_bushidora_ambitious",
         "n_w_provisional_hunters"
       ],
@@ -9736,17 +9713,7 @@
         "暗黒大陸"
       ],
       "members": [
-        "n_beyond",
-        "n_pariston",
-        "n_ging",
-        "n_w_botobai_gigante",
-        "n_w_muherr",
-        "n_w_mascher",
-        "n_w_marione",
-        "n_w_pekotero",
-        "n_w_golem",
-        "n_w_usamen",
-        "n_w_curly"
+        "n_w_botobai_gigante"
       ],
       "parents": [
         "n_hunter_assoc"
@@ -11229,22 +11196,7 @@
       "arcs": [
         "継承戦"
       ],
-      "members": [
-        "n_k_onior_longbao",
-        "n_k_hinrigh_biganduffno",
-        "n_k_zakuro_custard",
-        "n_k_lynch_fullbokko",
-        "n_k_morena_prudo",
-        "n_k_luini",
-        "n_k_cashew",
-        "n_k_badoyu",
-        "n_k_brocco_li",
-        "n_k_ken_i_wang",
-        "n_k_ittoku",
-        "n_k_tajao",
-        "n_k_sun_bin",
-        "n_k_tsudonke"
-      ],
+      "members": [],
       "parents": [
         "n_kakin_kingdom"
       ]
@@ -15868,7 +15820,8 @@
         "n_k_connelly",
         "n_k_hinrigh_biganduffno",
         "n_k_zakuro_custard",
-        "n_k_misha_hao"
+        "n_k_misha_hao",
+        "n_k_lynch_fullbokko"
       ],
       "parents": [
         "n_three_mafia"
@@ -15975,35 +15928,23 @@
         "キメラアント"
       ],
       "members": [
-        "n_w_chimera_ant_queen",
         "n_w_crab",
         "n_w_reina",
         "n_w_alligator",
-        "n_w_bihorn",
-        "n_w_bloster",
         "n_w_frog",
         "n_w_mantis",
         "n_w_octopus",
         "n_w_small_bear",
         "n_w_turtle",
         "n_w_balda",
-        "n_w_cheetu",
         "n_w_koala",
-        "n_w_pekuba",
-        "n_w_pike",
-        "n_w_centipede",
-        "n_w_flutter",
         "n_w_gyro",
-        "n_w_hina",
-        "n_w_leol",
         "n_w_mosquito",
-        "n_w_yunju",
         "n_w_baro",
         "n_w_rhino",
         "n_w_pig",
         "n_w_dog",
         "n_w_gorilla",
-        "n_w_pell",
         "n_w_boki",
         "n_w_small_beetle",
         "n_w_bat",
