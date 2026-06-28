@@ -105,6 +105,7 @@ export function computeFitTransform(
   viewportW: number,
   viewportH: number,
   headerH = 118,
+  alignX: 'center' | 'right' = 'center',
 ): { scale: number; tx: number; ty: number } {
   const padX = 32;
   const padY = 24;
@@ -113,7 +114,9 @@ export function computeFitTransform(
   const scaleX = availW / bounds.width;
   const scaleY = availH / bounds.height;
   const scale = Math.max(FIT_MIN_SCALE, Math.min(scaleX, scaleY, 1.25));
-  const tx = (viewportW - bounds.width * scale) / 2 - bounds.minX * scale;
+  const tx = alignX === 'right'
+    ? viewportW - padX - bounds.maxX * scale
+    : (viewportW - bounds.width * scale) / 2 - bounds.minX * scale;
   const ty = headerH + (availH - bounds.height * scale) / 2 + padY - bounds.minY * scale;
   return { scale, tx, ty };
 }

@@ -201,7 +201,7 @@ export default function App() {
     if (!stage) return;
     const bounds = getVisibleBounds(positionedNodes, branches, layout, minEpisode, maxEpisode);
     if (!bounds) return;
-    panZoom.applyTransform(computeFitTransform(bounds, stage.clientWidth, stage.clientHeight));
+    panZoom.applyTransform(computeFitTransform(bounds, stage.clientWidth, stage.clientHeight, 118, 'right'));
   }, [panZoom, minEpisode, maxEpisode]);
 
   useEffect(() => {
@@ -219,6 +219,15 @@ export default function App() {
     const timer = window.setTimeout(() => setShowHint(false), 4200);
     return () => window.clearTimeout(timer);
   }, [fit]);
+
+  // Re-anchor latest episode to the right edge when the episode range slider
+  // moves (after initial fit).
+  useEffect(() => {
+    if (!initializedRef.current) return;
+    fit();
+    // intentionally omit `fit` to avoid loops; fit() reads latest min/maxEpisode via closure.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [minEpisode, maxEpisode]);
 
   useEffect(() => {
     if (!selectedId) return;
