@@ -28,6 +28,7 @@ CI でブロックされる:
 - **gitMeta の non-`<code>` HTML タグ** (XSS 防止)
 - **arcs が空配列** (必ず 1 個以上の arc に所属させる)
 - **nen.type が enum 外** (`強化系` / `放出系` / `変化系` / `具現化系` / `操作系` / `特質系` / `不明` のいずれか)
+- **tags が `meta.tagsCatalog` 外** (後述「タグカタログ」参照)
 
 許容:
 - 日本語 (漢字・ひらがな・カタカナ・記号 ＝・・…等)
@@ -64,17 +65,103 @@ character ノードに以下の任意フィールドを足せます。すべて 
         "description": "盤上に書いた文字や数字で対象を強制的に動かす能力。"  // 任意: 短い説明
       }
     ]
-  }
+  },
+  "tags": ["念能力者", "暗殺者"]            // closed vocabulary、後述「タグカタログ」
 }
 ```
 
 ### 命名規約
 
 - **affiliations**: 漫画上の正式日本語名 (例: `幻影旅団`、`エイ＝イ一家`)
+  - **leaf subgroup に書く** — 親 group は `parents[]` 階層で自動継承される (後述「グループ階層」)
 - **occupation**: 複数の役職を `/` で区切る (例: `マフィア / 悪専弁護士`)
 - **nen.type**: 必ず enum 値。確定情報のみ。未確定は `不明`
 - **nen.abilities[].name**: 漫画掲載の正式 JA 表記。Hunter版英字 (LSDF, Bungee Gum 等) はそのままだとレビュー差し戻し対象 → 正式 JA に置き換える
 - **nen.abilities[].code**: 漫画で kanji + 振り仮名や acronym が併記される場合の片方を入れる
+- **tags**: `data/meta.json` の `tagsCatalog` 内の語のみ。未定義タグは CI で reject
+
+## グループ階層 (kind='group')
+
+group ノードは集合論的に親子関係を持てる。`parents[]` で 1 つ以上の親 group を指定すると、その group の member は自動的に親 group の所属とみなされる (UI では「所属 (継承)」として表示)。
+
+```jsonc
+{
+  "id": "n_mafia_shu_u",
+  "kind": "group",
+  "label": "シュウ＝ウ一家",
+  "members": [                            // 直接登録される character / 下位 group node id
+    "n_k_onior_longbao",
+    "n_k_lynch_fullbokko"
+    // ... etc
+  ],
+  "parents": ["n_three_mafia"]            // 親 group の id (DAG)
+}
+```
+
+### 登録方針 (重要)
+
+**キャラを group に登録するときは、必ず最も leaf な subgroup (最小の集合) に入れること**。親 group には書かない。
+
+| 良い例 | 悪い例 |
+|---|---|
+| リンチを `n_mafia_shu_u.members` に追加 | リンチを `n_three_mafia.members` に追加 |
+
+理由: `parents[]` 経由で UI が transitive に親階層を表示するため、親 group に直接入れると重複表示や inheritance が壊れる。
+
+### 既存階層 (主要)
+
+```
+カキン王国 ← 8人の王妃 / カキン14王子 / 3大マフィア / カキン王立軍 / カキン司法局 / 三神器 / 持たざる者
+カキン14王子 ← ベンジャミン/カミーラ/ハルケンブルク私設兵団
+3大マフィア ← シュウ＝ウ / シャア＝ア / エイ＝イ 一家
+ハンター協会 ← 十二支ん / 協専 / 暗黒大陸探検隊
+十二支ん ← 情報班 / 科学班 / 防衛班
+暗黒大陸探検隊 ← ビヨンド派
+キメラ＝アント ← 直属護衛軍 / 師団長 / 女王 & 師団長
+師団長 ← ザザン軍
+討伐隊 ← 討伐隊(モラウ・ノヴ)
+十老頭 ← 陰獣
+```
+
+新グループを既存階層に追加する場合は親を `parents[]` に指定。トップレベル group (ゾルディック家・心源流など) は `parents` 省略可。
+
+## イベント参加者 (kind='event')
+
+event ノードに `participants?: string[]` で登場 character の node id を列挙できる。指定すると character 側からも「登場イベント」として back-link 表示される。
+
+```jsonc
+{
+  "id": "n_kacho_fugetsu",
+  "kind": "event",
+  "label": "カチョウ・フウゲツ脱出計画",
+  "description": "...",
+  "participants": [
+    "n_kacho",
+    "n_fugetsu",
+    "n_melody",
+    "n_w_keeney"
+  ]
+}
+```
+
+description に登場するキャラを基本的に全て participants に入れる。実装上は auto-detect も走るが、漏れや誤検出を防ぐため明示推奨。
+
+## タグカタログ (closed vocabulary)
+
+`tags` フィールドは `data/meta.json` の `tagsCatalog` に定義された語のみ受け付ける。新タグ追加は `meta.json` 更新を含む PR で。
+
+```jsonc
+// data/meta.json
+"tagsCatalog": {
+  "状態": ["死亡", "復活", "離脱", "加入", "失踪", "拘束"],
+  "念": ["念能力者", "念未覚醒", "半覚醒", "念獣使い", "守護霊獣保有"],
+  "役割": ["スパイ", "内通者", "護衛", "暗殺者", "裏切り者", "師弟関係"],
+  "メタイベント": ["戦闘", "試合", "修行", "儀式"],
+  "物語装置": ["回想", "予兆", "伏線回収"]
+}
+```
+
+タグは複数指定可、character / event 両方に付けられる。既存軸 (`kind` / `type` / `arcs` / `affiliations` / `parents`) で表現できない横串の属性・状態・役割を表す。
 
 ### 表記揺れ対応方針
 
