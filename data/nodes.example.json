@@ -1,0 +1,28 @@
+{
+  "$schema": "./schema.json",
+  "nodes": [
+    {
+      "id": "n_example",
+      "branchId": "example_branch",
+      "type": "n",
+      "label": "新キャラ登場",
+      "arc": "試験",
+      "kind": "character",
+      "description": "正体の説明文。",
+      "gitMeta": "<code>example_branch</code> から分岐。",
+      "episode": 10
+    },
+    {
+      "id": "n_example_merge",
+      "branchId": "main",
+      "type": "m",
+      "label": "新キャラ合流",
+      "arc": "試験",
+      "kind": "event",
+      "description": "本流への合流イベント。",
+      "gitMeta": "<code>merge example_branch</code>。",
+      "mergeFromBranch": "example_branch",
+      "episode": 12
+    }
+  ]
+}

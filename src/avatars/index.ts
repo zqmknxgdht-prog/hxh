@@ -1,0 +1,1 @@
+export { NodeAvatar } from './NodeAvatar';

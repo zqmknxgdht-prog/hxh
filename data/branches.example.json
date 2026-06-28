@@ -1,0 +1,19 @@
+{
+  "$schema": "./schema.json",
+  "branches": [
+    {
+      "id": "main",
+      "lane": 0,
+      "color": "#6cb6ff",
+      "name": "本流 / ゴン"
+    },
+    {
+      "id": "example_branch",
+      "lane": 26,
+      "color": "#cccccc",
+      "name": "新キャラ名",
+      "parentBranch": "main",
+      "forkFromNode": "n_exam"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+# Dependencies
+node_modules/
+
+# Lockfiles (Bun only)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build
+dist/
+
+# Environment & secrets (never commit)
+.env
+.env.*
+!.env.example
+!.env.template
+!.env.sample
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+*.keystore
+.netrc
+.npmrc
+.pypirc
+.aws/
+.credentials
+credentials.json
+credentials.*.json
+secrets.json
+secrets.*.json
+service-account*.json
+*.tfvars
+!*.tfvars.example
+.terraform/
+
+# Editor local config (may contain tokens or personal rules)
+.cursor/
+.claude/
+.cursorrules.local
+CLAUDE.md
+*.local.md
+
+# IDE (local overrides only; share extensions.json if needed)
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs & temp
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.local
+*.tmp
+*.swp
+*~
+.cache/
+data/_wiki*
+
+# Scratch / ad-hoc scripts
+tmp/

@@ -1,0 +1,2952 @@
+{
+  "meta": {
+    "title": "H×H Lineage Tree",
+    "subtitle": "Story lineage by manga chapter · scrub slider to change time point",
+    "ui": {
+      "episodeTime": "Time point",
+      "episodeUntil": "Up to No.{n}",
+      "hint": "Drag to pan · pinch/wheel to zoom · tap a node (⤢ fits current chapter range)",
+      "detailWho": "Identity",
+      "detailMemo": "Lineage note",
+      "branchPrefix": "branch",
+      "edgeFork": "Fork",
+      "edgeMerge": "Merge",
+      "edgeCherry": "Cherry-pick"
+    },
+    "version": {
+      "unit": "No.",
+      "label": "No.{n}"
+    },
+    "labels": {
+      "kind": {
+        "character": "Character",
+        "event": "Event",
+        "ability": "Nen ability",
+        "group": "Faction"
+      },
+      "type": {
+        "n": "Normal",
+        "h": "Key chapter",
+        "r": "Exit",
+        "m": "Merge",
+        "c": "Cherry-pick"
+      }
+    }
+  },
+  "arcs": {
+    "序章": "Prologue",
+    "試験": "Hunter Exam",
+    "ゾルディック家": "Zoldyck Family",
+    "天空闘技場": "Heaven's Arena",
+    "ヨークシン": "Yorknew",
+    "グリードアイランド": "Greed Island",
+    "キメラアント": "Chimera Ant",
+    "選挙": "Election",
+    "暗黒大陸": "Dark Continent",
+    "継承戦": "Succession War"
+  },
+  "branches": {
+    "main": "Main",
+    "ging": "Ging Freecss",
+    "kite": "Kite",
+    "zoldyck": "Zoldyck Family",
+    "killua": "Killua",
+    "alluka": "Alluka & Nanika",
+    "kurapika": "Kurapika",
+    "nostrade": "Nostrade Family",
+    "kakin": "Kakin Kingdom",
+    "leorio": "Leorio",
+    "wing": "Wing",
+    "hisoka": "Hisoka",
+    "genei_ryodan": "Phantom Troupe",
+    "kortopi": "Kortopi",
+    "kalluto": "Kalluto",
+    "bisky": "Biscuit",
+    "genthru": "Genthru",
+    "kimera_ant": "Chimera Ant",
+    "royal_guard": "Royal Guards",
+    "komugi": "Komugi",
+    "ikalgo": "Ikalgo",
+    "netero": "Netero",
+    "zodiac": "Zodiac",
+    "beyond": "Beyond",
+    "izunavi": "Izunavi (Master)",
+    "hanzo": "Hanzo",
+    "mito": "Mito",
+    "exam_cast": "Exam Staff",
+    "razor": "Razor",
+    "extermination": "Extermination Team",
+    "neon_guard": "Neon's Bodyguards",
+    "gi_cast": "G.I. Challengers",
+    "gi_bomb": "Genthru's Side",
+    "squadron": "Squadron Leaders",
+    "basho": "Basho",
+    "senritsu": "Senritsu",
+    "bill": "Bill",
+    "gon": "Gon Freecss",
+    "pariston": "Pariston Hill",
+    "illumi": "Illumi Zoldyck"
+  },
+  "nodes": {
+    "n_gon": {
+      "label": "Gon Freecss",
+      "description": "Gon Freecss. A character from Hunter × Hunter."
+    },
+    "n_start": {
+      "label": "Whale Island · Departure",
+      "description": "Gon Freecss sets out from Whale Island to find his father Ging, a two-star Hunter. The starting point of the entire story."
+    },
+    "n_ging": {
+      "label": "Ging Freecss",
+      "description": "Gon's father and an off-the-charts elite Hunter. Meeting him is itself the goal of the story."
+    },
+    "n_kite": {
+      "label": "Kite",
+      "description": "Ging's student. He saves Gon in the forest and becomes the benefactor who leads him into the Hunter world."
+    },
+    "n_mito": {
+      "label": "Mito",
+      "description": "The woman who raised Gon on Whale Island. She fiercely opposed his taking the Hunter Exam at first, but later sent him off."
+    },
+    "n_exam": {
+      "label": "Hunter Exam Arc",
+      "description": "A brutal selection for professional Hunter licenses. The meeting point where the main cast first comes together."
+    },
+    "n_hisoka": {
+      "label": "Magician Hisoka",
+      "description": "A Transmutation Nen user who revels in deadly battles with the strong. A drifter who is neither ally nor enemy."
+    },
+    "n_hanzo": {
+      "label": "Hanzo",
+      "description": "A ninja who fought Gon fiercely during the Hunter Exam. A fellow exam candidate alongside Kurapika."
+    },
+    "n_silva": {
+      "label": "Silva & Zeno",
+      "description": "The head and former head of the assassin Zoldyck family. They embody the family's standing itself."
+    },
+    "n_illumi": {
+      "label": "Illumi (Gitarakuru)",
+      "description": "Killua's eldest brother. He infiltrated the Hunter Exam in disguise as Gitarakuru and controls others with needles."
+    },
+    "n_killua": {
+      "label": "Thirst for Freedom",
+      "description": "A boy raised as an assassin. Meeting Gon lets him choose his own way of living."
+    },
+    "n_killmerge": {
+      "label": "Killua Joins",
+      "description": "Killua becomes Gon's partner. The beginning of one of the series' greatest friendships."
+    },
+    "n_kura": {
+      "label": "Last of the Kurta",
+      "description": "A survivor of the Kurta clan, wiped out by the Phantom Troupe. He balances calm reason with burning passion."
+    },
+    "n_leorio": {
+      "label": "Dream of Becoming a Doctor",
+      "description": "A hot-blooded man greedy for money yet driven to medicine by poverty and the loss of a friend. The voice of common sense."
+    },
+    "n_tonpa": {
+      "label": "Rookie Crusher Tonpa",
+      "description": "A crafty veteran of the Hunter Exam affiliated with the Association. He fails again and again yet never quits, testing newcomers."
+    },
+    "n_satotz": {
+      "label": "Examiner Satotz",
+      "description": "Chief examiner of the 287th Hunter Exam. He guides Gon and the others as the long-distance run examiner."
+    },
+    "n_menchi_buhara": {
+      "label": "Menchi & Buhara",
+      "description": "The cooking examiner pair for the second phase. Menchi is ultra-strict; Buhara is a Gourmet Hunter who values quantity."
+    },
+    "n_pokkle": {
+      "label": "Pokkle",
+      "description": "A young Hunter from the same exam cohort. He fights with a bow and poison, and later heads into NGL."
+    },
+    "n_ponzu": {
+      "label": "Ponzu",
+      "description": "A fellow exam candidate. A girl who uses bee Nen beasts. She too sets out for NGL."
+    },
+    "n_geretta": {
+      "label": "Geretta",
+      "description": "A crafty old Hunter who attacks Gon and the others in the first phase. He ambushes them with snakes and Nen abilities."
+    },
+    "n_bodoro": {
+      "label": "Bodoro",
+      "description": "An elderly exam participant. Stronger than he looks, but slain by Killua."
+    },
+    "n_bodoro_die": {
+      "label": "Bodoro Eliminated",
+      "description": "Killua finishes Bodoro in a single blow. His assassin nature is laid bare."
+    },
+    "n_amori": {
+      "label": "Amori Brothers",
+      "description": "The Amori, Imori, and Umori triplet brothers who challenge Kurapika in the Hunter Exam; later reappear as Troupe-adjacent hires."
+    },
+    "n_netero_trio": {
+      "label": "Netero, Bim & Menchi",
+      "description": "The trio who stand before Chairman Netero in the final exam. Each is a top candidate within the Association."
+    },
+    "n_examiners": {
+      "label": "Lippo & Riehlvelt",
+      "description": "The examiner duo who oversee the third phase. They test candidates atop the tower (as mentors)."
+    },
+    "n_pass": {
+      "label": "Exam Passed",
+      "description": "Gon and his friends obtain their Hunter licenses."
+    },
+    "n_canary": {
+      "label": "Butler Canary",
+      "description": "A young butler who serves the Zoldyck family. She blocks intruders at the gate."
+    },
+    "n_rescue": {
+      "label": "Rescuing Killua",
+      "description": "Gon and the others go to Killua's home and bring him back."
+    },
+    "n_arena": {
+      "label": "Heaven's Arena Arc",
+      "description": "A tower where the strong compete. The stage that becomes the gateway to the world of Nen."
+    },
+    "n_wing": {
+      "label": "Wing",
+      "description": "The teacher who teaches Gon and Killua the fundamentals of Nen."
+    },
+    "n_nen": {
+      "label": "Nen · Awakening",
+      "description": "Gon and Killua awaken to Nen and climb one step higher on the ladder of strength."
+    },
+    "n_zushi": {
+      "label": "Zushi",
+      "description": "A polite fellow student of Nen. A disciple of Wing."
+    },
+    "n_izunavi": {
+      "label": "Nen Master Izunavi",
+      "description": "The master who taught Kurapika Nen and \"Limitations and Vows.\" He forged Kurapika, who knew nothing of Nen, into a first-rate Nen user in just half a year."
+    },
+    "n_kura_nen": {
+      "label": "Learning Nen",
+      "description": "After training under Izunavi, Kurapika gains the Nen abilities he needs to crush the Troupe."
+    },
+    "n_melody": {
+      "label": "Senritsu (Melody)",
+      "description": "A Music Hunter and bodyguard for Neon Nostrade from the Yorknew arc; an Emitter who fascinates and analyses targets through her flute. Once warped by hearing the cursed Sonata of Darkness. In the Succession War she is hired by Kurapika and serves as bodyguard to Prince Kacho."
+    },
+    "n_neon": {
+      "label": "Neon Nostrade",
+      "description": "The daughter of the mafia Nostrade family. She has a Nen ability that records the future. Kurapika becomes her bodyguard."
+    },
+    "n_basho_york": {
+      "label": "Basho (Bodyguard)",
+      "description": "Neon's bodyguard. A large Hunter who uses bomb abilities while reciting haiku."
+    },
+    "n_squala": {
+      "label": "Squala",
+      "description": "A bodyguard posing as Neon's lover. In truth, he is Uvogin's spy."
+    },
+    "n_chrollo": {
+      "label": "Boss Chrollo",
+      "description": "Head of the Phantom Troupe. A cold, charismatic leader who steals others' Nen abilities."
+    },
+    "n_lovely": {
+      "label": "Angelic Auto Writing",
+      "description": "Neon's fortune-telling ability. It writes future events out as poetry."
+    },
+    "n_york": {
+      "label": "Yorknew Arc",
+      "description": "The city arc where the underground auction draws the Troupe and every faction into collision."
+    },
+    "n_nobunaga": {
+      "label": "No.1 Nobunaga Hazama",
+      "description": "A master of iaido. A Meteor City native and founding Phantom Troupe member, Uvogin's longtime comrade. An Enhancer who deploys a 4-meter-radius En—the upper limit he himself acknowledges—within which he can slash any target instantly."
+    },
+    "n_uvo": {
+      "label": "No.11 Uvogin",
+      "description": "The Troupe's strongest physical fighter. A proud warrior and Nobunaga's comrade in arms."
+    },
+    "n_feitan": {
+      "label": "No.2 Feitan",
+      "description": "A Transmutation user who loves torture. His Pain Packer turns the pain he receives into aura and releases it."
+    },
+    "n_machi": {
+      "label": "No.3 Machi",
+      "description": "An early member who manipulates Nen threads. Loyal to Chrollo, with a caring side for her comrades."
+    },
+    "n_phinks": {
+      "label": "No.5 Phinks",
+      "description": "An Enhancement user whose Ripper Cyclotron grows stronger the more he spins his arm. Among the Troupe's top arm wrestlers."
+    },
+    "n_franklin": {
+      "label": "No.7 Franklin",
+      "description": "A huge man who sprays Nen bullets from his fingertips. An early member."
+    },
+    "n_shalnark": {
+      "label": "No.6 Shalnark",
+      "description": "Black Voice lets him control anyone he plants an antenna in. The Troupe's information specialist."
+    },
+    "n_shizuku": {
+      "label": "No.8 Shizuku",
+      "description": "She controls the vacuum Nen beast Blinky, which sucks up anything except living creatures. The Troupe's evidence disposal specialist."
+    },
+    "n_bonolenov": {
+      "label": "No.10 Bonolenov",
+      "description": "A dancer (bap) wrapped head to toe in bandages. A descendant of an extinct minority who fights as if dancing."
+    },
+    "n_gallery": {
+      "label": "Gallery Fake",
+      "description": "Kortopi's copy ability. It creates meticulous fakes of anything he touches."
+    },
+    "n_paku": {
+      "label": "Pakunoda",
+      "description": "A Troupe woman who reads and fires memories. Deeply devoted to her comrades."
+    },
+    "n_skill": {
+      "label": "Bandit's Secret",
+      "description": "Chrollo's core ability: sealing others' Nen abilities in a book and using them freely. A Skill Hunter."
+    },
+    "n_steal": {
+      "label": "Stealing Neon's Ability",
+      "description": "Chrollo steals Neon's Angelic Auto Writing."
+    },
+    "n_emperor": {
+      "label": "Emperor Time",
+      "description": "Kurapika's trump card: trading his life to maximize every Nen category (Emperor Time)."
+    },
+    "n_uvodie": {
+      "label": "Uvogin Killed (Scarlet Chain)",
+      "description": "Kurapika's chains kill Uvogin. The \"kill\" aspect of the Scarlet Chain."
+    },
+    "n_seal": {
+      "label": "Chrollo Sealed by Chains",
+      "description": "Kurapika's chains seal Chrollo's Nen. Bind without killing—the \"bind\" aspect of the Scarlet Chain."
+    },
+    "n_squala_die": {
+      "label": "Squala Killed by Nobunaga",
+      "description": "After extracting chain-user info, Nobunaga kills Squala; his lover Eliza survives."
+    },
+    "n_zeno_york": {
+      "label": "Zeno Zoldyck Intervenes",
+      "description": "Hired as mercenaries, Zeno and Silva fight the Troupe. Their intervention also becomes the trigger to undo Kurapika's seal."
+    },
+    "n_kalluto": {
+      "label": "Kalluto",
+      "description": "Killua's younger brother. He follows his brother's trail and throws himself into the Troupe."
+    },
+    "n_pakudie": {
+      "label": "Pakunoda's Death (Passing Memories)",
+      "description": "Pakunoda leaves her memories with her comrades and dies on her own terms."
+    },
+    "n_kallutojoin": {
+      "label": "New Member Kalluto",
+      "description": "Kalluto fills the Troupe's vacant slot."
+    },
+    "n_gi": {
+      "label": "G.I. Arc",
+      "description": "The legendary game world Ging was involved in. A stage for training and growth."
+    },
+    "n_bisky": {
+      "label": "Biscuit Krueger (Bisky)",
+      "description": "With a lovely appearance, but in truth a veteran Nen master. She hammers the two boys into shape."
+    },
+    "n_razor": {
+      "label": "No.14 Razor",
+      "description": "G.I.'s toughest guardian. He tests Gon and the others with his Explosion-type Nen ability, No.14 (Destroy)."
+    },
+    "n_goreinu": {
+      "label": "Goreinu",
+      "description": "A Manipulator who commands black and white gorilla Nen beasts. Black Voice (Black Goreinu) anchors a place-swap teleportation. He partners with Gon and Killua in Greed Island."
+    },
+    "n_tsezguerra": {
+      "label": "Tsezguerra",
+      "description": "A veteran G.I. challenger. He gives Gon and the others trials and advice."
+    },
+    "n_bopobo": {
+      "label": "Bopobo",
+      "description": "A giant fisherman. He meets Gon and the others on the sea of G.I."
+    },
+    "n_train": {
+      "label": "Training",
+      "description": "Under Biscuit, Gon and Killua grow dramatically stronger."
+    },
+    "n_bara": {
+      "label": "Bara",
+      "description": "A bomber on Genthru's side. One of a trio aiming to clear G.I."
+    },
+    "n_genthru": {
+      "label": "Bomb Devil Genthru",
+      "description": "A ruthless bomber who tries to dominate G.I."
+    },
+    "n_sub": {
+      "label": "Sub",
+      "description": "One of Genthru's trio. A contact-type bomb ability user."
+    },
+    "n_bomb_die": {
+      "label": "Bara & Sub Defeated",
+      "description": "Gon, Killua, and Biscuit defeat two of Genthru's allies."
+    },
+    "n_genthrudie": {
+      "label": "Defeated",
+      "description": "Gon defeats Genthru with a self-sacrificing blow."
+    },
+    "n_growth": {
+      "label": "Dramatic Nen Growth",
+      "description": "Gon and Killua reach first-rate fighting strength."
+    },
+    "n_ant": {
+      "label": "Chimera Ant Arc",
+      "description": "The threat of ants that devour humans to evolve. One of the series' heaviest long arcs."
+    },
+    "n_kitescout": {
+      "label": "Scouting in NGL",
+      "description": "Kite senses the unknown threat early and enters the field to investigate."
+    },
+    "n_pokkle_die": {
+      "label": "Pokkle Killed",
+      "description": "Attacked by Squadron Leader Colt in NGL, Pokkle becomes food for the ants."
+    },
+    "n_ponzu_die": {
+      "label": "Ponzu Killed",
+      "description": "Attacked by Rammot, she dies in the forests of NGL."
+    },
+    "n_queen": {
+      "label": "Queen & Squadron Leaders",
+      "description": "The queen who births the King, and the officers who evolve into human form."
+    },
+    "n_alluka": {
+      "label": "Alluka & Nanika",
+      "description": "Killua's sister, and Nanika—the being within her who grants wishes."
+    },
+    "n_cheadle": {
+      "label": "Cheadle, New Chairman",
+      "description": "An upright medical Hunter. She becomes the new chairman."
+    },
+    "n_colt": {
+      "label": "Colt",
+      "description": "One of the humanized Squadron Leaders. He later defects to the human side and saves Gon."
+    },
+    "n_colt_turn": {
+      "label": "Colt Surrenders",
+      "description": "After his sister Reina is killed, Colt cradles her reborn-as-baby form and surrenders to the extermination team — the first sign that Chimera Ants have family bonds and humanity."
+    },
+    "n_elect": {
+      "label": "Chairman Election Arc",
+      "description": "After Netero's death, a struggle for control of the Association unfolds."
+    },
+    "n_gonsan": {
+      "label": "Adult Gon",
+      "description": "Gon transforms into his strongest form at the cost of his entire future and defeats Pitou."
+    },
+    "n_guarddie": {
+      "label": "Pouf & Youpi Perish",
+      "description": "At the end of poison and exhaustion, the Royal Guards too are gone."
+    },
+    "n_heart": {
+      "label": "A Heart Takes Root",
+      "description": "Through games with Komugi, \"humanity\" begins to sprout in the King."
+    },
+    "n_ikalgo": {
+      "label": "Ikalgo (Defection)",
+      "description": "An ant who bonds with Killua and sides with humanity. A symbol of friendship across species."
+    },
+    "n_ikalgojoin": {
+      "label": "Ally",
+      "description": "Ikalgo becomes fighting strength on the extermination side."
+    },
+    "n_kannon": {
+      "label": "100-Type Guanyin Bodhisattva",
+      "description": "The embodiment of Nen at supersonic speed, perfected through prayer."
+    },
+    "n_kingfall1": {
+      "label": "Mutual Kill",
+      "description": "Netero drives poison into the King along with his own life, and they pierce each other."
+    },
+    "n_kingfall2": {
+      "label": "The King Falls",
+      "description": "The King quietly breathes his last beside Komugi."
+    },
+    "n_kitedie": {
+      "label": "Kite Killed (Pitou)",
+      "description": "Pitou takes Kite's life. The trigger for Gon's rage."
+    },
+    "n_knov": {
+      "label": "Knov",
+      "description": "A Conjuration user who deploys a four-dimensional apartment. He partners with Morel to investigate NGL."
+    },
+    "n_knuckle": {
+      "label": "Knuckle Bine",
+      "description": "Amortizing Power Redirector lends aura to opponents. The key to the fight against Youpi."
+    },
+    "n_komugi": {
+      "label": "Gungi Prodigy Komugi",
+      "description": "A blind girl and the absolute champion of Gungi. The only one who changes the King's heart."
+    },
+    "n_lastgame": {
+      "label": "Final Match",
+      "description": "Poisoned, the King plays one last game of Gungi with Komugi."
+    },
+    "n_leorioback": {
+      "label": "Leorio Returns",
+      "description": "Leorio comes back to the center of the story."
+    },
+    "n_leoriozodiac": {
+      "label": "Joining the Zodiac",
+      "description": "Leorio takes a seat among the Association's executives, the Zodiac."
+    },
+    "n_meleoron": {
+      "label": "Meleoron",
+      "description": "A chameleon-type Squadron Leader. His invisibility ability toys with Gon and the others."
+    },
+    "n_meruem": {
+      "label": "King Meruem Born",
+      "description": "The ant King born as the apex of all living things. Overwhelming and alone."
+    },
+    "n_morel": {
+      "label": "Morel Mackernasey",
+      "description": "A category that amplifies aura through smoking. A veteran Hunter and de facto leader of the extermination team."
+    },
+    "n_netero": {
+      "label": "Chairman Netero",
+      "description": "Chairman of the Hunter Association and humanity's strongest old warrior."
+    },
+    "n_newregime": {
+      "label": "New Regime",
+      "description": "The Association's new leadership takes shape."
+    },
+    "n_palm": {
+      "label": "Palm Siberia",
+      "description": "A Nen user who petrifies. She later tilts toward the ants under Pouf's scales, but regains her will."
+    },
+    "n_pariston": {
+      "label": "Pariston's Schemes",
+      "description": "The former vice chairman who loves chaos. He throws the election into turmoil."
+    },
+    "n_peggy": {
+      "label": "Peggy",
+      "description": "A Squadron Leader who plans strategy. He commands the NGL invasion."
+    },
+    "n_pitou": {
+      "label": "Pitou",
+      "description": "Among the strongest Royal Guards. A Necromancer who manipulates techniques even after death. They bury Kite."
+    },
+    "n_pitoudie": {
+      "label": "Pitou Destroyed",
+      "description": "Adult Gon erases Pitou with a single blow."
+    },
+    "n_pouf": {
+      "label": "Pouf",
+      "description": "A Royal Guard who worships the King. A schemer who controls hearts with his scales."
+    },
+    "n_punch": {
+      "label": "Punching Ging",
+      "description": "Worried for Gon, Leorio punches Ging in front of everyone—a legendary moment."
+    },
+    "n_rammot": {
+      "label": "Rammot",
+      "description": "A Squadron Leader who senses Nen with his antennae. He attacks Ponzu and fights Gon and the others."
+    },
+    "n_reunion": {
+      "label": "Father and Son Reunited",
+      "description": "Gon finally faces his father Ging. A milestone in one journey."
+    },
+    "n_revive": {
+      "label": "Gon Revived",
+      "description": "Nanika's power fully heals Gon, who had lost his Nen and lay near death."
+    },
+    "n_shoot": {
+      "label": "Shoot McMahon",
+      "description": "A Transmutation user whose Nen beasts \"erase\" parts of the enemy's body. He contributes greatly in the fight against Pitou."
+    },
+    "n_team": {
+      "label": "Extermination Team (Morel & Knov)",
+      "description": "Elite professional Hunters gathered to exterminate the ants."
+    },
+    "n_tree": {
+      "label": "Top of the World Tree",
+      "description": "Ging waits for Gon atop the World Tree."
+    },
+    "n_welfin": {
+      "label": "Welfin",
+      "description": "A dog-like Squadron Leader. He later sides with Ikalgo alongside Meleoron."
+    },
+    "n_welfin_join": {
+      "label": "Welfin Joins",
+      "description": "Welfin and Meleoron join the human intelligence network through Ikalgo."
+    },
+    "n_wish": {
+      "label": "The Cost of a Wish",
+      "description": "Nanika's power demands an equivalent price. Killua risks everything to make his wish."
+    },
+    "n_youpi": {
+      "label": "Youpi",
+      "description": "A Royal Guard of the King. A pure mass of combat instinct."
+    },
+    "n_zazan": {
+      "label": "Zazan",
+      "description": "A Squadron Leader directly under the Queen. She builds her own nest and rules humans."
+    },
+    "n_zero": {
+      "label": "Zero Hand",
+      "description": "A final move wagered on his life. It releases lethal poison upon the King."
+    },
+    "n_dark": {
+      "label": "Dark Continent Arc",
+      "description": "The opening of a new great voyage toward lands humanity has never tread."
+    },
+    "n_beyond": {
+      "label": "Beyond Netero",
+      "description": "Chairman Netero's son. An ambitious man who leads the Dark Continent expedition."
+    },
+    "n_calamity": {
+      "label": "Five Great Calamities",
+      "description": "A cluster of threats on a human scale lurking in the Dark Continent."
+    },
+    "n_vshisoka": {
+      "label": "Vs. Hisoka (Borrowed Abilities)",
+      "description": "Chrollo combines stolen abilities and defeats Hisoka."
+    },
+    "n_shaldie": {
+      "label": "Shalnark & Kortopi Killed",
+      "description": "After losing to Chrollo and dying, Hisoka is revived by his own post-death Nen and begins hunting the Troupe; Kortopi and Shalnark are the first casualties."
+    },
+    "n_hunt": {
+      "label": "Hunting the Troupe (Revival)",
+      "description": "Hisoka, revived from death, declares he will annihilate the Troupe."
+    },
+    "n_illumi_troupe": {
+      "label": "Illumi Joins as No.11",
+      "description": "At Hisoka's request, Illumi Zoldyck joins the Phantom Troupe to fill Uvogin's vacant No. 11 seat—an infiltration aligned with Hisoka's hunt for Troupe members aboard the succession-war ship."
+    },
+    "n_princes": {
+      "label": "Kakin's 14 Princes",
+      "description": "Fourteen princes of Kakin who kill one another for the throne."
+    },
+    "n_benjamin": {
+      "label": "First Prince Benjamin",
+      "description": "Supreme commander of the Kakin military. He seeks the throne with overwhelming charisma."
+    },
+    "n_camilla": {
+      "label": "Second Prince Camilla",
+      "description": "A prince who favors curses and assassination. She uses aberrant Nen beasts."
+    },
+    "n_zhang": {
+      "label": "Third Prince Zhang Lei",
+      "description": "A prince with ties to the Chinese underworld. He also has dealings with the Troupe."
+    },
+    "n_tubeppa": {
+      "label": "Fifth Prince Tubeppa",
+      "description": "A prince of a conservative political faction. She pursues a steady succession strategy."
+    },
+    "n_tyson": {
+      "label": "Sixth Prince Tyson",
+      "description": "The prince Izunavi bodyguards. Eccentric, but with sharp insight."
+    },
+    "n_luzurus": {
+      "label": "Seventh Prince Luzurus",
+      "description": "A prince who loves wine and women. He seems frivolous, but his Nen beasts are formidable."
+    },
+    "n_sale": {
+      "label": "Eighth Prince Sale-Sale",
+      "description": "A prince with a childlike appearance. He controls multiple Nen beasts."
+    },
+    "n_halkenburg": {
+      "label": "Ninth Prince Halkenburg",
+      "description": "An idealistic prince. He gathers popular support."
+    },
+    "n_kacho": {
+      "label": "Tenth Prince Kacho",
+      "description": "Sister of the prince Basho guards. She uses poison Nen beasts."
+    },
+    "n_fugetsu": {
+      "label": "Eleventh Prince Fugetsu",
+      "description": "Kacho's twin sister. Wields an intricate Nen-beast ability."
+    },
+    "n_momoze": {
+      "label": "Twelfth Prince Momoze",
+      "description": "The prince Senritsu guards. She gives a gentle impression."
+    },
+    "n_marayair": {
+      "label": "Thirteenth Prince Marayam",
+      "description": "A prince with religious charisma. He leads his own sect."
+    },
+    "n_woble": {
+      "label": "Fourteenth Prince Woble",
+      "description": "The young fourteenth prince. The crux of the succession war, with Kurapika as his direct bodyguard."
+    },
+    "n_succession": {
+      "label": "Succession War (Nen Beasts)",
+      "description": "A locked-room succession war aboard the ship, where Nen beasts bound to each prince intertwine."
+    },
+    "n_bill": {
+      "label": "Bill (Association Hunter)",
+      "description": "A Beast Hunter sent by the Hunter Association on Beyond's V6 mission; cooperates with Kurapika's group as part of Prince Woble's bodyguard team."
+    },
+    "n_tser": {
+      "label": "Tserriednich (Scarlet Eyes)",
+      "description": "The fourth prince. Cruel and brilliant, he holds stolen Scarlet Eyes. Kurapika's sworn enemy."
+    },
+    "n_bisky2": {
+      "label": "Biscuit Enters the War",
+      "description": "Hired by Kurapika through Killua's introduction, she reappears as a bodyguard. She supports Prince Woble's camp."
+    },
+    "n_senritsu": {
+      "label": "Senritsu Returns",
+      "description": "Senritsu—away since the Yorknew arc—rejoins Kurapika's camp, deployed as bodyguard to Prince Kacho in the Succession War."
+    },
+    "n_izunavi2": {
+      "label": "Izunavi Enters the War",
+      "description": "At his student Kurapika's request, he infiltrates the succession war as bodyguard to Sixth Prince Tyson. His first appearance in the present story since the flashback."
+    },
+    "n_hanzo2": {
+      "label": "Hanzo Enters the War",
+      "description": "Fellow exam candidate Hanzo is also hired by Kurapika and joins as a prince's bodyguard."
+    },
+    "n_team_kura": {
+      "label": "Forming Kurapika's Bodyguard Team",
+      "description": "Aiming to reach Tserriednich who holds Scarlet Eyes, Kurapika hires Basho, Senritsu, Hanzo, his master Izunavi, and Biscuit, forming a bodyguard team for Prince Woble."
+    },
+    "n_troupe_origin": {
+      "label": "Phantom Troupe Origins (Flashback)",
+      "description": "Flashback scenes depict young Chrollo and Meteor City orphans, foreshadowing the founding of the Phantom Troupe."
+    },
+    "n_ship": {
+      "label": "Battle Aboard the Ship",
+      "description": "The Troupe, princes, and Association cross paths on the same ship—the current front line."
+    },
+    "n_w_bat": {
+      "label": "Bat",
+      "description": "Bat. A character from Hunter × Hunter."
+    },
+    "n_w_frog": {
+      "label": "Frog",
+      "description": "Frog. A character from Hunter × Hunter."
+    },
+    "n_kortopi": {
+      "label": "Kortopi",
+      "description": "Kortopi. A character from Hunter × Hunter."
+    },
+    "n_w_abengane": {
+      "label": "Abengane",
+      "description": "Abengane. A character from Hunter × Hunter."
+    },
+    "n_w_agon": {
+      "label": "Agon",
+      "description": "Agon. A character from Hunter × Hunter."
+    },
+    "n_w_alligator": {
+      "label": "Alligator",
+      "description": "Alligator. A character from Hunter × Hunter."
+    },
+    "n_w_amana": {
+      "label": "Amana",
+      "description": "Amana. A character from Hunter × Hunter."
+    },
+    "n_w_amane": {
+      "label": "Amane",
+      "description": "Amane. A character from Hunter × Hunter."
+    },
+    "n_w_amori": {
+      "label": "Amori",
+      "description": "Amori. A character from Hunter × Hunter."
+    },
+    "n_w_antokiba_trade_shop_npc": {
+      "label": "Antokiba Trade Shop NPC",
+      "description": "Antokiba Trade Shop NPC. A character from Hunter × Hunter."
+    },
+    "n_w_arka": {
+      "label": "Arka",
+      "description": "Arka. A character from Hunter × Hunter."
+    },
+    "n_w_assam": {
+      "label": "Assam",
+      "description": "Assam. A character from Hunter × Hunter."
+    },
+    "n_w_assassin_a": {
+      "label": "Assassin A",
+      "description": "Assassin A. A character from Hunter × Hunter."
+    },
+    "n_w_assassin_b": {
+      "label": "Assassin B",
+      "description": "Assassin B. A character from Hunter × Hunter."
+    },
+    "n_w_assassin_c": {
+      "label": "Assassin C",
+      "description": "Assassin C. A character from Hunter × Hunter."
+    },
+    "n_w_assassin_d": {
+      "label": "Assassin D",
+      "description": "Assassin D. A character from Hunter × Hunter."
+    },
+    "n_w_assassin_e": {
+      "label": "Assassin E",
+      "description": "Assassin E. A character from Hunter × Hunter."
+    },
+    "n_w_assassin_f": {
+      "label": "Assassin F",
+      "description": "Assassin F. A character from Hunter × Hunter."
+    },
+    "n_w_asta": {
+      "label": "Asta",
+      "description": "Asta. A character from Hunter × Hunter."
+    },
+    "n_w_auctioneer": {
+      "label": "Auctioneer",
+      "description": "Auctioneer. A character from Hunter × Hunter."
+    },
+    "n_w_baise": {
+      "label": "Baise",
+      "description": "Baise. A character from Hunter × Hunter."
+    },
+    "n_w_baital": {
+      "label": "Baital",
+      "description": "Baital. A character from Hunter × Hunter."
+    },
+    "n_w_baka_ki_el_dogra": {
+      "label": "Baka Ki El Dogra",
+      "description": "Baka Ki El Dogra. A character from Hunter × Hunter."
+    },
+    "n_w_balda": {
+      "label": "Balda",
+      "description": "Balda. A character from Hunter × Hunter."
+    },
+    "n_w_banana_kavaro": {
+      "label": "Banana Kavaro",
+      "description": "Banana Kavaro. A character from Hunter × Hunter."
+    },
+    "n_w_baro": {
+      "label": "Baro",
+      "description": "Baro. A character from Hunter × Hunter."
+    },
+    "n_w_barry": {
+      "label": "Barry",
+      "description": "Barry. A character from Hunter × Hunter."
+    },
+    "n_w_battera": {
+      "label": "Battera",
+      "description": "Battera. A character from Hunter × Hunter."
+    },
+    "n_w_battera_s_lover": {
+      "label": "Battera's Lover",
+      "description": "Battera's Lover. A character from Hunter × Hunter."
+    },
+    "n_w_bean": {
+      "label": "Bean",
+      "description": "Bean. A character from Hunter × Hunter."
+    },
+    "n_w_beans": {
+      "label": "Beans",
+      "description": "Beans. A character from Hunter × Hunter."
+    },
+    "n_w_belerainte": {
+      "label": "Belerainte",
+      "description": "A professional Hunter in Prince Marayam's camp; speaks with feminine inflections despite being male. Attends Kurapika's Nen lectures but, as a Hunter, is already a Nen user."
+    },
+    "n_w_bendot": {
+      "label": "Bendot",
+      "description": "Bendot. A character from Hunter × Hunter."
+    },
+    "n_w_bihorn": {
+      "label": "Bihorn",
+      "description": "Bihorn. A character from Hunter × Hunter."
+    },
+    "n_w_binolt": {
+      "label": "Binolt",
+      "description": "A wanted serial killer. With his favourite scissors he cuts a target's hair and eats it, reading their body and abilities. After being felled in a single strike by Bisky, he is kept alive for two weeks as Gon and Killua's training opponent; once defeated, he is released on the condition that he turn himself in."
+    },
+    "n_w_bizeff": {
+      "label": "Bizeff",
+      "description": "Bizeff. A character from Hunter × Hunter."
+    },
+    "n_w_bloster": {
+      "label": "Bloster",
+      "description": "Bloster. A character from Hunter × Hunter."
+    },
+    "n_w_boki": {
+      "label": "Boki",
+      "description": "Boki. A character from Hunter × Hunter."
+    },
+    "n_w_bombers": {
+      "label": "The Bombers",
+      "description": "Inside Greed Island, the 'Bombers' trio—Genthru (Finger), Sub (Arm), and Bara (Mouth)—who together rig their timed-bomb Nen ability."
+    },
+    "n_w_borksen": {
+      "label": "Borksen",
+      "description": "An associate Hunter Association member; a medium-haired woman soldier and former military-academy classmate of Prince Tserriednich. Leads the classmates on the lower decks and proposes to feign the Morena hunt while avoiding actual engagement."
+    },
+    "n_w_botobai_gigante": {
+      "label": "Botobai Gigante",
+      "description": "Zodiac Dragon. A three-star Terrorist Hunter, prosecutor, and military analyst—an aged giant with scaled skin and the longest-serving Zodiac. Considered the closest to becoming Chairman by name and substance. Aboard the B/W he runs the court chambers in the general-passenger area."
+    },
+    "n_w_bourbon": {
+      "label": "Bourbon",
+      "description": "Bourbon. A character from Hunter × Hunter."
+    },
+    "n_w_buhara": {
+      "label": "Buhara",
+      "description": "Buhara. A character from Hunter × Hunter."
+    },
+    "n_w_bushidora_ambitious": {
+      "label": "Bushidora Ambitious",
+      "description": "Bushidora Ambitious. A character from Hunter × Hunter."
+    },
+    "n_w_captain": {
+      "label": "Captain",
+      "description": "Captain. A character from Hunter × Hunter."
+    },
+    "n_w_carabid_beetle": {
+      "label": "Carabid Beetle",
+      "description": "Carabid Beetle. A character from Hunter × Hunter."
+    },
+    "n_w_casino_king": {
+      "label": "Casino King",
+      "description": "Casino King. A character from Hunter × Hunter."
+    },
+    "n_w_cat_diner_npc": {
+      "label": "Cat Diner NPC",
+      "description": "Cat Diner NPC. A character from Hunter × Hunter."
+    },
+    "n_w_centipede": {
+      "label": "Centipede",
+      "description": "Centipede. A character from Hunter × Hunter."
+    },
+    "n_w_cheetu": {
+      "label": "Cheetu",
+      "description": "A Chimera Ant Squadron Leader (Cheetah-type). Boasts overwhelming speed but develops a rivalry with Morel of the Extermination Team and is ultimately killed by his abilities."
+    },
+    "n_w_cherry": {
+      "label": "Cherry",
+      "description": "Cherry. A character from Hunter × Hunter."
+    },
+    "n_w_chibaba": {
+      "label": "Chibaba",
+      "description": "Chibaba. A character from Hunter × Hunter."
+    },
+    "n_w_chimera_ant_queen": {
+      "label": "Chimera Ant Queen",
+      "description": "Chimera Ant Queen. A character from Hunter × Hunter."
+    },
+    "n_w_cluck": {
+      "label": "Cluck",
+      "description": "Zodiac Rooster. A Plant Hunter, musician, and dancer—the shortest member, decked in feathers across her body. Has a catchphrase of three-word bursts ('X!! X!! X!!') and a short temper. Controls flocks of birds."
+    },
+    "n_w_cocco": {
+      "label": "Cocco",
+      "description": "Cocco. A character from Hunter × Hunter."
+    },
+    "n_w_coco_loo": {
+      "label": "Coco Loo",
+      "description": "Coco Loo. A character from Hunter × Hunter."
+    },
+    "n_w_conditional_auction_announcer": {
+      "label": "Conditional Auction Announcer",
+      "description": "Conditional Auction Announcer. A character from Hunter × Hunter."
+    },
+    "n_w_crab": {
+      "label": "Crab",
+      "description": "Crab. A character from Hunter × Hunter."
+    },
+    "n_w_curly": {
+      "label": "Curly (Kururi)",
+      "description": "A Beyond-faction member; a long-haired man with glasses and curl-tipped hair. A learned professor at Barbard University."
+    },
+    "n_w_cutie_beauty": {
+      "label": "Cutie Beauty",
+      "description": "Cutie Beauty. A character from Hunter × Hunter."
+    },
+    "n_w_cuzco": {
+      "label": "Cuzco",
+      "description": "Cuzco. A character from Hunter × Hunter."
+    },
+    "n_w_dalzollene": {
+      "label": "Dalzollene",
+      "description": "Dalzollene. A character from Hunter × Hunter."
+    },
+    "n_w_danjin": {
+      "label": "Tangin",
+      "description": "One of Prince Tserriednich's private soldiers, an associate Hunter Association member. Attends Kurapika's Nen lectures and reins in Meeryhan."
+    },
+    "n_w_death_row_convicts": {
+      "label": "Death Row Convicts",
+      "description": "Death Row Convicts. A character from Hunter × Hunter."
+    },
+    "n_w_degiro": {
+      "label": "Degiro",
+      "description": "Degiro. A character from Hunter × Hunter."
+    },
+    "n_w_dog": {
+      "label": "Dog",
+      "description": "Dog. A character from Hunter × Hunter."
+    },
+    "n_w_doster": {
+      "label": "Doster",
+      "description": "Doster. A character from Hunter × Hunter."
+    },
+    "n_w_dr_lee": {
+      "label": "Dr. Lee",
+      "description": "Dr. Lee. A character from Hunter × Hunter."
+    },
+    "n_w_dwun": {
+      "label": "Dwun",
+      "description": "Greed Island-adjacent figure (Dwun)."
+    },
+    "n_w_east_gorteau_go_champion": {
+      "label": "East Gorteau Go Champion",
+      "description": "East Gorteau Go Champion. A character from Hunter × Hunter."
+    },
+    "n_w_east_gorteau_nen_using_soldier": {
+      "label": "East Gorteau Nen-using Soldier",
+      "description": "East Gorteau Nen-using Soldier. A character from Hunter × Hunter."
+    },
+    "n_w_east_gorteau_shogi_champion": {
+      "label": "East Gorteau Shogi Champion",
+      "description": "East Gorteau Shogi Champion. A character from Hunter × Hunter."
+    },
+    "n_w_elena": {
+      "label": "Elena",
+      "description": "Elena. A character from Hunter × Hunter."
+    },
+    "n_w_eliza": {
+      "label": "Eliza",
+      "description": "Eliza. A character from Hunter × Hunter."
+    },
+    "n_w_erbier_mano": {
+      "label": "Erbier Mano",
+      "description": "Erbier Mano. A character from Hunter × Hunter."
+    },
+    "n_w_eta": {
+      "label": "Eta",
+      "description": "Eta. A character from Hunter × Hunter."
+    },
+    "n_w_extermination_team": {
+      "label": "Chimera Ant Extermination Team",
+      "description": "The Chimera Ant Extermination Team led by Chairman Netero. Centred on Morel, Knov, Knuckle, Shoot, and Palm—reinforced by Gon and Killua as auxiliary members."
+    },
+    "n_w_floor_masters": {
+      "label": "Floor Masters",
+      "description": "The elite of Heavens Arena's 200th-floor class. Their ranks include Hisoka and Kastro."
+    },
+    "n_w_flutter": {
+      "label": "Flutter",
+      "description": "Flutter. A character from Hunter × Hunter."
+    },
+    "n_w_freelance_assassins": {
+      "label": "Freelance Assassins",
+      "description": "Freelance killers hired by the Yorknew mafia to secure the Scarlet Eyes, filling in for the fallen Shadow Beasts."
+    },
+    "n_w_fumi": {
+      "label": "Fumi",
+      "description": "Fumi. A character from Hunter × Hunter."
+    },
+    "n_w_g_i_game_masters": {
+      "label": "G.I. Game Masters",
+      "description": "G.I. Game Masters. A character from Hunter × Hunter."
+    },
+    "n_w_gashta_bellam": {
+      "label": "Gashta Bellam",
+      "description": "Gashta Bellam. A character from Hunter × Hunter."
+    },
+    "n_w_gel": {
+      "label": "Gel",
+      "description": "Zodiac Snake. A Poison Hunter, coroner, and pharmacist—a slender woman with snake-slit pupils. Can transform her arms into snakes."
+    },
+    "n_w_gidal": {
+      "label": "Gidal",
+      "description": "Kakin Royal Army/family-adjacent figure (Gidal)."
+    },
+    "n_w_gido": {
+      "label": "Gido",
+      "description": "Gido. A character from Hunter × Hunter."
+    },
+    "n_w_ging_and_mito_s_grandmother": {
+      "label": "Ging and Mito's Grandmother",
+      "description": "Ging and Mito's Grandmother. A character from Hunter × Hunter."
+    },
+    "n_w_ginta": {
+      "label": "Ginta",
+      "description": "Zodiac Sheep. A Poaching Hunter and ranger—a hairy giant with an Afro, sheep horns, and a wool garment; a huge eater yet swift. Especially devoted to the late Chairman Netero, he showed the fiercest anger when Pariston declared his candidacy, and was the most shaken when Beyond Netero stepped into the open."
+    },
+    "n_w_giuliano": {
+      "label": "Giuliano",
+      "description": "A professional Hunter in Prince Tyson's camp; a breezy young man who calls Izunavi 'Iz-san.' Receives Tyson's Scripture and is bonded to an Eyeball Tadpole, becoming ever more devoted to her doctrine."
+    },
+    "n_w_gold_dust_girl": {
+      "label": "Gold Dust Girl",
+      "description": "Gold Dust Girl. A character from Hunter × Hunter."
+    },
+    "n_w_gold_dust_girl_guard": {
+      "label": "Gold Dust Girl Guard",
+      "description": "Gold Dust Girl Guard. A character from Hunter × Hunter."
+    },
+    "n_w_golem": {
+      "label": "Golem",
+      "description": "A Beyond-faction mercenary; a Conjurer and the keystone of the suppressive-fire unit. The name is self-styled, and his face is hidden under a robot-like power armour. He conjures multiple firearms and performs best with an Emitter partner."
+    },
+    "n_w_gorilla": {
+      "label": "Gorilla",
+      "description": "Gorilla. A character from Hunter × Hunter."
+    },
+    "n_w_gothic_newscaster": {
+      "label": "Gothic Newscaster",
+      "description": "Gothic Newscaster. A character from Hunter × Hunter."
+    },
+    "n_w_gotoh": {
+      "label": "Gotoh",
+      "description": "Gotoh. A character from Hunter × Hunter."
+    },
+    "n_w_goz": {
+      "label": "Goz",
+      "description": "Goz. A character from Hunter × Hunter."
+    },
+    "n_w_gyro": {
+      "label": "Gyro",
+      "description": "Gyro. A character from Hunter × Hunter."
+    },
+    "n_w_gyro_s_father": {
+      "label": "Gyro's Father",
+      "description": "Gyro's Father. A character from Hunter × Hunter."
+    },
+    "n_w_hagakushi": {
+      "label": "Hagakushi",
+      "description": "Hagakushi. A character from Hunter × Hunter."
+    },
+    "n_w_hanse": {
+      "label": "Hanse",
+      "description": "Hanse. A character from Hunter × Hunter."
+    },
+    "n_w_haruna": {
+      "label": "Haruna",
+      "description": "Haruna. A character from Hunter × Hunter."
+    },
+    "n_w_heads_of_the_v6": {
+      "label": "Heads of the V6",
+      "description": "The heads of state of the V6—the modern Five (V5) plus Kakin—who jointly arbitrate the Dark Continent expedition."
+    },
+    "n_w_heavens_arena_200th_floor_clerk": {
+      "label": "Heavens Arena 200th Floor Clerk",
+      "description": "Heavens Arena 200th Floor Clerk. A character from Hunter × Hunter."
+    },
+    "n_w_hina": {
+      "label": "Hina",
+      "description": "Hina. A character from Hunter × Hunter."
+    },
+    "n_w_hishita": {
+      "label": "Hishita",
+      "description": "Hishita. A character from Hunter × Hunter."
+    },
+    "n_w_hollow": {
+      "label": "Hollow",
+      "description": "Hollow. A character from Hunter × Hunter."
+    },
+    "n_w_hunter_association_exorcist": {
+      "label": "Hunter Association Exorcist",
+      "description": "Hunter Association Exorcist. A character from Hunter × Hunter."
+    },
+    "n_w_hunter_website_bartender": {
+      "label": "Hunter Website Bartender",
+      "description": "Hunter Website Bartender. A character from Hunter × Hunter."
+    },
+    "n_w_ickshonpe_katocha": {
+      "label": "Ickshonpe Katocha",
+      "description": "Ickshonpe Katocha. A character from Hunter × Hunter."
+    },
+    "n_w_imori": {
+      "label": "Imori",
+      "description": "Imori. A character from Hunter × Hunter."
+    },
+    "n_w_inzagi": {
+      "label": "Inzagi",
+      "description": "Inzagi. A character from Hunter × Hunter."
+    },
+    "n_w_isaac": {
+      "label": "Isaac",
+      "description": "Isaac. A character from Hunter × Hunter."
+    },
+    "n_w_ivlenkov": {
+      "label": "Ivlenkov",
+      "description": "Ivlenkov. A character from Hunter × Hunter."
+    },
+    "n_w_ivona_kawski": {
+      "label": "Ivona Kawski",
+      "description": "Ivona Kawski. A character from Hunter × Hunter."
+    },
+    "n_w_jeet": {
+      "label": "Jeet",
+      "description": "Jeet. A character from Hunter × Hunter."
+    },
+    "n_w_jeitsari": {
+      "label": "Jeitsari",
+      "description": "Jeitsari. A character from Hunter × Hunter."
+    },
+    "n_w_jikono": {
+      "label": "Jikono",
+      "description": "Jikono. A character from Hunter × Hunter."
+    },
+    "n_w_jispa": {
+      "label": "Jispa",
+      "description": "Jispa. A character from Hunter × Hunter."
+    },
+    "n_w_johness": {
+      "label": "Johness",
+      "description": "Johness. A character from Hunter × Hunter."
+    },
+    "n_w_kanzai": {
+      "label": "Kanzai",
+      "description": "Zodiac Tiger. A Treasure Hunter and bodyguard with flamboyant hair and a striped baseball-uniform style; impulsive and combative. Bad at desk work and often asks the other Zodiacs to explain. Aboard the B/W he stands watch over Beyond's detention room with Saccho and Saiyu."
+    },
+    "n_w_kastro": {
+      "label": "Kastro",
+      "description": "Kastro. A character from Hunter × Hunter."
+    },
+    "n_w_kasuga": {
+      "label": "Kasuga",
+      "description": "Kasuga. A character from Hunter × Hunter."
+    },
+    "n_w_katzo": {
+      "label": "Katzo",
+      "description": "Katzo. A character from Hunter × Hunter."
+    },
+    "n_w_kazsule": {
+      "label": "Kazsule",
+      "description": "Kazsule. A character from Hunter × Hunter."
+    },
+    "n_w_keeney": {
+      "label": "Keeney",
+      "description": "A professional Hunter in Prince Kacho's camp; a small, older man who guards with En and is a master pianist. Lost his wife and child two years ago and has sought a place to die. Under Mizaistom's orders he covers the twin princesses' escape and then suicides."
+    },
+    "n_w_kenmi": {
+      "label": "Kenmi",
+      "description": "Kenmi. A character from Hunter × Hunter."
+    },
+    "n_w_kess": {
+      "label": "Kess",
+      "description": "Kess. A character from Hunter × Hunter."
+    },
+    "n_w_khara": {
+      "label": "Khara",
+      "description": "Khara. A character from Hunter × Hunter."
+    },
+    "n_w_kikyo_zoldyck": {
+      "label": "Kikyo Zoldyck",
+      "description": "Kikyo Zoldyck. A character from Hunter × Hunter."
+    },
+    "n_w_kiriko": {
+      "label": "Kiriko",
+      "description": "Kiriko. A character from Hunter × Hunter."
+    },
+    "n_w_koala": {
+      "label": "Koala",
+      "description": "Koala. A character from Hunter × Hunter."
+    },
+    "n_w_kon": {
+      "label": "Kon",
+      "description": "Kon. A character from Hunter × Hunter."
+    },
+    "n_w_kosofftro": {
+      "label": "Kosofftro",
+      "description": "Kosofftro. A character from Hunter × Hunter."
+    },
+    "n_w_kurt": {
+      "label": "Kurt",
+      "description": "Kurt. A character from Hunter × Hunter."
+    },
+    "n_w_kurton": {
+      "label": "Kurton",
+      "description": "A professional Hunter in Prince Woble's camp, a Conjurer with bristly short hair and bushy brows. Hired via Pariston as an Association-Exclusive Hunter, unaware of the succession war. Could transform into a 5-person boat or car—a key escape route—until killed by Sayird (puppeted by Momoze's Guardian Spirit Beast)."
+    },
+    "n_w_kyu": {
+      "label": "Kyu",
+      "description": "Kyu. A character from Hunter × Hunter."
+    },
+    "n_w_latarza": {
+      "label": "Latarza",
+      "description": "Latarza. A character from Hunter × Hunter."
+    },
+    "n_w_lead_east_gorteau_dancer": {
+      "label": "Lead East Gorteau Dancer",
+      "description": "Lead East Gorteau Dancer. A character from Hunter × Hunter."
+    },
+    "n_w_leech": {
+      "label": "Leech",
+      "description": "A Manipulation user who produces leeches from his tongue and implants them in foes."
+    },
+    "n_w_leol": {
+      "label": "Leol",
+      "description": "A Chimera Ant Squadron Leader (Lion-type, formerly Hagya). His Specialization ability Rental Pod borrows others' Nen abilities. A charismatic leader with many followers since NGL days. He confronts Morel in the underground church of the East Gorteau palace, deploying borrowed Inamura/Big Wall water tactics from Grachan—but is ultimately overwhelmed by Morel's Deep Purple and slain."
+    },
+    "n_w_leroute": {
+      "label": "Leroute",
+      "description": "Leroute. A character from Hunter × Hunter."
+    },
+    "n_w_light_nostrade": {
+      "label": "Light Nostrade",
+      "description": "Light Nostrade. A character from Hunter × Hunter."
+    },
+    "n_w_lin_koshi": {
+      "label": "Lin Koshi",
+      "description": "Lin Koshi. A character from Hunter × Hunter."
+    },
+    "n_w_linn": {
+      "label": "Linn",
+      "description": "Linn. A character from Hunter × Hunter."
+    },
+    "n_w_linne_horsdoeuvre": {
+      "label": "Linne Horsdoeuvre",
+      "description": "Linne Horsdoeuvre. A character from Hunter × Hunter."
+    },
+    "n_w_linssen": {
+      "label": "Linssen",
+      "description": "Nostrade Family-adjacent figure (Linssen)."
+    },
+    "n_w_lippo": {
+      "label": "Lippo",
+      "description": "Lippo. A character from Hunter × Hunter."
+    },
+    "n_w_lisamsetta": {
+      "label": "Lisamsetta",
+      "description": "Kakin Royal Army/family-adjacent figure (Lisamsetta)."
+    },
+    "n_w_list": {
+      "label": "List",
+      "description": "Greed Island-adjacent figure (List)."
+    },
+    "n_w_loupe_highland": {
+      "label": "Loupe Highland",
+      "description": "Loupe Highland. A character from Hunter × Hunter."
+    },
+    "n_w_luciart": {
+      "label": "Luciart",
+      "description": "Luciart. A character from Hunter × Hunter."
+    },
+    "n_w_maenole": {
+      "label": "Maenole",
+      "description": "Maenole. A character from Hunter × Hunter."
+    },
+    "n_w_mafia_hacker": {
+      "label": "Mafia Hacker",
+      "description": "Mafia Hacker. A character from Hunter × Hunter."
+    },
+    "n_w_maha_zoldyck": {
+      "label": "Maha Zoldyck",
+      "description": "Maha Zoldyck. A character from Hunter × Hunter."
+    },
+    "n_w_maita": {
+      "label": "Maita",
+      "description": "Maita. A character from Hunter × Hunter."
+    },
+    "n_w_majtani": {
+      "label": "Majtani",
+      "description": "Majtani. A character from Hunter × Hunter."
+    },
+    "n_w_manheim": {
+      "label": "Manheim",
+      "description": "Manheim. A character from Hunter × Hunter."
+    },
+    "n_w_mantis": {
+      "label": "Mantis",
+      "description": "Mantis. A character from Hunter × Hunter."
+    },
+    "n_w_marcos": {
+      "label": "Marcos",
+      "description": "Marcos. A character from Hunter × Hunter."
+    },
+    "n_w_marione": {
+      "label": "Marione",
+      "description": "A Beyond-faction mercenary; a robot-like girl serving as a combat operative."
+    },
+    "n_w_masadora_trade_shop_npc": {
+      "label": "Masadora Trade Shop NPC",
+      "description": "Masadora Trade Shop NPC. A character from Hunter × Hunter."
+    },
+    "n_w_mascher": {
+      "label": "Mascher",
+      "description": "A Beyond-faction mercenary; a mushroom-cut man who serves as the squad's general organiser."
+    },
+    "n_w_masta": {
+      "label": "Masta",
+      "description": "Masta. A character from Hunter × Hunter."
+    },
+    "n_w_matthew": {
+      "label": "Matthew",
+      "description": "Matthew. A character from Hunter × Hunter."
+    },
+    "n_w_menchi": {
+      "label": "Menchi",
+      "description": "Menchi. A character from Hunter × Hunter."
+    },
+    "n_w_meshush": {
+      "label": "Meshush",
+      "description": "Kakin Royal Army/family-adjacent figure (Meshush)."
+    },
+    "n_w_michael": {
+      "label": "Michael",
+      "description": "Michael. A character from Hunter × Hunter."
+    },
+    "n_w_michiro": {
+      "label": "Michiro",
+      "description": "Michiro. A character from Hunter × Hunter."
+    },
+    "n_w_mike": {
+      "label": "Mike",
+      "description": "Mike. A character from Hunter × Hunter."
+    },
+    "n_w_mikli": {
+      "label": "Mikli",
+      "description": "Mikli. A character from Hunter × Hunter."
+    },
+    "n_w_milluki_zoldyck": {
+      "label": "Milluki Zoldyck",
+      "description": "Milluki Zoldyck. A character from Hunter × Hunter."
+    },
+    "n_w_ming_jol_ik": {
+      "label": "Ming Jol-ik",
+      "description": "Ming Jol-ik. A character from Hunter × Hunter."
+    },
+    "n_w_ming_jol_ik_s_double": {
+      "label": "Ming Jol-ik's Double",
+      "description": "Ming Jol-ik's Double. A character from Hunter × Hunter."
+    },
+    "n_w_mitsuba": {
+      "label": "Mitsuba",
+      "description": "Mitsuba. A character from Hunter × Hunter."
+    },
+    "n_w_mizaistom_nana": {
+      "label": "Mizaistom Nana",
+      "description": "Zodiac Ox. A two-star Crime Hunter, lawyer, and private-security CEO. Known as 'the conscience of the Zodiacs,' he regards Pariston as a dangerous 'beast.' Brought Kurapika into the Zodiacs in exchange for intelligence. His ability Cross Game presents three colour cards (blue/yellow/red) to restrict an opponent's actions."
+    },
+    "n_w_monta_yuras": {
+      "label": "Monta Yuras",
+      "description": "Monta Yuras. A character from Hunter × Hunter."
+    },
+    "n_w_montreux": {
+      "label": "Montreux",
+      "description": "Montreux. A character from Hunter × Hunter."
+    },
+    "n_w_moritonio": {
+      "label": "Moritonio",
+      "description": "Moritonio. A character from Hunter × Hunter."
+    },
+    "n_w_mosquito": {
+      "label": "Mosquito",
+      "description": "Mosquito. A character from Hunter × Hunter."
+    },
+    "n_w_motaricke": {
+      "label": "Motaricke",
+      "description": "Motaricke. A character from Hunter × Hunter."
+    },
+    "n_w_mozbe": {
+      "label": "Mozbe",
+      "description": "Kakin Royal Army/family-adjacent figure (Mozbe)."
+    },
+    "n_w_muherr": {
+      "label": "Muherr",
+      "description": "Leader of the Beyond-faction mercenaries; a sharp-eared man and old acquaintance of Ging. In the 289th Hunter Exam he was rated highly by Mizaistom but failed by Kurapika who saw through his Beyond allegiance."
+    },
+    "n_w_mukanaki": {
+      "label": "Mukanaki",
+      "description": "Mukanaki. A character from Hunter × Hunter."
+    },
+    "n_w_muna": {
+      "label": "Muna",
+      "description": "Muna. A character from Hunter × Hunter."
+    },
+    "n_w_myuhan": {
+      "label": "Myuhan",
+      "description": "One of Prince Tserriednich's private soldiers. Provocatively joins Kurapika's Nen lectures, then is killed off-guard by a Nen attack."
+    },
+    "n_w_ngl_interpreter": {
+      "label": "NGL Interpreter",
+      "description": "NGL Interpreter. A character from Hunter × Hunter."
+    },
+    "n_w_nicholas": {
+      "label": "Nicholas",
+      "description": "Nicholas. A character from Hunter × Hunter."
+    },
+    "n_w_nick_cue": {
+      "label": "Nick Cue",
+      "description": "Nick Cue. A character from Hunter × Hunter."
+    },
+    "n_w_nickes": {
+      "label": "Nickes",
+      "description": "Nickes. A character from Hunter × Hunter."
+    },
+    "n_w_noko": {
+      "label": "Noko",
+      "description": "Noko. A character from Hunter × Hunter."
+    },
+    "n_w_nomdieu": {
+      "label": "Nomdieu",
+      "description": "Nomdieu. A character from Hunter × Hunter."
+    },
+    "n_w_nostrade": {
+      "label": "Nostrade",
+      "description": "Nostrade. A character from Hunter × Hunter."
+    },
+    "n_w_nostrade_butler": {
+      "label": "Nostrade Butler",
+      "description": "Nostrade Butler. A character from Hunter × Hunter."
+    },
+    "n_w_octopus": {
+      "label": "Octopus",
+      "description": "Octopus. A character from Hunter × Hunter."
+    },
+    "n_w_ortho_brother": {
+      "label": "Ortho Brother",
+      "description": "Ortho Brother. A character from Hunter × Hunter."
+    },
+    "n_w_ortho_sister": {
+      "label": "Ortho Sister",
+      "description": "Ortho Sister. A character from Hunter × Hunter."
+    },
+    "n_w_owl": {
+      "label": "Owl",
+      "description": "A Conjuration user of Fan Fan Cloth, used to compress and transport auction items."
+    },
+    "n_w_pairo": {
+      "label": "Pairo",
+      "description": "A Kurta-clan boy and Kurapika's dearest friend. Cooperative and level-headed. Saving Kurapika from a fall left him injured—gradually losing his sight and the use of his leg—becoming Kurapika's reason for venturing into the outside world."
+    },
+    "n_w_pekotero": {
+      "label": "Pekotero",
+      "description": "A Beyond-faction mercenary; carries candy and wears a black hat covered in white globes."
+    },
+    "n_w_pekuba": {
+      "label": "Pekuba",
+      "description": "Pekuba. A character from Hunter × Hunter."
+    },
+    "n_w_pell": {
+      "label": "Pell",
+      "description": "Pell. A character from Hunter × Hunter."
+    },
+    "n_w_pig": {
+      "label": "Pig",
+      "description": "Pig. A character from Hunter × Hunter."
+    },
+    "n_w_pike": {
+      "label": "Pike",
+      "description": "Pike. A character from Hunter × Hunter."
+    },
+    "n_w_pirate_boxer": {
+      "label": "Pirate boxer",
+      "description": "Pirate boxer. A character from Hunter × Hunter."
+    },
+    "n_w_pirate_footballer": {
+      "label": "Pirate footballer",
+      "description": "Pirate footballer. A character from Hunter × Hunter."
+    },
+    "n_w_pisac": {
+      "label": "Pisac",
+      "description": "Pisac. A character from Hunter × Hunter."
+    },
+    "n_w_plot_of_beach_npc": {
+      "label": "Plot of Beach NPC",
+      "description": "Plot of Beach NPC. A character from Hunter × Hunter."
+    },
+    "n_w_podungo_lapoy": {
+      "label": "Podungo Lapoy",
+      "description": "Podungo Lapoy. A character from Hunter × Hunter."
+    },
+    "n_w_pongo": {
+      "label": "Pongo",
+      "description": "Pongo. A character from Hunter × Hunter."
+    },
+    "n_w_porcupine": {
+      "label": "Porcupine",
+      "description": "Controls body hair at will, hardening it like needles for offense and defense."
+    },
+    "n_w_provisional_hunters": {
+      "label": "Provisional Hunters",
+      "description": "Provisional Hunters. A character from Hunter × Hunter."
+    },
+    "n_w_puhat": {
+      "label": "Puhat",
+      "description": "Puhat. A character from Hunter × Hunter."
+    },
+    "n_w_pyon": {
+      "label": "Pyon",
+      "description": "Zodiac Rabbit. A Paleograph Hunter, linguist, and interpreter, dressed bunny-girl style. Perpetually at her own pace—she snipes at anyone, drawls when calm and turns sharp when angry. Often glued to laptop or smartphone."
+    },
+    "n_w_quizzing_lady": {
+      "label": "Quizzing Lady",
+      "description": "Quizzing Lady. A character from Hunter × Hunter."
+    },
+    "n_w_rabid_dog": {
+      "label": "Sick Dog",
+      "description": "An Enhancer who strengthens fangs and claws and coats them with paralytic venom."
+    },
+    "n_w_redwood": {
+      "label": "Redwood",
+      "description": "Redwood. A character from Hunter × Hunter."
+    },
+    "n_w_reina": {
+      "label": "Reina",
+      "description": "Reina. A character from Hunter × Hunter."
+    },
+    "n_w_remora": {
+      "label": "Remora",
+      "description": "Remora. A character from Hunter × Hunter."
+    },
+    "n_w_rhino": {
+      "label": "Rhino",
+      "description": "Rhino. A character from Hunter × Hunter."
+    },
+    "n_w_richard_hackett": {
+      "label": "Richard Hackett",
+      "description": "Richard Hackett. A character from Hunter × Hunter."
+    },
+    "n_w_ridge": {
+      "label": "Ridge",
+      "description": "Kakin Royal Army/family-adjacent figure (Ridge)."
+    },
+    "n_w_riehlvelt": {
+      "label": "Riehlvelt",
+      "description": "Riehlvelt. A character from Hunter × Hunter."
+    },
+    "n_w_rodriot": {
+      "label": "Rodriot",
+      "description": "Rodriot. A character from Hunter × Hunter."
+    },
+    "n_w_royal_guards": {
+      "label": "Royal Guards",
+      "description": "The three Royal Guards born from eggs together with King Meruem: Neferpitou (Doctor Blythe / Terpsichora), Shaiapouf (Beelzebub / Spiritual Message), and Menthuthuyoupi (Metamorphosis). Each holds distinct authority but defers everything to protect the King."
+    },
+    "n_w_ryu": {
+      "label": "Ryu",
+      "description": "Ryu. A character from Hunter × Hunter."
+    },
+    "n_w_sabazushi": {
+      "label": "Sabazushi",
+      "description": "Sabazushi. A character from Hunter × Hunter."
+    },
+    "n_w_saccho_kobayakawa": {
+      "label": "Saccho Kobayakawa",
+      "description": "Zodiac Horse. A two-star Problem Hunter, detective, and jack-of-all-trades; the Zodiacs' counsellor. A horse-faced man with shaggy hair, carrying twin swords. Aboard the B/W he stands watch over Beyond's detention room with Kanzai and Saiyu."
+    },
+    "n_w_sadaso": {
+      "label": "Sadaso",
+      "description": "Sadaso. A character from Hunter × Hunter."
+    },
+    "n_w_saiyu": {
+      "label": "Saiyu",
+      "description": "Zodiac Monkey. A Bounty Hunter and martial artist, styled like Sun Wukong with an extending staff and a foul mouth. In truth he is a spy for the Beyond faction. Aboard the B/W he stands watch over Beyond's detention room with Kanzai and Saccho. Wields three monkey Nen-beasts—See-No-Evil, Hear-No-Evil, Speak-No-Evil—that strip sight, hearing, and speech."
+    },
+    "n_w_sakisuke_njiji": {
+      "label": "Sakisuke Njiji",
+      "description": "Sakisuke Njiji. A character from Hunter × Hunter."
+    },
+    "n_w_salkov": {
+      "label": "Salkov",
+      "description": "One of Prince Tserriednich's private soldiers, an associate Hunter Association member and Nen user. He can speak candidly with Theta as a fellow Nen user. Takes over Nen instruction when Theta is too drained to continue."
+    },
+    "n_w_sanbica_norton": {
+      "label": "Sanbica Norton",
+      "description": "Sanbica Norton. A character from Hunter × Hunter."
+    },
+    "n_w_sayird": {
+      "label": "Sayird",
+      "description": "A professional Hunter in Prince Woble's camp, an Emitter with parted-7:3 hair and a goatee. Hired via Pariston as an Association-Exclusive Hunter and unaware of the succession war. Puppeted by Momoze's Guardian Spirit Beast, he kills Kurton and two other guards before being arrested."
+    },
+    "n_w_scairt": {
+      "label": "Scairt",
+      "description": "Kakin Royal Army/family-adjacent figure (Scairt)."
+    },
+    "n_w_seaquant": {
+      "label": "Seaquant",
+      "description": "Zoldyck-adjacent figure (Seaquant)."
+    },
+    "n_w_sedokan": {
+      "label": "Sedokan",
+      "description": "Sedokan. A character from Hunter × Hunter."
+    },
+    "n_w_sengi_guild_agent": {
+      "label": "Sengi Guild Agent",
+      "description": "Sengi Guild Agent. A character from Hunter × Hunter."
+    },
+    "n_w_shachmono_tocino": {
+      "label": "Shachmono Tocino",
+      "description": "Shachmono Tocino. A character from Hunter × Hunter."
+    },
+    "n_w_shadow_beasts": {
+      "label": "Shadow Beasts",
+      "description": "The Ten Dons’ elite execution squad, each using an animal codename. They guarded the Yorknew underground auction and were wiped out fighting the Phantom Troupe."
+    },
+    "n_w_shark": {
+      "label": "Shark",
+      "description": "Shark. A character from Hunter × Hunter."
+    },
+    "n_w_sheila": {
+      "label": "Sheila",
+      "description": "A female adventurer from Meteor City. A childhood friend of Chrollo and the founding Phantom Troupe members—especially close to Sarasa. After a tragic event involving Sarasa she breaks with Chrollo's circle and pursues a Hunter's path. Collapses in the Kurta forest, where young Kurapika and Pairo find her; she tells them of the outside world."
+    },
+    "n_w_shidore": {
+      "label": "Shidore",
+      "description": "Shidore. A character from Hunter × Hunter."
+    },
+    "n_w_shihael": {
+      "label": "Shihael",
+      "description": "Shihael. A character from Hunter × Hunter."
+    },
+    "n_w_shishito": {
+      "label": "Shishito",
+      "description": "Shishito. A character from Hunter × Hunter."
+    },
+    "n_w_sick_villagers": {
+      "label": "Sick Villagers",
+      "description": "Sick Villagers. A character from Hunter × Hunter."
+    },
+    "n_w_siper": {
+      "label": "Siper",
+      "description": "Siper. A character from Hunter × Hunter."
+    },
+    "n_w_small_bear": {
+      "label": "Small Bear",
+      "description": "Small Bear. A character from Hunter × Hunter."
+    },
+    "n_w_small_beetle": {
+      "label": "Small Beetle",
+      "description": "Small Beetle. A character from Hunter × Hunter."
+    },
+    "n_w_snake": {
+      "label": "Snake",
+      "description": "Snake. A character from Hunter × Hunter."
+    },
+    "n_w_soffman": {
+      "label": "Soffman",
+      "description": "Soffman. A character from Hunter × Hunter."
+    },
+    "n_w_sommy": {
+      "label": "Sommy",
+      "description": "Sommy. A character from Hunter × Hunter."
+    },
+    "n_w_souheil": {
+      "label": "Souheil",
+      "description": "Souheil. A character from Hunter × Hunter."
+    },
+    "n_w_spell_card_shop_npc": {
+      "label": "Spell Card Shop NPC",
+      "description": "Spell Card Shop NPC. A character from Hunter × Hunter."
+    },
+    "n_w_spinner_clow": {
+      "label": "Spinner Clow",
+      "description": "Spinner Clow. A character from Hunter × Hunter."
+    },
+    "n_w_squadron_leaders": {
+      "label": "Squadron Leaders",
+      "description": "Senior Chimera Ant officers commanding mid-tier units under the Royal Guards. Representative figures include Leol (Lion / Rental Pod), Cheetu (Cheetah / hyper-speed), Peggy (Spider / Love Shower), Zazan (Snake-woman / Meteor City invasion), Flutter (Winged / Satellite Dragonfly), Colt (later defects to the human side), Hina, Pekuba, Pell, and others. The squadron leaders led the Ants' expansion from NGL outward."
+    },
+    "n_w_stick_dinner": {
+      "label": "Stick Dinner",
+      "description": "Stick Dinner. A character from Hunter × Hunter."
+    },
+    "n_w_taloon": {
+      "label": "Taloon",
+      "description": "Taloon. A character from Hunter × Hunter."
+    },
+    "n_w_taragetter": {
+      "label": "Taragetter",
+      "description": "Taragetter. A character from Hunter × Hunter."
+    },
+    "n_w_ten_dons": {
+      "label": "Ten Dons",
+      "description": "The ten elder bosses at the apex of the Yorknew mafia world, presiding over the Underground Auction. Wiped out in the Phantom Troupe raid pursuing the Scarlet Eyes."
+    },
+    "n_w_teradein_neutral": {
+      "label": "Teradein Neutral",
+      "description": "Teradein Neutral. A character from Hunter × Hunter."
+    },
+    "n_w_theta": {
+      "label": "Theta",
+      "description": "One of Prince Tserriednich's private soldiers, a Nen user and associate Hunter Association member. Alarmed by the Prince's psyche, she lures him into Zetsu—dispersing his Guardian Spirit Beast—and shoots him, only for his Foresight (Instant Lover) ability to evade her. Spared, yet later marked by the beast's strikes that mar the left side of her face."
+    },
+    "n_w_todo": {
+      "label": "Todo",
+      "description": "Todo. A character from Hunter × Hunter."
+    },
+    "n_w_togari": {
+      "label": "Togari",
+      "description": "Togari. A character from Hunter × Hunter."
+    },
+    "n_w_tokarine": {
+      "label": "Tokarine",
+      "description": "Tokarine. A character from Hunter × Hunter."
+    },
+    "n_w_trick_tower": {
+      "label": "Trick Tower",
+      "description": "Trick Tower. A character from Hunter × Hunter."
+    },
+    "n_w_trick_tower_s_3rd_examiner": {
+      "label": "Trick Tower's 3rd examiner",
+      "description": "Trick Tower's 3rd examiner. A character from Hunter × Hunter."
+    },
+    "n_w_tsubone": {
+      "label": "Tsubone",
+      "description": "Tsubone. A character from Hunter × Hunter."
+    },
+    "n_w_tsukuma": {
+      "label": "Tsukuma",
+      "description": "Tsukuma. A character from Hunter × Hunter."
+    },
+    "n_w_turtle": {
+      "label": "Turtle",
+      "description": "Turtle. A character from Hunter × Hunter."
+    },
+    "n_w_umori": {
+      "label": "Umori",
+      "description": "Umori. A character from Hunter × Hunter."
+    },
+    "n_w_underground_clinic_nurse": {
+      "label": "Underground Clinic Nurse",
+      "description": "Underground Clinic Nurse. A character from Hunter × Hunter."
+    },
+    "n_w_usamen": {
+      "label": "Usamen",
+      "description": "A Beyond-faction member with a chef-like look. Confident in 'Ibokuri,' a finger-flick game played with aura. After a clash with Ging he comes to acknowledge Ging's value."
+    },
+    "n_w_vice": {
+      "label": "Vice",
+      "description": "Vice. A character from Hunter × Hunter."
+    },
+    "n_w_whale_island_inhabitants": {
+      "label": "Whale Island Inhabitants",
+      "description": "Whale Island Inhabitants. A character from Hunter × Hunter."
+    },
+    "n_w_wong": {
+      "label": "Wong",
+      "description": "Kakin Royal Army/family-adjacent figure (Wong)."
+    },
+    "n_w_wong_ho": {
+      "label": "Wong Ho",
+      "description": "Wong Ho. A character from Hunter × Hunter."
+    },
+    "n_w_wong_li": {
+      "label": "Wong Li",
+      "description": "Wong Li. A character from Hunter × Hunter."
+    },
+    "n_w_worm": {
+      "label": "Earthworm",
+      "description": "Moves freely underground and can drag opponents beneath the earth. Fought Uvogin."
+    },
+    "n_w_yabibi": {
+      "label": "Yabibi",
+      "description": "Yabibi. A character from Hunter × Hunter."
+    },
+    "n_w_yasuha": {
+      "label": "Yasuha",
+      "description": "Yasuha. A character from Hunter × Hunter."
+    },
+    "n_w_yunju": {
+      "label": "Yunju",
+      "description": "Yunju. A character from Hunter × Hunter."
+    },
+    "n_w_zebro": {
+      "label": "Zebro",
+      "description": "Zebro. A character from Hunter × Hunter."
+    },
+    "n_w_zeho": {
+      "label": "Zeho",
+      "description": "Zeho. A character from Hunter × Hunter."
+    },
+    "n_w_zenji": {
+      "label": "Zenji",
+      "description": "Zenji. A character from Hunter × Hunter."
+    },
+    "n_w_zenju": {
+      "label": "Zenju",
+      "description": "Zenju. A character from Hunter × Hunter."
+    },
+    "n_w_zepile": {
+      "label": "Zepile",
+      "description": "Zepile. A character from Hunter × Hunter."
+    },
+    "n_w_zetsk_bellam": {
+      "label": "Zetsk Bellam",
+      "description": "Zetsk Bellam. A character from Hunter × Hunter."
+    },
+    "n_w_zigg_zoldyck": {
+      "label": "Zigg Zoldyck",
+      "description": "Zigg Zoldyck. A character from Hunter × Hunter."
+    },
+    "n_w_zoldyck": {
+      "label": "Zoldyck",
+      "description": "Zoldyck. A character from Hunter × Hunter."
+    },
+    "n_main_four": {
+      "label": "Main Four",
+      "description": "Gon, Killua, Kurapika, and Leorio—the core quartet of the series."
+    },
+    "n_zoldyck_arc": {
+      "label": "Zoldyck Family Arc",
+      "description": "After the exam, Gon and friends travel to Killua’s home on Kukuroo Mountain."
+    },
+    "n_kurapika_flashback": {
+      "label": "Kurapika’s Memories",
+      "description": "Volume 0 one-shot: Kurapika’s childhood in the Kurta Clan and his bond with Pairo."
+    },
+    "n_genei_group": {
+      "label": "Phantom Troupe",
+      "description": "A band of Nen users marked with spider tattoos, infamous for the Kurta Clan massacre."
+    },
+    "n_hunter_assoc": {
+      "label": "Hunter Association",
+      "description": "The global organization overseeing professional Hunters, the Chairman, and the Zodiacs."
+    },
+    "n_zodiac_twelve": {
+      "label": "Zodiacs",
+      "description": "The Hunter Association’s top executives, codenamed after the Chinese zodiac."
+    },
+    "n_hisoka_chrollo": {
+      "label": "Hisoka vs. Chrollo",
+      "description": "Hisoka and Chrollo face off as Heavens Arena floor masters."
+    },
+    "n_dark_expedition": {
+      "label": "Dark Continent Expedition Team",
+      "description": "Beyond Netero’s team of Temp Hunters and mercenaries bound for the Dark Continent."
+    },
+    "n_kyosho": {
+      "label": "Restricted Access Hunters",
+      "description": "The V5 nations’ joint intelligence unit monitoring the Dark Continent expedition."
+    },
+    "n_nasubi": {
+      "label": "Nasubi Hui Guo Rou",
+      "description": "King of the Kakin Empire. He announces the Dark Continent expedition and backs Beyond’s team."
+    },
+    "n_succession_arc": {
+      "label": "Succession Contest Arc",
+      "description": "The Kakin princes’ deadly succession war aboard the Black Whale en route to the New Continent."
+    },
+    "n_k_anesuto": {
+      "label": "Anesuto",
+      "description": "Anesuto. A character in the Kakin succession contest."
+    },
+    "n_k_anzel": {
+      "label": "Anzel",
+      "description": "Anzel. A character in the Kakin succession contest."
+    },
+    "n_k_babimyna": {
+      "label": "Babimyna",
+      "description": "Successor to Vincent, sent to Prince Woble's side. Despite a youthful appearance, he is a skilled operator that even Kurapika respects. His ability is a counter-type with a wide-range En. Kurapika and Sakata are his prime targets."
+    },
+    "n_k_bachaem": {
+      "label": "Bachaem",
+      "description": "A bowl-cut guard belonging to Queen Seiko. Struggles with the fact that—since the retainers are five spies and noncombatants—the camp is in effect defended by just two."
+    },
+    "n_k_balsamilco_might": {
+      "label": "Balsamilco Might",
+      "description": "Sergeant Major and chief of Benjamin's private soldiers; also his strategist. A small, weathered older man with a scar across the left side of his face. He grasps his master's character well, offers cool counsel, and leads the elite Nen-using troops."
+    },
+    "n_k_barrigen": {
+      "label": "Barrigen",
+      "description": "Barrigen. A character in the Kakin succession contest."
+    },
+    "n_k_beeta": {
+      "label": "Beeta",
+      "description": "Beeta. A character in the Kakin succession contest."
+    },
+    "n_k_bharate": {
+      "label": "Bharate",
+      "description": "Bharate. A character in the Kakin succession contest."
+    },
+    "n_k_bille": {
+      "label": "Bille",
+      "description": "Bille. A character in the Kakin succession contest."
+    },
+    "n_k_bladge": {
+      "label": "Bladge",
+      "description": "A Queen Tang Zhao Li soldier-spy with a freckled face; holds a chef's license. Arrested as a suspect in Prince Momoze's murder."
+    },
+    "n_k_brocco_li": {
+      "label": "Brocco Li",
+      "description": "Boss of the Sha-A Family; a middle-aged man with a broccoli-shaped Afro. An illegitimate half-brother of King Nasubi (a 'second-line'), with his ritual scar running across the centre of his face. Stationed on Tier 1 of the B/W ship."
+    },
+    "n_k_bucket": {
+      "label": "Bucket",
+      "description": "Bucket. A character in the Kakin succession contest."
+    },
+    "n_k_burvena": {
+      "label": "Burvena",
+      "description": "Burvena. A character in the Kakin succession contest."
+    },
+    "n_k_butch": {
+      "label": "Butch",
+      "description": "A bald soldier with round eyes and a round nose. Posted to Prince Tubeppa; appears to have been swapped out with Rihan in the second week of the voyage."
+    },
+    "n_k_cashew": {
+      "label": "Cashew",
+      "description": "Cashew. A character in the Kakin succession contest."
+    },
+    "n_k_cavic": {
+      "label": "Cavic",
+      "description": "Cavic. A character in the Kakin succession contest."
+    },
+    "n_k_chiffon_toto": {
+      "label": "Chiffon Toto",
+      "description": "Chiffon Toto. A character in the Kakin succession contest."
+    },
+    "n_k_cleapatro": {
+      "label": "Cleapatro",
+      "description": "Chief Justice on Tier 1 of the Kakin Kingdom."
+    },
+    "n_k_connelly": {
+      "label": "Connelly",
+      "description": "Connelly. A character in the Kakin succession contest."
+    },
+    "n_k_coventoba": {
+      "label": "Coventoba",
+      "description": "A bald giant of a private soldier, sent to Prince Chōrai. Doubles as a Queen Unma soldier and exchanges intel with Queen Duazul's men."
+    },
+    "n_k_daemon": {
+      "label": "Daemon",
+      "description": "Daemon. A character in the Kakin succession contest."
+    },
+    "n_k_deruboro": {
+      "label": "Deruboro",
+      "description": "Deruboro. A character in the Kakin succession contest."
+    },
+    "n_k_dogman": {
+      "label": "Dogman",
+      "description": "Dogman. A character in the Kakin succession contest."
+    },
+    "n_k_duazul_hui_guo_rou": {
+      "label": "Duazul Hui Guo Rou",
+      "description": "Second Queen of Kakin; mother of Princes Camilla (2nd), Tubeppa (5th), Luzurus (7th), and Halkenburg (9th). A reserved figure who currently resides with Camilla and lets her daughter take the lead on succession matters."
+    },
+    "n_k_famule": {
+      "label": "Famule",
+      "description": "Famule. A character in the Kakin succession contest."
+    },
+    "n_k_fukataki": {
+      "label": "Fukataki",
+      "description": "Head butler of Camilla's camp. A non-combatant retainer addressed as 'Baba' by Sarahell, deeply versed in curse lore and advising the private soldiers."
+    },
+    "n_k_furichosefu": {
+      "label": "Furichosefu",
+      "description": "Furichosefu. A character in the Kakin succession contest."
+    },
+    "n_k_furykov": {
+      "label": "Furykov",
+      "description": "A combative private soldier with drooping eyebrows. His sharp observation lets him read Nen status and category from subtle physical and aura cues. Joins Kurapika's Nen lectures for intel and to coordinate with Babimyna."
+    },
+    "n_k_gadeau": {
+      "label": "Gadeau",
+      "description": "Gadeau. A character in the Kakin succession contest."
+    },
+    "n_k_gantai": {
+      "label": "Gantai",
+      "description": "Gantai. A character in the Kakin succession contest."
+    },
+    "n_k_gateaume": {
+      "label": "Gateaume",
+      "description": "Gateaume. A character in the Kakin succession contest."
+    },
+    "n_k_gelato": {
+      "label": "Gelato",
+      "description": "Gelato. A character in the Kakin succession contest."
+    },
+    "n_k_gihoruto": {
+      "label": "Gihoruto",
+      "description": "Gihoruto. A character in the Kakin succession contest."
+    },
+    "n_k_gipper": {
+      "label": "Gipper",
+      "description": "A corporal among Prince Tserriednich's lower-deck private soldiers, with droopy eyes and a shaved head. Commander of the Prince's academy classmates. Trades places with Bokuksen to move to the upper decks during the Morena hunt."
+    },
+    "n_k_guerimori": {
+      "label": "Guerimori",
+      "description": "Guerimori. A character in the Kakin succession contest."
+    },
+    "n_k_hanal": {
+      "label": "Hanal",
+      "description": "Hanal. A character in the Kakin succession contest."
+    },
+    "n_k_hashito": {
+      "label": "Hashitou",
+      "description": "One of Prince Chōrai's private soldiers; distinctive fleshy lips. Dispatched to allied Prince Woble's side."
+    },
+    "n_k_heisen": {
+      "label": "Heisen",
+      "description": "Heisen. A character in the Kakin succession contest."
+    },
+    "n_k_hignori": {
+      "label": "Hignori",
+      "description": "Hignori. A character in the Kakin succession contest."
+    },
+    "n_k_himonc": {
+      "label": "Himoncé",
+      "description": "Himoncé. A character in the Kakin succession contest."
+    },
+    "n_k_hinrigh_biganduffno": {
+      "label": "Hinrigh Biganduffno",
+      "description": "Hinrigh Biganduffno. A character in the Kakin succession contest."
+    },
+    "n_k_hyuga": {
+      "label": "Hyuga",
+      "description": "Hyuga. A character in the Kakin succession contest."
+    },
+    "n_k_illardia": {
+      "label": "Illardia",
+      "description": "A non-combatant retainer of Prince Fugetsu's camp; attends Kurapika's Nen lectures."
+    },
+    "n_k_ittoku": {
+      "label": "Ittoku",
+      "description": "Ittoku. A character in the Kakin succession contest."
+    },
+    "n_k_javietti": {
+      "label": "Javietti",
+      "description": "Javietti. A character in the Kakin succession contest."
+    },
+    "n_k_kaiser": {
+      "label": "Kaiser",
+      "description": "An agent of the Justice Bureau, a man in glasses and a suit. Assigned to surveil Kacho/Fugetsu's camp following Loberry's arrest, he is moved by Melody's performance and falls for her."
+    },
+    "n_k_kako": {
+      "label": "Kako",
+      "description": "Kako. A character in the Kakin succession contest."
+    },
+    "n_k_kanjidol": {
+      "label": "Kanjidol",
+      "description": "A round-faced private soldier sent to Prince Luzurus. Reports the suspicious circumstances of Shikaku's death directly to Benjamin and Balsamilco."
+    },
+    "n_k_katrono_hui_guo_rou": {
+      "label": "Katrono Hui Guo Rou",
+      "description": "Fourth Queen of Kakin; mother of Prince Tyson (6th). Unseen in the main story."
+    },
+    "n_k_ken_i_wang": {
+      "label": "Wang Ken-i",
+      "description": "Underboss of the Sha-A Family; a bespectacled man. A shrewd operator who allies with the Phantom Troupe while engineering a mutual collapse between the Troupe and the Heil-Ly Family."
+    },
+    "n_k_konattsu": {
+      "label": "Konattsu",
+      "description": "Konattsu. A character in the Kakin succession contest."
+    },
+    "n_k_kontasutin": {
+      "label": "Kontasutin",
+      "description": "Kontasutin. A character in the Kakin succession contest."
+    },
+    "n_k_koroabde": {
+      "label": "Koroabde",
+      "description": "Queen Tang Zhao Li's soldier-spy. Works the same rotation as Benjamin's soldier Rihan."
+    },
+    "n_k_k_bihi": {
+      "label": "Kōbihi",
+      "description": "Kōbihi. A character in the Kakin succession contest."
+    },
+    "n_k_ladiolus": {
+      "label": "Ladiolus",
+      "description": "A non-combatant retainer of Prince Fugetsu's camp; attends Kurapika's Nen lectures."
+    },
+    "n_k_laroc": {
+      "label": "Laroc",
+      "description": "A Queen Katrono soldier-spy with a broad forehead and jaw. Arrested as a suspect in Prince Momoze's murder."
+    },
+    "n_k_lisores": {
+      "label": "Lisores",
+      "description": "Phantom Troupe-adjacent figure (Lisores)."
+    },
+    "n_k_loberry": {
+      "label": "Loberry",
+      "description": "A non-combatant retainer of Prince Kacho's camp. Joins Kurapika's Nen lectures and is fed up with the Prince's selfishness. Used as a possession target by a Kuroboko and arrested as a suspect in Barigen's murder."
+    },
+    "n_k_longhi": {
+      "label": "Longhi",
+      "description": "One of Prince Tubeppa's private soldiers; a hollow-cheeked woman. Joins Kurapika's Nen lectures."
+    },
+    "n_k_luini": {
+      "label": "Luini",
+      "description": "A subject of Morena's Loving Étude (Bacterial Infection) in the Heil-Ly Family; a man with a crescent scar on his left cheek. He revels in his newfound Nen and develops Emission-based teleportation, but is killed after taunting Nobunaga."
+    },
+    "n_k_lynch_fullbokko": {
+      "label": "Lynch Fullbokko",
+      "description": "A Shuu-U Family member; a perpetually combative woman. Hunting Hisoka, she punches Bonolenov (disguised as Hisoka) and is knocked out by the counter; afterwards, having recognised the impostor, she is killed (her neck twisted) by Bonolenov disguised as Zakuro. Her ability is Body and Soul."
+    },
+    "n_k_macne": {
+      "label": "Macne",
+      "description": "Macne. A character in the Kakin succession contest."
+    },
+    "n_k_madwig": {
+      "label": "Madwig",
+      "description": "Madwig. A character in the Kakin succession contest."
+    },
+    "n_k_maizan": {
+      "label": "Maizan",
+      "description": "Maizan. A character in the Kakin succession contest."
+    },
+    "n_k_makaha": {
+      "label": "Makaha",
+      "description": "Makaha. A character in the Kakin succession contest."
+    },
+    "n_k_maor": {
+      "label": "Maor",
+      "description": "Lieutenant and captain of Prince Tubeppa's private soldiers; a mature Shingen-ryu shinobi soldier. Joins Kurapika's Nen lectures and acts proactively as the Prince's surrogate."
+    },
+    "n_k_mark": {
+      "label": "Mark",
+      "description": "Mark. A character in the Kakin succession contest."
+    },
+    "n_k_matvere": {
+      "label": "Matvere",
+      "description": "Matvere. A character in the Kakin succession contest."
+    },
+    "n_k_misha_hao": {
+      "label": "Misha Hao",
+      "description": "Misha Hao. A character in the Kakin succession contest."
+    },
+    "n_k_mizaurouno": {
+      "label": "Mizaurouno",
+      "description": "Mizaurouno. A character in the Kakin succession contest."
+    },
+    "n_k_mizuri": {
+      "label": "Mizuri",
+      "description": "A corporal of the Kakin Royal Army; helps maintain order with Mizaistom and others in the general-passenger area. A Black man with an Afro under his helmet."
+    },
+    "n_k_momolly": {
+      "label": "Momolly",
+      "description": "Momolly. A character in the Kakin succession contest."
+    },
+    "n_k_montblanc_toto": {
+      "label": "Montblanc Toto",
+      "description": "Montblanc Toto. A character in the Kakin succession contest."
+    },
+    "n_k_morena_prudo": {
+      "label": "Morena Prudo",
+      "description": "Morena Prudo. A character in the Kakin succession contest."
+    },
+    "n_k_moswana": {
+      "label": "Moswana",
+      "description": "One of Prince Camilla's private soldiers, mole on her right jaw. Assigned curse target: Prince Benjamin."
+    },
+    "n_k_mushaho": {
+      "label": "Mushaho",
+      "description": "Captain of Queen Swinko-Swinko's soldiers; rugged-faced. Attends Kurapika's Nen lectures—pushed out of Prince Salé-salé's chambers but considering this the critical mission only he can shoulder."
+    },
+    "n_k_musse": {
+      "label": "Musse",
+      "description": "A private soldier with mismatched eyes, dispatched to Prince Camilla. Uses bird-shaped Nen beasts for surveillance. When Camilla declares she will kill Benjamin, he shoots her—only to be killed by her counter-Nen, his life consumed to revive her. His ability passes to Benjamin."
+    },
+    "n_k_nagmum": {
+      "label": "Nagmum",
+      "description": "A Queen Seiko soldier-spy. Arrested as a suspect in Prince Momoze's murder."
+    },
+    "n_k_naik_ru": {
+      "label": "Naikēru",
+      "description": "Naikēru. A character in the Kakin succession contest."
+    },
+    "n_k_narumi_mcgait": {
+      "label": "Narumi McGait",
+      "description": "Narumi McGait. A character in the Kakin succession contest."
+    },
+    "n_k_nikoraurusu": {
+      "label": "Nikoraurusu",
+      "description": "Nikoraurusu. A character in the Kakin succession contest."
+    },
+    "n_k_nipaper": {
+      "label": "Nipaper",
+      "description": "A Queen Duazul soldier-spy with glasses and a bumpy chin. Arrested as a suspect in Prince Momoze's murder."
+    },
+    "n_k_notre": {
+      "label": "Notre",
+      "description": "Notre. A character in the Kakin succession contest."
+    },
+    "n_k_nugui": {
+      "label": "Nugui",
+      "description": "The royal household's butler, a small older man. Under King Nasubi's orders, he presided over the Vessel-Egg Ceremony."
+    },
+    "n_k_nukuocon": {
+      "label": "Nukuocon",
+      "description": "Nukuocon. A character in the Kakin succession contest."
+    },
+    "n_k_odessa": {
+      "label": "Odessa",
+      "description": "Odessa. A character in the Kakin succession contest."
+    },
+    "n_k_oito_hui_guo_rou": {
+      "label": "Oito Hui Guo Rou",
+      "description": "Eighth Queen of Kakin; mother of Prince Woble (14th). An intelligent, kind-hearted woman who rose from poverty after the king took notice of her. Her lowest-rank status puts her and her child in mortal danger, prompting her to seek a way out of the succession war by contracting Kurapika as a bodyguard, and to begin learning Nen herself."
+    },
+    "n_k_onior_longbao": {
+      "label": "Onior Longbao",
+      "description": "Onior Longbao. A character in the Kakin succession contest."
+    },
+    "n_k_orarge": {
+      "label": "Orarge",
+      "description": "Orarge. A character in the Kakin succession contest."
+    },
+    "n_k_orau": {
+      "label": "Orau",
+      "description": "A balding private soldier dispatched to Prince Tyson."
+    },
+    "n_k_otocin": {
+      "label": "Otocin",
+      "description": "Otocin. A character in the Kakin succession contest."
+    },
+    "n_k_padaille": {
+      "label": "Padaille",
+      "description": "Padaille. A character in the Kakin succession contest."
+    },
+    "n_k_perigord": {
+      "label": "Perigord",
+      "description": "Perigord. A character in the Kakin succession contest."
+    },
+    "n_k_peuckert": {
+      "label": "Peuckert",
+      "description": "Peuckert. A character in the Kakin succession contest."
+    },
+    "n_k_quorolle": {
+      "label": "Quorolle",
+      "description": "Quorolle. A character in the Kakin succession contest."
+    },
+    "n_k_renko": {
+      "label": "Renko",
+      "description": "A black-clad woman embalmer of Meteor City. She restored Sarasa's body and is also depicted as the Nen mentor of Machi and Pakunoda."
+    },
+    "n_k_rice": {
+      "label": "Rice",
+      "description": "A goateed soldier of Queen Duazul. Speaks with Benjamin's soldier Shikaku through an intercom and witnesses Shikaku's suicide."
+    },
+    "n_k_rihan": {
+      "label": "Rihan",
+      "description": "A slender-eyed soldier with a long braid; a Conjurer. His ability Predator grows a counter-beast inside himself to 'prey upon' a target's Nen. He neutralised Salé-salé's Guardian Spirit Beast. Reassigned Fugetsu → Tubeppa; strategically the main weapon against Halkenburg."
+    },
+    "n_k_risnorth": {
+      "label": "Risnorth",
+      "description": "Phantom Troupe-adjacent figure (Risnorth)."
+    },
+    "n_k_ryoji": {
+      "label": "Ryoji",
+      "description": "A guard belonging to Queen Seiko."
+    },
+    "n_k_r_uen": {
+      "label": "Rēuen",
+      "description": "Rēuen. A character in the Kakin succession contest."
+    },
+    "n_k_sakata": {
+      "label": "Sakata",
+      "description": "One of Prince Chōrai's private soldiers, dark hair parted 7:3. Dispatched to allied Prince Woble's side, he watches Kurapika closely and carries high-powered 9mm Parabellum rounds."
+    },
+    "n_k_sandra": {
+      "label": "Sandra",
+      "description": "Queen Oito's attendant. Stayed with her even after the guards were killed, only to be murdered by Benjamin's soldier Vincent in a fabricated frame-up of being an assassin."
+    },
+    "n_k_sarahell": {
+      "label": "Sarahell",
+      "description": "Captain of Prince Camilla's private soldiers. Assigned curse target: Prince Woble."
+    },
+    "n_k_sarasa": {
+      "label": "Sarasa",
+      "description": "The youngest girl among Chrollo's childhood circle. She bridged the feud between Chrollo and Uvogin. Killed and her body desecrated by an outsider preying on Meteor City; her remains were restored by Renko and laid to rest by Chrollo and his friends—becoming the foundational scar behind the Phantom Troupe's later code."
+    },
+    "n_k_satobi": {
+      "label": "Satobi",
+      "description": "Captain of Queen Duazul's soldiers; a serious-minded middle-aged gentleman. Joins Kurapika's Nen lectures while watching him with marked suspicion."
+    },
+    "n_k_seiko_hui_guo_rou": {
+      "label": "Seiko Hui Guo Rou",
+      "description": "Sixth Queen of Kakin; mother of Princes Kacho (10th) and Fugetsu (11th). Holds an openly negative stance toward the succession war."
+    },
+    "n_k_sevanti_hui_guo_rou": {
+      "label": "Sevanti Hui Guo Rou",
+      "description": "Seventh Queen of Kakin; mother of Princes Momoze (12th) and Marayam (13th). She dotes on Marayam while showing little interest in Momoze, and—holding personnel authority over the guards—concentrates her soldiers and retainers on Marayam."
+    },
+    "n_k_shedule": {
+      "label": "Shedule",
+      "description": "Shedule. A character in the Kakin succession contest."
+    },
+    "n_k_shikaku": {
+      "label": "Shikaku",
+      "description": "A Manipulator among Benjamin's private soldiers, dispatched to Prince Halkenburg. Shot through by Halkenburg's awakened Nen, his body is taken over by Halkenburg's soldier Sumidori. While Sumidori inhabits the body, it shoots itself to investigate Halkenburg's ability, killing the host."
+    },
+    "n_k_shimano": {
+      "label": "Shimano",
+      "description": "Queen Oito's attendant. Deeply versed in court matters; her family has served the royals for generations, so she knows the princes' personalities and palace intrigues. When three princes call simultaneously, she sidesteps disaster on the spot by an instant judgement of priority."
+    },
+    "n_k_slakka": {
+      "label": "Slakka",
+      "description": "Queen Duazul's soldier-spy; grim-faced. Trades intel with Queen Unma's men (held by Benjamin's soldiers). Dispatched to allied Woble's side to watch over Chōrai's soldiers."
+    },
+    "n_k_sodom": {
+      "label": "Sodom",
+      "description": "Sodom. A character in the Kakin succession contest."
+    },
+    "n_k_souffl": {
+      "label": "Soufflé",
+      "description": "Soufflé. A character in the Kakin succession contest."
+    },
+    "n_k_steiner": {
+      "label": "Steiner",
+      "description": "Steiner. A character in the Kakin succession contest."
+    },
+    "n_k_sumidori": {
+      "label": "Sumidori",
+      "description": "One of Prince Halkenburg's private soldiers, short-haired with a pug nose. Through Halkenburg's ability 'A Lonely Boy Shoots a Cruel Bow,' his personality is temporarily transferred into Benjamin's soldier Shikaku's body."
+    },
+    "n_k_sun_bin": {
+      "label": "Sun-bin",
+      "description": "Sun-bin. A character in the Kakin succession contest."
+    },
+    "n_k_swinko_swinko_hui_guo_rou": {
+      "label": "Swinko Swinko Hui Guo Rou",
+      "description": "Fifth Queen of Kakin; mother of Prince Salé-salé (8th). Voices criticism of her only son's indulgent ways."
+    },
+    "n_k_tagenpaku": {
+      "label": "Tagenpaku",
+      "description": "Tagenpaku. A character in the Kakin succession contest."
+    },
+    "n_k_tajao": {
+      "label": "Tajao",
+      "description": "Tajao. A character in the Kakin succession contest."
+    },
+    "n_k_taler": {
+      "label": "Taler",
+      "description": "Taler. A character in the Kakin succession contest."
+    },
+    "n_k_tamazo": {
+      "label": "Tamazo",
+      "description": "Tamazo. A character in the Kakin succession contest."
+    },
+    "n_k_tang_zhao_li_hui_guo_rou": {
+      "label": "Tang Zhao Li Hui Guo Rou",
+      "description": "Third Queen of Kakin; mother of Prince Chōrai (3rd). Unseen in the main story."
+    },
+    "n_k_tassi": {
+      "label": "Tassi",
+      "description": "Tassi. A character in the Kakin succession contest."
+    },
+    "n_k_tenftory": {
+      "label": "Tenfuturi",
+      "description": "One of Prince Chōrai's private soldiers; bespectacled with sharp features. Door-keeper at the Prince's chamber; attends Kurapika's Nen lectures."
+    },
+    "n_k_terebellum": {
+      "label": "Terebellum",
+      "description": "Terebellum. A character in the Kakin succession contest."
+    },
+    "n_k_tevelares": {
+      "label": "Tevelares",
+      "description": "Tevelares. A character in the Kakin succession contest."
+    },
+    "n_k_tsudonke": {
+      "label": "Tsudonke",
+      "description": "Tsudonke. A character in the Kakin succession contest."
+    },
+    "n_k_tuffdy": {
+      "label": "Tuffdy",
+      "description": "Queen Swinko-Swinko's soldier-spy; the actual killer of Prince Momoze. Arrested and then killed by Hanzo in retaliation—officially reported as a suicide in detention. Wields a body-clone ability of the same type as Hanzo."
+    },
+    "n_k_umanma": {
+      "label": "Umanma",
+      "description": "Umanma. A character in the Kakin succession contest."
+    },
+    "n_k_unma_hui_guo_rou": {
+      "label": "Unma Hui Guo Rou",
+      "description": "First Queen of Kakin; mother of Prince Benjamin (1st) and Prince Tserriednich (4th). Unseen in the main story, yet she runs a surveillance web by placing her soldiers as spies on every other prince."
+    },
+    "n_k_vantine": {
+      "label": "Vantine",
+      "description": "Captain of Prince Tserriednich's private soldiers. An elderly soldier with a butler-like demeanor."
+    },
+    "n_k_vergei": {
+      "label": "Vergei",
+      "description": "The last surviving of Queen Sevanti's three guard captains. Suspecting the Hunter Association lectures of disguising an internal coup as Nen instruction, he initially dismisses Nen as superstition—until Bisky reveals her true form, at which he softens."
+    },
+    "n_k_vic": {
+      "label": "Vic",
+      "description": "Vic. A character in the Kakin succession contest."
+    },
+    "n_k_vict": {
+      "label": "Vict",
+      "description": "A bushy-browed, bearded private soldier dispatched to Prince Momoze; arrested on suspicion of her murder and later released. Subsequently sent to Prince Halkenburg, where he fights and loses; his fate is unknown. Ability Tackle Shield is described by Benjamin as an attack-defence combined technique."
+    },
+    "n_k_vincent": {
+      "label": "Vincent",
+      "description": "One of Benjamin's private soldiers. A tall, long-faced man with a shaved head; catchphrase 'Yes (ee).' Dispatched to Prince Woble, he murders maid Sandra in a frame-up against the bodyguards, is overpowered, then suicides to protect classified info. His ability passes to Benjamin upon death."
+    },
+    "n_k_voconte": {
+      "label": "Voconte",
+      "description": "Voconte. A character in the Kakin succession contest."
+    },
+    "n_k_wolfe": {
+      "label": "Wolfe",
+      "description": "A soldier belonging to First Queen Unma. Shot and killed by Prince Camilla."
+    },
+    "n_k_woody": {
+      "label": "Woody",
+      "description": "A royal-attached guard in Prince Woble's camp. Found dead in fifteen minutes—pierced through and exsanguinated."
+    },
+    "n_k_worio_bay": {
+      "label": "Worio Bay",
+      "description": "Worio Bay. A character in the Kakin succession contest."
+    },
+    "n_k_yokotani": {
+      "label": "Yokotani",
+      "description": "A criminal-defence lawyer affiliated with the Heil-Ly Family. Wields the Conjuration ability Bokkou (LSDF), a purely defensive technique that, within the family's hideout, moves targets via letters and numbers written on a 'board.'"
+    },
+    "n_k_yuhirai": {
+      "label": "Yuhirai",
+      "description": "One of Prince Halkenburg's private soldiers, droopy slit-eyed. Half-awakened in Nen like all fourteen of his unit due to the Guardian Spirit Beast. Joins Kurapika's Nen lectures."
+    },
+    "n_k_yuri": {
+      "label": "Yuri",
+      "description": "A non-combatant retainer of Prince Kacho's camp. Joins Kurapika's Nen lectures and is fed up with the Prince's selfishness."
+    },
+    "n_k_yushohi": {
+      "label": "Yushohi",
+      "description": "A shaven-headed private soldier with assassination-suited ability Stand By Me, which attaches small fly-like Needle Balls to a target. After serving with Prince Fugetsu he moves to Prince Salé-salé and carries out an assassination."
+    },
+    "n_k_zakuro_custard": {
+      "label": "Zakuro Custard",
+      "description": "A Shuu-U Family member; a languid-looking young man who always carries an IV drip. His Manipulator ability Bloody Mary lets him freely control his own blood. The drip serves both as a constraint and a practical resource for the ability."
+    },
+    "n_mito_truth": {
+      "label": "Ging Is Alive",
+      "description": "Mito confesses that Gon's father Ging is alive, fixing the quest motive."
+    },
+    "n_gon_resolve": {
+      "label": "Setting Out for the Exam",
+      "description": "Gon resolves to take the Hunter Exam and leaves Whale Island."
+    },
+    "n_phase2_cook": {
+      "label": "Phase 2: Cooking",
+      "description": "Menchi and Buhara's cooking test eliminates most applicants."
+    },
+    "n_phase3_tower": {
+      "label": "Phase 3: Trick Tower",
+      "description": "The cast escapes Trick Tower's maze of traps and choices."
+    },
+    "n_phase4_zevil": {
+      "label": "Phase 4: Zevil Island",
+      "description": "Tag-hunting survival; each examinee stalks a marked target."
+    },
+    "n_phase5_imprint": {
+      "label": "Hisoka's Pledge",
+      "description": "At the end of Phase 4 on Zevil Island, Hisoka returns Gon's number tag and vows, 'Grow strong and fight me'—formalising the bond from Phase 1's 'unripe fruit' remark."
+    },
+    "n_phase5_hanzogon": {
+      "label": "Hanzo vs Gon",
+      "description": "In the final tournament, Hanzo concedes to let Gon advance."
+    },
+    "n_silva_zeno": {
+      "label": "Silva and Zeno Appear",
+      "description": "Killua's father Silva and grandfather Zeno are revealed as active assassins."
+    },
+    "n_canary_gate": {
+      "label": "Canary Tests the Visitors",
+      "description": "Apprentice butler Canary tests Gon's resolve before opening the gate."
+    },
+    "n_zushi_intro": {
+      "label": "Zushi and the Aura Leak",
+      "description": "Zushi's stray aura prompts Wing to reveal Nen to Gon and Killua."
+    },
+    "n_wing_train": {
+      "label": "Training Under Wing",
+      "description": "Wing teaches Gon and Killua the four major exercises of Nen."
+    },
+    "n_kastro": {
+      "label": "Castro vs Hisoka",
+      "description": "The doppelgänger Castro is decisively crushed by Hisoka."
+    },
+    "n_riehlvelt": {
+      "label": "Gon vs Riehlvelt",
+      "description": "Gon defeats Riehlvelt to reach the 200th-floor class."
+    },
+    "n_hisokagon": {
+      "label": "Hisoka vs Gon (200F)",
+      "description": "Gon lands the punch he owed Hisoka, settling the debt."
+    },
+    "n_york_meet": {
+      "label": "Yorknew Reunion",
+      "description": "Gon, Killua, Kurapika, and Leorio reunite in Yorknew City."
+    },
+    "n_nostrade_hire": {
+      "label": "Joining the Nostrade Family",
+      "description": "Kurapika is hired as a Nostrade bodyguard, a stepping stone to recover the Scarlet Eyes."
+    },
+    "n_troupe_arrive": {
+      "label": "Troupe Enters Yorknew",
+      "description": "The Phantom Troupe gathers in Yorknew to hit the underground auction."
+    },
+    "n_auction_open": {
+      "label": "Auction Opens",
+      "description": "The underground auction begins; rumors of Scarlet Eyes spread."
+    },
+    "n_auction_massacre": {
+      "label": "Auction Massacre",
+      "description": "The Phantom Troupe wipes out the Ten Dons and Shadow Beasts to take the auction."
+    },
+    "n_uvogin_v_shadow": {
+      "label": "Uvogin vs Shadow Beasts",
+      "description": "Uvogin alone wipes the Shadow Beasts; Mafia mercenaries then kidnap him."
+    },
+    "n_chrollo_silvazeno": {
+      "label": "Chrollo vs Silva & Zeno",
+      "description": "The Zoldycks, hired by the Mafia, fight Chrollo; the contract ends before resolution."
+    },
+    "n_shadow_disinfo": {
+      "label": "Troupe's Disinformation",
+      "description": "The Troupe seeds rumors of a prophet to wrong-foot the alliance and Kurapika's side."
+    },
+    "n_paku_predict": {
+      "label": "Lovely Ghostwriter",
+      "description": "Neon's prophecy hints at Chrollo's fate; Pakunoda later mines and shares the memory."
+    },
+    "n_kura_v_troupe": {
+      "label": "Kurapika vs Troupe",
+      "description": "Kurapika's chains pin Troupe members, setting up the hostage exchange for Gon and Killua."
+    },
+    "n_hostage_swap": {
+      "label": "Hostage Exchange",
+      "description": "Pakunoda escorts Gon and Killua to the hostage exchange with Kurapika's camp—final negotiation over Chrollo's chain seal."
+    },
+    "n_hisoka_predict": {
+      "label": "Hisoka's Forgery",
+      "description": "Hisoka fakes a prophecy to secure a future duel with Chrollo."
+    },
+    "n_hisoka_leaves_troupe": {
+      "label": "Hisoka Leaves the Troupe",
+      "description": "Hisoka leaves the Troupe to pursue a one-on-one duel with Chrollo."
+    },
+    "n_york_close": {
+      "label": "Yorknew Closes",
+      "description": "Yorknew ends; Gon and Killua aim for Greed Island next."
+    },
+    "n_gi_auction": {
+      "label": "G.I. Auction",
+      "description": "Battera buys the Zoldycks' G.I. cartridge and offers access slots."
+    },
+    "n_gi_test": {
+      "label": "Tsezguerra's Trial",
+      "description": "Tsezguerra's Nen test clears Gon and Killua for entry."
+    },
+    "n_gi_enter": {
+      "label": "Entering G.I.",
+      "description": "Gon and Killua are warped into Greed Island to follow Ging's trail."
+    },
+    "n_bisky_join": {
+      "label": "Bisky Joins",
+      "description": "Bisky takes Gon and Killua as students for serious Nen training."
+    },
+    "n_binolt_arc": {
+      "label": "Binolt Training",
+      "description": "Two weeks of brutal field combat — including fights with Binolt — sharpens their Nen."
+    },
+    "n_razor_battle": {
+      "label": "Razor's Dodgeball",
+      "description": "Gon's side defeats Razor at dodgeball to win a restricted card."
+    },
+    "n_jin_absent": {
+      "label": "Ging Absent — Meets Kite",
+      "description": "Gon's 'Accompany' search for Ging instead leads him to Ging's apprentice Kite, who withholds Ging's location, frames what being a Hunter means, and points Gon toward the NGL expedition."
+    },
+    "n_kite_join": {
+      "label": "Kite Joins",
+      "description": "Ging's apprentice Kite reunites with Gon to investigate NGL's anomalies."
+    },
+    "n_ngl_revealed": {
+      "label": "Chimera Ant Threat",
+      "description": "NGL's missing population is revealed to be Chimera Ant prey, expanding catastrophically."
+    },
+    "n_royal_guard_appear": {
+      "label": "Royal Guard Born",
+      "description": "Neferpitou, Menthuthuyoupi, and Shaiapouf emerge as the Royal Guard."
+    },
+    "n_meruem_birth": {
+      "label": "Meruem Is Born",
+      "description": "Meruem violently emerges, killing his mother; the King has arrived."
+    },
+    "n_extermination_form": {
+      "label": "Extermination Team Forms",
+      "description": "Under Netero, Morel, Knov, Knuckle, Shoot, and Palm form the extermination team."
+    },
+    "n_palm_kite": {
+      "label": "Palm Captured",
+      "description": "Palm is taken by the Ants and later remade; a major loss for the team."
+    },
+    "n_pitou_knuckle": {
+      "label": "Knuckle's APR Combat",
+      "description": "Knuckle establishes Nen combat tactics through duels around his APR ability."
+    },
+    "n_palace_breach": {
+      "label": "Palace Assault",
+      "description": "Netero, Zeno, Morel, Knuckle, Killua, and Gon storm the East Gorteau palace."
+    },
+    "n_netero_zero": {
+      "label": "Netero's Zero Hand",
+      "description": "Netero detonates the Poor Man's Rose, mortally wounding the King and dying himself."
+    },
+    "n_pariston_scheme": {
+      "label": "Pariston's Scheme",
+      "description": "Pariston manipulates the election to sow rifts inside the Zodiacs."
+    },
+    "n_alluka_intro": {
+      "label": "Alluka Appears",
+      "description": "To save Gon, Killua extracts his sister Alluka from the Zoldyck estate."
+    },
+    "n_nanika_wake": {
+      "label": "Nanika Awakens",
+      "description": "Nanika — the wish-granting presence inside Alluka — manifests."
+    },
+    "n_ging_meeting": {
+      "label": "Ging Resurfaces",
+      "description": "Ging returns to the stage in the election's final phase, moving toward Gon."
+    },
+    "n_v6_kakin": {
+      "label": "V6 With Kakin",
+      "description": "Kakin joins the V5 to form a six-state pact behind the Dark Continent venture."
+    },
+    "n_troupe_dc_set": {
+      "label": "Troupe Boards B/W",
+      "description": "The Phantom Troupe also boards the Black Whale; the Chrollo–Hisoka rematch advances."
+    },
+    "n_succession_decl": {
+      "label": "King Nasubi Decrees the Contest",
+      "description": "King Nasubi declares the Succession Contest to his 14 princes, announcing the Nen-beast rite."
+    },
+    "n_chrollo_aboard": {
+      "label": "Troupe Boards Black Whale",
+      "description": "Chrollo, Machi, Kortopi and other Troupe members board; Hisoka lurks in the lower decks."
+    },
+    "n_kurapika_dolphin": {
+      "label": "Kurapika's Dolphin",
+      "description": "Kurapika's new Conjuration ability extracts the list of Nen users, shaping his defense plan."
+    },
+    "n_mafia_aboard": {
+      "label": "Mafia Families Board",
+      "description": "Heil-Ly, Sha-A, and Shuu-U mafia families embark, entangling the underworld into the contest."
+    },
+    "n_morena_intro": {
+      "label": "Morena Appears",
+      "description": "Heil-Ly's Morena debuts; her 'Happy Sad New Year' triggers mass on-board killing."
+    },
+    "n_camilla_return": {
+      "label": "Camilla Resurrected by Nen Beast",
+      "description": "Camilla's guardian beast 'The Cat That Lived a Million Times' (Neko no Namae) kneads the killer's life energy to revive her — the death-proof prince. Actual resurrection in ch 373."
+    },
+    "n_princes_intro": {
+      "label": "Princes Introduced",
+      "description": "Benjamin, Camilla, Zhang Lei, and the rest of the 14 princes are framed."
+    },
+    "n_kakin_depart": {
+      "label": "Black Whale Departs",
+      "description": "The Black Whale sets sail for the Dark Continent with princes, guards, and the Troupe aboard."
+    },
+    "n_woble_contract": {
+      "label": "Woble Contract",
+      "description": "Kurapika contracts with Queen Oito to protect Prince Woble."
+    },
+    "n_nen_grant": {
+      "label": "Nen Beasts Granted",
+      "description": "The Urn Ceremony bestows individualized Nen beasts on all 14 princes."
+    },
+    "n_halken_beast": {
+      "label": "Halkenburg's Beast",
+      "description": "Prince Halkenburg's beast reveals a uniquely binding domination ability."
+    },
+    "n_beast_rules": {
+      "label": "Beast Rules Revealed",
+      "description": "The beasts grow stronger as other princes die — kicking off mutual assassination."
+    },
+    "n_momoze_die": {
+      "label": "Momoze Assassinated",
+      "description": "Prince Momoze is poisoned — the first overt royal kill."
+    },
+    "n_kacho_fugetsu": {
+      "label": "Kacho & Fugetsu",
+      "description": "The twin princesses' escape plan unravels as their beast intervenes."
+    },
+    "n_sale_die": {
+      "label": "Salé-salé Assassinated",
+      "description": "Prince Salé-salé (8th) is killed by Benjamin's private soldier Yushohi via the assassination ability 'Stand By Me' (How to Make Murder Lawful)."
+    },
+    "n_kacho_die": {
+      "label": "Kacho's Sacrifice",
+      "description": "Prince Kacho sacrifices herself so her twin Fugetsu can escape."
+    },
+    "n_furyko_intercept": {
+      "label": "Outsiders Infiltrate",
+      "description": "External Nen users — Hisoka, Illumi — infiltrate the lower decks and twist the battle."
+    },
+    "n_clan_war": {
+      "label": "Heil-Ly vs Sha-A",
+      "description": "Mafia families Heil-Ly and Sha-A clash inside the ship, widening the war."
+    },
+    "n_halken_followers": {
+      "label": "Halkenburg's Faction",
+      "description": "Halkenburg gathers Nen users; his commitment to the contest itself wavers."
+    },
+    "n_chrollo_arrange": {
+      "label": "Chrollo–Hisoka Setup",
+      "description": "On the ship, Chrollo and Hisoka stage a rematch that drags the Troupe in."
+    },
+    "n_troupe_hunt": {
+      "label": "Troupe Hunt Continues",
+      "description": "Hisoka's assassination spree on the Troupe continues past Kortopi/Shalnark."
+    },
+    "n_kite_young_gon": {
+      "label": "Young Gon Meets Kite",
+      "description": "A young Gon meets Kite on Whale Island. Kite tells him Ging is alive and a Hunter, seeding Gon's quest. Shown later as a flashback in the Chimera Ant arc."
+    },
+    "n_kite_reborn": {
+      "label": "Kite Reborn as an Ant Baby",
+      "description": "Pitou's ability reincarnates Kite as a Chimera Ant baby born to the Queen — later reappearing as a girl."
+    },
+    "n_kite_reunion": {
+      "label": "Gon Reunites with Reborn Kite",
+      "description": "After Nanika revives him, Gon visits the Ant colony post-Election and reunites with Kite — now reborn as a girl. A long chapter of his journey closes."
+    },
+    "n_gyro_debut": {
+      "label": "Gyro Appears",
+      "description": "NGL's founder and former king Gyro is shown. Driven by childhood abuse, he aspires to spread evil across the world — the human-side darkness woven into the arc."
+    },
+    "n_hisoka_defeated": {
+      "label": "Hisoka's Defeat and Bungee Gum Revival",
+      "description": "Defeated by Chrollo, Hisoka dies as his heart and lungs stop — then his post-death Bungee Gum restarts them, reviving him and setting the Troupe-hunt resolve in motion."
+    },
+    "n_w_galactic_matron": {
+      "label": "Galactic Matron",
+      "description": "Galactic Matron. A character from Hunter × Hunter."
+    },
+    "n_w_juhnde": {
+      "label": "Juhnde",
+      "description": "Juhnde. A character from Hunter × Hunter."
+    },
+    "n_w_tokharone": {
+      "label": "Tokharone",
+      "description": "Tokharone. A character from Hunter × Hunter."
+    },
+    "n_k_mandam": {
+      "label": "Mandam",
+      "description": "Captain of Queen Duazul's soldiers. His assigned prince is unclear, but he acts as mediator between Queen Duazul's and Queen Unma's soldiers (the latter doubling as Benjamin's private soldiers)."
+    },
+    "n_k_orzny": {
+      "label": "Orzny",
+      "description": "A soldier belonging to First Queen Unma; previously assigned to monitor Prince Halkenburg."
+    },
+    "n_beyond_plan": {
+      "label": "Beyond's Dark Continent Plan Revealed",
+      "description": "At a V6 conference, it is revealed that Beyond Netero proposed an expedition to the Dark Continent and had secretly allied with King Nasubi Hui Guo Rou."
+    },
+    "n_beyond_arrest": {
+      "label": "Beyond Detained",
+      "description": "The Hunter Association takes Beyond into custody. New Chairman Cheadle assumes oversight, with the Zodiacs rotating watch duty."
+    },
+    "n_beyond_interrogation": {
+      "label": "Beyond Interrogated",
+      "description": "In the detention room aboard the ship, interrogations of Beyond continue. Pariston and others approach him, seeking information on the Dark Continent."
+    },
+    "n_pariston_resign": {
+      "label": "Pariston Resigns as Vice-Chairman",
+      "description": "After the chairman election, Pariston Hill resigns his Zodiac Vice-Chairman post and leaves the Hunter Association, beginning to maneuver freely toward the Dark Continent."
+    },
+    "n_ging_truth": {
+      "label": "Revealing the Truth at the World Tree",
+      "description": "Atop the World Tree, Ging tells Gon about Beyond's plan and the truth of the Dark Continent, and expresses his own intent to join the expedition."
+    },
+    "n_dc_team": {
+      "label": "Expedition Roster Finalised",
+      "description": "Centred on Beyond, the Dark Continent expedition roster is finalised: Ging, Pariston, Zodiac member Dr. Botobai, and Beyond-faction mercenaries (Muherr et al.), with the agreement formalised with the Hunter Association."
+    },
+    "n_illumi_reveal": {
+      "label": "Illumi's Identity Revealed",
+      "description": "In Phase 5 of the Hunter Exam, 'Gittarackur' is unmasked as Illumi—eldest of the Zoldyck family. With his control needle, he forces Killua to kill Bodoro."
+    },
+    "n_illumi_alluka_block": {
+      "label": "Blocking Alluka's Escape",
+      "description": "As Killua moves to take Alluka out of the estate, Illumi obstructs him by weaponizing family ties and obligations."
+    },
+    "n_illumi_pact": {
+      "label": "Hisoka–Illumi Pact",
+      "description": "Hisoka hires Illumi as accomplice in the Phantom Troupe hunt, plotting member assassinations aboard the ship. Because Hisoka has declared every Troupe member a target, Illumi—who joins the Troupe to carry out the contract—is by terms also among the targets."
+    },
+    "n_theta_attempt": {
+      "label": "Theta's Assassination Attempt",
+      "description": "On the banquet night, Theta lures Tserriednich into prolonged Zetsu during Nen training, dismisses the bodyguards, and produces a gun in an attempt to assassinate him."
+    },
+    "n_tser_awaken": {
+      "label": "Tserriednich Awakens His Ability (Flashback)",
+      "description": "A flashback 25 minutes before Theta's attempt, from Tserriednich's perspective. While in Zetsu, he masters his Nen ability—seeing ten seconds into the future and being the only one able to alter his actions—and uses it to evade the assassination."
+    },
+    "n_kura_nen_class": {
+      "label": "Kurapika's Nen Lectures",
+      "description": "In Room 1014 aboard the ship, Kurapika teaches Nen to recruits from various princes' camps in exchange for their cooperation with the Woble faction."
+    },
+    "n_halken_awaken": {
+      "label": "Halkenburg's Nen Awakens",
+      "description": "On his way to confront his father King Nasubi, Prince Halkenburg's Nen ability 'A Lonely Boy Shoots a Cruel Bow' manifests—altering the early succession war's strategy."
+    },
+    "n_halken_curse": {
+      "label": "Curse of the Nen Arrows",
+      "description": "Halkenburg's ability 'A Lonely Boy Shoots a Cruel Bow' forces those struck by his arrows—starting with Benjamin's private soldier Shikaku—into successive suicides."
+    },
+    "n_chrollo_kidnap_plan": {
+      "label": "Operation: Kidnap Chrollo",
+      "description": "Gon and Killua draw Nobunaga, Pakunoda, and Kortopi at Hotel Beitacle while, under cover of a blackout, Kurapika kidnaps and restrains Chrollo."
+    },
+    "n_kura_face_chrollo": {
+      "label": "Kurapika Faces Chrollo",
+      "description": "With Chrollo's Nen chain-sealed, Kurapika—eyes blood-red—beats him repeatedly in raw fury. The first direct confrontation with his enemy."
+    },
+    "n_k_badoyu": {
+      "label": "Badoyu",
+      "description": "A subject of the Bacterial Infection. A demolition worker by trade and a thrill-killer. He awakens an ability that conjures weapons in his right hand, but is killed by veteran Hinrigh after a group attack."
+    },
+    "n_don_freecss": {
+      "label": "Don Freecss",
+      "description": "Author of 'A Voyage to the New World', the foundational text on the Dark Continent. Said to be roughly 300 years old; per Ging, he may still be alive, currently writing the western volume. Shares the surname Freecss with Gon and Ging, though any kinship is unknown."
+    },
+    "n_k_shejell": {
+      "label": "Shejell",
+      "description": "One of Prince Halkenburg's private soldiers; bespectacled with freckles. Half-awakened in Nen like all fourteen of his unit. Attends Kurapika's Nen lectures."
+    },
+    "n_ms_elder": {
+      "label": "Meteor City Elder",
+      "description": "One of the Meteor City elders, his face concealed. He enforces Meteor City's law of total retribution. Mastermind of the bombing terror campaign with an ability that turns humans into bombs; though deceased, the ability persists as 'undying Nen of the dead' in Chrollo's collection."
+    },
+    "n_ms_risol": {
+      "label": "Father Risol",
+      "description": "A priest of Meteor City's All-Faith Society. Noticing young Chrollo's intellect, he recommended him for an audience with the council of elders."
+    },
+    "n_predator_consume": {
+      "label": "Guardian Beast Devoured",
+      "description": "Rihan's Conjuration ability Predator (Stranger) leaps upon Prince Salé-salé's Guardian Spirit Beast and consumes it entirely, neutralising it. Immediately afterward, Rihan requests to swap places with Yushohi."
+    },
+    "n_shadow_beasts": {
+      "label": "Shadow Beasts",
+      "description": "A ten-member anti-Nen assassination squad serving the Ten Dons, each named after an animal (Owl, Wooden Statue, Bat, Snail, Centipede, Wolf Spirit, and others). Nine were wiped out in a single night by Uvogin alone, and the last (Owl) was captured and tortured by the Phantom Troupe."
+    },
+    "n_kurta_clan": {
+      "label": "Kurta Clan",
+      "description": "A reclusive people whose eyes turn scarlet with rage; those eyes are reckoned among the world's seven great treasures. Annihilated by the Phantom Troupe. Kurapika is the sole survivor."
+    },
+    "n_ngl_state": {
+      "label": "NGL (Neo-Green Life Autonomous Region)",
+      "description": "An anti-modernist micro-state founded and ruled by Gyro. Forbidding modern conveniences, its people lived simply—while internally the Chimera Ant Queen was already preying on them."
+    },
+    "n_east_gorteau": {
+      "label": "Republic of East Gorteau",
+      "description": "A dictatorship in the East. Its 'supreme leader' Ming Jol-ik is a double; the real power is vice-president Bizeff. King Meruem's Chimera Ant army takes over the nation wholesale, staging the Selection ceremony there."
+    },
+    "n_zazan_squad": {
+      "label": "Zazan Squad (Meteor City Invasion)",
+      "description": "Chimera Ants under Squadron Leader Zazan who broke from Meruem to act independently, seeking to carve out their own kingdom in Meteor City. Annihilated by the Phantom Troupe (drawn there via Hisoka's lead)."
+    },
+    "n_eight_queens": {
+      "label": "Eight Queens of Kakin",
+      "description": "The eight official wives of King Nasubi Hui Guo Rou. A strict hierarchy by order of marriage governs them, with senior queens planting spies in the guards of junior princes: Unma, Duazul, Tang Zhao Li, Katrono, Swinko-Swinko, Seiko, Sevanti, Oito."
+    },
+    "n_three_mafia": {
+      "label": "The Three Great Mafia Families",
+      "description": "The three syndicates governing Kakin's underworld: Shuu-U Family ('周', backed by Prince Chōrai), Heil-Ly Family ('A', backed by Prince Tserriednich), and Sha-A Family ('射', backed by Prince Luzurus). Aboard the ship they administer Tiers 3-5."
+    },
+    "n_benjamin_army": {
+      "label": "Benjamin's Private Soldiers",
+      "description": "Fifteen elite Nen-using regular soldiers serving Prince Benjamin directly. Led by chief strategist Balsamilco, they are dispatched to other princes as spies, assassins, and intelligence operatives. Members include Vincent, Babimyna, Furykov, Musse, Coventoba, Butch, Orau, Kanjidol, Rihan, Yushohi, Shikaku, Vict, and more."
+    },
+    "n_camilla_army": {
+      "label": "Camilla's Private Soldiers",
+      "description": "Prince Camilla's fourteen-member private guard, all drawn from the persecuted \"untouchables\" caste, wearing a distinctive uniform. Headed by Sarahell, with eleven curse-bearers assigned one per other prince plus a single exorcist. All bear the shared curse ability Yomotsu Hegui (\"Born to Mend Wrongs\")."
+    },
+    "n_halken_legion": {
+      "label": "Halkenburg's Private Soldiers",
+      "description": "Prince Halkenburg's fourteen private soldiers, all in a semi-awakened Nen state due to the Guardian Spirit Beast. United by the feather mark, they channel Halkenburg's arrow ability A Lonely Boy Shoots a Cruel Bow."
+    },
+    "n_beyond_faction": {
+      "label": "Beyond Faction",
+      "description": "The faction led by Beyond Netero. No. 2 is Pariston; the combat arm under mercenary leader Muherr (Mashul, Marione, Pekotero, Golem), scholars (Kururi), the cook (Usameen), and others. Ging later joins their ranks."
+    },
+    "n_melody_concert": {
+      "label": "Melody's Concert",
+      "description": "At the ship's banquet Melody performs on flute, her music stirring deep feeling in many listeners—Justice Bureau agent Kaiser is utterly smitten. The performance also intersects with the unfolding Kacho/Fugetsu escape plan."
+    }
+  }
+}

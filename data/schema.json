@@ -1,0 +1,334 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hxh-gitgraph.example/data/schema.json",
+  "title": "H×H Lineage Tree Data",
+  "description": "Split files: branches.json, nodes.json, meta.json. Authoritative reference; enforced by scripts/check-data-safety.mjs in CI.",
+  "oneOf": [
+    {
+      "$ref": "#/$defs/branchesFile"
+    },
+    {
+      "$ref": "#/$defs/nodesFile"
+    },
+    {
+      "$ref": "#/$defs/metaFile"
+    }
+  ],
+  "$defs": {
+    "branch": {
+      "type": "object",
+      "required": [
+        "id",
+        "lane",
+        "color",
+        "name"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{0,30}$",
+          "description": "ASCII snake_case, 1-31 chars"
+        },
+        "lane": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 200
+        },
+        "color": {
+          "type": "string",
+          "pattern": "^#[0-9a-fA-F]{6}$"
+        },
+        "name": {
+          "type": "string",
+          "maxLength": 40
+        },
+        "nameEn": {
+          "type": "string",
+          "maxLength": 60
+        },
+        "parentBranch": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{0,30}$"
+        },
+        "forkFromNode": {
+          "type": "string",
+          "pattern": "^n_[a-z0-9_]{1,40}$"
+        }
+      },
+      "additionalProperties": false
+    },
+    "node": {
+      "type": "object",
+      "required": [
+        "id",
+        "branchId",
+        "type",
+        "label",
+        "arcs",
+        "kind",
+        "description",
+        "gitMeta",
+        "episode"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^n_[a-z0-9_]{1,40}$",
+          "description": "n_ prefix + ASCII snake_case, 3-43 chars total"
+        },
+        "branchId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{0,30}$"
+        },
+        "type": {
+          "enum": [
+            "n",
+            "h",
+            "r",
+            "m",
+            "c"
+          ],
+          "description": "n=normal, h=highlight, r=retire/death, m=merge, c=cherry (ability stolen)"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 60,
+          "description": "Japanese-primary display name"
+        },
+        "arcs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 30
+          },
+          "minItems": 1,
+          "uniqueItems": true,
+          "description": "Set-based arc memberships; multi-arc allowed for transition chapters"
+        },
+        "kind": {
+          "enum": [
+            "character",
+            "event",
+            "ability",
+            "group"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500,
+          "description": "Fact-only. No AI command phrases, no external URLs."
+        },
+        "gitMeta": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 200,
+          "description": "Git-metaphor blurb. Only <code>...</code> HTML allowed (XSS-safe renderer)."
+        },
+        "episode": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 999,
+          "description": "Manga chapter number (No.). Not anime episode."
+        },
+        "mergeFromBranch": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]{0,30}$",
+          "description": "For type=m, the branch whose lineage merges in here."
+        },
+        "cherryFromNode": {
+          "type": "string",
+          "pattern": "^n_[a-z0-9_]{1,40}$",
+          "description": "For type=c, the source node whose ability/identity is stolen."
+        },
+        "highlight": {
+          "type": "boolean"
+        },
+        "reverse": {
+          "type": "boolean"
+        },
+        "affiliations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 50
+          },
+          "uniqueItems": true,
+          "description": "Faction / group memberships (multi)."
+        },
+        "occupation": {
+          "type": "string",
+          "maxLength": 80,
+          "description": "Role / job title."
+        },
+        "nen": {
+          "type": "object",
+          "required": [
+            "type"
+          ],
+          "properties": {
+            "type": {
+              "enum": [
+                "強化系",
+                "放出系",
+                "変化系",
+                "具現化系",
+                "操作系",
+                "特質系",
+                "不明"
+              ]
+            },
+            "abilities": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "name"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 40
+                  },
+                  "code": {
+                    "type": "string",
+                    "maxLength": 30
+                  },
+                  "description": {
+                    "type": "string",
+                    "maxLength": 300
+                  }
+                },
+                "additionalProperties": false
+              }
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "branchesFile": {
+      "type": "object",
+      "required": [
+        "branches"
+      ],
+      "properties": {
+        "branches": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/branch"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "nodesFile": {
+      "type": "object",
+      "required": [
+        "nodes"
+      ],
+      "properties": {
+        "nodes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/node"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "metaFile": {
+      "type": "object",
+      "required": [
+        "title",
+        "subtitle",
+        "arcOrder",
+        "layout",
+        "labels",
+        "version"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "maxLength": 60
+        },
+        "subtitle": {
+          "type": "string",
+          "maxLength": 120
+        },
+        "arcOrder": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "maxLength": 30
+          },
+          "minItems": 1
+        },
+        "layout": {
+          "type": "object",
+          "required": [
+            "colWidth",
+            "laneHeight",
+            "marginX",
+            "marginY"
+          ],
+          "properties": {
+            "colWidth": {
+              "type": "number",
+              "minimum": 1,
+              "maximum": 200
+            },
+            "laneHeight": {
+              "type": "number",
+              "minimum": 1,
+              "maximum": 500
+            },
+            "marginX": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1000
+            },
+            "marginY": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1000
+            }
+          }
+        },
+        "labels": {
+          "type": "object"
+        },
+        "ui": {
+          "type": "object"
+        },
+        "version": {
+          "type": "object",
+          "required": [
+            "unit",
+            "label",
+            "max"
+          ],
+          "properties": {
+            "unit": {
+              "type": "string",
+              "maxLength": 10
+            },
+            "label": {
+              "type": "string",
+              "maxLength": 20
+            },
+            "max": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 999
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

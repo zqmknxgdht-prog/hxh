@@ -1,0 +1,320 @@
+{
+  "branches": [
+    {
+      "id": "main",
+      "lane": 0,
+      "color": "#AC3415",
+      "name": "本流"
+    },
+    {
+      "id": "ging",
+      "lane": 2,
+      "color": "#15AC60",
+      "name": "ジン=フリークス",
+      "parentBranch": "gon",
+      "forkFromNode": "n_start"
+    },
+    {
+      "id": "kite",
+      "lane": 3,
+      "color": "#8C15AC",
+      "name": "カイト",
+      "parentBranch": "ging",
+      "forkFromNode": "n_ging"
+    },
+    {
+      "id": "zoldyck",
+      "lane": 4,
+      "color": "#A1AC15",
+      "name": "ゾルディック家",
+      "parentBranch": "main",
+      "forkFromNode": "n_exam"
+    },
+    {
+      "id": "killua",
+      "lane": 5,
+      "color": "#1575AC",
+      "name": "キルア",
+      "parentBranch": "zoldyck",
+      "forkFromNode": "n_illumi"
+    },
+    {
+      "id": "alluka",
+      "lane": 6,
+      "color": "#AC1549",
+      "name": "アルカ=ナニカ",
+      "parentBranch": "killua",
+      "forkFromNode": "n_killua"
+    },
+    {
+      "id": "kurapika",
+      "lane": 7,
+      "color": "#1DAC15",
+      "name": "クラピカ",
+      "parentBranch": "gon",
+      "forkFromNode": "n_killmerge"
+    },
+    {
+      "id": "nostrade",
+      "lane": 8,
+      "color": "#3A15AC",
+      "name": "ノストラード組",
+      "parentBranch": "kurapika",
+      "forkFromNode": "n_vow"
+    },
+    {
+      "id": "kakin",
+      "lane": 9,
+      "color": "#AC6615",
+      "name": "カキン王国",
+      "parentBranch": "kurapika",
+      "forkFromNode": "n_emperor"
+    },
+    {
+      "id": "leorio",
+      "lane": 10,
+      "color": "#15AC92",
+      "name": "レオリオ",
+      "parentBranch": "gon",
+      "forkFromNode": "n_killmerge"
+    },
+    {
+      "id": "wing",
+      "lane": 11,
+      "color": "#AC159B",
+      "name": "ウイング",
+      "parentBranch": "main",
+      "forkFromNode": "n_arena"
+    },
+    {
+      "id": "hisoka",
+      "lane": 12,
+      "color": "#6FAC15",
+      "name": "ヒソカ",
+      "parentBranch": "main",
+      "forkFromNode": "n_exam"
+    },
+    {
+      "id": "genei_ryodan",
+      "lane": 13,
+      "color": "#1542AC",
+      "name": "幻影旅団",
+      "parentBranch": "main",
+      "forkFromNode": "n_york"
+    },
+    {
+      "id": "kortopi",
+      "lane": 14,
+      "color": "#AC1516",
+      "name": "コルトピ",
+      "parentBranch": "genei_ryodan",
+      "forkFromNode": "n_uvo"
+    },
+    {
+      "id": "kalluto",
+      "lane": 15,
+      "color": "#15AC40",
+      "name": "カルト",
+      "parentBranch": "zoldyck",
+      "forkFromNode": "n_canary"
+    },
+    {
+      "id": "bisky",
+      "lane": 16,
+      "color": "#6D15AC",
+      "name": "ビスケ",
+      "parentBranch": "main",
+      "forkFromNode": "n_gi"
+    },
+    {
+      "id": "genthru",
+      "lane": 17,
+      "color": "#AC9915",
+      "name": "ゲンスルー",
+      "parentBranch": "main",
+      "forkFromNode": "n_train"
+    },
+    {
+      "id": "kimera_ant",
+      "lane": 18,
+      "color": "#1594AC",
+      "name": "キメラ＝アント",
+      "parentBranch": "main",
+      "forkFromNode": "n_ant"
+    },
+    {
+      "id": "royal_guard",
+      "lane": 19,
+      "color": "#AC1568",
+      "name": "護衛軍",
+      "parentBranch": "kimera_ant",
+      "forkFromNode": "n_meruem"
+    },
+    {
+      "id": "komugi",
+      "lane": 20,
+      "color": "#3CAC15",
+      "name": "コムギ",
+      "parentBranch": "kimera_ant",
+      "forkFromNode": "n_meruem"
+    },
+    {
+      "id": "ikalgo",
+      "lane": 21,
+      "color": "#1B15AC",
+      "name": "イカルゴ",
+      "parentBranch": "main",
+      "forkFromNode": "n_team"
+    },
+    {
+      "id": "netero",
+      "lane": 22,
+      "color": "#AC4715",
+      "name": "ネテロ",
+      "parentBranch": "main",
+      "forkFromNode": "n_ikalgojoin"
+    },
+    {
+      "id": "zodiac",
+      "lane": 23,
+      "color": "#15AC73",
+      "name": "十二支ん",
+      "parentBranch": "main",
+      "forkFromNode": "n_leorioback"
+    },
+    {
+      "id": "beyond",
+      "lane": 24,
+      "color": "#9F15AC",
+      "name": "ビヨンド",
+      "parentBranch": "main",
+      "forkFromNode": "n_dark"
+    },
+    {
+      "id": "izunavi",
+      "lane": 25,
+      "color": "#8EAC15",
+      "name": "イズナビ(師)",
+      "parentBranch": "kurapika",
+      "forkFromNode": "n_vow"
+    },
+    {
+      "id": "hanzo",
+      "lane": 26,
+      "color": "#1562AC",
+      "name": "ハンゾー",
+      "parentBranch": "main",
+      "forkFromNode": "n_exam"
+    },
+    {
+      "id": "mito",
+      "lane": 27,
+      "color": "#AC1536",
+      "name": "ミト",
+      "parentBranch": "gon",
+      "forkFromNode": "n_start"
+    },
+    {
+      "id": "exam_cast",
+      "lane": 28,
+      "color": "#15AC21",
+      "name": "試験関係者",
+      "parentBranch": "main",
+      "forkFromNode": "n_exam"
+    },
+    {
+      "id": "razor",
+      "lane": 29,
+      "color": "#4D15AC",
+      "name": "レイザー",
+      "parentBranch": "main",
+      "forkFromNode": "n_gi"
+    },
+    {
+      "id": "extermination",
+      "lane": 30,
+      "color": "#AC7915",
+      "name": "討伐隊(個人)",
+      "parentBranch": "main",
+      "forkFromNode": "n_team"
+    },
+    {
+      "id": "neon_guard",
+      "lane": 31,
+      "color": "#15ACA6",
+      "name": "ネオン護衛",
+      "parentBranch": "nostrade",
+      "forkFromNode": "n_neon"
+    },
+    {
+      "id": "gi_cast",
+      "lane": 32,
+      "color": "#AC1587",
+      "name": "G・I 挑戦者",
+      "parentBranch": "main",
+      "forkFromNode": "n_gi"
+    },
+    {
+      "id": "gi_bomb",
+      "lane": 33,
+      "color": "#5BAC15",
+      "name": "ゲンスルー側",
+      "parentBranch": "genthru",
+      "forkFromNode": "n_genthru"
+    },
+    {
+      "id": "squadron",
+      "lane": 34,
+      "color": "#152FAC",
+      "name": "師団長",
+      "parentBranch": "kimera_ant",
+      "forkFromNode": "n_queen"
+    },
+    {
+      "id": "basho",
+      "lane": 35,
+      "color": "#AC2815",
+      "name": "バショウ",
+      "parentBranch": "kurapika",
+      "forkFromNode": "n_neon"
+    },
+    {
+      "id": "senritsu",
+      "lane": 36,
+      "color": "#15AC54",
+      "name": "センリツ",
+      "parentBranch": "kurapika",
+      "forkFromNode": "n_york"
+    },
+    {
+      "id": "bill",
+      "lane": 37,
+      "color": "#8015AC",
+      "name": "ビル",
+      "parentBranch": "kakin",
+      "forkFromNode": "n_princes"
+    },
+    {
+      "id": "gon",
+      "lane": 1,
+      "color": "#3CB371",
+      "name": "ゴン＝フリークス"
+    },
+    {
+      "id": "pariston",
+      "lane": 38,
+      "color": "#D8B11A",
+      "name": "パリストン＝ヒル",
+      "parentBranch": "zodiac",
+      "forkFromNode": "n_pariston_scheme"
+    },
+    {
+      "id": "illumi",
+      "lane": 39,
+      "color": "#7A1AAC",
+      "name": "イルミ＝ゾルディック",
+      "parentBranch": "zoldyck",
+      "forkFromNode": "n_illumi"
+    }
+  ]
+}

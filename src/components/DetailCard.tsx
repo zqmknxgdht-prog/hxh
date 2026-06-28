@@ -1,0 +1,170 @@
+import { Fragment, type ReactNode } from 'react';
+import type { GraphNode, GraphMeta } from '../types/graph';
+import type { Branch } from '../types/graph';
+import { NodeAvatar } from '../avatars';
+import { bilingualBlock, bilingualInline } from '../utils/bilingual';
+import { formatEpisodeBilingual } from '../utils/formatEpisode';
+
+/**
+ * Whitelist renderer for `gitMeta`: parses only `<code>...</code>` and
+ * renders the rest as plain text. Avoids dangerouslySetInnerHTML so a
+ * contributor cannot inject `<script>` via a PR.
+ */
+function renderGitMeta(input: string): ReactNode[] {
+  const parts: ReactNode[] = [];
+  const re = /<code>([\s\S]*?)<\/code>/g;
+  let last = 0;
+  let m: RegExpExecArray | null;
+  let key = 0;
+  while ((m = re.exec(input))) {
+    if (m.index > last) parts.push(<Fragment key={key++}>{input.slice(last, m.index)}</Fragment>);
+    parts.push(<code key={key++}>{m[1]}</code>);
+    last = m.index + m[0].length;
+  }
+  if (last < input.length) parts.push(<Fragment key={key++}>{input.slice(last)}</Fragment>);
+  return parts;
+}
+
+interface DetailCardProps {
+  node: GraphNode;
+  branch: Branch;
+  meta: GraphMeta;
+  nodesById: Record<string, GraphNode>;
+  open: boolean;
+  onClose: () => void;
+  onSelectNode: (id: string) => void;
+}
+
+export function DetailCard({ node, branch, meta, nodesById, open, onClose, onSelectNode }: DetailCardProps) {
+  const kindLabel = bilingualInline(
+    meta.labels.kind[node.kind] ?? node.kind,
+    meta.labelsEn?.kind[node.kind],
+  );
+  const typeLabel = bilingualInline(
+    meta.labels.type[node.type] ?? node.type,
+    meta.labelsEn?.type[node.type],
+  );
+  const episodeLabel = formatEpisodeBilingual(meta.version, meta.versionEn, node.episode);
+  const arcLabel = node.arcs
+    .map((arc) => bilingualInline(arc, meta.arcLabelsEn?.[arc]))
+    .join(' / ');
+  const whoLabel = bilingualInline(meta.ui?.detailWho ?? '正体', meta.uiEn?.detailWho);
+  const memoLabel = bilingualInline(meta.ui?.detailMemo ?? '系譜メモ', meta.uiEn?.detailMemo);
+
+  return (
+    <div id="card" className={open ? 'open' : ''}>
+      <div className="card-top">
+        <div className="swatch" style={{ background: branch.color }} />
+        <button type="button" className="close" onClick={onClose} aria-label="閉じる / Close">
+          ✕
+        </button>
+        <div className="eyebrow">{arcLabel}</div>
+        <div className="version">{episodeLabel}</div>
+        <div className="branch">
+          {bilingualInline('系譜', 'Branch')}: {bilingualInline(branch.name, branch.nameEn)}
+        </div>
+        {node.kind === 'character' && (
+          <div className="card-avatar" aria-hidden>
+            <svg viewBox="-14 -14 28 28" width={72} height={72}>
+              {node.tracedAvatar ? (
+                <NodeAvatar
+                  nodeId={`card-${node.id}`}
+                  traced={node.tracedAvatar}
+                  radius={12}
+                  stroke={branch.color}
+                  strokeWidth={2}
+                />
+              ) : (
+                <circle r={12} fill={branch.color} stroke={branch.color} strokeWidth={2} />
+              )}
+            </svg>
+          </div>
+        )}
+        <div className="name">
+          <span className="name-ja">{node.label}</span>
+          {node.labelEn && node.labelEn !== node.label && (
+            <span className="name-en">{node.labelEn}</span>
+          )}
+        </div>
+        <div className="badges">
+          <span className="badge k">{kindLabel}</span>
+          <span className="badge t">{typeLabel}</span>
+        </div>
+      </div>
+      <div className="card-body">
+        <div className="sec">
+          <h4>{whoLabel}</h4>
+          <p className="bilingual">{bilingualBlock(node.description, node.descriptionEn)}</p>
+        </div>
+        {node.affiliations && node.affiliations.length > 0 && (
+          <div className="sec attrs">
+            <h4>所属 / Affiliation</h4>
+            <ul className="attr-list">
+              {node.affiliations.map((a, i) => (
+                <li key={i}>{a}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+        {node.occupation && (
+          <div className="sec attrs">
+            <h4>職業 / Occupation</h4>
+            <p>{node.occupation}</p>
+          </div>
+        )}
+        {node.nen && (
+          <div className="sec attrs nen">
+            <h4>念 / Nen</h4>
+            <p className="nen-type">系統: <strong>{node.nen.type}</strong></p>
+            {node.nen.abilities && node.nen.abilities.length > 0 && (
+              <ul className="attr-list">
+                {node.nen.abilities.map((ab, i) => (
+                  <li key={i}>
+                    <strong>{ab.name}</strong>
+                    {ab.code && ab.code !== ab.name && (
+                      <span className="nen-code">（{ab.code}）</span>
+                    )}
+                    {ab.description && <div className="nen-desc">{ab.description}</div>}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        )}
+        {node.kind === 'group' && node.members && node.members.length > 0 && (
+          <div className="sec attrs members">
+            <h4>メンバー / Members <span className="count">{node.members.length}</span></h4>
+            <ul className="member-list">
+              {node.members.map((mid) => {
+                const m = nodesById[mid];
+                if (!m) return (
+                  <li key={mid}>
+                    <span className="member-missing">{mid}</span>
+                  </li>
+                );
+                return (
+                  <li key={mid}>
+                    <button
+                      type="button"
+                      className="member-link"
+                      onClick={() => onSelectNode(mid)}
+                    >
+                      <span className="member-ja">{m.label}</span>
+                      {m.labelEn && m.labelEn !== m.label && (
+                        <span className="member-en">{m.labelEn}</span>
+                      )}
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        )}
+        <div className="sec git">
+          <h4>{memoLabel}</h4>
+          <p>{renderGitMeta(node.gitMeta)}</p>
+        </div>
+      </div>
+    </div>
+  );
+}

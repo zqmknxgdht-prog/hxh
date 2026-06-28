@@ -1,0 +1,52 @@
+{
+  "title": "H×H 系統樹",
+  "subtitle": "漫画話数で追う系譜樹・スライダーで時点を切替",
+  "arcOrder": [
+    "序章",
+    "試験",
+    "ゾルディック家",
+    "天空闘技場",
+    "ヨークシン",
+    "グリードアイランド",
+    "キメラアント",
+    "選挙",
+    "暗黒大陸",
+    "継承戦"
+  ],
+  "layout": {
+    "colWidth": 28,
+    "laneHeight": 52,
+    "marginX": 130,
+    "marginY": 72
+  },
+  "ui": {
+    "episodeTime": "時点",
+    "episodeUntil": "No.{n}まで",
+    "hint": "ドラッグで移動・ピンチ/ホイールで拡大・ノードをタップ（⤢ は現在の話数範囲にフィット）",
+    "detailWho": "正体",
+    "detailMemo": "系譜メモ",
+    "edgeFork": "分岐",
+    "edgeMerge": "合流",
+    "edgeCherry": "強奪"
+  },
+  "labels": {
+    "kind": {
+      "character": "人物",
+      "event": "出来事",
+      "ability": "念能力",
+      "group": "勢力"
+    },
+    "type": {
+      "n": "通常",
+      "h": "重要話",
+      "r": "退場",
+      "m": "合流",
+      "c": "強奪"
+    }
+  },
+  "version": {
+    "unit": "No.",
+    "label": "No.{n}",
+    "max": 410
+  }
+}

@@ -1,0 +1,18 @@
+# CODEOWNERS — review requests are routed to the listed handles.
+# This file does NOT enforce branch protection (configure that in
+# repo Settings → Branches).
+
+# Maintainer-only — schema, lint, workflows, build/release pipeline
+/data/schema.json               @zqmknxgdht-prog
+/scripts/                       @zqmknxgdht-prog
+/.github/                       @zqmknxgdht-prog
+/package.json                   @zqmknxgdht-prog
+/bun.lock                       @zqmknxgdht-prog
+/tsconfig*.json                 @zqmknxgdht-prog
+/vite.config.ts                 @zqmknxgdht-prog
+
+# App code — requires review
+/src/                           @zqmknxgdht-prog
+
+# Data files — community PRs OK, reviewed for canon accuracy
+/data/                          @zqmknxgdht-prog
