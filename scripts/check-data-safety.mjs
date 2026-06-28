@@ -29,6 +29,12 @@ const HOMOGLYPH_RE = /[Ѐ-ӿͰ-Ͽ]/g; // Cyrillic, Greek
 // Only fullwidth Latin letters (impersonation risk); fullwidth punctuation is fine.
 const FULLWIDTH_LETTERS_RE = /[Ａ-Ｚａ-ｚ]/g;
 
+/** Files that legitimately contain fullwidth Latin letters as manga
+ *  typesetting (e.g., ＶＳ in chapter titles). */
+const FULLWIDTH_LATIN_OK = new Set([
+  'data/chapter-titles.json',
+]);
+
 function scanFile(file) {
   const text = fs.readFileSync(file, 'utf8');
   let m;
@@ -40,7 +46,7 @@ function scanFile(file) {
     const codes = [...new Set(m.map((c) => 'U+' + c.codePointAt(0).toString(16).toUpperCase().padStart(4, '0')))];
     issue(file, `Cyrillic/Greek chars outside whitelist: ${codes.join(', ')}`);
   }
-  if ((m = text.match(FULLWIDTH_LETTERS_RE))) {
+  if ((m = text.match(FULLWIDTH_LETTERS_RE)) && !FULLWIDTH_LATIN_OK.has(file)) {
     issue(file, `fullwidth Latin letters detected (homoglyph risk): ${m.length} chars`);
   }
 }
