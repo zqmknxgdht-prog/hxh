@@ -6,6 +6,19 @@ interface PanZoomState {
   ty: number;
 }
 
+interface PinchAnchor {
+  /** Distance between the two pointers at pinch start (px) */
+  initialDist: number;
+  /** Scale at pinch start */
+  initialScale: number;
+  /** Translation at pinch start */
+  initialTx: number;
+  initialTy: number;
+  /** Midpoint of the two pointers at pinch start (stage-local px) */
+  midX: number;
+  midY: number;
+}
+
 interface UsePanZoomOptions {
   onTap: (clientX: number, clientY: number) => void;
 }
@@ -14,7 +27,7 @@ export function usePanZoom({ onTap }: UsePanZoomOptions) {
   const [{ scale, tx, ty }, setState] = useState<PanZoomState>({ scale: 1, tx: 0, ty: 0 });
   const stageRef = useRef<HTMLDivElement>(null);
   const pointersRef = useRef(new Map<number, PointerEvent>());
-  const pinchDistRef = useRef(0);
+  const pinchRef = useRef<PinchAnchor | null>(null);
   const downRef = useRef({ x: 0, y: 0 });
 
   const applyTransform = useCallback((next: PanZoomState) => {
@@ -43,13 +56,36 @@ export function usePanZoom({ onTap }: UsePanZoomOptions) {
     });
   }, []);
 
+  /** Snapshot current pinch baseline from the two active pointers + current view state. */
+  const initPinchAnchor = useCallback(() => {
+    const stage = stageRef.current;
+    if (!stage) return;
+    const [a, b] = [...pointersRef.current.values()];
+    if (!a || !b) return;
+    const rect = stage.getBoundingClientRect();
+    setState((s) => {
+      pinchRef.current = {
+        initialDist: Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY),
+        initialScale: s.scale,
+        initialTx: s.tx,
+        initialTy: s.ty,
+        midX: (a.clientX + b.clientX) / 2 - rect.left,
+        midY: (a.clientY + b.clientY) / 2 - rect.top,
+      };
+      return s; // no state change, only ref snapshot
+    });
+  }, []);
+
   const handlePointerDown = useCallback((e: React.PointerEvent) => {
     pointersRef.current.set(e.pointerId, e.nativeEvent);
     if (pointersRef.current.size === 1) {
       downRef.current = { x: e.clientX, y: e.clientY };
       if (stageRef.current) stageRef.current.style.cursor = 'grabbing';
+    } else if (pointersRef.current.size === 2) {
+      // Second finger landed — capture pinch baseline immediately.
+      initPinchAnchor();
     }
-  }, []);
+  }, [initPinchAnchor]);
 
   const handlePointerMove = useCallback((e: React.PointerEvent) => {
     if (!pointersRef.current.has(e.pointerId)) return;
@@ -62,24 +98,20 @@ export function usePanZoom({ onTap }: UsePanZoomOptions) {
         tx: s.tx + e.clientX - prev.clientX,
         ty: s.ty + e.clientY - prev.clientY,
       }));
-    } else if (pointersRef.current.size === 2) {
+    } else if (pointersRef.current.size === 2 && pinchRef.current) {
+      const anchor = pinchRef.current;
       const [a, b] = [...pointersRef.current.values()];
       const dist = Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY);
-      const stage = stageRef.current;
-      if (stage && pinchDistRef.current) {
-        const rect = stage.getBoundingClientRect();
-        const cx = (a.clientX + b.clientX) / 2 - rect.left;
-        const cy = (a.clientY + b.clientY) / 2 - rect.top;
-        setState((s) => {
-          const nextScale = Math.max(0.1, Math.min(7, s.scale * (dist / pinchDistRef.current)));
-          return {
-            scale: nextScale,
-            tx: cx - (cx - s.tx) * (nextScale / s.scale),
-            ty: cy - (cy - s.ty) * (nextScale / s.scale),
-          };
-        });
-      }
-      pinchDistRef.current = dist;
+      // Absolute (gesture-anchored) ratio — fingers spread (dist > initial) zooms in.
+      const ratio = dist / anchor.initialDist;
+      const nextScale = Math.max(0.1, Math.min(7, anchor.initialScale * ratio));
+      // Keep the initial pinch midpoint locked to the same scene-space point.
+      const k = nextScale / anchor.initialScale;
+      setState({
+        scale: nextScale,
+        tx: anchor.midX - (anchor.midX - anchor.initialTx) * k,
+        ty: anchor.midY - (anchor.midY - anchor.initialTy) * k,
+      });
     }
   }, []);
 
@@ -87,7 +119,9 @@ export function usePanZoom({ onTap }: UsePanZoomOptions) {
     (e: React.PointerEvent) => {
       const wasSingle = pointersRef.current.size === 1;
       pointersRef.current.delete(e.pointerId);
-      if (pointersRef.current.size < 2) pinchDistRef.current = 0;
+      if (pointersRef.current.size < 2) pinchRef.current = null;
+      // If we still have one finger after a pinch, re-seed pan baseline so next move doesn't jump.
+      // (Map already has the remaining pointer's last event, so next pointermove diff will work.)
       if (pointersRef.current.size === 0 && stageRef.current) {
         stageRef.current.style.cursor = 'grab';
         if (wasSingle && Math.hypot(e.clientX - downRef.current.x, e.clientY - downRef.current.y) < 6) {
