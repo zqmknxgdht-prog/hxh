@@ -43,6 +43,15 @@ const groupsByMemberId: Record<string, string[]> = (() => {
   return m;
 })();
 
+/** group label -> group node id (for resolving affiliation strings to clickable links) */
+const groupIdByLabel: Record<string, string> = (() => {
+  const m: Record<string, string> = {};
+  for (const node of rawNodes) {
+    if (node.kind === 'group' && node.label) m[node.label] = node.id;
+  }
+  return m;
+})();
+
 export default function App() {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [activeArc, setActiveArc] = useState<string | null>(null);
@@ -372,6 +381,7 @@ export default function App() {
           meta={meta}
           nodesById={nodesById}
           groupsByMemberId={groupsByMemberId}
+          groupIdByLabel={groupIdByLabel}
           open={selectedId !== null}
           onClose={() => { deselect(); setCameFromList(false); }}
           onSelectNode={navigateToNode}

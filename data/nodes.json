@@ -113,7 +113,7 @@
       "affiliations": [
         "ハンター協会",
         "グリードアイランド",
-        "Beyond Netero's Dark Continent Expedition Team"
+        "暗黒大陸探検隊"
       ],
       "nen": {
         "type": "不明",
@@ -192,9 +192,7 @@
       "arcs": [
         "序章"
       ],
-      "affiliations": [
-        "Captain"
-      ],
+      "affiliations": [],
       "occupation": "Crewman"
     },
     {
@@ -461,7 +459,6 @@
       "affiliations": [
         "雲隠流",
         "ハンター協会",
-        "Kurapika",
         "第十三王子マラヤーム"
       ],
       "occupation": "''Ninja'' / ハンター / Marayam付護衛",
@@ -1387,8 +1384,7 @@
         "ゾルディック家"
       ],
       "affiliations": [
-        "ゾルディック家",
-        "Seaquant (Co-worker)"
+        "ゾルディック家"
       ],
       "occupation": "Groundskeeper / Janitor",
       "nen": {
@@ -1432,8 +1428,7 @@
       ],
       "affiliations": [
         "ハンター協会",
-        "ゾルディック家（雇主）",
-        "Zebro (Co-worker)"
+        "ゾルディック家（雇主）"
       ],
       "occupation": "ブラックリストハンター / Zoldyck Estate Groundskeeper",
       "nen": {
@@ -1698,9 +1693,7 @@
       ],
       "affiliations": [
         "ハンター協会",
-        "心源流",
-        "Dojo",
-        "Zushi (Pupil)"
+        "心源流"
       ],
       "occupation": "ハンター / Shingen-ryu Assistant Master",
       "nen": {
@@ -1755,7 +1748,6 @@
         "天空闘技場"
       ],
       "affiliations": [
-        "Wing (Master)",
         "天空闘技場"
       ],
       "occupation": "Shingen-ryu Pupil / Heavens Arena Fighter / Floor Master (Movie-only)",
@@ -1813,7 +1805,6 @@
       ],
       "affiliations": [
         "ハンター協会",
-        "Kurapika",
         "第六王子タイソン"
       ],
       "occupation": "ハンター / Tyson付護衛",
@@ -1915,7 +1906,6 @@
       "affiliations": [
         "ハンター協会",
         "ノストラード組",
-        "Kurapika",
         "第十王子カチョウ"
       ],
       "occupation": "Music Hunter / Kacho付護衛",
@@ -1972,7 +1962,6 @@
       "affiliations": [
         "ハンター協会",
         "ノストラード組",
-        "Kurapika",
         "第七王子ルズールス"
       ],
       "occupation": "ハンター / Luzurus付護衛",
@@ -2611,8 +2600,7 @@
       ],
       "affiliations": [
         "ハンター協会",
-        "ノストラード組",
-        "Kurapika"
+        "ノストラード組"
       ],
       "occupation": "ハンター / Nostrade Bodyguard",
       "nen": {
@@ -3278,8 +3266,6 @@
       "affiliations": [
         "ハンター協会",
         "心源流",
-        "Dojo",
-        "Kurapika",
         "第十三王子マラヤーム"
       ],
       "occupation": "Stone Hunter (Double-Star) / Shingen-ryu Master / Nen Teacher / Marayam付護衛",
@@ -3300,8 +3286,7 @@
         "グリードアイランド"
       ],
       "affiliations": [
-        "グリードアイランド",
-        "G.I.プレイヤー"
+        "グリードアイランド"
       ],
       "occupation": "G.I. Game Master",
       "nen": {
@@ -4525,9 +4510,7 @@
       "arcs": [
         "グリードアイランド"
       ],
-      "affiliations": [
-        "Team Tokharone"
-      ],
+      "affiliations": [],
       "occupation": "Greed Island Player / Leader of Team Tokharone",
       "nen": {
         "type": "不明"
@@ -4971,7 +4954,6 @@
         "キメラアント"
       ],
       "affiliations": [
-        "Kite",
         "アマチュアハンター"
       ],
       "occupation": "Amateur Hunter"
@@ -4988,9 +4970,7 @@
       "arcs": [
         "キメラアント"
       ],
-      "affiliations": [
-        "Kite"
-      ],
+      "affiliations": [],
       "occupation": "Amateur Hunter"
     },
     {
@@ -5005,9 +4985,7 @@
       "arcs": [
         "キメラアント"
       ],
-      "affiliations": [
-        "Kite"
-      ],
+      "affiliations": [],
       "occupation": "Amateur Hunter"
     },
     {
@@ -5022,9 +5000,7 @@
       "arcs": [
         "キメラアント"
       ],
-      "affiliations": [
-        "Kite"
-      ],
+      "affiliations": [],
       "occupation": "Amateur Hunter"
     },
     {
@@ -5039,9 +5015,7 @@
       "arcs": [
         "キメラアント"
       ],
-      "affiliations": [
-        "Kite"
-      ],
+      "affiliations": [],
       "occupation": "Amateur Hunter"
     },
     {
@@ -5056,9 +5030,7 @@
       "arcs": [
         "キメラアント"
       ],
-      "affiliations": [
-        "Kite"
-      ],
+      "affiliations": [],
       "occupation": "Amateur Hunter"
     },
     {
@@ -5400,9 +5372,7 @@
       "arcs": [
         "キメラアント"
       ],
-      "affiliations": [
-        "Kite"
-      ],
+      "affiliations": [],
       "occupation": "Kite's Companion",
       "nen": {
         "type": "不明"
@@ -5420,9 +5390,7 @@
       "arcs": [
         "キメラアント"
       ],
-      "affiliations": [
-        "NGL政府"
-      ],
+      "affiliations": [],
       "occupation": "Interpreter"
     },
     {
@@ -6408,9 +6376,7 @@
         "キメラアント"
       ],
       "affiliations": [
-        "ハンター協会",
-        "Zodiacs (Flora",
-        "Fauna Team)"
+        "ハンター協会"
       ],
       "occupation": "Botanical Hunter / Zodiac (Chicken) / Dancer / Musician",
       "nen": {
@@ -6465,9 +6431,7 @@
         "キメラアント"
       ],
       "affiliations": [
-        "ハンター協会",
-        "Zodiacs (Flora",
-        "Fauna Team)"
+        "ハンター協会"
       ],
       "occupation": "Poacher Hunter / Zodiac (Sheep) / Ranger",
       "nen": {
@@ -7255,8 +7219,7 @@
         "キメラアント"
       ],
       "affiliations": [
-        "ハンター協会",
-        "Palm Siberia (Pupil)"
+        "ハンター協会"
       ],
       "occupation": "ハンター",
       "nen": {
@@ -7283,8 +7246,7 @@
         "キメラアント"
       ],
       "affiliations": [
-        "ハンター協会",
-        "Morel Mackernasey (Master)"
+        "ハンター協会"
       ],
       "occupation": "獣ハンター",
       "nen": {
@@ -7418,8 +7380,7 @@
         "キメラアント"
       ],
       "affiliations": [
-        "ハンター協会",
-        "Knov (Master)"
+        "ハンター協会"
       ],
       "occupation": "ハンター / Clairvoyant",
       "nen": {
@@ -7447,7 +7408,7 @@
       ],
       "affiliations": [
         "ハンター協会",
-        "Beyond Netero's Dark Continent Expedition Team"
+        "暗黒大陸探検隊"
       ],
       "occupation": "Hunter (Triple-Star) / Beyond's Dark Continent Expedition Team所属",
       "nen": {
@@ -7562,8 +7523,7 @@
         "キメラアント"
       ],
       "affiliations": [
-        "ハンター協会",
-        "Morel Mackernasey (Master)"
+        "ハンター協会"
       ],
       "occupation": "Unidentified Beast Hunter"
     },
@@ -7826,8 +7786,7 @@
         "暗黒大陸"
       ],
       "affiliations": [
-        "Varvard University",
-        "ビヨンド＝ネテロ派",
+        "ビヨンド派",
         "ハンター協会"
       ],
       "occupation": "Varvard Professor",
@@ -7849,7 +7808,7 @@
       ],
       "affiliations": [
         "石壁",
-        "ビヨンド＝ネテロ派",
+        "ビヨンド派",
         "ハンター協会"
       ],
       "nen": {
@@ -7876,7 +7835,7 @@
         "暗黒大陸"
       ],
       "affiliations": [
-        "ビヨンド＝ネテロ派",
+        "ビヨンド派",
         "ハンター協会"
       ],
       "occupation": "Beyond's Dark Continent Expedition Team所属 / Temp Hunter",
@@ -7897,7 +7856,7 @@
         "暗黒大陸"
       ],
       "affiliations": [
-        "ビヨンド＝ネテロ派",
+        "ビヨンド派",
         "ハンター協会"
       ],
       "occupation": "Beyond's Dark Continent Expedition Team所属 / Temp Hunter",
@@ -7918,7 +7877,7 @@
         "暗黒大陸"
       ],
       "affiliations": [
-        "ビヨンド＝ネテロ派",
+        "ビヨンド派",
         "ハンター協会"
       ],
       "occupation": "Beyond's Dark Continent Expedition Team所属 / Temp Hunter",
@@ -7939,7 +7898,7 @@
         "暗黒大陸"
       ],
       "affiliations": [
-        "ビヨンド＝ネテロ派",
+        "ビヨンド派",
         "ハンター協会"
       ],
       "occupation": "Beyond's Dark Continent Expedition Team所属 / Temp Hunter",
@@ -8111,12 +8070,8 @@
         "暗黒大陸"
       ],
       "affiliations": [
-        "V6",
         "国際渡航許可庁",
-        "RVAs",
-        "Kakin Justice Bureau Investigation Department",
-        "国際渡航許可庁",
-        "V5"
+        "カキン司法局"
       ],
       "occupation": "国際渡航許可庁 特務課 課長補佐"
     },
@@ -8228,7 +8183,7 @@
         "暗黒大陸"
       ],
       "affiliations": [
-        "ビヨンド＝ネテロ派"
+        "ビヨンド派"
       ],
       "occupation": "Mercenary / Beyond's Dark Continent Expedition Team所属",
       "nen": {
@@ -8610,9 +8565,7 @@
       "arcs": [
         "暗黒大陸"
       ],
-      "affiliations": [
-        "V5"
-      ],
+      "affiliations": [],
       "members": [
         "n_k_steiner",
         "n_k_peuckert"
@@ -8838,7 +8791,7 @@
       ],
       "affiliations": [
         "ハンター協会",
-        "ビヨンド＝ネテロ派"
+        "ビヨンド派"
       ],
       "occupation": "ハンター / Beyond's Dark Continent Expedition Team所属",
       "nen": {
@@ -8993,8 +8946,7 @@
         "継承戦"
       ],
       "affiliations": [
-        "カキン王国",
-        "Tamazo"
+        "カキン王国"
       ],
       "occupation": "Announcer Personality for the Dark Continent Voyage"
     },
@@ -9073,8 +9025,7 @@
         "継承戦"
       ],
       "affiliations": [
-        "カキン王国",
-        "Gantai"
+        "カキン王国"
       ],
       "occupation": "Announcer Personality for the Dark Continent Voyage"
     },
@@ -9184,7 +9135,7 @@
       ],
       "affiliations": [
         "ハンター協会",
-        "ビヨンド＝ネテロ派",
+        "ビヨンド派",
         "オイト王妃"
       ],
       "occupation": "ハンター / Beyond's Dark Continent Expedition Team所属 / Woble Hui Guo Rou付護衛",
@@ -9316,10 +9267,7 @@
       ],
       "affiliations": [
         "国際渡航許可庁",
-        "RVAs",
-        "Kakin Justice Bureau Investigation Department",
-        "国際渡航許可庁",
-        "V5"
+        "カキン司法局"
       ],
       "occupation": "Restricted Travel Permit Agency's Special Task Force Member"
     },
@@ -9394,7 +9342,7 @@
       ],
       "affiliations": [
         "カキン王国",
-        "Tang Zhao Li Hui Guo Rou"
+        "第三王子チョウライ"
       ],
       "occupation": "Spy for Queen Tang Zhao Li Hui Guo Rou"
     },
@@ -10500,7 +10448,8 @@
         "継承戦"
       ],
       "affiliations": [
-        "カキン王国"
+        "カキン王国",
+        "カキン司法局"
       ],
       "occupation": "第1層 最高裁判官"
     },
@@ -10541,7 +10490,7 @@
       ],
       "occupation": "Ministry of Justice's Deputy Chief Prosecutor",
       "affiliations": [
-        "Kakin Justice Bureau Investigation Department"
+        "カキン司法局"
       ]
     },
     {
@@ -10743,7 +10692,7 @@
       ],
       "affiliations": [
         "カキン王国",
-        "Tang Zhao Li Hui Guo Rou"
+        "第三王子チョウライ"
       ],
       "occupation": "Spy for Queen Tang Zhao Li Hui Guo Rou"
     },
@@ -12595,9 +12544,7 @@
       "arcs": [
         "継承戦"
       ],
-      "affiliations": [
-        "|occupation ="
-      ],
+      "affiliations": [],
       "occupation": "|type ="
     },
     {
@@ -12776,9 +12723,7 @@
       "arcs": [
         "継承戦"
       ],
-      "affiliations": [
-        "|occupation = Embalmer"
-      ],
+      "affiliations": [],
       "occupation": "葬儀屋",
       "nen": {
         "type": "特質系",
@@ -12962,9 +12907,7 @@
       "arcs": [
         "継承戦"
       ],
-      "affiliations": [
-        "|occupation ="
-      ],
+      "affiliations": [],
       "occupation": "|type = Unknown",
       "nen": {
         "type": "不明",
@@ -12999,7 +12942,9 @@
       "description": "世界屈指の暗殺一家。先祖代々暗殺を生業とする。",
       "gitMeta": "<code>zoldyck</code> 暗殺一族。",
       "episode": 10,
-      "arcs": ["試験"],
+      "arcs": [
+        "試験"
+      ],
       "members": [
         "n_silva",
         "n_illumi",
@@ -13021,7 +12966,9 @@
       "description": "ヨークシン拠点のマフィア組織。組長ライト＝ノストラードの娘ネオンの未来予知能力で勢力を伸ばす。クラピカら念能力者を護衛隊として雇う。",
       "gitMeta": "<code>nostrade</code> マフィア組織。",
       "episode": 16,
-      "arcs": ["ヨークシン"],
+      "arcs": [
+        "ヨークシン"
+      ],
       "members": [
         "n_w_light_nostrade",
         "n_neon",
@@ -13040,7 +12987,9 @@
       "description": "念を教える武術流派。ウイングとビスケはこの流派の門下。",
       "gitMeta": "<code>wing</code> 念武術流派。",
       "episode": 51,
-      "arcs": ["天空闘技場"],
+      "arcs": [
+        "天空闘技場"
+      ],
       "members": [
         "n_wing",
         "n_bisky"
@@ -13055,7 +13004,11 @@
       "description": "十二支んの情報担当班。継承戦・暗黒大陸渡航計画に関する情報収集を担う。",
       "gitMeta": "<code>zodiac</code> 情報班。",
       "episode": 16,
-      "arcs": ["ヨークシン", "選挙", "継承戦"],
+      "arcs": [
+        "ヨークシン",
+        "選挙",
+        "継承戦"
+      ],
       "members": [
         "n_w_mizaistom_nana",
         "n_kura",
@@ -13072,7 +13025,10 @@
       "description": "十二支んの科学・医療担当班。チードル新会長を中心とする。",
       "gitMeta": "<code>zodiac</code> 科学班。",
       "episode": 19,
-      "arcs": ["選挙", "暗黒大陸"],
+      "arcs": [
+        "選挙",
+        "暗黒大陸"
+      ],
       "members": [
         "n_cheadle",
         "n_w_gel",
@@ -13088,7 +13044,10 @@
       "description": "十二支んの防衛・戦闘担当班。ボトバイ ギガンテを長とする実力派。",
       "gitMeta": "<code>zodiac</code> 防衛班。",
       "episode": 318,
-      "arcs": ["選挙", "暗黒大陸"],
+      "arcs": [
+        "選挙",
+        "暗黒大陸"
+      ],
       "members": [
         "n_w_botobai_gigante",
         "n_w_kanzai",
@@ -13099,12 +13058,14 @@
       "id": "n_greed_island",
       "branchId": "gi_cast",
       "type": "h",
-      "label": "G・I 関係者",
+      "label": "グリードアイランド",
       "kind": "group",
       "description": "ジンら11人のゲームマスターが制作した念能力のゲーム『グリードアイランド』を巡る関係者群。制作者・プレイヤー・島内NPCを含む。",
-      "gitMeta": "<code>gi_cast</code> G・I 関係者。",
+      "gitMeta": "<code>gi_cast</code> グリードアイランド。",
       "episode": 2,
-      "arcs": ["G・I"],
+      "arcs": [
+        "G・I"
+      ],
       "members": [
         "n_ging",
         "n_w_dwun",
@@ -13125,7 +13086,9 @@
       "description": "カキン帝国の正規軍。継承戦中、王族の警護・船内秩序維持にあたる。各王子の私設兵団とは別組織。",
       "gitMeta": "<code>kakin</code> 正規軍。",
       "episode": 358,
-      "arcs": ["継承戦"],
+      "arcs": [
+        "継承戦"
+      ],
       "members": [
         "n_k_mizuri",
         "n_k_maizan",
@@ -13143,7 +13106,9 @@
       "description": "カキン王国の被差別カースト（不可持民）。第二王子カミーラの私設兵団の主体を成し、彼女に絶大な忠誠を示す。",
       "gitMeta": "<code>kakin</code> 被差別カースト。",
       "episode": 363,
-      "arcs": ["継承戦"],
+      "arcs": [
+        "継承戦"
+      ],
       "members": [
         "n_k_sarahell",
         "n_k_moswana",
@@ -13171,7 +13136,9 @@
       "description": "カキン三大マフィアの一つ。組長オニオール＝ロンポウ。第三王子チョウライと懇意。継承戦の下層を実質統制し、ヒソカ確保とモレナ抹殺を企てる。",
       "gitMeta": "<code>kakin</code> 三大マフィア・シュウ＝ウ。",
       "episode": 358,
-      "arcs": ["継承戦"],
+      "arcs": [
+        "継承戦"
+      ],
       "members": [
         "n_k_onior_longbao",
         "n_zhang",
@@ -13190,7 +13157,9 @@
       "description": "カキン三大マフィアの一つ。組長ブロッコ＝リー。第七王子ルズールスと懇意。",
       "gitMeta": "<code>kakin</code> 三大マフィア・シャア＝ア。",
       "episode": 364,
-      "arcs": ["継承戦"],
+      "arcs": [
+        "継承戦"
+      ],
       "members": [
         "n_k_brocco_li",
         "n_luzurus",
@@ -13210,7 +13179,9 @@
       "description": "カキン三大マフィアの一つ。組長モレナ＝プルードの裏切りで第四王子ツェリードニヒと結託し、船内で『恋のエチュード（サイキンオセン）』を介した謝肉祭（大量殺戮）の引き金を引く。",
       "gitMeta": "<code>kakin</code> 三大マフィア・エイ＝イ。",
       "episode": 378,
-      "arcs": ["継承戦"],
+      "arcs": [
+        "継承戦"
+      ],
       "members": [
         "n_k_morena_prudo",
         "n_k_bille",
@@ -13233,6 +13204,26 @@
         "n_k_voconte",
         "n_k_yokotani",
         "n_k_badoyu"
+      ]
+    },
+    {
+      "id": "n_kakin_justice",
+      "branchId": "kakin",
+      "type": "n",
+      "label": "カキン司法局",
+      "kind": "group",
+      "description": "カキン王国の司法機関。最高裁判官クレアパトロを頂点とし、捜査部・検察部の局員が継承戦下の事件を扱う。",
+      "gitMeta": "<code>kakin</code> 司法機関。",
+      "episode": 372,
+      "arcs": [
+        "継承戦"
+      ],
+      "members": [
+        "n_k_cleapatro",
+        "n_k_kaiser",
+        "n_k_worio_bay",
+        "n_k_steiner",
+        "n_k_peuckert"
       ]
     }
   ]

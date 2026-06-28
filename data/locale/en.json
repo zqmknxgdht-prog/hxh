@@ -3023,6 +3023,10 @@
     "n_mafia_aii": {
       "label": "Heil-Ly Family",
       "description": "One of Kakin's three great mafia families. Boss Morena Prudo's betrayal ties them to Fourth Prince Tserriednich. Triggers the on-board 'Happy Sad New Year' Nen-fueled mass killing they call the Carnival."
+    },
+    "n_kakin_justice": {
+      "label": "Kakin Justice Bureau",
+      "description": "The judicial branch of the Kakin Empire. Headed by Supreme Magistrate Cleapatro, with investigators and prosecutors handling incidents during the succession contest."
     }
   }
 }
