@@ -42,6 +42,10 @@ interface DetailCardProps {
   groupsByMemberId: Record<string, string[]>;
   /** group label -> group node id. Used to make affiliation strings clickable. */
   groupIdByLabel: Record<string, string>;
+  /** groupId -> ordered list of ancestor group ids. */
+  groupAncestors: Record<string, string[]>;
+  /** groupId -> direct subgroup ids. */
+  subgroupsByGroupId: Record<string, string[]>;
   open: boolean;
   onClose: () => void;
   onSelectNode: (id: string) => void;
@@ -49,7 +53,7 @@ interface DetailCardProps {
   onBackToList?: () => void;
 }
 
-export function DetailCard({ node, branch, branches, meta, nodesById, groupsByMemberId, groupIdByLabel, open, onClose, onSelectNode, onBackToList }: DetailCardProps) {
+export function DetailCard({ node, branch, branches, meta, nodesById, groupsByMemberId, groupIdByLabel, groupAncestors, subgroupsByGroupId, open, onClose, onSelectNode, onBackToList }: DetailCardProps) {
   const kindLabel = bilingualInline(
     meta.labels.kind[node.kind] ?? node.kind,
     meta.labelsEn?.kind[node.kind],
@@ -120,57 +124,79 @@ export function DetailCard({ node, branch, branches, meta, nodesById, groupsByMe
           <p className="bilingual">{bilingualBlock(node.description, node.descriptionEn)}</p>
         </div>
         {(() => {
-          // Union of affiliation strings and group nodes that contain this node as a member.
-          // Render clickable when resolvable to a group node; deduplicate by group id (when known)
-          // and by string label otherwise.
-          const seenGid = new Set<string>();
-          const seenStr = new Set<string>();
-          const items: { key: string; label: string; labelEn?: string; gid?: string }[] = [];
+          // Direct affiliations: from node.affiliations strings + reverse-lookup memberships.
+          // Inherited: transitive parents of direct groups, not already in direct.
+          type Item = { key: string; label: string; labelEn?: string; gid?: string };
+          const directSeenGid = new Set<string>();
+          const directSeenStr = new Set<string>();
+          const direct: Item[] = [];
           for (const a of node.affiliations ?? []) {
             const gid = groupIdByLabel[a];
             if (gid && gid !== node.id) {
-              if (seenGid.has(gid)) continue;
-              seenGid.add(gid);
+              if (directSeenGid.has(gid)) continue;
+              directSeenGid.add(gid);
               const g = nodesById[gid];
-              items.push({ key: gid, label: a, labelEn: g?.labelEn, gid });
+              direct.push({ key: gid, label: a, labelEn: g?.labelEn, gid });
             } else {
-              if (seenStr.has(a)) continue;
-              seenStr.add(a);
-              items.push({ key: `s:${a}`, label: a });
+              if (directSeenStr.has(a)) continue;
+              directSeenStr.add(a);
+              direct.push({ key: `s:${a}`, label: a });
             }
           }
           for (const gid of groupsByMemberId[node.id] ?? []) {
-            if (seenGid.has(gid)) continue;
+            if (directSeenGid.has(gid)) continue;
             const g = nodesById[gid];
             if (!g) continue;
-            seenGid.add(gid);
-            items.push({ key: gid, label: g.label, labelEn: g.labelEn, gid });
+            directSeenGid.add(gid);
+            direct.push({ key: gid, label: g.label, labelEn: g.labelEn, gid });
           }
-          if (items.length === 0) return null;
+          // Inherited groups: ancestors of any direct group, not already direct
+          const inheritedSet = new Set<string>();
+          for (const gid of directSeenGid) {
+            for (const a of groupAncestors[gid] ?? []) {
+              if (!directSeenGid.has(a)) inheritedSet.add(a);
+            }
+          }
+          const inherited: Item[] = [];
+          for (const gid of inheritedSet) {
+            const g = nodesById[gid];
+            if (!g) continue;
+            inherited.push({ key: gid, label: g.label, labelEn: g.labelEn, gid });
+          }
+          if (direct.length === 0 && inherited.length === 0) return null;
+          const renderItem = (it: Item) => (
+            <li key={it.key}>
+              {it.gid ? (
+                <button
+                  type="button"
+                  className="member-link affiliation-link"
+                  onClick={() => onSelectNode(it.gid!)}
+                >
+                  <span className="member-ja">{it.label}</span>
+                  {it.labelEn && it.labelEn !== it.label && (
+                    <span className="member-en">{it.labelEn}</span>
+                  )}
+                </button>
+              ) : (
+                <span className="affiliation-plain">{it.label}</span>
+              )}
+            </li>
+          );
           return (
-            <div className="sec attrs members">
-              <h4>所属 / Affiliation <span className="count">{items.length}</span></h4>
-              <ul className="member-list">
-                {items.map((it) => (
-                  <li key={it.key}>
-                    {it.gid ? (
-                      <button
-                        type="button"
-                        className="member-link affiliation-link"
-                        onClick={() => onSelectNode(it.gid!)}
-                      >
-                        <span className="member-ja">{it.label}</span>
-                        {it.labelEn && it.labelEn !== it.label && (
-                          <span className="member-en">{it.labelEn}</span>
-                        )}
-                      </button>
-                    ) : (
-                      <span className="affiliation-plain">{it.label}</span>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <>
+              {direct.length > 0 && (
+                <div className="sec attrs members">
+                  <h4>所属 / Affiliation <span className="count">{direct.length}</span></h4>
+                  <ul className="member-list">{direct.map(renderItem)}</ul>
+                </div>
+              )}
+              {inherited.length > 0 && (
+                <div className="sec attrs members inherited">
+                  <h4>所属 (継承) / Inherited <span className="count">{inherited.length}</span></h4>
+                  <ul className="member-list">{inherited.map(renderItem)}</ul>
+                </div>
+              )}
+            </>
           );
         })()}
         {node.occupation && (
@@ -196,6 +222,48 @@ export function DetailCard({ node, branch, branches, meta, nodesById, groupsByMe
                 ))}
               </ul>
             )}
+          </div>
+        )}
+        {node.kind === 'group' && node.parents && node.parents.length > 0 && (
+          <div className="sec attrs members parents">
+            <h4>親グループ / Parent <span className="count">{node.parents.length}</span></h4>
+            <ul className="member-list">
+              {node.parents.map((pid) => {
+                const p = nodesById[pid];
+                if (!p) return <li key={pid}><span className="member-missing">{pid}</span></li>;
+                return (
+                  <li key={pid}>
+                    <button type="button" className="member-link affiliation-link" onClick={() => onSelectNode(pid)}>
+                      <span className="member-ja">{p.label}</span>
+                      {p.labelEn && p.labelEn !== p.label && (
+                        <span className="member-en">{p.labelEn}</span>
+                      )}
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        )}
+        {node.kind === 'group' && (subgroupsByGroupId[node.id]?.length ?? 0) > 0 && (
+          <div className="sec attrs members subgroups">
+            <h4>サブグループ / Subgroups <span className="count">{subgroupsByGroupId[node.id].length}</span></h4>
+            <ul className="member-list">
+              {subgroupsByGroupId[node.id].map((sid) => {
+                const s = nodesById[sid];
+                if (!s) return <li key={sid}><span className="member-missing">{sid}</span></li>;
+                return (
+                  <li key={sid}>
+                    <button type="button" className="member-link affiliation-link" onClick={() => onSelectNode(sid)}>
+                      <span className="member-ja">{s.label}</span>
+                      {s.labelEn && s.labelEn !== s.label && (
+                        <span className="member-en">{s.labelEn}</span>
+                      )}
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
           </div>
         )}
         {node.kind === 'group' && node.members && node.members.length > 0 && (
