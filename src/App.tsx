@@ -1,15 +1,32 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import './App.css';
+import { BottomSheet } from './components/BottomSheet';
 import { DetailCard } from './components/DetailCard';
 import { EpisodeSlider } from './components/EpisodeSlider';
 import { GraphScene } from './components/GraphScene';
 import { GraphTooltip, type HoverPayload } from './components/GraphTooltip';
+import { MobileBottomBar } from './components/MobileBottomBar';
 import { NodeListPanel } from './components/NodeListPanel';
 import { graphData } from './data/loadGraph';
 import { usePanZoom } from './hooks/usePanZoom';
 import { computeLayout, type PositionedNode } from './utils/layout';
 import { bilingualBlock, bilingualInline } from './utils/bilingual';
 import { computeFitTransform, getVisibleBounds } from './utils/fitBounds';
+
+type SheetId = null | 'list' | 'episodes';
+
+function useIsMobile() {
+  const [isMobile, set] = useState(() =>
+    typeof window !== 'undefined' && window.matchMedia('(max-width: 759px)').matches,
+  );
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 759px)');
+    const onChange = () => set(mq.matches);
+    mq.addEventListener('change', onChange);
+    return () => mq.removeEventListener('change', onChange);
+  }, []);
+  return isMobile;
+}
 
 const { meta, branches, nodes: rawNodes, nodesById } = graphData;
 const layout = meta.layout;
@@ -24,23 +41,61 @@ export default function App() {
   const [maxEpisode, setMaxEpisode] = useState(meta.version.max);
   const [hover, setHover] = useState<HoverPayload | null>(null);
   const [hoverPos, setHoverPos] = useState({ x: 0, y: 0 });
+  const [openSheet, setOpenSheet] = useState<SheetId>(null);
+  const [cameFromList, setCameFromList] = useState(false);
   const initializedRef = useRef(false);
+  const isMobile = useIsMobile();
 
-  const handleTap = useCallback((clientX: number, clientY: number) => {
-    let target = document.elementFromPoint(clientX, clientY);
-    while (target) {
-      if (target instanceof Element && target.classList.contains('node')) {
-        if (target.classList.contains('future')) return;
-        const id = target.closest('[data-id]')?.getAttribute('data-id');
-        if (id) {
-          setSelectedId(id);
+  const tappedIdRef = useRef<string | null>(null);
+
+  const handleTap = useCallback(
+    (clientX: number, clientY: number) => {
+      let target = document.elementFromPoint(clientX, clientY);
+      while (target) {
+        if (target instanceof Element && target.classList.contains('node')) {
+          if (target.classList.contains('future')) return;
+          const id = target.closest('[data-id]')?.getAttribute('data-id');
+          if (!id) break;
+          // On desktop (hover-capable), a tap goes straight to the detail card.
+          if (!isMobile) {
+            setSelectedId(id);
+            return;
+          }
+          // On mobile: first tap shows the tooltip; a second tap on the same
+          // node opens the detail card.
+          if (tappedIdRef.current === id) {
+            tappedIdRef.current = null;
+            setHover(null);
+            setSelectedId(id);
+            return;
+          }
+          tappedIdRef.current = id;
+          const node = nodesById[id];
+          const branch = branches[node.branchId];
+          // Lazy-build a payload similar to GraphScene hover.
+          import('./utils/hoverInfo').then(({ buildNodeHoverInfo }) => {
+            const info = buildNodeHoverInfo(node, branch, meta);
+            setHover({
+              target: 'node',
+              nodeId: id,
+              title: info.title,
+              detail: info.detail,
+              episodeLabel: info.episodeLabel,
+              badges: [info.branchName, info.kindLabel, info.typeLabel],
+              color: info.color,
+            });
+            setHoverPos({ x: clientX, y: clientY });
+          });
           return;
         }
+        target = target.parentElement;
       }
-      target = target.parentElement;
-    }
-    setSelectedId(null);
-  }, []);
+      tappedIdRef.current = null;
+      setHover(null);
+      setSelectedId(null);
+    },
+    [isMobile],
+  );
 
   const panZoom = usePanZoom({ onTap: handleTap });
 
@@ -163,70 +218,101 @@ export default function App() {
     [],
   );
 
+  const episodeArcsBlock = (
+    <>
+      <EpisodeSlider
+        version={meta.version}
+        ui={meta.ui}
+        uiEn={meta.uiEn}
+        minValue={minEpisode}
+        maxValue={maxEpisode}
+        onMinChange={setMinEpisode}
+        onMaxChange={setMaxEpisode}
+      />
+      <div className="arcs">
+        {arcChips.map((arc) => (
+          <button
+            key={arc}
+            type="button"
+            className={activeArc === arc ? 'chip on' : 'chip'}
+            onClick={() => {
+              focusArc(arc);
+              if (isMobile) setOpenSheet(null);
+            }}
+          >
+            <span className="chip-ja">{arc}</span>
+            {meta.arcLabelsEn?.[arc] && meta.arcLabelsEn[arc] !== arc && (
+              <span className="chip-en">{meta.arcLabelsEn[arc]}</span>
+            )}
+          </button>
+        ))}
+      </div>
+    </>
+  );
+
+  const handleNavigateAndClose = useCallback(
+    (id: string) => {
+      navigateToNode(id);
+      if (isMobile) {
+        setOpenSheet(null);
+        setCameFromList(true);
+      }
+    },
+    [navigateToNode, isMobile],
+  );
+
+  const handleBackToList = useCallback(() => {
+    setSelectedId(null);
+    setOpenSheet('list');
+  }, []);
+
   return (
     <>
-      <header>
+      <header className={isMobile ? 'compact' : ''}>
         <div className="ttl">
           <span className="hi">
             H<b>×</b>H 系統樹
             {meta.titleEn && <span className="hi-en"> / {meta.titleEn}</span>}
           </span>
-          <span className="sub">{bilingualInline(meta.subtitle, meta.subtitleEn)}</span>
+          {!isMobile && (
+            <span className="sub">{bilingualInline(meta.subtitle, meta.subtitleEn)}</span>
+          )}
         </div>
-        <EpisodeSlider
-          version={meta.version}
-          ui={meta.ui}
-          uiEn={meta.uiEn}
-          minValue={minEpisode}
-          maxValue={maxEpisode}
-          onMinChange={setMinEpisode}
-          onMaxChange={setMaxEpisode}
-        />
-        <div className="arcs">
-          {arcChips.map((arc) => (
-            <button
-              key={arc}
-              type="button"
-              className={activeArc === arc ? 'chip on' : 'chip'}
-              onClick={() => focusArc(arc)}
-            >
-              <span className="chip-ja">{arc}</span>
-              {meta.arcLabelsEn?.[arc] && meta.arcLabelsEn[arc] !== arc && (
-                <span className="chip-en">{meta.arcLabelsEn[arc]}</span>
-              )}
-            </button>
-          ))}
-        </div>
+        {!isMobile && episodeArcsBlock}
       </header>
 
-      <div className="ctrls">
-        <button type="button" onClick={panZoom.zoomIn} aria-label="拡大">
-          ＋
-        </button>
-        <button type="button" onClick={panZoom.zoomOut} aria-label="縮小">
-          －
-        </button>
-        <button
-          type="button"
-          onClick={() => {
-            deselect();
-            fit();
-          }}
-          aria-label="全体表示"
-        >
-          ⤢
-        </button>
-      </div>
+      {!isMobile && (
+        <div className="ctrls">
+          <button type="button" onClick={panZoom.zoomIn} aria-label="拡大">
+            ＋
+          </button>
+          <button type="button" onClick={panZoom.zoomOut} aria-label="縮小">
+            －
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              deselect();
+              fit();
+            }}
+            aria-label="全体表示"
+          >
+            ⤢
+          </button>
+        </div>
+      )}
 
-      <NodeListPanel
-        nodes={positionedNodes}
-        branches={branches}
-        meta={meta}
-        minEpisode={minEpisode}
-        maxEpisode={maxEpisode}
-        selectedId={selectedId}
-        onSelectNode={navigateToNode}
-      />
+      {!isMobile && (
+        <NodeListPanel
+          nodes={positionedNodes}
+          branches={branches}
+          meta={meta}
+          minEpisode={minEpisode}
+          maxEpisode={maxEpisode}
+          selectedId={selectedId}
+          onSelectNode={navigateToNode}
+        />
+      )}
 
       <div
         id="stage"
@@ -275,9 +361,36 @@ export default function App() {
           meta={meta}
           nodesById={nodesById}
           open={selectedId !== null}
-          onClose={deselect}
+          onClose={() => { deselect(); setCameFromList(false); }}
           onSelectNode={navigateToNode}
+          onBackToList={isMobile && cameFromList ? handleBackToList : undefined}
         />
+      )}
+
+      {isMobile && (
+        <>
+          <MobileBottomBar
+            onOpenList={() => setOpenSheet((s) => (s === 'list' ? null : 'list'))}
+            onOpenEpisodes={() => setOpenSheet((s) => (s === 'episodes' ? null : 'episodes'))}
+            onZoomIn={panZoom.zoomIn}
+            onZoomOut={panZoom.zoomOut}
+            onFit={() => { deselect(); fit(); }}
+          />
+          <BottomSheet open={openSheet === 'list'} onClose={() => setOpenSheet(null)} title="ノード一覧 / Nodes">
+            <NodeListPanel
+              nodes={positionedNodes}
+              branches={branches}
+              meta={meta}
+              minEpisode={minEpisode}
+              maxEpisode={maxEpisode}
+              selectedId={selectedId}
+              onSelectNode={handleNavigateAndClose}
+            />
+          </BottomSheet>
+          <BottomSheet open={openSheet === 'episodes'} onClose={() => setOpenSheet(null)} title="話数 / アーク">
+            {episodeArcsBlock}
+          </BottomSheet>
+        </>
       )}
     </>
   );

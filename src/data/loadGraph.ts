@@ -1,5 +1,6 @@
 import branchesJson from '../../data/branches.json';
 import avatarSvgJson from '../../data/avatar-svg.json';
+import chapterTitlesJson from '../../data/chapter-titles.json';
 import enJson from '../../data/locale/en.json';
 import nodesJson from '../../data/nodes.json';
 import metaJson from '../../data/meta.json';
@@ -47,6 +48,14 @@ function loadGraph(): GraphData {
   const metaJa = metaJson as Omit<GraphMeta, 'arcEpisodes'>;
   const en = enJson as EnLocale;
   const avatarSvgs = (avatarSvgJson as AvatarSvgFile).avatars ?? {};
+  // chapter-titles.json is { "1": "出発の日", ... } — keys are strings in JSON
+  // but we expose them as numeric-keyed for lookup convenience.
+  const chapterTitlesRaw = chapterTitlesJson as Record<string, string>;
+  const chapterTitles: Record<number, string> = {};
+  for (const [k, v] of Object.entries(chapterTitlesRaw)) {
+    chapterTitles[Number(k)] = clean(v);
+  }
+
   const meta: GraphMeta = {
     ...metaJa,
     titleEn: en.meta.title,
@@ -56,6 +65,7 @@ function loadGraph(): GraphData {
     labelsEn: en.meta.labels,
     arcLabelsEn: en.arcs,
     arcEpisodes: {},
+    chapterTitles,
   };
 
   const branchesList = (branchesJson as BranchesFile).branches.map((b) => ({

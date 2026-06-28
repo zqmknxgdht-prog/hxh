@@ -1622,7 +1622,7 @@
     },
     "n_w_saiyu": {
       "label": "Saiyu",
-      "description": "Zodiac Monkey. A Bounty Hunter and martial artist, styled like Sun Wukong with an extending staff and a foul mouth. In truth he is a spy for the Beyond faction. Aboard the B/W he stands watch over Beyond's detention room with Kanzai and Saccho. Wields three monkey Nen-beasts—See-No-Evil, Hear-No-Evil, Speak-No-Evil—that strip sight, hearing, and speech."
+      "description": "Zodiac Monkey. A Bounty Hunter and martial artist, styled like Sun Wukong with an extending staff and a foul mouth. In truth, he is in cahoots with Pariston to engineer Beyond's release, posted at Beyond's detention room aboard the B/W (with Kanzai and Saccho) precisely to act as the inside man. Wields three monkey Nen-beasts—See-No-Evil, Hear-No-Evil, Speak-No-Evil—that strip sight, hearing, and speech from targets."
     },
     "n_w_sakisuke_njiji": {
       "label": "Sakisuke Njiji",
@@ -2947,6 +2947,10 @@
     "n_melody_concert": {
       "label": "Melody's Concert",
       "description": "At the ship's banquet Melody performs on flute, her music stirring deep feeling in many listeners—Justice Bureau agent Kaiser is utterly smitten. The performance also intersects with the unfolding Kacho/Fugetsu escape plan."
+    },
+    "n_saiyu_revealed": {
+      "label": "Saiyu Exposed as the Beyond Informant",
+      "description": "Mizaistom confronts all Zodiacs about a traitor in their ranks and discloses his own ability. Watching via a hidden camera from a separate room, Kurapika identifies Saiyu as Beyond's informant."
     }
   }
 }
