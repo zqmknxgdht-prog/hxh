@@ -12,7 +12,7 @@ import {
   type EdgeHoverInfo,
 } from '../utils/hoverInfo';
 import { formatEpisodeBilingual } from '../utils/formatEpisode';
-import { branchPolylinePath, edgePath, type PositionedNode } from '../utils/layout';
+import { branchPolylinePath, computeLaneGeometry, edgePath, type PositionedNode } from '../utils/layout';
 import { layoutLabels, leaderDistance, type LabelInput } from '../utils/labelForce';
 
 const LABEL_LINE_H = 11;
@@ -47,6 +47,19 @@ interface GraphSceneProps {
   hoverEdgeKey: string | null;
   hasSelection: boolean;
   onSelectNode: (id: string) => void;
+  onSelectEdge?: (edge: {
+    key: string;
+    title: string;
+    detail: string;
+    episodeLabel: string;
+    kindLabel: string;
+    color: string;
+    fromNodeId?: string;
+    toNodeId?: string;
+    fromLabel?: string;
+    toLabel?: string;
+  }) => void;
+  onSelectDay?: (day: number, label: string) => void;
   onHover: (payload: HoverPayload | null) => void;
 }
 
@@ -110,6 +123,8 @@ export function GraphScene({
   hoverEdgeKey,
   hasSelection,
   onSelectNode,
+  onSelectEdge,
+  onSelectDay,
   onHover,
 }: GraphSceneProps) {
   const layout = meta.layout;
@@ -124,14 +139,53 @@ export function GraphScene({
     return m;
   }, [nodes]);
 
+  /** Day → x position derived from positioned nodes' actual day slot. Since
+   *  voyage nodes are sub-clustered by day, each day has a distinct minimum x.
+   *  Skip days that have no visible node. */
+  const voyageDayGuides = useMemo(() => {
+    const days = meta.voyageDays ?? [];
+    if (days.length === 0) return [];
+    const xByDay = new Map<number, number>();
+    let minY = Infinity;
+    let maxY = -Infinity;
+    for (const n of nodes) {
+      minY = Math.min(minY, n.y);
+      maxY = Math.max(maxY, n.y);
+      if (typeof n.day !== 'number') continue;
+      const cur = xByDay.get(n.day);
+      if (cur === undefined || n.x < cur) xByDay.set(n.day, n.x);
+    }
+    return days
+      .filter((d) => d.chapter >= minEpisode && d.chapter <= maxEpisode)
+      .map((d) => {
+        const x = xByDay.get(d.day);
+        if (x === undefined) return null;
+        return { day: d.day, label: d.label ?? `Day ${d.day}`, x: x - 14, y1: minY - 18, y2: maxY + 30 };
+      })
+      .filter((x): x is { day: number; label: string; x: number; y1: number; y2: number } => x !== null);
+  }, [meta.voyageDays, nodes, minEpisode, maxEpisode]);
+
+  /** During voyage range, swap branch to voyageLocation for lane assignment. */
+  const effectiveBranchOf = (n: GraphNode) =>
+    n.voyageLocation && n.episode >= 358 && n.episode <= 410 ? n.voyageLocation : n.branchId;
+
+  /** Adaptive lane y / height per pre-voyage and voyage contexts. */
+  const laneGeometry = useMemo(
+    () => computeLaneGeometry(nodes, branches, layout),
+    [nodes, branches, layout],
+  );
+
   const branchSegments = useMemo(() => {
     const segments: { branchId: string; branch: Branch; d: string; labelY: number; future: boolean }[] = [];
     for (const branchId of Object.keys(branches)) {
-      const branchNodes = nodes.filter((n) => n.branchId === branchId);
+      const branchNodes = nodes.filter((n) => effectiveBranchOf(n) === branchId);
       if (!branchNodes.length) continue;
       const branch = branches[branchId];
       const visible = branchNodes.filter((n) => !isFuture(n));
-      const labelY = layout.marginY + branch.lane * layout.laneHeight;
+      // labelY anchors the lane label at the left of the graph; prefer the voyage
+      // map (where loc_* always lives), fall back to pre-voyage map.
+      const labelY = laneGeometry.voyage.y.get(branchId) ?? laneGeometry.pre.y.get(branchId);
+      if (labelY === undefined) continue;
       segments.push({
         branchId,
         branch,
@@ -141,7 +195,7 @@ export function GraphScene({
       });
     }
     return segments;
-  }, [nodes, branches, layout, minEpisode, maxEpisode]);
+  }, [nodes, branches, layout, minEpisode, maxEpisode, laneGeometry]);
 
   const forkEdges = useMemo((): RenderEdge[] => {
     const edges: RenderEdge[] = [];
@@ -205,6 +259,103 @@ export function GraphScene({
     return edges;
   }, [nodes, branches, nodesById, posById, minEpisode, maxEpisode, meta]);
 
+  /** Voyage entry edges: for each character node with voyageLocation set whose
+   *  own episode is pre-voyage, draw a faint curve from that pre-voyage node
+   *  to where its location lane starts (at voyage begin x). Visualizes the
+   *  character moving into a specific room/area when the voyage starts. */
+  const voyageEntryEdges = useMemo(() => {
+    let voyageXMin = Infinity;
+    for (const n of nodes) {
+      if (n.episode >= 358 && n.episode <= 410 && n.x < voyageXMin) voyageXMin = n.x;
+    }
+    if (voyageXMin === Infinity) return [];
+    const edges: {
+      key: string;
+      d: string;
+      color: string;
+      title: string;
+      detail: string;
+      episode: number;
+      fromNodeId?: string;
+      toNodeId?: string;
+      fromLabel?: string;
+      toLabel?: string;
+    }[] = [];
+    for (const n of nodes) {
+      if (!n.voyageLocation) continue;
+      if (n.episode >= 358) continue;
+      const srcPos = posById.get(n.id);
+      if (!srcPos) continue;
+      const laneY = laneGeometry.voyage.y.get(n.voyageLocation);
+      if (laneY === undefined) continue;
+      const color = branches[n.voyageLocation]?.color ?? '#888';
+      const locName = branches[n.voyageLocation]?.name ?? n.voyageLocation;
+      edges.push({
+        key: `voy-entry-${n.id}`,
+        d: edgePath(srcPos.x, srcPos.y, voyageXMin - 8, laneY),
+        color,
+        title: `船上着任 / Voyage Entry`,
+        detail: `${n.label} → ${locName}`,
+        episode: 358,
+        fromNodeId: n.id,
+        fromLabel: n.label,
+        toLabel: locName,
+      });
+    }
+    return edges;
+  }, [nodes, posById, branches, laneGeometry]);
+
+  /** Participation edges: for each event with participants[], draw a thin
+   *  curved line from each participant's nearest pre-event node to the event,
+   *  visualizing convergence. */
+  const participationEdges = useMemo(() => {
+    const edges: {
+      key: string;
+      d: string;
+      color: string;
+      title: string;
+      detail: string;
+      episode: number;
+      fromNodeId?: string;
+      toNodeId?: string;
+      fromLabel?: string;
+      toLabel?: string;
+    }[] = [];
+    for (const ev of nodes) {
+      if (ev.kind !== 'event' || !ev.participants?.length) continue;
+      if (isFuture(ev)) continue;
+      const evPos = posById.get(ev.id);
+      if (!evPos) continue;
+      for (const pid of ev.participants) {
+        const p = nodesById[pid];
+        if (!p) continue;
+        const sameBranch = nodes.filter(
+          (n) => n.branchId === p.branchId && n.x <= evPos.x && n.id !== ev.id,
+        );
+        const src = sameBranch.length
+          ? sameBranch.reduce((a, b) => (a.x > b.x ? a : b))
+          : nodesById[pid];
+        if (!src || src.id === ev.id) continue;
+        const srcPos = posById.get(src.id);
+        if (!srcPos) continue;
+        const color = branches[p.branchId]?.color ?? '#888';
+        edges.push({
+          key: `part-${ev.id}-${pid}`,
+          d: edgePath(srcPos.x, srcPos.y, evPos.x, evPos.y),
+          color,
+          title: `登場 / Participation`,
+          detail: `${p.label} → ${ev.label}`,
+          episode: ev.episode,
+          fromNodeId: p.id,
+          toNodeId: ev.id,
+          fromLabel: p.label,
+          toLabel: ev.label,
+        });
+      }
+    }
+    return edges;
+  }, [nodes, nodesById, posById, branches, minEpisode, maxEpisode]);
+
   const allEdges = useMemo(() => [...forkEdges, ...mergeEdges], [forkEdges, mergeEdges]);
 
   /** Force-laid-out label positions for visible labels. */
@@ -232,33 +383,130 @@ export function GraphScene({
     return laidOut.map((item) => ({ ...item, measure: measureCache.get(item.id)! }));
   }, [nodes, minEpisode, maxEpisode, showNodeLabels]);
 
+  /** Location lane bands: for each location branch with at least one visible node,
+   *  compute (xMin..xMax, yMin..yMax) so we can draw a horizontal separator + a
+   *  faint background label of the location name. */
+  const locationBands = useMemo(() => {
+    // x range: starts at smallest x of any voyage node (ep >= 358), extends to graph right.
+    let voyageXMin = Infinity;
+    let graphXMax = -Infinity;
+    for (const n of nodes) {
+      if (n.x > graphXMax) graphXMax = n.x;
+      if (n.episode >= 358 && n.episode <= 410 && n.x < voyageXMin) voyageXMin = n.x;
+    }
+    if (voyageXMin === Infinity) return [];
+    const bands: {
+      branchId: string;
+      label: string;
+      x1: number;
+      x2: number;
+      yTop: number;
+      yBottom: number;
+      yMid: number;
+    }[] = [];
+    for (const id of Object.keys(branches)) {
+      if (!id.startsWith('loc_')) continue;
+      const laneY = laneGeometry.voyage.y.get(id);
+      const laneH = laneGeometry.voyage.height.get(id);
+      if (laneY === undefined || laneH === undefined) continue;
+      const lh = laneH / 2;
+      bands.push({
+        branchId: id,
+        label: branches[id].name,
+        x1: voyageXMin - 20,
+        x2: graphXMax + 40,
+        yTop: laneY - lh + 2,
+        yBottom: laneY + lh - 2,
+        yMid: laneY,
+      });
+    }
+    return bands;
+  }, [nodes, branches, layout, laneGeometry]);
+
   const sceneClass = ['scene', lod !== 'normal' ? `lod-${lod}` : '', hasSelection ? 'has-sel' : '']
     .filter(Boolean)
     .join(' ');
 
   return (
     <g className={sceneClass}>
-      {branchSegments.map(({ branchId, branch, d, labelY, future }) => (
-        <g key={`lane-${branchId}`} className={future ? 'future' : undefined}>
-          <path className="lane" d={d} fill="none" stroke={branch.color} {...STROKE} />
-          {showBranchLabels && (
-            <text
-              className="lbl lbl-lane"
-              x={10}
-              y={labelY + 4}
-              textAnchor="start"
-              fill={branch.color}
-            >
-              <tspan x={10} dy={0}>
-                {branch.name}
-              </tspan>
-              {branch.nameEn && branch.nameEn !== branch.name && (
-                <tspan x={10} dy={11} className="lbl-en">
-                  {branch.nameEn}
+      {/* Location bands: solid separator lines + repeated label (left outside,
+          center, right outside) so the lane is identifiable wherever the user pans. */}
+      {locationBands.map((b) => (
+        <g key={`loc-band-${b.branchId}`} className="loc-band">
+          <line x1={b.x1} x2={b.x2} y1={b.yTop} y2={b.yTop} className="loc-band-sep" />
+          <line x1={b.x1} x2={b.x2} y1={b.yBottom} y2={b.yBottom} className="loc-band-sep" />
+          <text x={b.x1 - 20} y={b.yMid + 8} className="loc-band-label" textAnchor="end">
+            {b.label}
+          </text>
+          <text x={(b.x1 + b.x2) / 2} y={b.yMid + 8} className="loc-band-label" textAnchor="middle">
+            {b.label}
+          </text>
+          <text x={b.x2 + 20} y={b.yMid + 8} className="loc-band-label" textAnchor="start">
+            {b.label}
+          </text>
+        </g>
+      ))}
+      {voyageDayGuides.map((g) => (
+        <g
+          key={`vday-${g.day}`}
+          className="voyage-day"
+          onClick={() => onSelectDay?.(g.day, g.label)}
+          style={{ cursor: onSelectDay ? 'pointer' : 'default' }}
+        >
+          <line x1={g.x} x2={g.x} y1={g.y1} y2={g.y2} className="voyage-day-line" />
+          <text x={g.x} y={g.y1 - 4} className="voyage-day-label" textAnchor="middle">
+            {g.label}
+          </text>
+          {/* invisible hit area for easier clicking */}
+          <rect
+            x={g.x - 60}
+            y={g.y1 - 28}
+            width={120}
+            height={28}
+            fill="transparent"
+            pointerEvents="all"
+          />
+        </g>
+      ))}
+      {branchSegments.map(({ branchId, branch, d, labelY, future }) => {
+        const isLoc = branchId.startsWith('loc_');
+        return (
+          <g
+            key={`lane-${branchId}`}
+            className={`${future ? 'future' : ''} ${isLoc ? 'loc-lane' : ''}`.trim() || undefined}
+          >
+            <path className="lane" d={d} fill="none" stroke={branch.color} {...STROKE} />
+            {showBranchLabels && (
+              <text
+                className={`lbl lbl-lane ${isLoc ? 'lbl-loc' : ''}`.trim()}
+                x={10}
+                y={labelY + 4}
+                textAnchor="start"
+                fill={branch.color}
+              >
+                <tspan x={10} dy={0}>
+                  {branch.name}
                 </tspan>
-              )}
-            </text>
-          )}
+                {branch.nameEn && branch.nameEn !== branch.name && (
+                  <tspan x={10} dy={11} className="lbl-en">
+                    {branch.nameEn}
+                  </tspan>
+                )}
+              </text>
+            )}
+          </g>
+        );
+      })}
+
+      {voyageEntryEdges.map(({ key, d, color }) => (
+        <g key={`vye-${key}`}>
+          <path className="edge voyage-entry" d={d} stroke={color} fill="none" />
+        </g>
+      ))}
+
+      {participationEdges.map(({ key, d, color }) => (
+        <g key={`pe-${key}`}>
+          <path className="edge participation" d={d} stroke={color} fill="none" />
         </g>
       ))}
 
@@ -395,6 +643,56 @@ export function GraphScene({
             d={edge.d}
             onMouseEnter={() => onHover(toEdgePayload(edge, meta))}
             onMouseLeave={() => onHover(null)}
+            onClick={() => {
+              if (!onSelectEdge) return;
+              onSelectEdge({
+                key: edge.key,
+                title: edge.title,
+                detail: edge.detail,
+                episodeLabel: formatEpisodeBilingual(meta.version, meta.versionEn, edge.episode),
+                kindLabel: edgeKindLabel(edge.kind, meta),
+                color: edge.color,
+              });
+            }}
+          />
+        );
+      })}
+
+      {/* Hit areas for participation + voyage-entry edges (auxiliary edges). */}
+      {[...participationEdges, ...voyageEntryEdges].map((edge) => {
+        const epLabel = formatEpisodeBilingual(meta.version, meta.versionEn, edge.episode);
+        return (
+          <path
+            key={`hit-aux-${edge.key}`}
+            className="edge-hit"
+            d={edge.d}
+            onMouseEnter={() =>
+              onHover({
+                target: 'edge',
+                edgeKey: edge.key,
+                title: edge.title,
+                detail: edge.detail,
+                episodeLabel: epLabel,
+                kindLabel: edge.title,
+                color: edge.color,
+              })
+            }
+            onMouseLeave={() => onHover(null)}
+            onClick={() => {
+              if (!onSelectEdge) return;
+              onSelectEdge({
+                key: edge.key,
+                title: edge.title,
+                detail: edge.detail,
+                episodeLabel: epLabel,
+                kindLabel: edge.title,
+                color: edge.color,
+                fromNodeId: edge.fromNodeId,
+                toNodeId: edge.toNodeId,
+                fromLabel: edge.fromLabel,
+                toLabel: edge.toLabel,
+              });
+            }}
           />
         );
       })}

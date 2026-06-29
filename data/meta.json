@@ -55,5 +55,19 @@
     "役割": ["スパイ", "内通者", "護衛", "暗殺者", "裏切り者", "師弟関係"],
     "メタイベント": ["戦闘", "試合", "修行", "儀式"],
     "物語装置": ["回想", "予兆", "伏線回収"]
-  }
+  },
+  "voyageDays": [
+    { "day": 1, "chapter": 358, "label": "Day 1 出港" },
+    { "day": 2, "chapter": 366 },
+    { "day": 3, "chapter": 372 },
+    { "day": 4, "chapter": 377 },
+    { "day": 5, "chapter": 380 },
+    { "day": 6, "chapter": 382 },
+    { "day": 7, "chapter": 384 },
+    { "day": 8, "chapter": 386 },
+    { "day": 9, "chapter": 388 },
+    { "day": 10, "chapter": 390 },
+    { "day": 11, "chapter": 400 },
+    { "day": 12, "chapter": 405 }
+  ]
 }

@@ -887,7 +887,8 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "voyageLocation": "loc_room_1014"
     },
     {
       "id": "n_w_bendot",
@@ -2219,12 +2220,12 @@
     },
     {
       "id": "n_melody",
-      "branchId": "neon_guard",
+      "branchId": "senritsu",
       "type": "n",
       "label": "センリツ",
       "kind": "character",
       "description": "ヨークシン編からの登場人物。ネオン護衛の音楽ハンターで、フルートの音で対象を魅了・解析する放出系念能力者。魔曲『ソナタ・オブ・ダークネス』により異形となった過去を持つ。継承戦編ではクラピカに雇われ第十王子カチョウの護衛に就く。",
-      "gitMeta": "<code>neon_guard</code> ブランチ＝雇われ護衛。",
+      "gitMeta": "<code>senritsu</code> ブランチ＝センリツの個人線。",
       "episode": 64,
       "arcs": [
         "ヨークシン"
@@ -2312,7 +2313,8 @@
       "tags": [
         "念能力者",
         "護衛"
-      ]
+      ],
+      "voyageLocation": "loc_room_1007"
     },
     {
       "id": "n_squala",
@@ -9727,7 +9729,8 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "voyageLocation": "loc_king_chamber"
     },
     {
       "id": "n_kite_reunion",
@@ -10199,7 +10202,8 @@
       "affiliations": [
         "カキン王国"
       ],
-      "occupation": "2nd Queen of the Kakin Empire"
+      "occupation": "2nd Queen of the Kakin Empire",
+      "voyageLocation": "loc_room_1002"
     },
     {
       "id": "n_k_katrono_hui_guo_rou",
@@ -10216,7 +10220,8 @@
       "affiliations": [
         "カキン王国"
       ],
-      "occupation": "4th Queen of the Kakin Empire"
+      "occupation": "4th Queen of the Kakin Empire",
+      "voyageLocation": "loc_room_1006"
     },
     {
       "id": "n_k_nugui",
@@ -10265,7 +10270,8 @@
       "tags": [
         "念未覚醒",
         "護衛"
-      ]
+      ],
+      "voyageLocation": "loc_room_1014"
     },
     {
       "id": "n_k_seiko_hui_guo_rou",
@@ -10282,7 +10288,8 @@
       "affiliations": [
         "カキン王国"
       ],
-      "occupation": "6th Queen of the Kakin Empire"
+      "occupation": "6th Queen of the Kakin Empire",
+      "voyageLocation": "loc_room_1010"
     },
     {
       "id": "n_k_sevanti_hui_guo_rou",
@@ -10302,7 +10309,8 @@
       "occupation": "7th Queen of the Kakin Empire",
       "tags": [
         "護衛"
-      ]
+      ],
+      "voyageLocation": "loc_room_1013"
     },
     {
       "id": "n_k_swinko_swinko_hui_guo_rou",
@@ -10319,7 +10327,8 @@
       "affiliations": [
         "カキン王国"
       ],
-      "occupation": "5th Queen of the Kakin Empire"
+      "occupation": "5th Queen of the Kakin Empire",
+      "voyageLocation": "loc_room_1008"
     },
     {
       "id": "n_k_tang_zhao_li_hui_guo_rou",
@@ -10336,7 +10345,8 @@
       "affiliations": [
         "カキン王国"
       ],
-      "occupation": "3rd Queen of the Kakin Empire"
+      "occupation": "3rd Queen of the Kakin Empire",
+      "voyageLocation": "loc_room_1003"
     },
     {
       "id": "n_k_unma_hui_guo_rou",
@@ -10356,7 +10366,8 @@
       "occupation": "1st Queen of the Kakin Empire",
       "tags": [
         "スパイ"
-      ]
+      ],
+      "voyageLocation": "loc_king_chamber"
     },
     {
       "id": "n_beyond_arrest",
@@ -10553,7 +10564,8 @@
       "tags": [
         "念未覚醒",
         "死亡"
-      ]
+      ],
+      "voyageLocation": "loc_room_1001"
     },
     {
       "id": "n_princes_intro",
@@ -10624,7 +10636,8 @@
       "tags": [
         "念未覚醒",
         "守護霊獣保有"
-      ]
+      ],
+      "voyageLocation": "loc_room_1002"
     },
     {
       "id": "n_hisoka_defeated",
@@ -10678,7 +10691,9 @@
         "守護霊獣保有",
         "護衛",
         "死亡"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1014"
     },
     {
       "id": "n_w_sayird",
@@ -10712,7 +10727,9 @@
         "守護霊獣保有",
         "護衛",
         "死亡"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1014"
     },
     {
       "id": "n_shaldie",
@@ -10736,7 +10753,8 @@
         "死亡",
         "復活",
         "念能力者"
-      ]
+      ],
+      "day": 1
     },
     {
       "id": "n_hunt",
@@ -10755,7 +10773,8 @@
       ],
       "tags": [
         "復活"
-      ]
+      ],
+      "day": 1
     },
     {
       "id": "n_zhang",
@@ -10786,7 +10805,9 @@
       "tags": [
         "念未覚醒",
         "守護霊獣保有"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1003"
     },
     {
       "id": "n_chrollo_aboard",
@@ -10794,7 +10815,7 @@
       "type": "n",
       "label": "旅団乗船",
       "kind": "event",
-      "description": "ブラックホエール号にクロロ・マチ・コルトピ含む旅団員が乗船。ヒソカは下層民区画に潜む。",
+      "description": "ブラックホエール号にクロロ・マチ・コルトピ含む旅団員が乗船し第5層を拠点に活動を開始。ヒソカも独自に潜伏。",
       "gitMeta": "<code>checkout troupe-aboard</code>＝旅団枝が船上戦線へ。",
       "episode": 358,
       "arcs": [
@@ -10805,7 +10826,9 @@
         "n_hisoka",
         "n_chrollo",
         "n_machi"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_k_balsamilco_might",
@@ -10828,7 +10851,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1001"
     },
     {
       "id": "n_k_butch",
@@ -10852,7 +10877,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1005"
     },
     {
       "id": "n_k_coventoba",
@@ -10876,7 +10903,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1003"
     },
     {
       "id": "n_k_gantai",
@@ -10893,7 +10922,9 @@
       "affiliations": [
         "カキン王国"
       ],
-      "occupation": "Announcer Personality for the Dark Continent Voyage"
+      "occupation": "Announcer Personality for the Dark Continent Voyage",
+      "day": 1,
+      "voyageLocation": "loc_tier_1"
     },
     {
       "id": "n_k_orau",
@@ -10917,7 +10948,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1006"
     },
     {
       "id": "n_k_rihan",
@@ -10949,7 +10982,9 @@
       "tags": [
         "念能力者",
         "守護霊獣保有"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1005"
     },
     {
       "id": "n_k_sandra",
@@ -10971,7 +11006,9 @@
         "護衛",
         "暗殺者",
         "死亡"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1014"
     },
     {
       "id": "n_k_tamazo",
@@ -10988,7 +11025,9 @@
       "affiliations": [
         "カキン王国"
       ],
-      "occupation": "Announcer Personality for the Dark Continent Voyage"
+      "occupation": "Announcer Personality for the Dark Continent Voyage",
+      "day": 1,
+      "voyageLocation": "loc_tier_1"
     },
     {
       "id": "n_k_vict",
@@ -11020,7 +11059,9 @@
       "tags": [
         "念未覚醒",
         "死亡"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1009"
     },
     {
       "id": "n_k_vincent",
@@ -11052,7 +11093,9 @@
         "念未覚醒",
         "護衛",
         "死亡"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1014"
     },
     {
       "id": "n_k_woody",
@@ -11072,7 +11115,9 @@
       "tags": [
         "護衛",
         "死亡"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1014"
     },
     {
       "id": "n_k_yushohi",
@@ -11103,7 +11148,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1008"
     },
     {
       "id": "n_bill",
@@ -11136,24 +11183,35 @@
       "tags": [
         "念能力者",
         "護衛"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1014"
     },
     {
       "id": "n_illumi_pact",
       "branchId": "illumi",
       "type": "h",
-      "label": "イルミ旅団加入(ヒソカ依頼)",
+      "label": "旅団集合 + イルミ紹介(第5層)",
       "kind": "event",
-      "description": "クロロとの死闘から蘇生したヒソカが旅団員全員を標的とする殺し合いを宣言。ヒソカからの依頼でイルミ＝ゾルディックが旅団 No.11(ウボォーギンの欠員)として加入し、ヒソカを討つ任を負う。船内で旅団 vs ヒソカの相互探索が進行する。",
-      "gitMeta": "<code>illumi</code> 継承戦編 旅団 No.11 加入。",
-      "episode": 358,
+      "description": "第5層に旅団員 (クロロ・ノブナガ・フィンクス・フェイタン・マチ・ボノレノフ・シズク・フランクリン) が集合。クロロが第5層でヒソカ未発見と確認した上で、新メンバーとしてイルミ＝ゾルディックを紹介。イルミは自らの目的が \"ヒソカ討伐\" であることを公言する (ch 377)。",
+      "gitMeta": "<code>illumi</code> ch 377 第5層集合。",
+      "episode": 377,
       "arcs": [
         "継承戦"
       ],
       "participants": [
-        "n_hisoka",
+        "n_chrollo",
+        "n_nobunaga",
+        "n_phinks",
+        "n_feitan",
+        "n_machi",
+        "n_bonolenov",
+        "n_shizuku",
+        "n_franklin",
         "n_illumi"
-      ]
+      ],
+      "day": 4,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_three_mafia",
@@ -11170,7 +11228,9 @@
       "members": [],
       "parents": [
         "n_kakin_kingdom"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_benjamin_army",
@@ -11207,7 +11267,9 @@
       ],
       "parents": [
         "n_princes"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1001"
     },
     {
       "id": "n_w_tokarine",
@@ -11237,7 +11299,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_medical"
     },
     {
       "id": "n_k_peuckert",
@@ -11255,7 +11319,9 @@
         "国際渡航許可庁",
         "カキン司法局"
       ],
-      "occupation": "Restricted Travel Permit Agency's Special Task Force Member"
+      "occupation": "Restricted Travel Permit Agency's Special Task Force Member",
+      "day": 1,
+      "voyageLocation": "loc_justice"
     },
     {
       "id": "n_k_shimano",
@@ -11273,7 +11339,9 @@
         "カキン王国",
         "オイト王妃"
       ],
-      "occupation": "Queen Oito's Maid"
+      "occupation": "Queen Oito's Maid",
+      "day": 1,
+      "voyageLocation": "loc_room_1014"
     },
     {
       "id": "n_tubeppa",
@@ -11302,7 +11370,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1005"
     },
     {
       "id": "n_kakin_depart",
@@ -11315,7 +11385,9 @@
       "episode": 360,
       "arcs": [
         "継承戦"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_tier_1"
     },
     {
       "id": "n_k_bladge",
@@ -11337,7 +11409,9 @@
       "tags": [
         "スパイ",
         "死亡"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1012"
     },
     {
       "id": "n_k_nipaper",
@@ -11359,7 +11433,9 @@
       "tags": [
         "スパイ",
         "死亡"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1012"
     },
     {
       "id": "n_k_vergei",
@@ -11378,7 +11454,9 @@
         "セヴァンチ王妃",
         "第十三王子マラヤーム"
       ],
-      "occupation": "Captain of Queen Sevanti's Royal Guard / Captain of the Guards of Prince Marayam"
+      "occupation": "Captain of Queen Sevanti's Royal Guard / Captain of the Guards of Prince Marayam",
+      "day": 1,
+      "voyageLocation": "loc_room_1013"
     },
     {
       "id": "n_w_giuliano",
@@ -11402,7 +11480,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1006"
     },
     {
       "id": "n_w_ridge",
@@ -11427,7 +11507,9 @@
       "tags": [
         "念未覚醒",
         "護衛"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1007"
     },
     {
       "id": "n_w_scairt",
@@ -11452,7 +11534,9 @@
       "tags": [
         "念未覚醒",
         "護衛"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1007"
     },
     {
       "id": "n_k_anesuto",
@@ -11476,7 +11560,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1009"
     },
     {
       "id": "n_k_furichosefu",
@@ -11500,7 +11586,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1009"
     },
     {
       "id": "n_k_k_bihi",
@@ -11524,7 +11612,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1009"
     },
     {
       "id": "n_k_kontasutin",
@@ -11548,7 +11638,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1009"
     },
     {
       "id": "n_k_mushaho",
@@ -11566,7 +11658,9 @@
         "カキン王国",
         "スィンコスィンコ王妃"
       ],
-      "occupation": "Captain of Queen Swinko-swinko's Royal Guard"
+      "occupation": "Captain of Queen Swinko-swinko's Royal Guard",
+      "day": 1,
+      "voyageLocation": "loc_room_1008"
     },
     {
       "id": "n_k_nikoraurusu",
@@ -11591,7 +11685,9 @@
       "tags": [
         "念未覚醒",
         "護衛"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1009"
     },
     {
       "id": "n_k_shedule",
@@ -11616,7 +11712,9 @@
       "tags": [
         "念未覚醒",
         "護衛"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1009"
     },
     {
       "id": "n_k_sumidori",
@@ -11634,7 +11732,9 @@
         "カキン王国",
         "第九王子ハルケンブルク"
       ],
-      "occupation": "第九王子ハルケンブルク付私兵"
+      "occupation": "第九王子ハルケンブルク付私兵",
+      "day": 1,
+      "voyageLocation": "loc_room_1009"
     },
     {
       "id": "n_k_yuhirai",
@@ -11659,7 +11759,9 @@
       "tags": [
         "念未覚醒",
         "守護霊獣保有"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1009"
     },
     {
       "id": "n_tyson",
@@ -11689,7 +11791,9 @@
       "tags": [
         "念未覚醒",
         "守護霊獣保有"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1006"
     },
     {
       "id": "n_k_babimyna",
@@ -11713,7 +11817,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1014"
     },
     {
       "id": "n_k_furykov",
@@ -11737,7 +11843,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1001"
     },
     {
       "id": "n_k_kanjidol",
@@ -11762,7 +11870,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1007"
     },
     {
       "id": "n_k_maor",
@@ -11786,7 +11896,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1005"
     },
     {
       "id": "n_k_moswana",
@@ -11818,7 +11930,9 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1002"
     },
     {
       "id": "n_k_musse",
@@ -11849,7 +11963,9 @@
       "tags": [
         "念未覚醒",
         "死亡"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1002"
     },
     {
       "id": "n_k_sarahell",
@@ -11881,7 +11997,9 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1002"
     },
     {
       "id": "n_k_shikaku",
@@ -11912,7 +12030,9 @@
       "tags": [
         "念能力者",
         "死亡"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1009"
     },
     {
       "id": "n_k_tenftory",
@@ -11936,7 +12056,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1003"
     },
     {
       "id": "n_k_vantine",
@@ -11954,7 +12076,9 @@
         "カキン王国",
         "第四王子ツェリードニヒ"
       ],
-      "occupation": "Private Military Commander for Prince Tserriednich"
+      "occupation": "Private Military Commander for Prince Tserriednich",
+      "day": 1,
+      "voyageLocation": "loc_room_1004"
     },
     {
       "id": "n_luzurus",
@@ -11985,7 +12109,9 @@
       "tags": [
         "念未覚醒",
         "守護霊獣保有"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1007"
     },
     {
       "id": "n_woble_contract",
@@ -12003,7 +12129,9 @@
         "n_kura",
         "n_k_oito_hui_guo_rou",
         "n_woble"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1014"
     },
     {
       "id": "n_k_slakka",
@@ -12025,7 +12153,9 @@
       "occupation": "Woble Hui Guo Rou付護衛 / Spy for Queen Duazul Hui Guo Rou",
       "tags": [
         "スパイ"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1014"
     },
     {
       "id": "n_k_bachaem",
@@ -12045,7 +12175,9 @@
       ],
       "tags": [
         "スパイ"
-      ]
+      ],
+      "day": 2,
+      "voyageLocation": "loc_room_1011"
     },
     {
       "id": "n_k_beeta",
@@ -12062,7 +12194,9 @@
       "affiliations": [
         "カキン王国",
         "第四王子ツベッパ"
-      ]
+      ],
+      "day": 2,
+      "voyageLocation": "loc_room_1005"
     },
     {
       "id": "n_k_hashito",
@@ -12080,7 +12214,9 @@
         "カキン王国",
         "第三王子チョウライ"
       ],
-      "occupation": "Woble Hui Guo Rou付護衛"
+      "occupation": "Woble Hui Guo Rou付護衛",
+      "day": 2,
+      "voyageLocation": "loc_room_1014"
     },
     {
       "id": "n_k_konattsu",
@@ -12101,7 +12237,9 @@
       "occupation": "第四王子ツベッパ付護衛",
       "tags": [
         "護衛"
-      ]
+      ],
+      "day": 2,
+      "voyageLocation": "loc_room_1005"
     },
     {
       "id": "n_k_laroc",
@@ -12123,7 +12261,9 @@
       "tags": [
         "スパイ",
         "死亡"
-      ]
+      ],
+      "day": 2,
+      "voyageLocation": "loc_room_1012"
     },
     {
       "id": "n_k_loberry",
@@ -12148,7 +12288,9 @@
       "tags": [
         "念未覚醒",
         "死亡"
-      ]
+      ],
+      "day": 2,
+      "voyageLocation": "loc_room_1010"
     },
     {
       "id": "n_k_mizaurouno",
@@ -12165,7 +12307,9 @@
       "affiliations": [
         "カキン王国",
         "第四王子ツベッパ"
-      ]
+      ],
+      "day": 2,
+      "voyageLocation": "loc_room_1005"
     },
     {
       "id": "n_k_nagmum",
@@ -12187,7 +12331,9 @@
       "tags": [
         "スパイ",
         "死亡"
-      ]
+      ],
+      "day": 2,
+      "voyageLocation": "loc_room_1012"
     },
     {
       "id": "n_k_ryoji",
@@ -12204,7 +12350,9 @@
       "affiliations": [
         "カキン王国",
         "第十一王子フウゲツ"
-      ]
+      ],
+      "day": 2,
+      "voyageLocation": "loc_room_1011"
     },
     {
       "id": "n_k_sakata",
@@ -12222,7 +12370,9 @@
         "カキン王国",
         "第三王子チョウライ"
       ],
-      "occupation": "Woble Hui Guo Rou付護衛"
+      "occupation": "Woble Hui Guo Rou付護衛",
+      "day": 2,
+      "voyageLocation": "loc_room_1014"
     },
     {
       "id": "n_k_tuffdy",
@@ -12254,7 +12404,9 @@
         "念未覚醒",
         "スパイ",
         "死亡"
-      ]
+      ],
+      "day": 2,
+      "voyageLocation": "loc_brig"
     },
     {
       "id": "n_k_yuri",
@@ -12278,7 +12430,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 2,
+      "voyageLocation": "loc_room_1010"
     },
     {
       "id": "n_sale",
@@ -12306,7 +12460,9 @@
       ],
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 2,
+      "voyageLocation": "loc_room_1008"
     },
     {
       "id": "n_nen_grant",
@@ -12322,7 +12478,9 @@
       ],
       "tags": [
         "儀式"
-      ]
+      ],
+      "day": 2,
+      "voyageLocation": "loc_ballroom"
     },
     {
       "id": "n_k_mandam",
@@ -12340,7 +12498,9 @@
         "カキン王国",
         "ドゥアズル王妃"
       ],
-      "occupation": "ドゥアズル王妃所属兵隊長"
+      "occupation": "ドゥアズル王妃所属兵隊長",
+      "day": 2,
+      "voyageLocation": "loc_room_1001"
     },
     {
       "id": "n_camilla_army",
@@ -12377,7 +12537,9 @@
       ],
       "parents": [
         "n_princes"
-      ]
+      ],
+      "day": 2,
+      "voyageLocation": "loc_room_1002"
     },
     {
       "id": "n_w_belerainte",
@@ -12401,7 +12563,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 2,
+      "voyageLocation": "loc_room_1013"
     },
     {
       "id": "n_k_barrigen",
@@ -12422,7 +12586,9 @@
       "tags": [
         "護衛",
         "死亡"
-      ]
+      ],
+      "day": 2,
+      "voyageLocation": "loc_room_1012"
     },
     {
       "id": "n_camilla_return",
@@ -12444,7 +12610,9 @@
         "死亡",
         "復活",
         "念能力者"
-      ]
+      ],
+      "day": 2,
+      "voyageLocation": "loc_room_1002"
     },
     {
       "id": "n_k_illardia",
@@ -12468,7 +12636,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 2,
+      "voyageLocation": "loc_room_1011"
     },
     {
       "id": "n_k_ladiolus",
@@ -12492,7 +12662,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 2,
+      "voyageLocation": "loc_room_1011"
     },
     {
       "id": "n_k_longhi",
@@ -12523,7 +12695,9 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 2,
+      "voyageLocation": "loc_room_1005"
     },
     {
       "id": "n_k_satobi",
@@ -12548,7 +12722,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 2,
+      "voyageLocation": "loc_room_1007"
     },
     {
       "id": "n_halkenburg",
@@ -12582,7 +12758,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 2,
+      "voyageLocation": "loc_room_1009"
     },
     {
       "id": "n_halken_beast",
@@ -12598,7 +12776,9 @@
       ],
       "participants": [
         "n_halkenburg"
-      ]
+      ],
+      "day": 2,
+      "voyageLocation": "loc_room_1009"
     },
     {
       "id": "n_k_cleapatro",
@@ -12616,7 +12796,9 @@
         "カキン王国",
         "カキン司法局"
       ],
-      "occupation": "第1層 最高裁判官"
+      "occupation": "第1層 最高裁判官",
+      "day": 2,
+      "voyageLocation": "loc_justice"
     },
     {
       "id": "n_kacho",
@@ -12646,7 +12828,9 @@
       "tags": [
         "念未覚醒",
         "守護霊獣保有"
-      ]
+      ],
+      "day": 2,
+      "voyageLocation": "loc_room_1010"
     },
     {
       "id": "n_k_kaiser",
@@ -12663,7 +12847,9 @@
       "occupation": "Ministry of Justice's Deputy Chief Prosecutor",
       "affiliations": [
         "カキン司法局"
-      ]
+      ],
+      "day": 3,
+      "voyageLocation": "loc_justice"
     },
     {
       "id": "n_kurapika_dolphin",
@@ -12680,7 +12866,9 @@
       "participants": [
         "n_kura",
         "n_w_list"
-      ]
+      ],
+      "day": 3,
+      "voyageLocation": "loc_room_1014"
     },
     {
       "id": "n_k_bucket",
@@ -12712,7 +12900,9 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 3,
+      "voyageLocation": "loc_room_1002"
     },
     {
       "id": "n_k_hignori",
@@ -12744,7 +12934,9 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 3,
+      "voyageLocation": "loc_room_1002"
     },
     {
       "id": "n_k_nukuocon",
@@ -12776,7 +12968,9 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 3,
+      "voyageLocation": "loc_room_1002"
     },
     {
       "id": "n_k_umanma",
@@ -12808,7 +13002,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 3,
+      "voyageLocation": "loc_room_1002"
     },
     {
       "id": "n_k_wolfe",
@@ -12828,7 +13024,9 @@
       ],
       "tags": [
         "死亡"
-      ]
+      ],
+      "day": 3,
+      "voyageLocation": "loc_room_1002"
     },
     {
       "id": "n_fugetsu",
@@ -12859,7 +13057,9 @@
       "tags": [
         "念未覚醒",
         "守護霊獣保有"
-      ]
+      ],
+      "day": 3,
+      "voyageLocation": "loc_room_1011"
     },
     {
       "id": "n_w_keeney",
@@ -12882,7 +13082,9 @@
       ],
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 3,
+      "voyageLocation": "loc_room_1010"
     },
     {
       "id": "n_k_koroabde",
@@ -12903,7 +13105,9 @@
       "occupation": "Spy for Queen Tang Zhao Li Hui Guo Rou",
       "tags": [
         "スパイ"
-      ]
+      ],
+      "day": 3,
+      "voyageLocation": "loc_room_1001"
     },
     {
       "id": "n_k_deruboro",
@@ -12927,7 +13131,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 3,
+      "voyageLocation": "loc_room_1009"
     },
     {
       "id": "n_k_gihoruto",
@@ -12951,7 +13157,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 3,
+      "voyageLocation": "loc_room_1009"
     },
     {
       "id": "n_k_guerimori",
@@ -12975,7 +13183,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 3,
+      "voyageLocation": "loc_room_1009"
     },
     {
       "id": "n_k_himonc",
@@ -12996,7 +13206,9 @@
       "occupation": "Tyson付護衛",
       "tags": [
         "護衛"
-      ]
+      ],
+      "day": 3,
+      "voyageLocation": "loc_room_1006"
     },
     {
       "id": "n_k_madwig",
@@ -13017,7 +13229,9 @@
       "occupation": "Tyson付護衛",
       "tags": [
         "護衛"
-      ]
+      ],
+      "day": 3,
+      "voyageLocation": "loc_room_1006"
     },
     {
       "id": "n_k_naik_ru",
@@ -13041,7 +13255,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 3,
+      "voyageLocation": "loc_room_1009"
     },
     {
       "id": "n_k_r_uen",
@@ -13065,7 +13281,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 3,
+      "voyageLocation": "loc_room_1009"
     },
     {
       "id": "n_k_tagenpaku",
@@ -13089,7 +13307,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 3,
+      "voyageLocation": "loc_room_1009"
     },
     {
       "id": "n_momoze",
@@ -13118,7 +13338,9 @@
       "tags": [
         "念未覚醒",
         "守護霊獣保有"
-      ]
+      ],
+      "day": 3,
+      "voyageLocation": "loc_room_1012"
     },
     {
       "id": "n_k_orzny",
@@ -13136,7 +13358,9 @@
         "カキン王国",
         "ウンマ王妃",
         "第一王子ベンジャミン"
-      ]
+      ],
+      "day": 3,
+      "voyageLocation": "loc_room_1009"
     },
     {
       "id": "n_k_sun_bin",
@@ -13160,7 +13384,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 4,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_marayair",
@@ -13190,7 +13416,9 @@
       "tags": [
         "念未覚醒",
         "守護霊獣保有"
-      ]
+      ],
+      "day": 4,
+      "voyageLocation": "loc_room_1013"
     },
     {
       "id": "n_k_bille",
@@ -13213,7 +13441,9 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 4,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_k_brocco_li",
@@ -13231,7 +13461,9 @@
         "シャア＝ア一家",
         "第七王子ルズールス"
       ],
-      "occupation": "Boss of the Sha-A Family"
+      "occupation": "Boss of the Sha-A Family",
+      "day": 4,
+      "voyageLocation": "loc_tier_1"
     },
     {
       "id": "n_k_cashew",
@@ -13255,7 +13487,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 4,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_k_chiffon_toto",
@@ -13278,7 +13512,9 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 4,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_k_connelly",
@@ -13294,7 +13530,9 @@
       ],
       "affiliations": [
         "シュウ＝ウ一家"
-      ]
+      ],
+      "day": 4,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_k_daemon",
@@ -13317,7 +13555,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 4,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_k_dogman",
@@ -13347,7 +13587,9 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 4,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_k_gateaume",
@@ -13377,7 +13619,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 4,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_k_gelato",
@@ -13400,7 +13644,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 4,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_k_hinrigh_biganduffno",
@@ -13431,7 +13677,9 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 4,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_k_ken_i_wang",
@@ -13449,7 +13697,9 @@
         "シャア＝ア一家",
         "第七王子ルズールス"
       ],
-      "occupation": "Underboss of the Sha-A Family"
+      "occupation": "Underboss of the Sha-A Family",
+      "day": 4,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_k_luini",
@@ -13479,7 +13729,9 @@
       "tags": [
         "念能力者",
         "死亡"
-      ]
+      ],
+      "day": 4,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_k_matvere",
@@ -13502,7 +13754,9 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 4,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_k_montblanc_toto",
@@ -13525,7 +13779,9 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 4,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_k_morena_prudo",
@@ -13555,7 +13811,9 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 4,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_k_notre",
@@ -13585,7 +13843,9 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 4,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_k_onior_longbao",
@@ -13603,7 +13863,9 @@
         "シュウ＝ウ一家",
         "第三王子チョウライ"
       ],
-      "occupation": "Boss of the Shuu-U Family"
+      "occupation": "Boss of the Shuu-U Family",
+      "day": 4,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_k_orarge",
@@ -13626,7 +13888,9 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 4,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_k_padaille",
@@ -13655,7 +13919,9 @@
       ],
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 4,
+      "voyageLocation": "loc_unknown"
     },
     {
       "id": "n_k_perigord",
@@ -13678,7 +13944,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 4,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_k_quorolle",
@@ -13701,7 +13969,9 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 4,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_k_sodom",
@@ -13725,7 +13995,9 @@
       "tags": [
         "念能力者",
         "暗殺者"
-      ]
+      ],
+      "day": 4,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_k_souffl",
@@ -13748,7 +14020,9 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 4,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_k_terebellum",
@@ -13779,7 +14053,9 @@
       "tags": [
         "念能力者",
         "暗殺者"
-      ]
+      ],
+      "day": 4,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_k_tevelares",
@@ -13802,7 +14078,9 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 4,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_k_voconte",
@@ -13832,7 +14110,9 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 4,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_k_yokotani",
@@ -13862,7 +14142,9 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 4,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_beast_rules",
@@ -13878,7 +14160,9 @@
       ],
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 4,
+      "voyageLocation": "loc_unknown"
     },
     {
       "id": "n_k_ittoku",
@@ -13896,7 +14180,9 @@
         "シャア＝ア一家",
         "第七王子ルズールス"
       ],
-      "occupation": "Consigliere of the Sha-A Family"
+      "occupation": "Consigliere of the Sha-A Family",
+      "day": 4,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_k_mizuri",
@@ -13913,7 +14199,9 @@
       "affiliations": [
         "カキン王立軍"
       ],
-      "occupation": "Corporal in the Kakin Royal Army"
+      "occupation": "Corporal in the Kakin Royal Army",
+      "day": 5,
+      "voyageLocation": "loc_tier_1"
     },
     {
       "id": "n_k_tsudonke",
@@ -13931,7 +14219,9 @@
         "シャア＝ア一家",
         "第七王子ルズールス"
       ],
-      "occupation": "Mafioso Supervisor"
+      "occupation": "Mafioso Supervisor",
+      "day": 5,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_k_vic",
@@ -13947,7 +14237,9 @@
       ],
       "affiliations": [
         "カキン王国"
-      ]
+      ],
+      "day": 5,
+      "voyageLocation": "loc_unknown"
     },
     {
       "id": "n_woble",
@@ -13977,7 +14269,9 @@
       "tags": [
         "念未覚醒",
         "護衛"
-      ]
+      ],
+      "day": 5,
+      "voyageLocation": "loc_room_1014"
     },
     {
       "id": "n_mafia_aboard",
@@ -13990,7 +14284,9 @@
       "episode": 380,
       "arcs": [
         "継承戦"
-      ]
+      ],
+      "day": 5,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_momoze_die",
@@ -14009,7 +14305,9 @@
       ],
       "tags": [
         "死亡"
-      ]
+      ],
+      "day": 5,
+      "voyageLocation": "loc_room_1012"
     },
     {
       "id": "n_predator_consume",
@@ -14026,7 +14324,9 @@
       "participants": [
         "n_k_yushohi",
         "n_k_rihan"
-      ]
+      ],
+      "day": 5,
+      "voyageLocation": "loc_room_1008"
     },
     {
       "id": "n_succession",
@@ -14039,7 +14339,9 @@
       "episode": 382,
       "arcs": [
         "継承戦"
-      ]
+      ],
+      "day": 6,
+      "voyageLocation": "loc_unknown"
     },
     {
       "id": "n_halken_awaken",
@@ -14056,7 +14358,9 @@
       "participants": [
         "n_halkenburg",
         "n_nasubi"
-      ]
+      ],
+      "day": 6,
+      "voyageLocation": "loc_room_1009"
     },
     {
       "id": "n_k_tajao",
@@ -14074,7 +14378,9 @@
         "シャア＝ア一家",
         "第七王子ルズールス"
       ],
-      "occupation": "Vice Boss of the Sha-A Family / Military Advisor for the Seventh Prince's Army"
+      "occupation": "Vice Boss of the Sha-A Family / Military Advisor for the Seventh Prince's Army",
+      "day": 7,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_morena_intro",
@@ -14090,7 +14396,9 @@
       ],
       "participants": [
         "n_k_morena_prudo"
-      ]
+      ],
+      "day": 7,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_kacho_fugetsu",
@@ -14109,7 +14417,9 @@
         "n_fugetsu",
         "n_melody",
         "n_w_keeney"
-      ]
+      ],
+      "day": 9,
+      "voyageLocation": "loc_room_1010"
     },
     {
       "id": "n_k_badoyu",
@@ -14132,7 +14442,9 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 7,
+      "voyageLocation": "loc_tier_3"
     },
     {
       "id": "n_theta_attempt",
@@ -14152,7 +14464,9 @@
       ],
       "tags": [
         "修行"
-      ]
+      ],
+      "day": 7,
+      "voyageLocation": "loc_room_1004"
     },
     {
       "id": "n_melody_concert",
@@ -14169,7 +14483,9 @@
       "participants": [
         "n_melody",
         "n_k_kaiser"
-      ]
+      ],
+      "day": 7,
+      "voyageLocation": "loc_ballroom"
     },
     {
       "id": "n_k_bharate",
@@ -14190,7 +14506,9 @@
       "occupation": "Luzurus付護衛",
       "tags": [
         "護衛"
-      ]
+      ],
+      "day": 8,
+      "voyageLocation": "loc_room_1007"
     },
     {
       "id": "n_k_famule",
@@ -14209,7 +14527,9 @@
         "ドゥアズル王妃",
         "第七王子ルズールス"
       ],
-      "occupation": "Queen Duazul assigned to Prince Luzurus付私兵"
+      "occupation": "Queen Duazul assigned to Prince Luzurus付私兵",
+      "day": 8,
+      "voyageLocation": "loc_room_1007"
     },
     {
       "id": "n_k_javietti",
@@ -14227,7 +14547,9 @@
         "カキン王国",
         "ドゥアズル王妃",
         "第七王子ルズールス"
-      ]
+      ],
+      "day": 8,
+      "voyageLocation": "loc_room_1007"
     },
     {
       "id": "n_k_rice",
@@ -14245,7 +14567,9 @@
         "カキン王国",
         "第七王子ルズールス",
         "ドゥアズル王妃"
-      ]
+      ],
+      "day": 8,
+      "voyageLocation": "loc_room_1007"
     },
     {
       "id": "n_tser",
@@ -14278,7 +14602,9 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 8,
+      "voyageLocation": "loc_room_1004"
     },
     {
       "id": "n_sale_die",
@@ -14299,7 +14625,9 @@
       ],
       "tags": [
         "死亡"
-      ]
+      ],
+      "day": 6,
+      "voyageLocation": "loc_room_1001"
     },
     {
       "id": "n_tser_awaken",
@@ -14319,7 +14647,9 @@
       ],
       "tags": [
         "回想"
-      ]
+      ],
+      "day": 8,
+      "voyageLocation": "loc_room_1004"
     },
     {
       "id": "n_k_heisen",
@@ -14336,7 +14666,9 @@
       "affiliations": [
         "カキン王国",
         "第四王子ツベッパ"
-      ]
+      ],
+      "day": 9,
+      "voyageLocation": "loc_room_1005"
     },
     {
       "id": "n_bisky2",
@@ -14346,7 +14678,7 @@
       "kind": "character",
       "description": "キルアの紹介でクラピカに雇われ、護衛団の一員として再登場。ワブル王子陣営を支える。",
       "gitMeta": "グリードアイランドで途切れた <code>bisky</code> ブランチがここで復活。",
-      "episode": 388,
+      "episode": 350,
       "arcs": [
         "継承戦"
       ],
@@ -14355,7 +14687,8 @@
       ],
       "tags": [
         "護衛"
-      ]
+      ],
+      "voyageLocation": "loc_room_1013"
     },
     {
       "id": "n_w_gidal",
@@ -14388,7 +14721,9 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 9,
+      "voyageLocation": "loc_room_1002"
     },
     {
       "id": "n_w_lisamsetta",
@@ -14421,7 +14756,9 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 9,
+      "voyageLocation": "loc_room_1002"
     },
     {
       "id": "n_w_meshush",
@@ -14454,7 +14791,9 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 9,
+      "voyageLocation": "loc_room_1002"
     },
     {
       "id": "n_w_mozbe",
@@ -14487,7 +14826,9 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 9,
+      "voyageLocation": "loc_room_1002"
     },
     {
       "id": "n_k_burvena",
@@ -14519,7 +14860,9 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 9,
+      "voyageLocation": "loc_room_1002"
     },
     {
       "id": "n_k_cavic",
@@ -14551,7 +14894,9 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 9,
+      "voyageLocation": "loc_room_1002"
     },
     {
       "id": "n_k_fukataki",
@@ -14576,7 +14921,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 9,
+      "voyageLocation": "loc_room_1002"
     },
     {
       "id": "n_k_gadeau",
@@ -14594,7 +14941,9 @@
         "カキン王国",
         "ドゥアズル王妃",
         "第七王子ルズールス"
-      ]
+      ],
+      "day": 9,
+      "voyageLocation": "loc_room_1007"
     },
     {
       "id": "n_k_kako",
@@ -14626,7 +14975,9 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 9,
+      "voyageLocation": "loc_room_1002"
     },
     {
       "id": "n_k_macne",
@@ -14643,7 +14994,9 @@
       "affiliations": [
         "カキン王国",
         "第七王子ルズールス"
-      ]
+      ],
+      "day": 9,
+      "voyageLocation": "loc_room_1007"
     },
     {
       "id": "n_k_odessa",
@@ -14661,7 +15014,9 @@
         "カキン王国",
         "ドゥアズル王妃",
         "第七王子ルズールス"
-      ]
+      ],
+      "day": 9,
+      "voyageLocation": "loc_room_1007"
     },
     {
       "id": "n_k_taler",
@@ -14693,7 +15048,9 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 9,
+      "voyageLocation": "loc_room_1002"
     },
     {
       "id": "n_halken_curse",
@@ -14712,7 +15069,9 @@
         "n_benjamin",
         "n_k_sumidori",
         "n_k_shikaku"
-      ]
+      ],
+      "day": 9,
+      "voyageLocation": "loc_room_1007"
     },
     {
       "id": "n_k_lynch_fullbokko",
@@ -14742,7 +15101,9 @@
       "tags": [
         "念能力者",
         "死亡"
-      ]
+      ],
+      "day": 10,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_k_zakuro_custard",
@@ -14773,7 +15134,9 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 10,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_senritsu",
@@ -14783,7 +15146,7 @@
       "kind": "event",
       "description": "ヨークシン編以来のセンリツがクラピカ陣営に再合流。第十王子カチョウ付護衛として継承戦に投入される。",
       "gitMeta": "休眠 <code>senritsu</code> 枝が継承戦で復活。",
-      "episode": 390,
+      "episode": 350,
       "arcs": [
         "継承戦"
       ],
@@ -14794,7 +15157,8 @@
       ],
       "tags": [
         "加入"
-      ]
+      ],
+      "voyageLocation": "loc_room_1010"
     },
     {
       "id": "n_k_misha_hao",
@@ -14824,7 +15188,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 10,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_kacho_die",
@@ -14845,7 +15211,9 @@
       "tags": [
         "死亡",
         "離脱"
-      ]
+      ],
+      "day": 9,
+      "voyageLocation": "loc_ballroom"
     },
     {
       "id": "n_kacho_beast",
@@ -14866,7 +15234,9 @@
       "tags": [
         "死亡",
         "念能力者"
-      ]
+      ],
+      "day": 9,
+      "voyageLocation": "loc_room_1011"
     },
     {
       "id": "n_k_hanal",
@@ -14882,7 +15252,9 @@
       ],
       "affiliations": [
         "カキン王国"
-      ]
+      ],
+      "day": 10,
+      "voyageLocation": "loc_unknown"
     },
     {
       "id": "n_k_maizan",
@@ -14899,7 +15271,9 @@
       "affiliations": [
         "カキン王立軍"
       ],
-      "occupation": "Corporal in the Kakin Royal Army"
+      "occupation": "Corporal in the Kakin Royal Army",
+      "day": 10,
+      "voyageLocation": "loc_tier_1"
     },
     {
       "id": "n_izunavi2",
@@ -14909,7 +15283,7 @@
       "kind": "character",
       "description": "弟子クラピカの依頼で、第六王子タイソンの護衛として継承戦に潜入。回想以来、初めて現在の物語に姿を見せる。",
       "gitMeta": "休眠していた <code>izunavi</code> ブランチが継承戦で復活＝再登場。",
-      "episode": 393,
+      "episode": 350,
       "arcs": [
         "継承戦"
       ],
@@ -14919,7 +15293,8 @@
       "tags": [
         "護衛",
         "師弟関係"
-      ]
+      ],
+      "voyageLocation": "loc_room_1006"
     },
     {
       "id": "n_w_borksen",
@@ -14942,7 +15317,9 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 10,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_k_gipper",
@@ -14960,7 +15337,9 @@
         "カキン王立軍",
         "第四王子ツェリードニヒ"
       ],
-      "occupation": "Corporal in the Kakin Royal Army"
+      "occupation": "Corporal in the Kakin Royal Army",
+      "day": 10,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_k_momolly",
@@ -14978,7 +15357,9 @@
         "カキン王国",
         "第四王子ツェリードニヒ"
       ],
-      "occupation": "Private second class for Prince Tserriednich Huo Guo Rou"
+      "occupation": "Private second class for Prince Tserriednich Huo Guo Rou",
+      "day": 10,
+      "voyageLocation": "loc_room_1004"
     },
     {
       "id": "n_k_otocin",
@@ -14996,7 +15377,9 @@
         "カキン王国",
         "第四王子ツェリードニヒ"
       ],
-      "occupation": "Private second class for Prince Tserriednich Hui Guo Rou"
+      "occupation": "Private second class for Prince Tserriednich Hui Guo Rou",
+      "day": 10,
+      "voyageLocation": "loc_room_1004"
     },
     {
       "id": "n_k_tassi",
@@ -15012,7 +15395,9 @@
       ],
       "affiliations": [
         "カキン王国"
-      ]
+      ],
+      "day": 10,
+      "voyageLocation": "loc_unknown"
     },
     {
       "id": "n_k_lisores",
@@ -15029,7 +15414,9 @@
       "affiliations": [
         "カキン王国"
       ],
-      "occupation": "|type ="
+      "occupation": "|type =",
+      "day": 10,
+      "voyageLocation": "loc_unknown"
     },
     {
       "id": "n_k_risnorth",
@@ -15045,7 +15432,8 @@
       ],
       "affiliations": [
         "Mom's Help"
-      ]
+      ],
+      "day": 10
     },
     {
       "id": "n_k_sarasa",
@@ -15064,7 +15452,8 @@
       ],
       "tags": [
         "死亡"
-      ]
+      ],
+      "day": 10
     },
     {
       "id": "n_hanzo2",
@@ -15074,7 +15463,7 @@
       "kind": "character",
       "description": "試験同期のハンゾーもクラピカに雇われ、王子護衛として参戦。",
       "gitMeta": "<code>hanzo</code> ブランチが継承戦で復活。",
-      "episode": 395,
+      "episode": 350,
       "arcs": [
         "継承戦"
       ],
@@ -15084,7 +15473,8 @@
       ],
       "tags": [
         "護衛"
-      ]
+      ],
+      "voyageLocation": "loc_room_1012"
     },
     {
       "id": "n_troupe_origin",
@@ -15104,7 +15494,8 @@
       "tags": [
         "回想",
         "伏線回収"
-      ]
+      ],
+      "day": 10
     },
     {
       "id": "n_ms_risol",
@@ -15122,7 +15513,8 @@
         "流星街",
         "全宗教会"
       ],
-      "occupation": "神父"
+      "occupation": "神父",
+      "day": 10
     },
     {
       "id": "n_beyond_interrogation",
@@ -15144,7 +15536,9 @@
       ],
       "tags": [
         "拘束"
-      ]
+      ],
+      "day": 11,
+      "voyageLocation": "loc_brig"
     },
     {
       "id": "n_kura_nen_class",
@@ -15152,16 +15546,51 @@
       "type": "h",
       "label": "クラピカ念能力講習",
       "kind": "event",
-      "description": "船内1014号室にて、各王子陣営から参加者を募り、クラピカがワブル陣営への協力と引き換えに念能力を伝授する。",
-      "gitMeta": "<code>kurapika</code> No.401「月光」以降の継続event。",
-      "episode": 401,
+      "description": "船内1014号室にて、Day 2 から各王子陣営に参加者を募り、クラピカがワブル陣営への協力と引き換えに念能力を継続的に伝授する。Day 9 まで断続的に開催され、複数の死者・覚醒者を出した。",
+      "gitMeta": "<code>kurapika</code> 念講習開始 (No.366-)。",
+      "episode": 366,
       "arcs": [
         "継承戦"
       ],
       "participants": [
         "n_kura",
-        "n_woble"
-      ]
+        "n_woble",
+        "n_k_oito_hui_guo_rou",
+        "n_k_sandra",
+        "n_k_shimano",
+        "n_w_kurton",
+        "n_w_sayird",
+        "n_bill",
+        "n_bisky",
+        "n_basho_york",
+        "n_senritsu",
+        "n_hanzo2",
+        "n_izunavi2",
+        "n_k_woody",
+        "n_k_babimyna",
+        "n_k_slakka",
+        "n_k_sakata",
+        "n_k_hashito",
+        "n_k_loberry",
+        "n_k_yuri",
+        "n_k_vergei",
+        "n_k_barrigen",
+        "n_w_belerainte",
+        "n_w_myuhan",
+        "n_w_danjin",
+        "n_k_satobi",
+        "n_k_furykov",
+        "n_k_maor",
+        "n_k_longhi",
+        "n_k_tenftory",
+        "n_k_mushaho",
+        "n_k_yuhirai",
+        "n_k_shejell",
+        "n_k_illardia",
+        "n_k_ladiolus"
+      ],
+      "day": 2,
+      "voyageLocation": "loc_room_1014"
     },
     {
       "id": "n_k_shejell",
@@ -15186,7 +15615,9 @@
       "tags": [
         "念未覚醒",
         "守護霊獣保有"
-      ]
+      ],
+      "day": 11,
+      "voyageLocation": "loc_room_1009"
     },
     {
       "id": "n_halken_legion",
@@ -15223,7 +15654,9 @@
       ],
       "parents": [
         "n_princes"
-      ]
+      ],
+      "day": 11,
+      "voyageLocation": "loc_room_1009"
     },
     {
       "id": "n_clan_war",
@@ -15236,7 +15669,9 @@
       "episode": 407,
       "arcs": [
         "継承戦"
-      ]
+      ],
+      "day": 12,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_k_renko",
@@ -15266,7 +15701,8 @@
       },
       "tags": [
         "念能力者"
-      ]
+      ],
+      "day": 10
     },
     {
       "id": "n_team_kura",
@@ -15277,7 +15713,7 @@
       "description": "クラピカは緋の眼を持つツェリードニヒへの接触を企図し、バショウ・センリツ・ハンゾー・師イズナビ・ビスケの5人を雇い、ワブル王子付護衛団を編成する。",
       "gitMeta": "各メンバーの枝を <code>kurapika</code> へ merge＝護衛団の結成。まずビスケが合流。",
       "mergeFromBranch": "bisky",
-      "episode": 365,
+      "episode": 350,
       "arcs": [
         "継承戦"
       ],
@@ -15306,7 +15742,9 @@
       "affiliations": [
         "カキン王国",
         "第六王子タイソン"
-      ]
+      ],
+      "day": 11,
+      "voyageLocation": "loc_room_1006"
     },
     {
       "id": "n_k_hyuga",
@@ -15323,7 +15761,9 @@
       "affiliations": [
         "カキン王国",
         "第六王子タイソン"
-      ]
+      ],
+      "day": 11,
+      "voyageLocation": "loc_room_1006"
     },
     {
       "id": "n_halken_followers",
@@ -15339,7 +15779,9 @@
       ],
       "participants": [
         "n_halkenburg"
-      ]
+      ],
+      "day": 12,
+      "voyageLocation": "loc_room_1009"
     },
     {
       "id": "n_regalia_lotus",
@@ -15352,7 +15794,9 @@
       "episode": 406,
       "arcs": [
         "継承戦"
-      ]
+      ],
+      "day": 12,
+      "voyageLocation": "loc_unknown"
     },
     {
       "id": "n_regalia_sword",
@@ -15365,7 +15809,9 @@
       "episode": 406,
       "arcs": [
         "継承戦"
-      ]
+      ],
+      "day": 12,
+      "voyageLocation": "loc_unknown"
     },
     {
       "id": "n_regalia",
@@ -15386,7 +15832,9 @@
       ],
       "parents": [
         "n_kakin_kingdom"
-      ]
+      ],
+      "day": 12,
+      "voyageLocation": "loc_unknown"
     },
     {
       "id": "n_k_makaha",
@@ -15409,7 +15857,9 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 11,
+      "voyageLocation": "loc_tier_1"
     },
     {
       "id": "n_k_worio_bay",
@@ -15433,15 +15883,17 @@
       },
       "tags": [
         "念未覚醒"
-      ]
+      ],
+      "day": 11,
+      "voyageLocation": "loc_justice"
     },
     {
       "id": "n_chrollo_arrange",
       "branchId": "hisoka",
       "type": "n",
-      "label": "カジノで旅団暗躍",
+      "label": "クロロ Love Dial 6700 発動",
       "kind": "event",
-      "description": "クロロら幻影旅団がVIPカジノにて芝居（騙し合いの賭場）を打ち、ヒソカ捜索や情報収集を進める。",
+      "description": "Day 10、ハルケンブルク葬儀行列の混乱と並行して、クロロが第3層拠点で具現化能力『忌まわし電話(Love Dial 6700)』を発動。本から携帯電話を具現化し、条件入力 + ダイヤルで能力者を遠隔索敵 (ch 405-406)。",
       "gitMeta": "<code>commit duel-prep</code>＝決戦の布石。",
       "episode": 405,
       "arcs": [
@@ -15450,7 +15902,9 @@
       "participants": [
         "n_hisoka",
         "n_chrollo"
-      ]
+      ],
+      "day": 10,
+      "voyageLocation": "loc_tier_3"
     },
     {
       "id": "n_k_narumi_mcgait",
@@ -15480,6 +15934,849 @@
       },
       "tags": [
         "念未覚醒"
+      ],
+      "day": 12,
+      "voyageLocation": "loc_unknown"
+    },
+    {
+      "id": "n_luini_die",
+      "branchId": "kakin",
+      "type": "r",
+      "label": "ルイーニー死",
+      "kind": "event",
+      "description": "下層 シュウ＝ウ一家オフィスに portal で侵入したエイ＝イ一家ルイーニーが旅団三名(ノブナガ/フィンクス/フェイタン)に協力を持ちかけるが、寝言と判断したノブナガが居合で頭部を刺し、続けて斬首・両断する (ch 392)。",
+      "gitMeta": "<code>kakin</code> 旅団 vs エイ＝イ一家。",
+      "episode": 392,
+      "day": 10,
+      "voyageLocation": "loc_tier_5",
+      "arcs": [
+        "継承戦"
+      ],
+      "participants": [
+        "n_k_luini",
+        "n_nobunaga",
+        "n_phinks",
+        "n_feitan"
+      ],
+      "tags": [
+        "死亡",
+        "戦闘"
+      ]
+    },
+    {
+      "id": "n_illumi_kalluto_tier3",
+      "branchId": "illumi",
+      "type": "n",
+      "label": "イルミ・カルト第3層侵入",
+      "kind": "event",
+      "description": "旅団員の中で唯一イルミ＝ゾルディックとカルトが第3層に侵入。展望デッキで王立軍に拘束されかけたが、ミザイストムらが対応し VVIP 居住区を提供される (ch 384)。",
+      "gitMeta": "<code>illumi</code> 第3層到達。",
+      "episode": 384,
+      "day": 5,
+      "voyageLocation": "loc_tier_3",
+      "arcs": [
+        "継承戦"
+      ],
+      "participants": [
+        "n_illumi",
+        "n_kalluto",
+        "n_w_mizaistom_nana",
+        "n_w_botobai_gigante",
+        "n_k_mizuri"
+      ]
+    },
+    {
+      "id": "n_badoyu_die",
+      "branchId": "kakin",
+      "type": "r",
+      "label": "バドイユ死(ヒンリギ戦)",
+      "kind": "event",
+      "description": "第3層で、エイ＝イ一家バドイユが仲間と共に歴戦のシュウ＝ウ一家若頭ヒンリギ＝ビガンダフノを包囲し襲撃するも、ヒンリギの能力『手のひらを太陽に(バイオハザード)』に敗れ殺害される。",
+      "gitMeta": "<code>kakin</code> Tier 3 戦闘。",
+      "episode": 394,
+      "day": 9,
+      "voyageLocation": "loc_tier_3",
+      "arcs": [
+        "継承戦"
+      ],
+      "participants": [
+        "n_k_badoyu",
+        "n_k_hinrigh_biganduffno"
+      ],
+      "tags": [
+        "死亡",
+        "戦闘"
+      ]
+    },
+    {
+      "id": "n_nasubi_voyage",
+      "branchId": "kakin",
+      "type": "n",
+      "label": "国王ナスビ (船上)",
+      "kind": "character",
+      "description": "カキン王国国王。出航以降は第1層 特別客室 (王の間) に滞在し、継承戦の進行を見守る。",
+      "gitMeta": "<code>kakin</code> 船上滞在。",
+      "episode": 358,
+      "day": 1,
+      "voyageLocation": "loc_king_chamber",
+      "arcs": [
+        "継承戦"
+      ],
+      "affiliations": [
+        "カキン王国"
+      ]
+    },
+    {
+      "id": "n_benjamin_v",
+      "branchId": "kakin",
+      "type": "n",
+      "label": "ベンジャミン (船上)",
+      "kind": "character",
+      "description": "ベンジャミンは出航時、loc_room_1001 に着座する。",
+      "gitMeta": "<code>kakin</code> 船上滞在。",
+      "episode": 358,
+      "day": 1,
+      "voyageLocation": "loc_room_1001",
+      "arcs": [
+        "継承戦"
+      ]
+    },
+    {
+      "id": "n_camilla_v",
+      "branchId": "kakin",
+      "type": "n",
+      "label": "カミーラ (船上)",
+      "kind": "character",
+      "description": "カミーラは出航時、loc_room_1002 に着座する。",
+      "gitMeta": "<code>kakin</code> 船上滞在。",
+      "episode": 358,
+      "day": 1,
+      "voyageLocation": "loc_room_1002",
+      "arcs": [
+        "継承戦"
+      ]
+    },
+    {
+      "id": "n_zhang_v",
+      "branchId": "kakin",
+      "type": "n",
+      "label": "チョウライ (船上)",
+      "kind": "character",
+      "description": "チョウライは出航時、loc_room_1003 に着座する。",
+      "gitMeta": "<code>kakin</code> 船上滞在。",
+      "episode": 358,
+      "day": 1,
+      "voyageLocation": "loc_room_1003",
+      "arcs": [
+        "継承戦"
+      ]
+    },
+    {
+      "id": "n_tser_v",
+      "branchId": "kakin",
+      "type": "n",
+      "label": "ツェリードニヒ (船上)",
+      "kind": "character",
+      "description": "ツェリードニヒは出航時、loc_room_1004 に着座する。",
+      "gitMeta": "<code>kakin</code> 船上滞在。",
+      "episode": 358,
+      "day": 1,
+      "voyageLocation": "loc_room_1004",
+      "arcs": [
+        "継承戦"
+      ]
+    },
+    {
+      "id": "n_tubeppa_v",
+      "branchId": "kakin",
+      "type": "n",
+      "label": "ツベッパ (船上)",
+      "kind": "character",
+      "description": "ツベッパは出航時、loc_room_1005 に着座する。",
+      "gitMeta": "<code>kakin</code> 船上滞在。",
+      "episode": 358,
+      "day": 1,
+      "voyageLocation": "loc_room_1005",
+      "arcs": [
+        "継承戦"
+      ]
+    },
+    {
+      "id": "n_tyson_v",
+      "branchId": "kakin",
+      "type": "n",
+      "label": "タイソン (船上)",
+      "kind": "character",
+      "description": "タイソンは出航時、loc_room_1006 に着座する。",
+      "gitMeta": "<code>kakin</code> 船上滞在。",
+      "episode": 358,
+      "day": 1,
+      "voyageLocation": "loc_room_1006",
+      "arcs": [
+        "継承戦"
+      ]
+    },
+    {
+      "id": "n_luzurus_v",
+      "branchId": "kakin",
+      "type": "n",
+      "label": "ルズールス (船上)",
+      "kind": "character",
+      "description": "ルズールスは出航時、loc_room_1007 に着座する。",
+      "gitMeta": "<code>kakin</code> 船上滞在。",
+      "episode": 358,
+      "day": 1,
+      "voyageLocation": "loc_room_1007",
+      "arcs": [
+        "継承戦"
+      ]
+    },
+    {
+      "id": "n_sale_v",
+      "branchId": "kakin",
+      "type": "n",
+      "label": "サレサレ (船上)",
+      "kind": "character",
+      "description": "サレサレは出航時、loc_room_1008 に着座する。",
+      "gitMeta": "<code>kakin</code> 船上滞在。",
+      "episode": 358,
+      "day": 1,
+      "voyageLocation": "loc_room_1008",
+      "arcs": [
+        "継承戦"
+      ]
+    },
+    {
+      "id": "n_halkenburg_v",
+      "branchId": "kakin",
+      "type": "n",
+      "label": "ハルケンブルク (船上)",
+      "kind": "character",
+      "description": "ハルケンブルクは出航時、loc_room_1009 に着座する。",
+      "gitMeta": "<code>kakin</code> 船上滞在。",
+      "episode": 358,
+      "day": 1,
+      "voyageLocation": "loc_room_1009",
+      "arcs": [
+        "継承戦"
+      ]
+    },
+    {
+      "id": "n_kacho_v",
+      "branchId": "kakin",
+      "type": "n",
+      "label": "カチョウ (船上)",
+      "kind": "character",
+      "description": "カチョウは出航時、loc_room_1010 に着座する。",
+      "gitMeta": "<code>kakin</code> 船上滞在。",
+      "episode": 358,
+      "day": 1,
+      "voyageLocation": "loc_room_1010",
+      "arcs": [
+        "継承戦"
+      ]
+    },
+    {
+      "id": "n_fugetsu_v",
+      "branchId": "kakin",
+      "type": "n",
+      "label": "フウゲツ (船上)",
+      "kind": "character",
+      "description": "フウゲツは出航時、loc_room_1011 に着座する。",
+      "gitMeta": "<code>kakin</code> 船上滞在。",
+      "episode": 358,
+      "day": 1,
+      "voyageLocation": "loc_room_1011",
+      "arcs": [
+        "継承戦"
+      ]
+    },
+    {
+      "id": "n_momoze_v",
+      "branchId": "kakin",
+      "type": "n",
+      "label": "モモゼ (船上)",
+      "kind": "character",
+      "description": "モモゼは出航時、loc_room_1012 に着座する。",
+      "gitMeta": "<code>kakin</code> 船上滞在。",
+      "episode": 358,
+      "day": 1,
+      "voyageLocation": "loc_room_1012",
+      "arcs": [
+        "継承戦"
+      ]
+    },
+    {
+      "id": "n_marayair_v",
+      "branchId": "kakin",
+      "type": "n",
+      "label": "マラヤーム (船上)",
+      "kind": "character",
+      "description": "マラヤームは出航時、loc_room_1013 に着座する。",
+      "gitMeta": "<code>kakin</code> 船上滞在。",
+      "episode": 358,
+      "day": 1,
+      "voyageLocation": "loc_room_1013",
+      "arcs": [
+        "継承戦"
+      ]
+    },
+    {
+      "id": "n_woble_v",
+      "branchId": "kakin",
+      "type": "n",
+      "label": "ワブル (船上)",
+      "kind": "character",
+      "description": "ワブルは出航時、loc_room_1014 に着座する。",
+      "gitMeta": "<code>kakin</code> 船上滞在。",
+      "episode": 358,
+      "day": 1,
+      "voyageLocation": "loc_room_1014",
+      "arcs": [
+        "継承戦"
+      ]
+    },
+    {
+      "id": "n_k_duazul_hui_guo_rou_v",
+      "branchId": "kakin",
+      "type": "n",
+      "label": "ドゥアズル王妃 (船上)",
+      "kind": "character",
+      "description": "ドゥアズル王妃は出航時、loc_room_1002 に着座する。",
+      "gitMeta": "<code>kakin</code> 船上滞在。",
+      "episode": 358,
+      "day": 1,
+      "voyageLocation": "loc_room_1002",
+      "arcs": [
+        "継承戦"
+      ]
+    },
+    {
+      "id": "n_k_seiko_hui_guo_rou_v",
+      "branchId": "kakin",
+      "type": "n",
+      "label": "セイコ王妃 (船上)",
+      "kind": "character",
+      "description": "セイコ王妃は出航時、loc_room_1010 に着座する。",
+      "gitMeta": "<code>kakin</code> 船上滞在。",
+      "episode": 358,
+      "day": 1,
+      "voyageLocation": "loc_room_1010",
+      "arcs": [
+        "継承戦"
+      ]
+    },
+    {
+      "id": "n_k_sevanti_hui_guo_rou_v",
+      "branchId": "kakin",
+      "type": "n",
+      "label": "セヴァンチ王妃 (船上)",
+      "kind": "character",
+      "description": "セヴァンチ王妃は出航時、loc_room_1013 に着座する。",
+      "gitMeta": "<code>kakin</code> 船上滞在。",
+      "episode": 358,
+      "day": 1,
+      "voyageLocation": "loc_room_1013",
+      "arcs": [
+        "継承戦"
+      ]
+    },
+    {
+      "id": "n_k_swinko_swinko_hui_guo_rou_v",
+      "branchId": "kakin",
+      "type": "n",
+      "label": "スィンコスィンコ王妃 (船上)",
+      "kind": "character",
+      "description": "スィンコスィンコ王妃は出航時、loc_room_1008 に着座する。",
+      "gitMeta": "<code>kakin</code> 船上滞在。",
+      "episode": 358,
+      "day": 1,
+      "voyageLocation": "loc_room_1008",
+      "arcs": [
+        "継承戦"
+      ]
+    },
+    {
+      "id": "n_k_oito_hui_guo_rou_v",
+      "branchId": "kakin",
+      "type": "n",
+      "label": "オイト王妃 (船上)",
+      "kind": "character",
+      "description": "オイト王妃は出航時、loc_room_1014 に着座する。",
+      "gitMeta": "<code>kakin</code> 船上滞在。",
+      "episode": 358,
+      "day": 1,
+      "voyageLocation": "loc_room_1014",
+      "arcs": [
+        "継承戦"
+      ]
+    },
+    {
+      "id": "n_k_unma_hui_guo_rou_v",
+      "branchId": "kakin",
+      "type": "n",
+      "label": "ウンマ王妃 (船上)",
+      "kind": "character",
+      "description": "ウンマ王妃は出航時、loc_king_chamber に着座する。",
+      "gitMeta": "<code>kakin</code> 船上滞在。",
+      "episode": 358,
+      "day": 1,
+      "voyageLocation": "loc_king_chamber",
+      "arcs": [
+        "継承戦"
+      ]
+    },
+    {
+      "id": "n_k_tang_zhao_li_hui_guo_rou_v",
+      "branchId": "kakin",
+      "type": "n",
+      "label": "トウチョウレイ王妃 (船上)",
+      "kind": "character",
+      "description": "トウチョウレイ王妃は出航時、loc_room_1003 に着座する。",
+      "gitMeta": "<code>kakin</code> 船上滞在。",
+      "episode": 358,
+      "day": 1,
+      "voyageLocation": "loc_room_1003",
+      "arcs": [
+        "継承戦"
+      ]
+    },
+    {
+      "id": "n_k_katrono_hui_guo_rou_v",
+      "branchId": "kakin",
+      "type": "n",
+      "label": "カットローノ王妃 (船上)",
+      "kind": "character",
+      "description": "カットローノ王妃は出航時、loc_room_1006 に着座する。",
+      "gitMeta": "<code>kakin</code> 船上滞在。",
+      "episode": 358,
+      "day": 1,
+      "voyageLocation": "loc_room_1006",
+      "arcs": [
+        "継承戦"
+      ]
+    },
+    {
+      "id": "n_kura_v",
+      "branchId": "kurapika",
+      "type": "n",
+      "label": "クラピカ (船上)",
+      "kind": "character",
+      "description": "出航時、loc_room_1014 に着任。クラピカ護衛団の一員。",
+      "gitMeta": "<code>kurapika</code> 船上着任。",
+      "episode": 358,
+      "day": 1,
+      "voyageLocation": "loc_room_1014",
+      "arcs": [
+        "継承戦"
+      ]
+    },
+    {
+      "id": "n_senritsu_v",
+      "branchId": "senritsu",
+      "type": "n",
+      "label": "センリツ(参戦) (船上)",
+      "kind": "character",
+      "description": "出航時、loc_room_1010 に着任。クラピカ護衛団の一員。",
+      "gitMeta": "<code>senritsu</code> 船上着任。",
+      "episode": 358,
+      "day": 1,
+      "voyageLocation": "loc_room_1010",
+      "arcs": [
+        "継承戦"
+      ]
+    },
+    {
+      "id": "n_hanzo2_v",
+      "branchId": "hanzo",
+      "type": "n",
+      "label": "ハンゾー(参戦) (船上)",
+      "kind": "character",
+      "description": "出航時、loc_room_1012 に着任。クラピカ護衛団の一員。",
+      "gitMeta": "<code>hanzo</code> 船上着任。",
+      "episode": 358,
+      "day": 1,
+      "voyageLocation": "loc_room_1012",
+      "arcs": [
+        "継承戦"
+      ]
+    },
+    {
+      "id": "n_bisky2_v",
+      "branchId": "bisky",
+      "type": "n",
+      "label": "ビスケ(参戦) (船上)",
+      "kind": "character",
+      "description": "出航時、loc_room_1013 に着任。クラピカ護衛団の一員。",
+      "gitMeta": "<code>bisky</code> 船上着任。",
+      "episode": 358,
+      "day": 1,
+      "voyageLocation": "loc_room_1013",
+      "arcs": [
+        "継承戦"
+      ]
+    },
+    {
+      "id": "n_basho_york_v",
+      "branchId": "basho",
+      "type": "n",
+      "label": "バショウ(護衛) (船上)",
+      "kind": "character",
+      "description": "出航時、loc_room_1007 に着任。クラピカ護衛団の一員。",
+      "gitMeta": "<code>basho</code> 船上着任。",
+      "episode": 358,
+      "day": 1,
+      "voyageLocation": "loc_room_1007",
+      "arcs": [
+        "継承戦"
+      ]
+    },
+    {
+      "id": "n_izunavi2_v",
+      "branchId": "izunavi",
+      "type": "n",
+      "label": "イズナビ(参戦) (船上)",
+      "kind": "character",
+      "description": "出航時、loc_room_1006 に着任。クラピカ護衛団の一員。",
+      "gitMeta": "<code>izunavi</code> 船上着任。",
+      "episode": 358,
+      "day": 1,
+      "voyageLocation": "loc_room_1006",
+      "arcs": [
+        "継承戦"
+      ]
+    },
+    {
+      "id": "n_tuffdy_die",
+      "branchId": "hanzo",
+      "type": "r",
+      "label": "タフディー処刑(ハンゾー)",
+      "kind": "event",
+      "description": "モモゼ暗殺の実行犯として拘置所に収監されたタフディーに対し、ハンゾーが『分身の術(ハンゾースキル4)』で拘置所内に侵入。ベンジャミン陣営に勧誘する芝居で犯行を自白させた後、毛布を巻きつけた腕で首をへし折って処刑。表向きは拘置所内自殺と発表される。",
+      "gitMeta": "<code>hanzo</code> モモゼ復讐。",
+      "episode": 372,
+      "day": 3,
+      "voyageLocation": "loc_brig",
+      "arcs": [
+        "継承戦"
+      ],
+      "participants": [
+        "n_hanzo",
+        "n_k_tuffdy",
+        "n_bisky"
+      ],
+      "tags": [
+        "死亡",
+        "暗殺者"
+      ]
+    },
+    {
+      "id": "n_hanzo_bisky_to_marayam",
+      "branchId": "kakin",
+      "type": "n",
+      "label": "ハンゾー・ビスケ マラヤーム異動",
+      "kind": "event",
+      "description": "セヴァンチ第7王妃の指示で、モモゼ第12王子の護衛達(ハンゾー、ビスケ等)が弟マラヤーム第13王子の警護に集中させられる異動が発生。モモゼの警備が手薄になる契機。",
+      "gitMeta": "<code>kakin</code> Day 1 護衛再編。",
+      "episode": 362,
+      "day": 1,
+      "voyageLocation": "loc_room_1013",
+      "arcs": [
+        "継承戦"
+      ],
+      "participants": [
+        "n_hanzo",
+        "n_bisky",
+        "n_momoze",
+        "n_marayair",
+        "n_k_sevanti_hui_guo_rou"
+      ]
+    },
+    {
+      "id": "n_troupe_xi_yu_meet",
+      "branchId": "genei_ryodan",
+      "type": "h",
+      "label": "旅団・シュウ＝ウ一家会談",
+      "kind": "event",
+      "description": "Day 7、ノブナガ・フィンクス・フェイタンの旅団三人衆がシャア＝ウ一家若頭オウ＝ケンイと副組長タハオと会談。ヒソカ捜索の協力体制と、エイ＝イ一家のヒットマン(ルイーニー)抹殺、ボスモレナ討伐を含む取引が成立。",
+      "gitMeta": "<code>genei_ryodan</code> Tier 4-5 会談。",
+      "episode": 384,
+      "day": 7,
+      "voyageLocation": "loc_tier_5",
+      "arcs": [
+        "継承戦"
+      ],
+      "participants": [
+        "n_nobunaga",
+        "n_phinks",
+        "n_feitan",
+        "n_k_ken_i_wang",
+        "n_k_tajao"
+      ],
+      "tags": [
+        "加入"
+      ]
+    },
+    {
+      "id": "n_halken_resolve",
+      "branchId": "kakin",
+      "type": "h",
+      "label": "ハルケンブルクの決意",
+      "kind": "event",
+      "description": "Day 7、第9王子ハルケンブルクが継承戦への積極参戦を改めて決意し、私設兵団 14 名を統括して念能力検証 (オーラの弩) に基づく作戦立案へ動き出す。父ナスビへのクーデター企図は阻止され、戦略を念能力主体へ転換する転機。",
+      "gitMeta": "<code>kakin</code> Halken 戦略転換。",
+      "episode": 384,
+      "day": 7,
+      "voyageLocation": "loc_room_1009",
+      "arcs": [
+        "継承戦"
+      ],
+      "participants": [
+        "n_halkenburg",
+        "n_k_sumidori",
+        "n_k_yuhirai",
+        "n_k_shejell"
+      ]
+    },
+    {
+      "id": "n_first_banquet",
+      "branchId": "kakin",
+      "type": "h",
+      "label": "最初の晩餐会",
+      "kind": "event",
+      "description": "Day 1、ブラックホエール号 第1層大広間で出航の晩餐会。14王子と国王ナスビ・各王妃が出席。継承戦正式開始の儀礼。",
+      "gitMeta": "<code>kakin</code> 出航晩餐会。",
+      "episode": 359,
+      "day": 1,
+      "voyageLocation": "loc_ballroom",
+      "arcs": [
+        "継承戦"
+      ],
+      "participants": [
+        "n_nasubi",
+        "n_benjamin",
+        "n_camilla",
+        "n_zhang",
+        "n_tser",
+        "n_tubeppa",
+        "n_tyson",
+        "n_luzurus",
+        "n_sale",
+        "n_halkenburg",
+        "n_kacho",
+        "n_fugetsu",
+        "n_momoze",
+        "n_marayair",
+        "n_woble"
+      ]
+    },
+    {
+      "id": "n_halken_first_test",
+      "branchId": "kakin",
+      "type": "h",
+      "label": "ハルケンブルク能力試験(初)",
+      "kind": "event",
+      "description": "Day 5、ハルケンブルクが自身の念能力『少年は残酷な弓を射る』を初検証。シカクの肉体にスミドリの魂が憑依した状態が確認され、能力の機構が部分的に判明する。",
+      "gitMeta": "<code>kakin</code> 念能力試験。",
+      "episode": 380,
+      "day": 5,
+      "voyageLocation": "loc_room_1009",
+      "arcs": [
+        "継承戦"
+      ],
+      "participants": [
+        "n_halkenburg",
+        "n_k_sumidori",
+        "n_k_shikaku"
+      ]
+    },
+    {
+      "id": "n_hinrigh_hisoka_search",
+      "branchId": "kakin",
+      "type": "h",
+      "label": "ヒンリギ ヒソカ本格捜索",
+      "kind": "event",
+      "description": "Day 10、シュウ＝ウ一家ヒンリギ＝ビガンダフノとザクロ＝カスタードがヒソカ本格捜索を開始。マフィア三家+ヒソカ+旅団が絡む下層抗争が激化する局面。",
+      "gitMeta": "<code>kakin</code> マフィア抗争激化。",
+      "episode": 390,
+      "day": 10,
+      "voyageLocation": "loc_tier_5",
+      "arcs": [
+        "継承戦"
+      ],
+      "participants": [
+        "n_k_hinrigh_biganduffno",
+        "n_k_zakuro_custard",
+        "n_hisoka"
+      ]
+    },
+    {
+      "id": "n_martial_law",
+      "branchId": "kakin",
+      "type": "h",
+      "label": "特殊戒厳令",
+      "kind": "event",
+      "description": "Day 12、船内で大量殺人事件・継承戦混乱・暗黒大陸渡航リスクから「特殊戒厳令」が発令。王立軍が船内全層を統制下に置き、国家的危機へ突入。",
+      "gitMeta": "<code>kakin</code> 戒厳令発令。",
+      "episode": 406,
+      "day": 12,
+      "voyageLocation": "loc_tier_1",
+      "arcs": [
+        "継承戦"
+      ],
+      "participants": [
+        "n_nasubi",
+        "n_w_mizaistom_nana",
+        "n_k_cleapatro"
+      ],
+      "tags": [
+        "拘束"
+      ]
+    },
+    {
+      "id": "n_halken_die",
+      "branchId": "kakin",
+      "type": "r",
+      "label": "ハルケンブルク偽装死",
+      "kind": "event",
+      "description": "Day 11 夜、第9王子ハルケンブルクの「元の肉体」が Room 1009 で死亡しているのが発見される。実態は本人が能力『意志を一つにする矢』でベンジャミン私設兵隊長バルサミルコ＝マイトに精神を移し、肉体側を空にした偽装死である (ch 401)。",
+      "gitMeta": "<code>kakin</code> 王子死亡。",
+      "episode": 401,
+      "day": 11,
+      "voyageLocation": "loc_room_1009",
+      "arcs": [
+        "継承戦"
+      ],
+      "participants": [
+        "n_halkenburg",
+        "n_k_balsamilco_might"
+      ],
+      "tags": [
+        "死亡"
+      ]
+    },
+    {
+      "id": "n_halken_funeral",
+      "branchId": "kakin",
+      "type": "h",
+      "label": "ハルケンブルク葬儀行列",
+      "kind": "event",
+      "description": "Day 12、ハルケンブルクの遺体を第1層 王の間カプセルへ運ぶ大規模な葬儀行列。クロロら旅団が Day 10 に確保した第1層通行証と葬儀の混乱を利用して上層潜入を本格決行 (ch 402)。",
+      "gitMeta": "<code>kakin</code> 葬儀行列。",
+      "episode": 402,
+      "day": 12,
+      "voyageLocation": "loc_tier_1",
+      "arcs": [
+        "継承戦"
+      ],
+      "participants": [
+        "n_halkenburg",
+        "n_nasubi",
+        "n_chrollo",
+        "n_w_mizaistom_nana"
+      ],
+      "tags": [
+        "離脱"
+      ]
+    },
+    {
+      "id": "n_bono_hisoka_disguise",
+      "branchId": "genei_ryodan",
+      "type": "h",
+      "label": "ボノレノフのヒソカ芝居",
+      "kind": "event",
+      "description": "Day 9 深夜〜Day 10 未明、旅団ボノレノフがヒソカに変装(芝居)してマフィアと接触し、最上層 (第1層) への通行証を入手 (ch 404-405)。クロロらの上層潜入の足がかり。",
+      "gitMeta": "<code>genei_ryodan</code> ヒソカ偽装。",
+      "episode": 404,
+      "day": 10,
+      "voyageLocation": "loc_tier_5",
+      "arcs": [
+        "継承戦"
+      ],
+      "participants": [
+        "n_bonolenov",
+        "n_chrollo",
+        "n_k_hinrigh_biganduffno",
+        "n_k_zakuro_custard"
+      ]
+    },
+    {
+      "id": "n_kura_class1_end",
+      "branchId": "kurapika",
+      "type": "n",
+      "label": "念講習1回目終了",
+      "kind": "event",
+      "description": "Day 10 午後、クラピカの第1回念講習会が終了。ロンギ (ツベッパ第5王子私設兵) からカキン王国の忌まわしい伝統 (詛贄者の風習等) が明かされ、継承戦の背景理解が深まる。",
+      "gitMeta": "<code>kurapika</code> 講習1終了。",
+      "episode": 401,
+      "day": 10,
+      "voyageLocation": "loc_room_1014",
+      "arcs": [
+        "継承戦"
+      ],
+      "participants": [
+        "n_kura",
+        "n_k_longhi",
+        "n_k_oito_hui_guo_rou",
+        "n_woble"
+      ]
+    },
+    {
+      "id": "n_halken_vs_balsamilco",
+      "branchId": "kakin",
+      "type": "h",
+      "label": "ハルケンブルク矢→バルサミルコ乗っ取り",
+      "kind": "event",
+      "description": "Day 11、第9王子ハルケンブルクが能力『意志を一つにする矢 (少年は残酷な弓を射る)』でベンジャミン私設兵隊長バルサミルコ＝マイトを射貫き、精神を乗っ取りに成功。以後バルサミルコの肉体は中身がハルケンブルクとして行動する (ch 401 前後)。",
+      "gitMeta": "<code>kakin</code> 矢で精神移行。",
+      "episode": 401,
+      "day": 11,
+      "voyageLocation": "loc_room_1009",
+      "arcs": [
+        "継承戦"
+      ],
+      "participants": [
+        "n_halkenburg",
+        "n_k_balsamilco_might"
+      ]
+    },
+    {
+      "id": "n_kura_class2",
+      "branchId": "kurapika",
+      "type": "h",
+      "label": "念講習2回目開始",
+      "kind": "event",
+      "description": "Day 12 朝9時、クラピカの第2回念講習会がスタート (ch 411)。葬儀混乱と並行して継承戦の戦略を再編。",
+      "gitMeta": "<code>kurapika</code> 講習2開始。",
+      "episode": 410,
+      "day": 12,
+      "voyageLocation": "loc_room_1014",
+      "arcs": [
+        "継承戦"
+      ],
+      "participants": [
+        "n_kura",
+        "n_woble",
+        "n_k_oito_hui_guo_rou"
+      ]
+    },
+    {
+      "id": "n_benjamin_poisoned",
+      "branchId": "kakin",
+      "type": "h",
+      "label": "ベンジャミン毒被害",
+      "kind": "event",
+      "description": "Day 12、第1王子ベンジャミンが毒を受ける大事件。船内に「特殊戒厳令」発令の引き金の一つ (ch 410)。",
+      "gitMeta": "<code>kakin</code> 毒事件。",
+      "episode": 410,
+      "day": 12,
+      "voyageLocation": "loc_room_1001",
+      "arcs": [
+        "継承戦"
+      ],
+      "participants": [
+        "n_benjamin",
+        "n_k_balsamilco_might"
       ]
     },
     {
@@ -15493,7 +16790,9 @@
       "episode": 410,
       "arcs": [
         "継承戦"
-      ]
+      ],
+      "day": 12,
+      "voyageLocation": "loc_unknown"
     },
     {
       "id": "n_zoldyck_family",
@@ -15738,7 +17037,9 @@
       ],
       "parents": [
         "n_kakin_kingdom"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_tier_1"
     },
     {
       "id": "n_have_nots",
@@ -15771,7 +17072,9 @@
       ],
       "parents": [
         "n_kakin_kingdom"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_room_1002"
     },
     {
       "id": "n_mafia_shu_u",
@@ -15796,7 +17099,9 @@
       ],
       "parents": [
         "n_three_mafia"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_mafia_sha_a",
@@ -15821,7 +17126,9 @@
       ],
       "parents": [
         "n_three_mafia"
-      ]
+      ],
+      "day": 1,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_mafia_aii",
@@ -15861,7 +17168,9 @@
       ],
       "parents": [
         "n_three_mafia"
-      ]
+      ],
+      "day": 4,
+      "voyageLocation": "loc_tier_5"
     },
     {
       "id": "n_kakin_justice",
@@ -15884,7 +17193,9 @@
       ],
       "parents": [
         "n_kakin_kingdom"
-      ]
+      ],
+      "day": 3,
+      "voyageLocation": "loc_justice"
     },
     {
       "id": "n_kimera_ants",

@@ -2,6 +2,8 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import './App.css';
 import { BottomSheet } from './components/BottomSheet';
 import { DetailCard } from './components/DetailCard';
+import { EdgeCard } from './components/EdgeCard';
+import { DayCard } from './components/DayCard';
 import { EpisodeSlider } from './components/EpisodeSlider';
 import { GraphScene } from './components/GraphScene';
 import { GraphTooltip, type HoverPayload } from './components/GraphTooltip';
@@ -132,6 +134,8 @@ export { normalizeLabel };
 
 export default function App() {
   const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [selectedEdge, setSelectedEdge] = useState<import('./components/EdgeCard').SelectedEdge | null>(null);
+  const [selectedDay, setSelectedDay] = useState<{ day: number; label: string } | null>(null);
   const [activeArc, setActiveArc] = useState<string | null>(null);
   const [showHint, setShowHint] = useState(true);
   const [minEpisode, setMinEpisode] = useState(1);
@@ -452,6 +456,8 @@ export default function App() {
               hoverEdgeKey={hoverEdgeKey}
               hasSelection={selectedId !== null}
               onSelectNode={selectNode}
+              onSelectEdge={(e) => { setSelectedId(null); setSelectedDay(null); setSelectedEdge(e); }}
+              onSelectDay={(d, l) => { setSelectedId(null); setSelectedEdge(null); setSelectedDay({ day: d, label: l }); }}
               onHover={handleHover}
             />
           </g>
@@ -482,6 +488,27 @@ export default function App() {
           onClose={() => { deselect(); setCameFromList(false); }}
           onSelectNode={navigateToNode}
           onBackToList={isMobile && cameFromList ? handleBackToList : undefined}
+        />
+      )}
+
+      {selectedEdge && !selectedNode && !selectedDay && (
+        <EdgeCard
+          edge={selectedEdge}
+          nodesById={nodesById}
+          open={true}
+          onClose={() => setSelectedEdge(null)}
+          onSelectNode={(id) => { setSelectedEdge(null); navigateToNode(id); }}
+        />
+      )}
+
+      {selectedDay && !selectedNode && !selectedEdge && (
+        <DayCard
+          day={selectedDay.day}
+          label={selectedDay.label}
+          nodes={rawNodes.filter((n) => n.day === selectedDay.day)}
+          open={true}
+          onClose={() => setSelectedDay(null)}
+          onSelectNode={(id) => { setSelectedDay(null); navigateToNode(id); }}
         />
       )}
 
