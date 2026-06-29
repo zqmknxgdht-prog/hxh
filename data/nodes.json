@@ -7,7 +7,7 @@
       "label": "ゴン＝フリークス",
       "kind": "character",
       "description": "クジラ島出身の少年。父ジンを追ってハンターになる。",
-      "gitMeta": "<code>main</code> 本流の主人公。",
+      "gitMeta": "<code>gon</code> 本流の主人公。",
       "episode": 1,
       "arcs": [
         "序章"
@@ -36,7 +36,7 @@
       "label": "くじら島・出発",
       "kind": "event",
       "description": "ゴン＝フリークスが、二つ星ハンターの父ジンを追ってクジラ島を旅立つ。すべての物語の起点。",
-      "gitMeta": "<code>main</code> 最初のコミット。ここから全分岐が伸びる根。",
+      "gitMeta": "<code>gon</code> 最初のコミット。ここから全分岐が伸びる根。",
       "episode": 1,
       "arcs": [
         "序章"
@@ -118,7 +118,7 @@
       "label": "ジン＝フリークス",
       "kind": "character",
       "description": "ゴンの父にして規格外の凄腕ハンター。会うこと自体が物語のゴール。",
-      "gitMeta": "最初期に <code>main</code> から分岐し、終盤の「親子再会」まで一度も merge されない超長期ブランチ。",
+      "gitMeta": "最初期に <code>ging</code> から分岐し、終盤の「親子再会」まで一度も merge されない超長期ブランチ。",
       "episode": 2,
       "arcs": [
         "序章"
@@ -149,7 +149,7 @@
       "label": "カイト",
       "kind": "character",
       "description": "ジンの弟子。森でゴンを救い、ハンターの世界へ導いた恩人。",
-      "gitMeta": "<code>ging</code> から分岐＝師弟の系譜を表す。",
+      "gitMeta": "<code>kite</code> から分岐＝師弟の系譜を表す。",
       "episode": 2,
       "arcs": [
         "序章"
@@ -233,7 +233,7 @@
       "label": "ミト",
       "kind": "character",
       "description": "ゴンを育てたクジラ島の女性。ハンター試験への参加を最初は猛反対したが、後に送り出す。",
-      "gitMeta": "<code>main</code> 序盤から分岐＝ゴンの原点。旅立ち後も <code>mito</code> 枝は休眠。",
+      "gitMeta": "<code>mito</code> 序盤から分岐＝ゴンの原点。旅立ち後も <code>mito</code> 枝は休眠。",
       "episode": 3,
       "arcs": [
         "序章"
@@ -480,7 +480,7 @@
       "label": "奇術師ヒソカ＝モロウ",
       "kind": "character",
       "description": "強者との死闘を悦ぶ伸縮自在の念使い。敵とも味方ともつかぬ漂流者。",
-      "gitMeta": "<code>main</code> から独立した一匹狼ブランチ。どこにも merge されず単独行動を貫く。",
+      "gitMeta": "<code>hisoka</code> から独立した一匹狼ブランチ。どこにも merge されず単独行動を貫く。",
       "episode": 7,
       "arcs": [
         "試験"
@@ -516,7 +516,7 @@
       "label": "ハンゾー",
       "kind": "character",
       "description": "ハンター試験でゴンと壮絶に渡り合った忍者。クラピカの試験同期。",
-      "gitMeta": "<code>main</code> から分岐＝試験同期。後の継承戦で再合流する伏線。",
+      "gitMeta": "<code>hanzo</code> から分岐＝試験同期。後の継承戦で再合流する伏線。",
       "episode": 8,
       "arcs": [
         "試験"
@@ -643,7 +643,7 @@
       "label": "イルミ(ギタラクル)",
       "kind": "character",
       "description": "キルアの長兄。試験では変装し別名「ギタラクル」として潜入。針で他者を操る。",
-      "gitMeta": "<code>zoldyck</code> コミット。後にキルアの「自由」を縛る存在。",
+      "gitMeta": "<code>illumi</code> コミット。後にキルアの「自由」を縛る存在。",
       "episode": 11,
       "arcs": [
         "試験"
@@ -675,7 +675,7 @@
       "label": "キルア＝ゾルディック",
       "kind": "character",
       "description": "暗殺者として育てられた少年。ゴンとの出会いで自分の生き方を選び取る。",
-      "gitMeta": "<code>zoldyck</code> から分岐＝家を出る。すぐ <code>main</code> へ合流。",
+      "gitMeta": "<code>killua</code> から分岐＝家を出る。すぐ <code>killua</code> へ合流。",
       "episode": 13,
       "arcs": [
         "試験"
@@ -839,7 +839,7 @@
       "label": "クラピカ",
       "kind": "character",
       "description": "幻影旅団に一族を皆殺しにされた復讐者。冷静さと激情を併せ持つ。",
-      "gitMeta": "<code>main</code> から分岐。復讐という独自目的で長く別行動を取る伏線。",
+      "gitMeta": "<code>kurapika</code> から分岐。復讐という独自目的で長く別行動を取る伏線。",
       "episode": 16,
       "arcs": [
         "試験"
@@ -980,7 +980,7 @@
       "label": "レオリオ＝パラディナイト",
       "kind": "character",
       "description": "金にがめついが、貧困で友を亡くし医者を志した熱血漢。常識枠。",
-      "gitMeta": "<code>main</code> から分岐し、すぐ merge＝仲間入り。",
+      "gitMeta": "<code>leorio</code> から分岐し、すぐ merge＝仲間入り。",
       "episode": 19,
       "arcs": [
         "試験"
@@ -1644,7 +1644,7 @@
       "label": "シークアント",
       "kind": "character",
       "description": "ゾルディック家「試しの門」の管理人ゼブロの兄。ブラックリストハンター。",
-      "gitMeta": "<code>zodiac</code>",
+      "gitMeta": "<code>zoldyck</code>",
       "episode": 40,
       "arcs": [
         "ゾルディック家"
@@ -2095,7 +2095,7 @@
       "label": "念の師イズナビ",
       "kind": "character",
       "description": "クラピカに念と「制約と誓約」を教えた師。念を知らなかったクラピカを、わずか半年で一流の念能力者に鍛え上げた。",
-      "gitMeta": "<code>kurapika</code> から分岐＝師弟。鎖と絶対時間の源流。",
+      "gitMeta": "<code>izunavi</code> から分岐＝師弟。鎖と絶対時間の源流。",
       "episode": 53,
       "arcs": [
         "天空闘技場"
@@ -2257,7 +2257,7 @@
       "label": "ネオン＝ノストラード",
       "kind": "character",
       "description": "マフィア「ノストラード組」の令嬢。未来を綴る念能力を持つ。クラピカが護衛に就く。",
-      "gitMeta": "<code>kurapika</code> から分岐＝雇用関係。",
+      "gitMeta": "<code>nostrade</code> から分岐＝雇用関係。",
       "episode": 64,
       "arcs": [
         "ヨークシン"
@@ -2288,7 +2288,7 @@
       "label": "バショウ(護衛)",
       "kind": "character",
       "description": "ネオンの護衛。俳句を詠みながら爆弾能力を使う大柄なハンター。",
-      "gitMeta": "<code>basho</code> ブランチ起点。継承戦で <code>kurapika</code> へ merge 予定。",
+      "gitMeta": "<code>basho</code> ブランチ起点。継承戦で <code>basho</code> へ merge 予定。",
       "episode": 65,
       "arcs": [
         "ヨークシン"
@@ -3047,7 +3047,7 @@
       "label": "リンセン",
       "kind": "character",
       "description": "クラピカの先輩格にあたるノストラード組ボディガード(プロハンター)。緋の眼関連の任務を補佐する。",
-      "gitMeta": "<code>zodiac</code>",
+      "gitMeta": "<code>nostrade</code>",
       "episode": 71,
       "arcs": [
         "ヨークシン"
@@ -3160,7 +3160,7 @@
       "label": "カルト＝ゾルディック",
       "kind": "character",
       "description": "キルアの弟。兄の行方を追い、旅団に身を投じる。",
-      "gitMeta": "<code>zoldyck</code> から分岐し <code>genei_ryodan</code> へ merge＝欠員補充の新団員。",
+      "gitMeta": "<code>kalluto</code> から分岐し <code>kalluto</code> へ merge＝欠員補充の新団員。",
       "episode": 74,
       "arcs": [
         "ヨークシン"
@@ -5133,7 +5133,7 @@
       "label": "ビノールト",
       "kind": "character",
       "description": "指名手配連続殺人犯。お気に入りのハサミで人体の毛を切り取り食すことで、対象の身体情報を読み取ることができる念能力者。ビスケに一撃で倒された後、ゴン・キルアの訓練相手として2週間生かされる。敗北後、自首を条件に解放。",
-      "gitMeta": "<code>zodiac</code>",
+      "gitMeta": "<code>gi_cast</code>",
       "episode": 136,
       "arcs": [
         "グリードアイランド"
@@ -5878,7 +5878,7 @@
       "label": "リスト",
       "kind": "character",
       "description": "グリードアイランド関連の登場人物（リスト)。",
-      "gitMeta": "<code>zodiac</code>",
+      "gitMeta": "<code>gi_cast</code>",
       "episode": 183,
       "arcs": [
         "グリードアイランド"
@@ -5918,7 +5918,7 @@
       "label": "ドゥーン",
       "kind": "character",
       "description": "グリードアイランド関連の登場人物（ドゥーン)。",
-      "gitMeta": "<code>zodiac</code>",
+      "gitMeta": "<code>gi_cast</code>",
       "episode": 184,
       "arcs": [
         "グリードアイランド"
@@ -6241,7 +6241,7 @@
       "label": "ウォン",
       "kind": "character",
       "description": "カキン王国の動物学者。",
-      "gitMeta": "<code>hisoka</code>",
+      "gitMeta": "<code>kakin</code>",
       "episode": 187,
       "arcs": [
         "キメラアント"
@@ -6398,7 +6398,7 @@
       "label": "直属護衛軍",
       "kind": "group",
       "description": "キメラアント王メルエムの直属護衛軍。卵から孵化し、王と共に絶対的忠誠で結ばれた3体: ネフェルピトー(玩具修理者・黒子無想)、シャウアプフ(蠅の王・鱗粉乃愛泉)、モントゥトゥユピー(怒りの変態)。それぞれ独自の領分を持つが、王の保護に関しては全てを犠牲にする。",
-      "gitMeta": "<code>kimera_ant</code>",
+      "gitMeta": "<code>royal_guard</code>",
       "episode": 188,
       "arcs": [
         "キメラアント"
@@ -7764,7 +7764,7 @@
       "label": "王 散る",
       "kind": "event",
       "description": "王はコムギの傍らで、静かに息を引き取る。",
-      "gitMeta": "<code>komugi</code> を再 merge（REVERSE/tag:王散る)。",
+      "gitMeta": "<code>kimera_ant</code> を再 merge（REVERSE/tag:王散る)。",
       "mergeFromBranch": "komugi",
       "reverse": true,
       "episode": 318,
@@ -8661,7 +8661,7 @@
       "label": "親子再会",
       "kind": "event",
       "description": "ゴンがついに父ジンと対面する。ひとつの旅の結節点。",
-      "gitMeta": "最初期に立てた <code>ging</code> をここで初めて merge。",
+      "gitMeta": "最初期に立てた <code>gon</code> をここで初めて merge。",
       "episode": 338,
       "arcs": [
         "選挙"
@@ -8717,7 +8717,7 @@
       "label": "アルカ＝ナニカ",
       "kind": "character",
       "description": "キルアの妹と、その中に宿る願いを叶える存在ナニカ。",
-      "gitMeta": "<code>killua</code> から分岐＝家族の絆。",
+      "gitMeta": "<code>alluka</code> から分岐＝家族の絆。",
       "episode": 339,
       "arcs": [
         "選挙"
@@ -8787,7 +8787,7 @@
       "label": "イカルゴ(寝返り)",
       "kind": "character",
       "description": "キルアと心を通わせ、人間側につく蟻。種を超えた友情の象徴。",
-      "gitMeta": "敵 <code>kimera_ant</code> 側から <code>main</code> へ merge＝寝返り・仲間化。",
+      "gitMeta": "敵 <code>ikalgo</code> 側から <code>ikalgo</code> へ merge＝寝返り・仲間化。",
       "episode": 339,
       "arcs": [
         "キメラアント"
@@ -9514,7 +9514,7 @@
       "label": "クルリ",
       "kind": "character",
       "description": "ビヨンド派。眼鏡と毛先がカールした長髪の男性。バーバード大の博識な教授。",
-      "gitMeta": "<code>zodiac</code>",
+      "gitMeta": "<code>beyond</code>",
       "episode": 340,
       "arcs": [
         "暗黒大陸"
@@ -9538,7 +9538,7 @@
       "label": "ゴレム",
       "kind": "character",
       "description": "ビヨンド派傭兵。具現化系能力者で援護射撃専門部隊のキーマン。名は自称で素顔不明、ロボット状の巨大装甲スーツをまとう。複数の銃を具現化する能力で、放出系能力者との相互協力で力を発揮する。",
-      "gitMeta": "<code>zodiac</code>",
+      "gitMeta": "<code>beyond</code>",
       "episode": 340,
       "arcs": [
         "暗黒大陸"
@@ -9569,7 +9569,7 @@
       "label": "マリオネ",
       "kind": "character",
       "description": "ビヨンド派傭兵。ロボットのような姿をした少女。戦闘要員。",
-      "gitMeta": "<code>zodiac</code>",
+      "gitMeta": "<code>beyond</code>",
       "episode": 340,
       "arcs": [
         "暗黒大陸"
@@ -9593,7 +9593,7 @@
       "label": "マッシュル",
       "kind": "character",
       "description": "ビヨンド派傭兵。マッシュルームカットの男性で、メンバーたちのまとめ役。",
-      "gitMeta": "<code>zodiac</code>",
+      "gitMeta": "<code>beyond</code>",
       "episode": 340,
       "arcs": [
         "暗黒大陸"
@@ -9617,7 +9617,7 @@
       "label": "ペコテロ",
       "kind": "character",
       "description": "ビヨンド派傭兵。キャンディーを持ち、白い玉が沢山ついた黒い帽子を被っている。",
-      "gitMeta": "<code>zodiac</code>",
+      "gitMeta": "<code>beyond</code>",
       "episode": 340,
       "arcs": [
         "暗黒大陸"
@@ -9641,7 +9641,7 @@
       "label": "ウサメーン",
       "kind": "character",
       "description": "ビヨンド派。板前風の風貌をした男性。「イボクリ」というオーラを使った手遊びに自信を持つ。殴り込んできたジンとトラブルになるが、紆余曲折を経てジンの必要性を認める。",
-      "gitMeta": "<code>zodiac</code>",
+      "gitMeta": "<code>beyond</code>",
       "episode": 340,
       "arcs": [
         "暗黒大陸"
@@ -9965,7 +9965,7 @@
       "label": "ミュヘル",
       "kind": "character",
       "description": "ビヨンド派傭兵たちのリーダー。尖った耳の男性でジンと顔見知り。第289期ハンター試験ではミザイストムから優秀と評価されたが、クラピカのチェックでビヨンド派と見抜かれ不合格。",
-      "gitMeta": "<code>zodiac</code>",
+      "gitMeta": "<code>beyond</code>",
       "episode": 346,
       "arcs": [
         "暗黒大陸"
@@ -10024,7 +10024,7 @@
       "label": "タンジン",
       "kind": "character",
       "description": "ツェリードニヒ第四王子私設兵。ハンター準会員。クラピカ念講習会の参加者で、ミュハンの抑え役を務める。",
-      "gitMeta": "<code>zodiac</code>",
+      "gitMeta": "<code>kakin</code>",
       "episode": 348,
       "arcs": [
         "暗黒大陸"
@@ -10049,7 +10049,7 @@
       "label": "ミュハン",
       "kind": "character",
       "description": "ツェリードニヒ第四王子私設兵。クラピカ念講習会の参加者で挑発的な態度をとっていたが、講習会で発動された念能力『11人いる(サイレントマジョリティー)』の呪唇白蛇(ツチボッコ)4匹に吸血されて死亡。",
-      "gitMeta": "<code>zodiac</code>",
+      "gitMeta": "<code>kakin</code>",
       "episode": 348,
       "arcs": [
         "暗黒大陸"
@@ -10068,7 +10068,7 @@
       "label": "サルコフ",
       "kind": "character",
       "description": "ツェリードニヒ第四王子私設兵。ハンター準協会員で念能力者。テータと念使い同士の腹を割った話ができる仲。テータが消耗した後は交代して王子に念を指南する。",
-      "gitMeta": "<code>zodiac</code>",
+      "gitMeta": "<code>kakin</code>",
       "episode": 348,
       "arcs": [
         "暗黒大陸"
@@ -10093,7 +10093,7 @@
       "label": "テータ",
       "kind": "character",
       "description": "ツェリードニヒ第四王子私設兵で念能力者。ハンター準協会員。王子の性情を危険視し、絶を習得させた上で守護霊獣を消し射殺するも、王子の「刹那の10秒」で回避される。お咎めなしだが守護霊獣に攻撃され顔の左側面が変質。",
-      "gitMeta": "<code>zodiac</code>",
+      "gitMeta": "<code>kakin</code>",
       "episode": 348,
       "arcs": [
         "暗黒大陸"
@@ -10444,7 +10444,7 @@
       "label": "ヒソカvs団長編",
       "kind": "event",
       "description": "天空闘技場でフロアマスター同士としてヒソカとクロロが決闘する。",
-      "gitMeta": "<code>wing</code> × <code>genei_ryodan</code>（Pixiv: ヒソカvs団長編）。",
+      "gitMeta": "<code>wing</code> × <code>wing</code>（Pixiv: ヒソカvs団長編）。",
       "episode": 351,
       "arcs": [
         "継承戦"
@@ -10465,7 +10465,7 @@
       "label": "カキン14王子",
       "kind": "group",
       "description": "王位を懸け殺し合う、カキン王国14人の王子たち。",
-      "gitMeta": "<code>kurapika</code> から分岐＝護衛任務の舞台。",
+      "gitMeta": "<code>kakin</code> から分岐＝護衛任務の舞台。",
       "episode": 351,
       "arcs": [
         "継承戦"
@@ -10654,7 +10654,7 @@
       "label": "カートン",
       "kind": "character",
       "description": "ワブル第十四王子陣営のプロハンター。具現化系能力者。逆立った短髪に太眉の男性。パリストン経由で護衛に就いた協専ハンターで継承戦を知らなかった。最大5人乗りの船・車に変身できる能力者だったが、モモゼの守護霊獣に操作されたサイールドに刺殺され、王子の脱出手段が潰える。",
-      "gitMeta": "<code>zodiac</code>",
+      "gitMeta": "<code>kakin</code>",
       "episode": 358,
       "arcs": [
         "継承戦"
@@ -10687,7 +10687,7 @@
       "label": "サイールド",
       "kind": "character",
       "description": "ワブル第十四王子陣営のプロハンター。放出系能力者。七三分けに髭の男性。パリストン経由で雇われた協専ハンターで継承戦を知らなかった。モモゼの守護霊獣に操作され、カートンと護衛2名を殺害して逮捕される。",
-      "gitMeta": "<code>zodiac</code>",
+      "gitMeta": "<code>beyond</code>",
       "episode": 358,
       "arcs": [
         "継承戦"
@@ -11387,7 +11387,7 @@
       "label": "ジュリアーノ",
       "kind": "character",
       "description": "タイソン第六王子陣営のプロハンター。軽い性格の青年でイズナビを「イズさん」と呼ぶ。タイソン経典を受け取り目玉ジャクシを憑けられ、徐々に教義に心酔する。",
-      "gitMeta": "<code>zodiac</code>",
+      "gitMeta": "<code>kakin</code>",
       "episode": 362,
       "arcs": [
         "継承戦"
@@ -11411,7 +11411,7 @@
       "label": "リッジ",
       "kind": "character",
       "description": "パリストン経由で雇われた協専ハンター。第七王子ルズールスの護衛として船に乗り込む。",
-      "gitMeta": "<code>zodiac</code>",
+      "gitMeta": "<code>kakin</code>",
       "episode": 362,
       "arcs": [
         "継承戦"
@@ -11436,7 +11436,7 @@
       "label": "スカルト",
       "kind": "character",
       "description": "パリストン経由で雇われた協専ハンター。第七王子ルズールスの護衛として船に乗り込む。",
-      "gitMeta": "<code>zodiac</code>",
+      "gitMeta": "<code>kakin</code>",
       "episode": 362,
       "arcs": [
         "継承戦"
@@ -12386,7 +12386,7 @@
       "label": "ベレレインテ",
       "kind": "character",
       "description": "マラヤーム第十三王子陣営のプロハンター。女性のような口調で話す男。クラピカ念講習会の参加者だが、ハンターのため既に念能力者。",
-      "gitMeta": "<code>zodiac</code>",
+      "gitMeta": "<code>kakin</code>",
       "episode": 368,
       "arcs": [
         "継承戦"
@@ -14364,7 +14364,7 @@
       "label": "ジダル",
       "kind": "character",
       "description": "カキン王国・持たざる者・第二王子カミーラ・ハンター協会のカミーラ私設兵、第五王子ツベッパ呪殺担当。",
-      "gitMeta": "<code>zodiac</code>",
+      "gitMeta": "<code>kakin</code>",
       "episode": 389,
       "arcs": [
         "継承戦"
@@ -14397,7 +14397,7 @@
       "label": "リサムセッタ",
       "kind": "character",
       "description": "カキン王国・持たざる者・第二王子カミーラ・ハンター協会のカミーラ私設兵、第七王子ルズールス呪殺担当。",
-      "gitMeta": "<code>zodiac</code>",
+      "gitMeta": "<code>kakin</code>",
       "episode": 389,
       "arcs": [
         "継承戦"
@@ -14430,7 +14430,7 @@
       "label": "メシュシ",
       "kind": "character",
       "description": "カキン王国・持たざる者・第二王子カミーラ・ハンター協会のカミーラ私設兵、第十一王子フウゲツ呪殺担当。",
-      "gitMeta": "<code>zodiac</code>",
+      "gitMeta": "<code>kakin</code>",
       "episode": 389,
       "arcs": [
         "継承戦"
@@ -14463,7 +14463,7 @@
       "label": "モズベ",
       "kind": "character",
       "description": "カキン王国・持たざる者・第二王子カミーラ・ハンター協会のカミーラ私設兵、第十王子カチョウ呪殺担当。",
-      "gitMeta": "<code>zodiac</code>",
+      "gitMeta": "<code>kakin</code>",
       "episode": 389,
       "arcs": [
         "継承戦"
@@ -14928,7 +14928,7 @@
       "label": "ボークセン",
       "kind": "character",
       "description": "ハンター準会員。ツェリードニヒ王子の軍学校時代の同級生で中段髪の女性兵士。下層に移動して同級生たちのリーダー役。念を脅威とみなしモレナ狩りを装いつつ避けるよう提案。",
-      "gitMeta": "<code>zodiac</code>",
+      "gitMeta": "<code>kakin</code>",
       "episode": 394,
       "arcs": [
         "継承戦"
