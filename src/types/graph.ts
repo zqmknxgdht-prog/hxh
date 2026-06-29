@@ -71,6 +71,14 @@ export interface GraphNode {
   /** Closed-vocabulary tags from meta.tagsCatalog. Cross-cutting attribute labels
    *  (e.g. 死亡, 念能力者, スパイ) that span the kind/type/arcs/affiliations axes. */
   tags?: string[];
+  /** Black Whale voyage day (1..N) for nodes that occur during the voyage.
+   *  Used as a sub-cluster key inside the same chapter so multi-day chapters
+   *  split visually. Outside the voyage range this field is unused. */
+  day?: number;
+  /** Black Whale voyage location branch id (e.g. `loc_room_1014`, `loc_tier_3`,
+   *  `loc_justice`). When set, this node is positioned on the location lane
+   *  instead of its personal/faction `branchId` during the voyage. */
+  voyageLocation?: string;
 }
 
 export type AvatarPrimitive =
@@ -141,6 +149,9 @@ export interface GraphMeta {
   /** Closed-vocabulary tag catalog grouped by category. Tags in node.tags must
    *  exist in this catalog or CI lint rejects. */
   tagsCatalog?: Record<string, string[]>;
+  /** Black Whale voyage day → starting chapter mapping. Renders vertical Day-N
+   *  guide lines on the graph in the voyage range. */
+  voyageDays?: { day: number; chapter: number; label?: string }[];
 }
 
 export interface GraphData {

@@ -2,13 +2,13 @@
   "branches": [
     {
       "id": "main",
-      "lane": 0,
+      "lane": 25,
       "color": "#AC3415",
       "name": "本流"
     },
     {
       "id": "ging",
-      "lane": 2,
+      "lane": 27,
       "color": "#15AC60",
       "name": "ジン=フリークス",
       "parentBranch": "gon",
@@ -16,7 +16,7 @@
     },
     {
       "id": "kite",
-      "lane": 3,
+      "lane": 28,
       "color": "#8C15AC",
       "name": "カイト",
       "parentBranch": "ging",
@@ -24,7 +24,7 @@
     },
     {
       "id": "zoldyck",
-      "lane": 4,
+      "lane": 29,
       "color": "#A1AC15",
       "name": "ゾルディック家",
       "parentBranch": "main",
@@ -32,7 +32,7 @@
     },
     {
       "id": "killua",
-      "lane": 5,
+      "lane": 30,
       "color": "#1575AC",
       "name": "キルア",
       "parentBranch": "zoldyck",
@@ -40,7 +40,7 @@
     },
     {
       "id": "alluka",
-      "lane": 6,
+      "lane": 31,
       "color": "#AC1549",
       "name": "アルカ=ナニカ",
       "parentBranch": "killua",
@@ -48,7 +48,7 @@
     },
     {
       "id": "kurapika",
-      "lane": 7,
+      "lane": 32,
       "color": "#1DAC15",
       "name": "クラピカ",
       "parentBranch": "gon",
@@ -56,7 +56,7 @@
     },
     {
       "id": "nostrade",
-      "lane": 8,
+      "lane": 33,
       "color": "#3A15AC",
       "name": "ノストラード組",
       "parentBranch": "kurapika",
@@ -64,7 +64,7 @@
     },
     {
       "id": "kakin",
-      "lane": 9,
+      "lane": 34,
       "color": "#AC6615",
       "name": "カキン王国",
       "parentBranch": "kurapika",
@@ -72,7 +72,7 @@
     },
     {
       "id": "leorio",
-      "lane": 10,
+      "lane": 35,
       "color": "#15AC92",
       "name": "レオリオ",
       "parentBranch": "gon",
@@ -80,7 +80,7 @@
     },
     {
       "id": "wing",
-      "lane": 11,
+      "lane": 36,
       "color": "#AC159B",
       "name": "ウイング",
       "parentBranch": "main",
@@ -88,7 +88,7 @@
     },
     {
       "id": "hisoka",
-      "lane": 12,
+      "lane": 37,
       "color": "#6FAC15",
       "name": "ヒソカ",
       "parentBranch": "main",
@@ -96,7 +96,7 @@
     },
     {
       "id": "genei_ryodan",
-      "lane": 13,
+      "lane": 38,
       "color": "#1542AC",
       "name": "幻影旅団",
       "parentBranch": "main",
@@ -104,7 +104,7 @@
     },
     {
       "id": "kortopi",
-      "lane": 14,
+      "lane": 39,
       "color": "#AC1516",
       "name": "コルトピ",
       "parentBranch": "genei_ryodan",
@@ -112,7 +112,7 @@
     },
     {
       "id": "kalluto",
-      "lane": 15,
+      "lane": 40,
       "color": "#15AC40",
       "name": "カルト",
       "parentBranch": "zoldyck",
@@ -120,7 +120,7 @@
     },
     {
       "id": "bisky",
-      "lane": 16,
+      "lane": 41,
       "color": "#6D15AC",
       "name": "ビスケ",
       "parentBranch": "main",
@@ -128,7 +128,7 @@
     },
     {
       "id": "genthru",
-      "lane": 17,
+      "lane": 42,
       "color": "#AC9915",
       "name": "ゲンスルー",
       "parentBranch": "main",
@@ -136,7 +136,7 @@
     },
     {
       "id": "kimera_ant",
-      "lane": 18,
+      "lane": 43,
       "color": "#1594AC",
       "name": "キメラ＝アント",
       "parentBranch": "main",
@@ -144,7 +144,7 @@
     },
     {
       "id": "royal_guard",
-      "lane": 19,
+      "lane": 44,
       "color": "#AC1568",
       "name": "護衛軍",
       "parentBranch": "kimera_ant",
@@ -152,7 +152,7 @@
     },
     {
       "id": "komugi",
-      "lane": 20,
+      "lane": 45,
       "color": "#3CAC15",
       "name": "コムギ",
       "parentBranch": "kimera_ant",
@@ -160,7 +160,7 @@
     },
     {
       "id": "ikalgo",
-      "lane": 21,
+      "lane": 46,
       "color": "#1B15AC",
       "name": "イカルゴ",
       "parentBranch": "main",
@@ -168,7 +168,7 @@
     },
     {
       "id": "netero",
-      "lane": 22,
+      "lane": 47,
       "color": "#AC4715",
       "name": "ネテロ",
       "parentBranch": "main",
@@ -176,7 +176,7 @@
     },
     {
       "id": "zodiac",
-      "lane": 23,
+      "lane": 48,
       "color": "#15AC73",
       "name": "十二支ん",
       "parentBranch": "main",
@@ -184,7 +184,7 @@
     },
     {
       "id": "beyond",
-      "lane": 24,
+      "lane": 49,
       "color": "#9F15AC",
       "name": "ビヨンド",
       "parentBranch": "main",
@@ -192,7 +192,7 @@
     },
     {
       "id": "izunavi",
-      "lane": 25,
+      "lane": 50,
       "color": "#8EAC15",
       "name": "イズナビ(師)",
       "parentBranch": "kurapika",
@@ -200,7 +200,7 @@
     },
     {
       "id": "hanzo",
-      "lane": 26,
+      "lane": 51,
       "color": "#1562AC",
       "name": "ハンゾー",
       "parentBranch": "main",
@@ -208,7 +208,7 @@
     },
     {
       "id": "mito",
-      "lane": 27,
+      "lane": 52,
       "color": "#AC1536",
       "name": "ミト",
       "parentBranch": "gon",
@@ -216,7 +216,7 @@
     },
     {
       "id": "exam_cast",
-      "lane": 28,
+      "lane": 53,
       "color": "#15AC21",
       "name": "試験関係者",
       "parentBranch": "main",
@@ -224,7 +224,7 @@
     },
     {
       "id": "razor",
-      "lane": 29,
+      "lane": 54,
       "color": "#4D15AC",
       "name": "レイザー",
       "parentBranch": "main",
@@ -232,7 +232,7 @@
     },
     {
       "id": "extermination",
-      "lane": 30,
+      "lane": 55,
       "color": "#AC7915",
       "name": "討伐隊(個人)",
       "parentBranch": "main",
@@ -240,7 +240,7 @@
     },
     {
       "id": "neon_guard",
-      "lane": 31,
+      "lane": 56,
       "color": "#15ACA6",
       "name": "ネオン護衛",
       "parentBranch": "nostrade",
@@ -248,7 +248,7 @@
     },
     {
       "id": "gi_cast",
-      "lane": 32,
+      "lane": 57,
       "color": "#AC1587",
       "name": "G・I 挑戦者",
       "parentBranch": "main",
@@ -256,7 +256,7 @@
     },
     {
       "id": "gi_bomb",
-      "lane": 33,
+      "lane": 58,
       "color": "#5BAC15",
       "name": "ゲンスルー側",
       "parentBranch": "genthru",
@@ -264,7 +264,7 @@
     },
     {
       "id": "squadron",
-      "lane": 34,
+      "lane": 59,
       "color": "#152FAC",
       "name": "師団長",
       "parentBranch": "kimera_ant",
@@ -272,7 +272,7 @@
     },
     {
       "id": "basho",
-      "lane": 35,
+      "lane": 60,
       "color": "#AC2815",
       "name": "バショウ",
       "parentBranch": "kurapika",
@@ -280,15 +280,15 @@
     },
     {
       "id": "senritsu",
-      "lane": 36,
+      "lane": 61,
       "color": "#15AC54",
       "name": "センリツ",
-      "parentBranch": "kurapika",
-      "forkFromNode": "n_york"
+      "parentBranch": "nostrade",
+      "forkFromNode": "n_neon"
     },
     {
       "id": "bill",
-      "lane": 37,
+      "lane": 62,
       "color": "#8015AC",
       "name": "ビル",
       "parentBranch": "kakin",
@@ -296,13 +296,13 @@
     },
     {
       "id": "gon",
-      "lane": 1,
+      "lane": 26,
       "color": "#3CB371",
       "name": "ゴン＝フリークス"
     },
     {
       "id": "pariston",
-      "lane": 38,
+      "lane": 63,
       "color": "#D8B11A",
       "name": "パリストン＝ヒル",
       "parentBranch": "zodiac",
@@ -310,11 +310,167 @@
     },
     {
       "id": "illumi",
-      "lane": 39,
+      "lane": 64,
       "color": "#7A1AAC",
       "name": "イルミ＝ゾルディック",
       "parentBranch": "zoldyck",
       "forkFromNode": "n_illumi"
+    },
+    {
+      "id": "loc_tier_1",
+      "lane": 0,
+      "color": "#888888",
+      "name": "第1層"
+    },
+    {
+      "id": "loc_tier_2",
+      "lane": 1,
+      "color": "#888888",
+      "name": "第2層"
+    },
+    {
+      "id": "loc_tier_3",
+      "lane": 2,
+      "color": "#888888",
+      "name": "第3層"
+    },
+    {
+      "id": "loc_tier_4",
+      "lane": 3,
+      "color": "#888888",
+      "name": "第4層"
+    },
+    {
+      "id": "loc_tier_5",
+      "lane": 4,
+      "color": "#888888",
+      "name": "第5層"
+    },
+    {
+      "id": "loc_room_1001",
+      "lane": 5,
+      "color": "#6699CC",
+      "name": "Room 1001 (ベンジャミン)"
+    },
+    {
+      "id": "loc_room_1002",
+      "lane": 6,
+      "color": "#6699CC",
+      "name": "Room 1002 (カミーラ)"
+    },
+    {
+      "id": "loc_room_1003",
+      "lane": 7,
+      "color": "#6699CC",
+      "name": "Room 1003 (チョウライ)"
+    },
+    {
+      "id": "loc_room_1004",
+      "lane": 8,
+      "color": "#6699CC",
+      "name": "Room 1004 (ツェリードニヒ)"
+    },
+    {
+      "id": "loc_room_1005",
+      "lane": 9,
+      "color": "#6699CC",
+      "name": "Room 1005 (ツベッパ)"
+    },
+    {
+      "id": "loc_room_1006",
+      "lane": 10,
+      "color": "#6699CC",
+      "name": "Room 1006 (タイソン)"
+    },
+    {
+      "id": "loc_room_1007",
+      "lane": 11,
+      "color": "#6699CC",
+      "name": "Room 1007 (ルズールス)"
+    },
+    {
+      "id": "loc_room_1008",
+      "lane": 12,
+      "color": "#6699CC",
+      "name": "Room 1008 (サレサレ)"
+    },
+    {
+      "id": "loc_room_1009",
+      "lane": 13,
+      "color": "#6699CC",
+      "name": "Room 1009 (ハルケンブルク)"
+    },
+    {
+      "id": "loc_room_1010",
+      "lane": 14,
+      "color": "#6699CC",
+      "name": "Room 1010 (カチョウ)"
+    },
+    {
+      "id": "loc_room_1011",
+      "lane": 15,
+      "color": "#6699CC",
+      "name": "Room 1011 (フウゲツ)"
+    },
+    {
+      "id": "loc_room_1012",
+      "lane": 16,
+      "color": "#6699CC",
+      "name": "Room 1012 (モモゼ)"
+    },
+    {
+      "id": "loc_room_1013",
+      "lane": 17,
+      "color": "#6699CC",
+      "name": "Room 1013 (マラヤーム)"
+    },
+    {
+      "id": "loc_room_1014",
+      "lane": 18,
+      "color": "#6699CC",
+      "name": "Room 1014 (ワブル)"
+    },
+    {
+      "id": "loc_justice",
+      "name": "司法局",
+      "lane": 19,
+      "color": "#AA5577"
+    },
+    {
+      "id": "loc_brig",
+      "name": "拘束室",
+      "lane": 20,
+      "color": "#AA5577"
+    },
+    {
+      "id": "loc_ballroom",
+      "name": "大広間",
+      "lane": 21,
+      "color": "#AA5577"
+    },
+    {
+      "id": "loc_corridor",
+      "name": "船内通路",
+      "lane": 23,
+      "color": "#AA5577"
+    },
+    {
+      "id": "loc_unknown",
+      "lane": 24,
+      "color": "#999999",
+      "name": "場所不明"
+    },
+    {
+      "id": "loc_king_chamber",
+      "lane": 24.5,
+      "color": "#AA5577",
+      "name": "王の間 (特別客室)"
+    },
+    {
+      "id": "loc_medical",
+      "lane": 23.5,
+      "color": "#AA5577",
+      "name": "医療区域 (第3層)"
     }
   ]
 }

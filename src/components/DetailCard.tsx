@@ -92,6 +92,27 @@ export function DetailCard({ node, branch, branches, meta, nodesById, groupsByMe
         <div className="branch">
           {bilingualInline('系譜', 'Branch')}: {bilingualInline(branch.name, branch.nameEn)}
         </div>
+        {node.voyageLocation && branches[node.voyageLocation] && (
+          <div className="voyage-loc">
+            {bilingualInline('所在', 'Voyage Loc')}:{' '}
+            <button
+              type="button"
+              className="voyage-loc-link"
+              onClick={() => {
+                const locBranch = branches[node.voyageLocation!];
+                // Navigate by clicking — emit a select to a representative node
+                // on this location lane if any (fallback: do nothing).
+                const target = Object.values(nodesById).find(
+                  (m) => m.voyageLocation === node.voyageLocation && m.id !== node.id,
+                );
+                if (target) onSelectNode(target.id);
+                void locBranch;
+              }}
+            >
+              {branches[node.voyageLocation].name}
+            </button>
+          </div>
+        )}
         {node.kind === 'character' && (
           <div className="card-avatar" aria-hidden>
             <svg viewBox="-14 -14 28 28" width={72} height={72}>
