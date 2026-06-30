@@ -317,20 +317,66 @@ export default function App() {
     [focusPointOnStage],
   );
 
-  /** Focus the visible area on the midpoint of an edge's from/to nodes. */
+  /** Fit a world-space bounding box into the area NOT covered by the selected
+   *  card. On desktop the card is a 340px right-anchored overlay; on mobile
+   *  it's a Bottom Sheet covering ~70dvh. Used for Day / Edge focus where the
+   *  target spans multiple lanes and a single-point focus would push parts
+   *  off-screen. */
+  const focusBoundsOnStage = useCallback(
+    (bounds: { minX: number; maxX: number; minY: number; maxY: number }) => {
+      const stage = panZoom.stageRef.current;
+      if (!stage) return;
+      const padX = 32;
+      const padY = 24;
+      const headerH = 118;
+      // Card overlay reservations (must match #card CSS rules in App.css)
+      const reservedRight = !isMobile ? 360 : 0;
+      const footerH = isMobile ? Math.round(stage.clientHeight * 0.7) : 0;
+      const availW = stage.clientWidth - reservedRight - padX * 2;
+      const availH = stage.clientHeight - headerH - footerH - padY * 2;
+      const width = bounds.maxX - bounds.minX;
+      const height = bounds.maxY - bounds.minY;
+      if (availW <= 0 || availH <= 0 || width <= 0 || height <= 0) return;
+      const scaleX = availW / width;
+      const scaleY = availH / height;
+      // Allow zooming in past MIN_READABLE_SCALE for small targets (single
+      // edge / tight day cluster), but never zoom out below FIT_MIN_SCALE.
+      const scale = Math.max(0.28, Math.min(scaleX, scaleY, 2.0));
+      const cx = (bounds.minX + bounds.maxX) / 2;
+      const cy = (bounds.minY + bounds.maxY) / 2;
+      // Center of the usable area
+      const targetCx = padX + availW / 2;
+      const targetCy = headerH + padY + availH / 2;
+      panZoom.applyTransform({
+        scale,
+        tx: targetCx - cx * scale,
+        ty: targetCy - cy * scale,
+      });
+    },
+    [panZoom, isMobile],
+  );
+
+  /** Focus the visible area on the bounding box of an edge's from/to nodes. */
   const focusEdgeOnStage = useCallback(
     (edge: import('./components/EdgeCard').SelectedEdge) => {
       const from = edge.fromNodeId ? positionedNodes.find((n) => n.id === edge.fromNodeId) : null;
       const to = edge.toNodeId ? positionedNodes.find((n) => n.id === edge.toNodeId) : null;
-      if (!from && !to) return;
-      const mx = from && to ? (from.x + to.x) / 2 : (from ?? to)!.x;
-      const my = from && to ? (from.y + to.y) / 2 : (from ?? to)!.y;
-      focusPointOnStage(mx, my);
+      const endpoints = [from, to].filter((n): n is PositionedNode => !!n);
+      if (endpoints.length === 0) return;
+      const pad = 80; // world-space padding so endpoints sit comfortably inside
+      const xs = endpoints.map((n) => n.x);
+      const ys = endpoints.map((n) => n.y);
+      focusBoundsOnStage({
+        minX: Math.min(...xs) - pad,
+        maxX: Math.max(...xs) + pad,
+        minY: Math.min(...ys) - pad,
+        maxY: Math.max(...ys) + pad,
+      });
     },
-    [focusPointOnStage],
+    [focusBoundsOnStage],
   );
 
-  /** Focus the centroid of nodes for the given voyage day. */
+  /** Focus the bounding box of nodes for the given voyage day. */
   const focusDayOnStage = useCallback(
     (day: number) => {
       const dayNodes = positionedNodes.filter((n) => n.day === day);
@@ -342,9 +388,15 @@ export default function App() {
         if (n.y < minY) minY = n.y;
         if (n.y > maxY) maxY = n.y;
       }
-      focusPointOnStage((minX + maxX) / 2, (minY + maxY) / 2);
+      const pad = 100; // world-space padding so the cluster has breathing room
+      focusBoundsOnStage({
+        minX: minX - pad,
+        maxX: maxX + pad,
+        minY: minY - pad,
+        maxY: maxY + pad,
+      });
     },
-    [focusPointOnStage],
+    [focusBoundsOnStage],
   );
 
   const selectNode = useCallback(
