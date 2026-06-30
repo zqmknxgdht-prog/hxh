@@ -3,6 +3,13 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main, master]
+    paths-ignore:
+      - '**.md'
+      - 'docs/**'
+      - '.github/PULL_REQUEST_TEMPLATE.md'
+      - 'LICENSE'
+  # Manual trigger remains available to force a deploy if a docs-only push
+  # ever needs to be released (e.g. README image referenced from the site).
   workflow_dispatch:
 
 permissions:
