@@ -90,7 +90,7 @@
   "nodes": {
     "n_gon": {
       "label": "Gon Freecss",
-      "description": "Gon Freecss. A character from Hunter × Hunter."
+      "description": "A boy from Whale Island who sets out to find his father Ging and becomes a Hunter."
     },
     "n_start": {
       "label": "Whale Island · Departure",
@@ -709,84 +709,84 @@
       "description": "The Troupe, princes, and Association cross paths on the same ship—the current front line."
     },
     "n_w_bat": {
-      "label": "Bat",
-      "description": "Bat. A character from Hunter × Hunter."
+      "label": "Bat-type Chimera Ant",
+      "description": "A bat-type Chimera Ant."
     },
     "n_w_frog": {
-      "label": "Frog",
-      "description": "Frog. A character from Hunter × Hunter."
+      "label": "Frog-type Chimera Ant",
+      "description": "A frog-type Chimera Ant."
     },
     "n_kortopi": {
       "label": "Kortopi",
-      "description": "Kortopi. A character from Hunter × Hunter."
+      "description": "Phantom Troupe member with the Conjuration ability 'Gallery Fake (Deceiver's Right Hand · Lefty Lie)', producing 48-hour copies of objects. Killed by Hisoka alongside Shalnark."
     },
     "n_w_abengane": {
       "label": "Abengane",
-      "description": "Abengane. A character from Hunter × Hunter."
+      "description": "A Nen-exorcist."
     },
     "n_w_agon": {
       "label": "Agon",
-      "description": "Agon. A character from Hunter × Hunter."
+      "description": "Tournament participant in the 5th phase of the 287th Hunter Exam."
     },
     "n_w_alligator": {
-      "label": "Alligator",
-      "description": "Alligator. A character from Hunter × Hunter."
+      "label": "Alligator-type Chimera Ant",
+      "description": "An alligator-type Chimera Ant."
     },
     "n_w_amana": {
       "label": "Amana",
-      "description": "Amana. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_amane": {
       "label": "Amane",
-      "description": "Amane. A character from Hunter × Hunter."
+      "description": "Butler of the Zoldyck family."
     },
     "n_w_amori": {
       "label": "Amori",
-      "description": "Amori. A character from Hunter × Hunter."
+      "description": "Eldest of the Amori brothers; participant in the 4th phase (Zevil Island) of the 287th Hunter Exam."
     },
     "n_w_antokiba_trade_shop_npc": {
-      "label": "Antokiba Trade Shop NPC",
-      "description": "Antokiba Trade Shop NPC. A character from Hunter × Hunter."
+      "label": "Antokiba Shop Clerk",
+      "description": "Shop-clerk NPC in the town of Antokiba inside Greed Island."
     },
     "n_w_arka": {
       "label": "Arka",
-      "description": "Arka. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_assam": {
       "label": "Assam",
-      "description": "Assam. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_assassin_a": {
-      "label": "Assassin A",
-      "description": "Assassin A. A character from Hunter × Hunter."
+      "label": "Shadow Beast A",
+      "description": "Member of the Mafia-affiliated assassin group 'Shadow Beasts'; dispatched to capture Uvogin but cut down in return."
     },
     "n_w_assassin_b": {
-      "label": "Assassin B",
-      "description": "Assassin B. A character from Hunter × Hunter."
+      "label": "Shadow Beast B",
+      "description": "Member of the Mafia-affiliated assassin group 'Shadow Beasts'."
     },
     "n_w_assassin_c": {
-      "label": "Assassin C",
-      "description": "Assassin C. A character from Hunter × Hunter."
+      "label": "Shadow Beast C",
+      "description": "Member of the Mafia-affiliated assassin group 'Shadow Beasts'."
     },
     "n_w_assassin_d": {
-      "label": "Assassin D",
-      "description": "Assassin D. A character from Hunter × Hunter."
+      "label": "Shadow Beast D",
+      "description": "Member of the Mafia-affiliated assassin group 'Shadow Beasts'."
     },
     "n_w_assassin_e": {
-      "label": "Assassin E",
-      "description": "Assassin E. A character from Hunter × Hunter."
+      "label": "Shadow Beast E",
+      "description": "Member of the Mafia-affiliated assassin group 'Shadow Beasts'."
     },
     "n_w_assassin_f": {
-      "label": "Assassin F",
-      "description": "Assassin F. A character from Hunter × Hunter."
+      "label": "Shadow Beast F",
+      "description": "Member of the Mafia-affiliated assassin group 'Shadow Beasts'."
     },
     "n_w_asta": {
       "label": "Asta",
-      "description": "Asta. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_auctioneer": {
       "label": "Auctioneer",
-      "description": "Auctioneer. A character from Hunter × Hunter."
+      "description": "Auctioneer at the Southernpiece Auction."
     },
     "n_w_baise": {
       "label": "Baise",
@@ -794,43 +794,43 @@
     },
     "n_w_baital": {
       "label": "Baital",
-      "description": "Baital. A character from Hunter × Hunter."
+      "description": "A citizen of East Gorteau."
     },
     "n_w_baka_ki_el_dogra": {
       "label": "Baka Ki El Dogra",
-      "description": "Baka Ki El Dogra. A character from Hunter × Hunter."
+      "description": "Guest commentator on Heavens Arena match broadcasts."
     },
     "n_w_balda": {
       "label": "Balda",
-      "description": "Balda. A character from Hunter × Hunter."
+      "description": "An individual Chimera Ant."
     },
     "n_w_banana_kavaro": {
       "label": "Banana Kavaro",
-      "description": "Banana Kavaro. A character from Hunter × Hunter."
+      "description": "Amateur Hunter on Kite's team."
     },
     "n_w_baro": {
       "label": "Baro",
-      "description": "Baro. A character from Hunter × Hunter."
+      "description": "An individual Chimera Ant named Baro."
     },
     "n_w_barry": {
       "label": "Barry",
-      "description": "Barry. A character from Hunter × Hunter."
+      "description": "Hunter affiliated with the Hunter Association."
     },
     "n_w_battera": {
       "label": "Battera",
-      "description": "Battera. A character from Hunter × Hunter."
+      "description": "An extremely wealthy investor who bankrolled the Greed Island development."
     },
     "n_w_battera_s_lover": {
       "label": "Battera's Lover",
-      "description": "Battera's Lover. A character from Hunter × Hunter."
+      "description": "Lover of the wealthy investor Battera; her illness is the driving motivation behind the development of Greed Island."
     },
     "n_w_bean": {
       "label": "Bean",
-      "description": "Bean. A character from Hunter × Hunter."
+      "description": "A Yorknew Mafia executive; involved in running the underground auction."
     },
     "n_w_beans": {
       "label": "Beans",
-      "description": "Beans. A character from Hunter × Hunter."
+      "description": "Hunter Association staff; secretary to the Chairman."
     },
     "n_w_belerainte": {
       "label": "Belerainte",
@@ -838,11 +838,11 @@
     },
     "n_w_bendot": {
       "label": "Bendot",
-      "description": "Bendot. A character from Hunter × Hunter."
+      "description": "An inmate of Trick Tower."
     },
     "n_w_bihorn": {
       "label": "Bihorn",
-      "description": "Bihorn. A character from Hunter × Hunter."
+      "description": "Chimera Ant officer Bihorn."
     },
     "n_w_binolt": {
       "label": "Binolt",
@@ -850,15 +850,15 @@
     },
     "n_w_bizeff": {
       "label": "Bizeff",
-      "description": "Bizeff. A character from Hunter × Hunter."
+      "description": "Vice President of the Republic of East Gorteau; the true power behind the puppet dictator Ming Jol-Ik."
     },
     "n_w_bloster": {
       "label": "Bloster",
-      "description": "Bloster. A character from Hunter × Hunter."
+      "description": "Chimera Ant officer Bloster."
     },
     "n_w_boki": {
       "label": "Boki",
-      "description": "Boki. A character from Hunter × Hunter."
+      "description": "An individual Chimera Ant; a Manipulator who controls targets like joysticks via tentacles."
     },
     "n_w_bombers": {
       "label": "The Bombers",
@@ -874,35 +874,35 @@
     },
     "n_w_bourbon": {
       "label": "Bourbon",
-      "description": "Bourbon. A character from Hunter × Hunter."
+      "description": "287th Hunter Exam applicant; a snake charmer."
     },
     "n_w_buhara": {
       "label": "Buhara",
-      "description": "Buhara. A character from Hunter × Hunter."
+      "description": "Gourmet Hunter of the Hunter Association."
     },
     "n_w_bushidora_ambitious": {
       "label": "Bushidora Ambitious",
-      "description": "Bushidora Ambitious. A character from Hunter × Hunter."
+      "description": "Nen user who appears as a candidate for the Zodiacs during the Leorio–Pariston election."
     },
     "n_w_captain": {
-      "label": "Captain",
-      "description": "Captain. A character from Hunter × Hunter."
+      "label": "The Captain",
+      "description": "Captain of the ship that ferries Hunter Exam applicants."
     },
     "n_w_carabid_beetle": {
-      "label": "Carabid Beetle",
-      "description": "Carabid Beetle. A character from Hunter × Hunter."
+      "label": "Carabid-Beetle-type Chimera Ant",
+      "description": "A carabid-beetle-type Chimera Ant."
     },
     "n_w_casino_king": {
       "label": "Casino King",
-      "description": "Casino King. A character from Hunter × Hunter."
+      "description": "The 'Casino King' who controls the casino in the Greed Island world."
     },
     "n_w_cat_diner_npc": {
-      "label": "Cat Diner NPC",
-      "description": "Cat Diner NPC. A character from Hunter × Hunter."
+      "label": "Cat Diner Staff",
+      "description": "NPC working at the cat diner inside the Greed Island world."
     },
     "n_w_centipede": {
-      "label": "Centipede",
-      "description": "Centipede. A character from Hunter × Hunter."
+      "label": "Centipede Man",
+      "description": "Chimera Ant officer under Zazan; has a centipede-shaped body."
     },
     "n_w_cheetu": {
       "label": "Cheetu",
@@ -910,15 +910,15 @@
     },
     "n_w_cherry": {
       "label": "Cherry",
-      "description": "Cherry. A character from Hunter × Hunter."
+      "description": "Applicant for the 287th Hunter Exam."
     },
     "n_w_chibaba": {
       "label": "Chibaba",
-      "description": "Chibaba. A character from Hunter × Hunter."
+      "description": "Veteran fighter who lives at Heavens Arena; an old acquaintance of Wing."
     },
     "n_w_chimera_ant_queen": {
       "label": "Chimera Ant Queen",
-      "description": "Chimera Ant Queen. A character from Hunter × Hunter."
+      "description": "Queen of the Chimera Ants. Devastates NGL, gives birth to the King (Meruem), and dies — the originating figure of the Chimera Ant arc."
     },
     "n_w_cluck": {
       "label": "Cluck",
@@ -926,19 +926,19 @@
     },
     "n_w_cocco": {
       "label": "Cocco",
-      "description": "Cocco. A character from Hunter × Hunter."
+      "description": "Heavens Arena commentator."
     },
     "n_w_coco_loo": {
       "label": "Coco Loo",
-      "description": "Coco Loo. A character from Hunter × Hunter."
+      "description": "A mourning-tour guide."
     },
     "n_w_conditional_auction_announcer": {
-      "label": "Conditional Auction Announcer",
-      "description": "Conditional Auction Announcer. A character from Hunter × Hunter."
+      "label": "Conditional-Auction Announcer",
+      "description": "Announcer at the Mafia's conditional auction."
     },
     "n_w_crab": {
-      "label": "Crab",
-      "description": "Crab. A character from Hunter × Hunter."
+      "label": "Crab-type Chimera Ant",
+      "description": "A crab-type Chimera Ant encountered in NGL."
     },
     "n_w_curly": {
       "label": "Curly (Kururi)",
@@ -946,11 +946,11 @@
     },
     "n_w_cutie_beauty": {
       "label": "Cutie Beauty",
-      "description": "Cutie Beauty. A character from Hunter × Hunter."
+      "description": "Single-star Cute Hunter of the Hunter Association."
     },
     "n_w_cuzco": {
       "label": "Cuzco",
-      "description": "Cuzco. A character from Hunter × Hunter."
+      "description": "Hunter Association Hunter and Greed Island player."
     },
     "n_w_dalzollene": {
       "label": "Dalzollene",
@@ -961,24 +961,24 @@
       "description": "One of Prince Tserriednich's private soldiers, an associate Hunter Association member. Attends Kurapika's Nen lectures and reins in Meeryhan."
     },
     "n_w_death_row_convicts": {
-      "label": "Death Row Convicts",
-      "description": "Death Row Convicts. A character from Hunter × Hunter."
+      "label": "Death-Row Convicts",
+      "description": "Death-row convicts hired by Battera for the development of Greed Island."
     },
     "n_w_degiro": {
       "label": "Degiro",
-      "description": "Degiro. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_dog": {
-      "label": "Dog",
-      "description": "Dog. A character from Hunter × Hunter."
+      "label": "Dog-type Chimera Ant",
+      "description": "A dog-type Chimera Ant."
     },
     "n_w_doster": {
       "label": "Doster",
-      "description": "Doster. A character from Hunter × Hunter."
+      "description": "Hunter affiliated with the Hunter Association."
     },
     "n_w_dr_lee": {
       "label": "Dr. Lee",
-      "description": "Dr. Lee. A character from Hunter × Hunter."
+      "description": "A physician."
     },
     "n_w_dwun": {
       "label": "Dwun",
@@ -986,31 +986,31 @@
     },
     "n_w_east_gorteau_go_champion": {
       "label": "East Gorteau Go Champion",
-      "description": "East Gorteau Go Champion. A character from Hunter × Hunter."
+      "description": "Go champion of East Gorteau; serves as a benchmark opponent measuring Komugi's skill."
     },
     "n_w_east_gorteau_nen_using_soldier": {
-      "label": "East Gorteau Nen-using Soldier",
-      "description": "East Gorteau Nen-using Soldier. A character from Hunter × Hunter."
+      "label": "East Gorteau Nen-Using Soldier",
+      "description": "Nen-user soldier of the East Gorteau military."
     },
     "n_w_east_gorteau_shogi_champion": {
       "label": "East Gorteau Shogi Champion",
-      "description": "East Gorteau Shogi Champion. A character from Hunter × Hunter."
+      "description": "Shogi champion of East Gorteau."
     },
     "n_w_elena": {
       "label": "Elena",
-      "description": "Elena. A character from Hunter × Hunter."
+      "description": "A Greed Island Game Master."
     },
     "n_w_eliza": {
       "label": "Eliza",
-      "description": "Eliza. A character from Hunter × Hunter."
+      "description": "Attendant assigned to Neon Nostrade."
     },
     "n_w_erbier_mano": {
       "label": "Erbier Mano",
-      "description": "Erbier Mano. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_eta": {
       "label": "Eta",
-      "description": "Eta. A character from Hunter × Hunter."
+      "description": "A Greed Island Game Master."
     },
     "n_w_extermination_team": {
       "label": "Chimera Ant Extermination Team",
@@ -1022,7 +1022,7 @@
     },
     "n_w_flutter": {
       "label": "Flutter",
-      "description": "Flutter. A character from Hunter × Hunter."
+      "description": "Chimera Ant general; winged, in charge of reconnaissance."
     },
     "n_w_freelance_assassins": {
       "label": "Freelance Assassins",
@@ -1030,15 +1030,15 @@
     },
     "n_w_fumi": {
       "label": "Fumi",
-      "description": "Fumi. A character from Hunter × Hunter."
+      "description": "Reception clerk of the Southernpiece Auction."
     },
     "n_w_g_i_game_masters": {
       "label": "G.I. Game Masters",
-      "description": "G.I. Game Masters. A character from Hunter × Hunter."
+      "description": "Game Masters of the Greed Island world."
     },
     "n_w_gashta_bellam": {
       "label": "Gashta Bellam",
-      "description": "Gashta Bellam. A character from Hunter × Hunter."
+      "description": "Hunter affiliated with the Hunter Association."
     },
     "n_w_gel": {
       "label": "Gel",
@@ -1050,11 +1050,11 @@
     },
     "n_w_gido": {
       "label": "Gido",
-      "description": "Gido. A character from Hunter × Hunter."
+      "description": "Heavens Arena fighter."
     },
     "n_w_ging_and_mito_s_grandmother": {
       "label": "Ging and Mito's Grandmother",
-      "description": "Ging and Mito's Grandmother. A character from Hunter × Hunter."
+      "description": "Grandmother of Ging and Mito; raised Gon on Whale Island."
     },
     "n_w_ginta": {
       "label": "Ginta",
@@ -1065,24 +1065,24 @@
       "description": "A professional Hunter in Prince Tyson's camp; a breezy young man who calls Izunavi 'Iz-san.' Receives Tyson's Scripture and is bonded to an Eyeball Tadpole, becoming ever more devoted to her doctrine."
     },
     "n_w_gold_dust_girl": {
-      "label": "Gold Dust Girl",
-      "description": "Gold Dust Girl. A character from Hunter × Hunter."
+      "label": "Gold-Dust Girl",
+      "description": "The Gold-Dust Girl of the Greed Island world."
     },
     "n_w_gold_dust_girl_guard": {
-      "label": "Gold Dust Girl Guard",
-      "description": "Gold Dust Girl Guard. A character from Hunter × Hunter."
+      "label": "Gold-Dust Girl's Guard",
+      "description": "Guard of the Gold-Dust Girl in the Greed Island world."
     },
     "n_w_golem": {
       "label": "Golem",
       "description": "A Beyond-faction mercenary; a Conjurer and the keystone of the suppressive-fire unit. The name is self-styled, and his face is hidden under a robot-like power armour. He conjures multiple firearms and performs best with an Emitter partner."
     },
     "n_w_gorilla": {
-      "label": "Gorilla",
-      "description": "Gorilla. A character from Hunter × Hunter."
+      "label": "Gorilla-type Chimera Ant",
+      "description": "A gorilla-type Chimera Ant."
     },
     "n_w_gothic_newscaster": {
-      "label": "Gothic Newscaster",
-      "description": "Gothic Newscaster. A character from Hunter × Hunter."
+      "label": "Gothic-Style Newscaster",
+      "description": "A TV news anchor in gothic attire."
     },
     "n_w_gotoh": {
       "label": "Gotoh",
@@ -1090,99 +1090,99 @@
     },
     "n_w_goz": {
       "label": "Goz",
-      "description": "Goz. A character from Hunter × Hunter."
+      "description": "Tournament participant in the 5th phase of the 287th Hunter Exam."
     },
     "n_w_gyro": {
       "label": "Gyro",
-      "description": "Gyro. A character from Hunter × Hunter."
+      "description": "Founder of NGL and a former human dictator. After years of brutal rule and human-experiment-like transformations he eventually crosses over to the Dark Continent as a Chimera Ant."
     },
     "n_w_gyro_s_father": {
       "label": "Gyro's Father",
-      "description": "Gyro's Father. A character from Hunter × Hunter."
+      "description": "Father of Gyro, the former NGL dictator."
     },
     "n_w_hagakushi": {
       "label": "Hagakushi",
-      "description": "Hagakushi. A character from Hunter × Hunter."
+      "description": "Hunter affiliated with the Hunter Association."
     },
     "n_w_hanse": {
       "label": "Hanse",
-      "description": "Hanse. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_haruna": {
       "label": "Haruna",
-      "description": "Haruna. A character from Hunter × Hunter."
+      "description": "A mother in East Gorteau."
     },
     "n_w_heads_of_the_v6": {
       "label": "Heads of the V6",
       "description": "The heads of state of the V6—the modern Five (V5) plus Kakin—who jointly arbitrate the Dark Continent expedition."
     },
     "n_w_heavens_arena_200th_floor_clerk": {
-      "label": "Heavens Arena 200th Floor Clerk",
-      "description": "Heavens Arena 200th Floor Clerk. A character from Hunter × Hunter."
+      "label": "Heavens Arena 200th-Floor Clerk",
+      "description": "Reception clerk on the 200th floor of Heavens Arena."
     },
     "n_w_hina": {
       "label": "Hina",
-      "description": "Hina. A character from Hunter × Hunter."
+      "description": "Chimera Ant officer Hina."
     },
     "n_w_hishita": {
       "label": "Hishita",
-      "description": "Hishita. A character from Hunter × Hunter."
+      "description": "Butler of the Zoldyck family."
     },
     "n_w_hollow": {
       "label": "Hollow",
-      "description": "Hollow. A character from Hunter × Hunter."
+      "description": "Nen user Hollow, appearing in the Chimera Ant arc."
     },
     "n_w_hunter_association_exorcist": {
       "label": "Hunter Association Exorcist",
-      "description": "Hunter Association Exorcist. A character from Hunter × Hunter."
+      "description": "Nen-exorcist of the Hunter Association."
     },
     "n_w_hunter_website_bartender": {
       "label": "Hunter Website Bartender",
-      "description": "Hunter Website Bartender. A character from Hunter × Hunter."
+      "description": "Bartender on the Hunter Website; a Hunter Association member."
     },
     "n_w_ickshonpe_katocha": {
       "label": "Ickshonpe Katocha",
-      "description": "Ickshonpe Katocha. A character from Hunter × Hunter."
+      "description": "Single-star Hacker Hunter of the Hunter Association."
     },
     "n_w_imori": {
       "label": "Imori",
-      "description": "Imori. A character from Hunter × Hunter."
+      "description": "Middle of the Amori brothers; participant in the 4th phase (Zevil Island) of the 287th Hunter Exam."
     },
     "n_w_inzagi": {
       "label": "Inzagi",
-      "description": "Inzagi. A character from Hunter × Hunter."
+      "description": "Nen user Inzagi, appearing in the Chimera Ant arc."
     },
     "n_w_isaac": {
       "label": "Isaac",
-      "description": "Isaac. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_ivlenkov": {
       "label": "Ivlenkov",
-      "description": "Ivlenkov. A character from Hunter × Hunter."
+      "description": "Member of the Mafia community appearing in the Yorknew arc."
     },
     "n_w_ivona_kawski": {
       "label": "Ivona Kawski",
-      "description": "Ivona Kawski. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_jeet": {
       "label": "Jeet",
-      "description": "Jeet. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_jeitsari": {
       "label": "Jeitsari",
-      "description": "Jeitsari. A character from Hunter × Hunter."
+      "description": "Hunter affiliated with the Hunter Association."
     },
     "n_w_jikono": {
       "label": "Jikono",
-      "description": "Jikono. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_jispa": {
       "label": "Jispa",
-      "description": "Jispa. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_johness": {
-      "label": "Johness",
-      "description": "Johness. A character from Hunter × Hunter."
+      "label": "Johness the Dissector",
+      "description": "A serial killer felled by Killua during the 4th phase (Zevil Island)."
     },
     "n_w_kanzai": {
       "label": "Kanzai",
@@ -1190,19 +1190,19 @@
     },
     "n_w_kastro": {
       "label": "Kastro",
-      "description": "Kastro. A character from Hunter × Hunter."
+      "description": "200th-floor Heavens Arena fighter; spawns clones via the Conjuration ability 'Double,' but is decisively defeated by Hisoka."
     },
     "n_w_kasuga": {
       "label": "Kasuga",
-      "description": "Kasuga. A character from Hunter × Hunter."
+      "description": "Maid serving the Zoldyck family."
     },
     "n_w_katzo": {
       "label": "Katzo",
-      "description": "Katzo. A character from Hunter × Hunter."
+      "description": "Crew member aboard the Hunter Exam transport ship; helps the Captain deliver Gon and the others."
     },
     "n_w_kazsule": {
       "label": "Kazsule",
-      "description": "Kazsule. A character from Hunter × Hunter."
+      "description": "Greed Island player involved in selecting designated positions for the Razor match."
     },
     "n_w_keeney": {
       "label": "Keeney",
@@ -1210,39 +1210,35 @@
     },
     "n_w_kenmi": {
       "label": "Kenmi",
-      "description": "Kenmi. A character from Hunter × Hunter."
+      "description": "Tournament participant in the 5th phase of the 287th Hunter Exam."
     },
     "n_w_kess": {
       "label": "Kess",
-      "description": "Kess. A character from Hunter × Hunter."
+      "description": "Hunter affiliated with the Hunter Association."
     },
     "n_w_khara": {
       "label": "Khara",
-      "description": "Khara. A character from Hunter × Hunter."
+      "description": "Hunter affiliated with the Hunter Association."
     },
     "n_w_kikyo_zoldyck": {
       "label": "Kikyo Zoldyck",
-      "description": "Kikyo Zoldyck. A character from Hunter × Hunter."
+      "description": "Assassin of the Zoldyck family; Killua's mother."
     },
     "n_w_kiriko": {
       "label": "Kiriko",
-      "description": "Kiriko. A character from Hunter × Hunter."
+      "description": "Shape-shifting Kiriko who screens Hunter Exam applicants and delivers Gon and Leorio to the exam site."
     },
     "n_w_koala": {
-      "label": "Koala",
-      "description": "Koala. A character from Hunter × Hunter."
+      "label": "Koala-type Chimera Ant",
+      "description": "A koala-type Chimera Ant; one of Kite's team's recovered companions."
     },
     "n_w_kon": {
       "label": "Kon",
-      "description": "Kon. A character from Hunter × Hunter."
+      "description": "Master of the forest on Whale Island."
     },
     "n_w_kosofftro": {
       "label": "Kosofftro",
-      "description": "Kosofftro. A character from Hunter × Hunter."
-    },
-    "n_w_kurt": {
-      "label": "Kurt",
-      "description": "Kurt. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_kurton": {
       "label": "Kurton",
@@ -1250,15 +1246,15 @@
     },
     "n_w_kyu": {
       "label": "Kyu",
-      "description": "Kyu. A character from Hunter × Hunter."
+      "description": "Tournament participant in the 5th phase of the 287th Hunter Exam."
     },
     "n_w_latarza": {
       "label": "Latarza",
-      "description": "Latarza. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_lead_east_gorteau_dancer": {
       "label": "Lead East Gorteau Dancer",
-      "description": "Lead East Gorteau Dancer. A character from Hunter × Hunter."
+      "description": "Lead performer in the East Gorteau military's national festival dance."
     },
     "n_w_leech": {
       "label": "Leech",
@@ -1270,23 +1266,23 @@
     },
     "n_w_leroute": {
       "label": "Leroute",
-      "description": "Leroute. A character from Hunter × Hunter."
+      "description": "An inmate of Trick Tower."
     },
     "n_w_light_nostrade": {
       "label": "Light Nostrade",
-      "description": "Light Nostrade. A character from Hunter × Hunter."
+      "description": "Head of the Nostrade Family; a Mafia executive of the Ritz lineage."
     },
     "n_w_lin_koshi": {
       "label": "Lin Koshi",
-      "description": "Lin Koshi. A character from Hunter × Hunter."
+      "description": "Amateur Hunter on Kite's team."
     },
     "n_w_linn": {
       "label": "Linn",
-      "description": "Linn. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_linne_horsdoeuvre": {
       "label": "Linne Horsdoeuvre",
-      "description": "Linne Horsdoeuvre. A character from Hunter × Hunter."
+      "description": "Two-star Gourmet Hunter of the Hunter Association."
     },
     "n_w_linssen": {
       "label": "Linssen",
@@ -1294,7 +1290,7 @@
     },
     "n_w_lippo": {
       "label": "Lippo",
-      "description": "Lippo. A character from Hunter × Hunter."
+      "description": "Warden of Trick Tower; a Blacklist Hunter."
     },
     "n_w_lisamsetta": {
       "label": "Lisamsetta",
@@ -1306,51 +1302,51 @@
     },
     "n_w_loupe_highland": {
       "label": "Loupe Highland",
-      "description": "Loupe Highland. A character from Hunter × Hunter."
+      "description": "Hunter Association Lost Hunter of the Pure Paladin division."
     },
     "n_w_luciart": {
       "label": "Luciart",
-      "description": "Luciart. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_maenole": {
       "label": "Maenole",
-      "description": "Maenole. A character from Hunter × Hunter."
+      "description": "Nen user Maenole, appearing in the Chimera Ant arc."
     },
     "n_w_mafia_hacker": {
       "label": "Mafia Hacker",
-      "description": "Mafia Hacker. A character from Hunter × Hunter."
+      "description": "A hacker employed by the Mafia."
     },
     "n_w_maha_zoldyck": {
       "label": "Maha Zoldyck",
-      "description": "Maha Zoldyck. A character from Hunter × Hunter."
+      "description": "Assassin of the Zoldyck family."
     },
     "n_w_maita": {
       "label": "Maita",
-      "description": "Maita. A character from Hunter × Hunter."
+      "description": "Veteran fighter who lives at Heavens Arena."
     },
     "n_w_majtani": {
       "label": "Majtani",
-      "description": "Majtani. A character from Hunter × Hunter."
+      "description": "An inmate of Trick Tower."
     },
     "n_w_manheim": {
       "label": "Manheim",
-      "description": "Manheim. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_mantis": {
-      "label": "Mantis",
-      "description": "Mantis. A character from Hunter × Hunter."
+      "label": "Mantis-type Chimera Ant",
+      "description": "A mantis-type Chimera Ant."
     },
     "n_w_marcos": {
       "label": "Marcos",
-      "description": "Marcos. A character from Hunter × Hunter."
+      "description": "A Chimera Ant."
     },
     "n_w_marione": {
       "label": "Marione",
       "description": "A Beyond-faction mercenary; a robot-like girl serving as a combat operative."
     },
     "n_w_masadora_trade_shop_npc": {
-      "label": "Masadora Trade Shop NPC",
-      "description": "Masadora Trade Shop NPC. A character from Hunter × Hunter."
+      "label": "Masadora Shop Clerk",
+      "description": "Spell-card shop clerk NPC in Masadora inside Greed Island."
     },
     "n_w_mascher": {
       "label": "Mascher",
@@ -1358,15 +1354,15 @@
     },
     "n_w_masta": {
       "label": "Masta",
-      "description": "Masta. A character from Hunter × Hunter."
+      "description": "Hunter affiliated with the Hunter Association."
     },
     "n_w_matthew": {
       "label": "Matthew",
-      "description": "Matthew. A character from Hunter × Hunter."
+      "description": "Applicant for the 287th Hunter Exam."
     },
     "n_w_menchi": {
       "label": "Menchi",
-      "description": "Menchi. A character from Hunter × Hunter."
+      "description": "Single-star Gourmet Hunter and chef of the Hunter Association."
     },
     "n_w_meshush": {
       "label": "Meshush",
@@ -1374,35 +1370,35 @@
     },
     "n_w_michael": {
       "label": "Michael",
-      "description": "Michael. A character from Hunter × Hunter."
+      "description": "A character connected to the Greed Island arc."
     },
     "n_w_michiro": {
       "label": "Michiro",
-      "description": "Michiro. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_mike": {
       "label": "Mike",
-      "description": "Mike. A character from Hunter × Hunter."
+      "description": "Guard dog of the Zoldyck estate."
     },
     "n_w_mikli": {
       "label": "Mikli",
-      "description": "Mikli. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_milluki_zoldyck": {
       "label": "Milluki Zoldyck",
-      "description": "Milluki Zoldyck. A character from Hunter × Hunter."
+      "description": "Zoldyck assassin, inventor, hacker, and programmer."
     },
     "n_w_ming_jol_ik": {
-      "label": "Ming Jol-ik",
-      "description": "Ming Jol-ik. A character from Hunter × Hunter."
+      "label": "Ming Jol-Ik",
+      "description": "Dictator of the Republic of East Gorteau — in reality a puppet ruled by his body double."
     },
     "n_w_ming_jol_ik_s_double": {
-      "label": "Ming Jol-ik's Double",
-      "description": "Ming Jol-ik's Double. A character from Hunter × Hunter."
+      "label": "Ming Jol-Ik's Double",
+      "description": "Body double for the East Gorteau dictator Ming Jol-Ik."
     },
     "n_w_mitsuba": {
       "label": "Mitsuba",
-      "description": "Mitsuba. A character from Hunter × Hunter."
+      "description": "Maid serving the Zoldyck family."
     },
     "n_w_mizaistom_nana": {
       "label": "Mizaistom Nana",
@@ -1410,23 +1406,23 @@
     },
     "n_w_monta_yuras": {
       "label": "Monta Yuras",
-      "description": "Monta Yuras. A character from Hunter × Hunter."
+      "description": "Amateur Hunter on Kite's team."
     },
     "n_w_montreux": {
       "label": "Montreux",
-      "description": "Montreux. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_moritonio": {
       "label": "Moritonio",
-      "description": "Moritonio. A character from Hunter × Hunter."
+      "description": "Leader of the Moritonio Troupe; the Nen master who trained Benny Delon."
     },
     "n_w_mosquito": {
-      "label": "Mosquito",
-      "description": "Mosquito. A character from Hunter × Hunter."
+      "label": "Mosquito Woman",
+      "description": "An individual mosquito-type Chimera Ant ('Mosquito Woman')."
     },
     "n_w_motaricke": {
       "label": "Motaricke",
-      "description": "Motaricke. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_mozbe": {
       "label": "Mozbe",
@@ -1438,11 +1434,11 @@
     },
     "n_w_mukanaki": {
       "label": "Mukanaki",
-      "description": "Mukanaki. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_muna": {
       "label": "Muna",
-      "description": "Muna. A character from Hunter × Hunter."
+      "description": "A figure appearing in the Chairman Election arc."
     },
     "n_w_myuhan": {
       "label": "Myuhan",
@@ -1450,47 +1446,47 @@
     },
     "n_w_ngl_interpreter": {
       "label": "NGL Interpreter",
-      "description": "NGL Interpreter. A character from Hunter × Hunter."
+      "description": "Interpreter for the NGL government."
     },
     "n_w_nicholas": {
       "label": "Nicholas",
-      "description": "Nicholas. A character from Hunter × Hunter."
+      "description": "A student."
     },
     "n_w_nick_cue": {
       "label": "Nick Cue",
-      "description": "Nick Cue. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_nickes": {
       "label": "Nickes",
-      "description": "Nickes. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_noko": {
       "label": "Noko",
-      "description": "Noko. A character from Hunter × Hunter."
+      "description": "Resident of Whale Island."
     },
     "n_w_nomdieu": {
       "label": "Nomdieu",
-      "description": "Nomdieu. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_nostrade": {
       "label": "Nostrade",
-      "description": "Nostrade. A character from Hunter × Hunter."
+      "description": "Head of the Nostrade Family; a Mafia Capo collecting peculiar curiosities, including the Scarlet Eyes."
     },
     "n_w_nostrade_butler": {
-      "label": "Nostrade Butler",
-      "description": "Nostrade Butler. A character from Hunter × Hunter."
+      "label": "Nostrade's Butler",
+      "description": "Butler serving the Nostrade Family."
     },
     "n_w_octopus": {
-      "label": "Octopus",
-      "description": "Octopus. A character from Hunter × Hunter."
+      "label": "Octopus-type Chimera Ant",
+      "description": "An octopus-type Chimera Ant."
     },
     "n_w_ortho_brother": {
       "label": "Ortho Brother",
-      "description": "Ortho Brother. A character from Hunter × Hunter."
+      "description": "Nen-using elder brother of the Ortho siblings; assists the Chimera Ant Extermination Team alongside his sister."
     },
     "n_w_ortho_sister": {
       "label": "Ortho Sister",
-      "description": "Ortho Sister. A character from Hunter × Hunter."
+      "description": "Nen-using younger sister of the Ortho siblings; assists the Chimera Ant Extermination Team alongside her brother."
     },
     "n_w_owl": {
       "label": "Owl",
@@ -1506,43 +1502,43 @@
     },
     "n_w_pekuba": {
       "label": "Pekuba",
-      "description": "Pekuba. A character from Hunter × Hunter."
+      "description": "An individual Chimera Ant named Pekuba."
     },
     "n_w_pell": {
       "label": "Pell",
-      "description": "Pell. A character from Hunter × Hunter."
+      "description": "Chimera Ant officer."
     },
     "n_w_pig": {
-      "label": "Pig",
-      "description": "Pig. A character from Hunter × Hunter."
+      "label": "Pig-type Chimera Ant",
+      "description": "A pig-type Chimera Ant."
     },
     "n_w_pike": {
       "label": "Pike",
-      "description": "Pike. A character from Hunter × Hunter."
+      "description": "Chimera Ant Squadron Leader (spider type)."
     },
     "n_w_pirate_boxer": {
-      "label": "Pirate boxer",
-      "description": "Pirate boxer. A character from Hunter × Hunter."
+      "label": "Pirate Boxer",
+      "description": "Death-row convict and boxer assigned to Greed Island."
     },
     "n_w_pirate_footballer": {
-      "label": "Pirate footballer",
-      "description": "Pirate footballer. A character from Hunter × Hunter."
+      "label": "Pirate Footballer",
+      "description": "Death-row convict and football player assigned to Greed Island."
     },
     "n_w_pisac": {
       "label": "Pisac",
-      "description": "Pisac. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_plot_of_beach_npc": {
-      "label": "Plot of Beach NPC",
-      "description": "Plot of Beach NPC. A character from Hunter × Hunter."
+      "label": "Beach NPC",
+      "description": "NPC on the beach in the Greed Island world."
     },
     "n_w_podungo_lapoy": {
       "label": "Podungo Lapoy",
-      "description": "Podungo Lapoy. A character from Hunter × Hunter."
+      "description": "Amateur Hunter on Kite's team."
     },
     "n_w_pongo": {
       "label": "Pongo",
-      "description": "Pongo. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_porcupine": {
       "label": "Porcupine",
@@ -1550,19 +1546,19 @@
     },
     "n_w_provisional_hunters": {
       "label": "Provisional Hunters",
-      "description": "Provisional Hunters. A character from Hunter × Hunter."
+      "description": "Personnel recruited as 'Provisional Hunters' by the Zodiacs during the Chairman election."
     },
     "n_w_puhat": {
       "label": "Puhat",
-      "description": "Puhat. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_pyon": {
       "label": "Pyon",
       "description": "Zodiac Rabbit. A Paleograph Hunter, linguist, and interpreter, dressed bunny-girl style. Perpetually at her own pace—she snipes at anyone, drawls when calm and turns sharp when angry. Often glued to laptop or smartphone."
     },
     "n_w_quizzing_lady": {
-      "label": "Quizzing Lady",
-      "description": "Quizzing Lady. A character from Hunter × Hunter."
+      "label": "Quizzing Old Lady",
+      "description": "An old woman who tests the resolve of Hunter Exam aspirants with a binary-choice quiz."
     },
     "n_w_rabid_dog": {
       "label": "Sick Dog",
@@ -1570,23 +1566,23 @@
     },
     "n_w_redwood": {
       "label": "Redwood",
-      "description": "Redwood. A character from Hunter × Hunter."
+      "description": "Figure connected to the Hunter Association / Hunter Exam arc."
     },
     "n_w_reina": {
       "label": "Reina",
-      "description": "Reina. A character from Hunter × Hunter."
+      "description": "A young NGL girl; Kolt's human sister, devoured by the Queen alongside her brother while returning from fishing. She is later reborn as the Chimera Ant Shidore."
     },
     "n_w_remora": {
-      "label": "Remora",
-      "description": "Remora. A character from Hunter × Hunter."
+      "label": "Cobarn",
+      "description": "An individual Chimera Ant named Cobarn."
     },
     "n_w_rhino": {
-      "label": "Rhino",
-      "description": "Rhino. A character from Hunter × Hunter."
+      "label": "Rhino-type Chimera Ant",
+      "description": "A rhino-type Chimera Ant."
     },
     "n_w_richard_hackett": {
       "label": "Richard Hackett",
-      "description": "Richard Hackett. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_ridge": {
       "label": "Ridge",
@@ -1594,11 +1590,11 @@
     },
     "n_w_riehlvelt": {
       "label": "Riehlvelt",
-      "description": "Riehlvelt. A character from Hunter × Hunter."
+      "description": "Heavens Arena fighter."
     },
     "n_w_rodriot": {
       "label": "Rodriot",
-      "description": "Rodriot. A character from Hunter × Hunter."
+      "description": "Hunter affiliated with the Hunter Association."
     },
     "n_w_royal_guards": {
       "label": "Royal Guards",
@@ -1606,11 +1602,11 @@
     },
     "n_w_ryu": {
       "label": "Ryu",
-      "description": "Ryu. A character from Hunter × Hunter."
+      "description": "Tournament participant in the 5th phase of the 287th Hunter Exam."
     },
     "n_w_sabazushi": {
       "label": "Sabazushi",
-      "description": "Sabazushi. A character from Hunter × Hunter."
+      "description": "Character appearing in the Yorknew arc."
     },
     "n_w_saccho_kobayakawa": {
       "label": "Saccho Kobayakawa",
@@ -1618,7 +1614,7 @@
     },
     "n_w_sadaso": {
       "label": "Sadaso",
-      "description": "Sadaso. A character from Hunter × Hunter."
+      "description": "200th-floor Heavens Arena fighter; tries to intimidate Gon during their bout."
     },
     "n_w_saiyu": {
       "label": "Saiyu",
@@ -1626,7 +1622,7 @@
     },
     "n_w_sakisuke_njiji": {
       "label": "Sakisuke Njiji",
-      "description": "Sakisuke Njiji. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_salkov": {
       "label": "Salkov",
@@ -1634,7 +1630,7 @@
     },
     "n_w_sanbica_norton": {
       "label": "Sanbica Norton",
-      "description": "Sanbica Norton. A character from Hunter × Hunter."
+      "description": "Single-star Virus Hunter and physician of the Hunter Association."
     },
     "n_w_sayird": {
       "label": "Sayird",
@@ -1650,23 +1646,23 @@
     },
     "n_w_sedokan": {
       "label": "Sedokan",
-      "description": "Sedokan. A character from Hunter × Hunter."
+      "description": "An inmate of Trick Tower."
     },
     "n_w_sengi_guild_agent": {
-      "label": "Sengi Guild Agent",
-      "description": "Sengi Guild Agent. A character from Hunter × Hunter."
+      "label": "Lei (Sengi Guild Agent)",
+      "description": "Broker affiliated with the Sengi Guild."
     },
     "n_w_shachmono_tocino": {
       "label": "Shachmono Tocino",
-      "description": "Shachmono Tocino. A character from Hunter × Hunter."
+      "description": "Nen user appearing in the Yorknew arc who claims to be a 'Diviner'; comes into contact with the protagonists."
     },
     "n_w_shadow_beasts": {
       "label": "Shadow Beasts",
       "description": "The Ten Dons’ elite execution squad, each using an animal codename. They guarded the Yorknew underground auction and were wiped out fighting the Phantom Troupe."
     },
     "n_w_shark": {
-      "label": "Shark",
-      "description": "Shark. A character from Hunter × Hunter."
+      "label": "Shark-type Chimera Ant",
+      "description": "A shark-type Chimera Ant."
     },
     "n_w_sheila": {
       "label": "Sheila",
@@ -1674,55 +1670,55 @@
     },
     "n_w_shidore": {
       "label": "Shidore",
-      "description": "Shidore. A character from Hunter × Hunter."
+      "description": "Nen user Shidore (originally Reina, reborn as a Chimera Ant)."
     },
     "n_w_shihael": {
       "label": "Shihael",
-      "description": "Shihael. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_shishito": {
       "label": "Shishito",
-      "description": "Shishito. A character from Hunter × Hunter."
+      "description": "Tournament participant in the 5th phase of the 287th Hunter Exam."
     },
     "n_w_sick_villagers": {
       "label": "Sick Villagers",
-      "description": "Sick Villagers. A character from Hunter × Hunter."
+      "description": "Villagers stricken by illness in the Greed Island world."
     },
     "n_w_siper": {
       "label": "Siper",
-      "description": "Siper. A character from Hunter × Hunter."
+      "description": "Tournament participant in the 5th phase of the 287th Hunter Exam."
     },
     "n_w_small_bear": {
-      "label": "Small Bear",
-      "description": "Small Bear. A character from Hunter × Hunter."
+      "label": "Small-bear-type Chimera Ant",
+      "description": "A small-bear-type Chimera Ant."
     },
     "n_w_small_beetle": {
-      "label": "Small Beetle",
-      "description": "Small Beetle. A character from Hunter × Hunter."
+      "label": "Small-Beetle-type Chimera Ant",
+      "description": "A small-beetle-type Chimera Ant."
     },
     "n_w_snake": {
-      "label": "Snake",
-      "description": "Snake. A character from Hunter × Hunter."
+      "label": "Snake-type Chimera Ant",
+      "description": "A snake-type Chimera Ant."
     },
     "n_w_soffman": {
       "label": "Soffman",
-      "description": "Soffman. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_sommy": {
       "label": "Sommy",
-      "description": "Sommy. A character from Hunter × Hunter."
+      "description": "Tournament participant in the 5th phase of the 287th Hunter Exam."
     },
     "n_w_souheil": {
       "label": "Souheil",
-      "description": "Souheil. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_spell_card_shop_npc": {
-      "label": "Spell Card Shop NPC",
-      "description": "Spell Card Shop NPC. A character from Hunter × Hunter."
+      "label": "Spell-Card Shop Clerk",
+      "description": "Spell-card shop clerk NPC inside Greed Island."
     },
     "n_w_spinner_clow": {
       "label": "Spinner Clow",
-      "description": "Spinner Clow. A character from Hunter × Hunter."
+      "description": "Amateur Hunter on Kite's team."
     },
     "n_w_squadron_leaders": {
       "label": "Squadron Leaders",
@@ -1730,15 +1726,15 @@
     },
     "n_w_stick_dinner": {
       "label": "Stick Dinner",
-      "description": "Stick Dinner. A character from Hunter × Hunter."
+      "description": "Amateur Hunter on Kite's team."
     },
     "n_w_taloon": {
-      "label": "Taloon",
-      "description": "Taloon. A character from Hunter × Hunter."
+      "label": "Konnerto",
+      "description": "Operator of the Preview Market staged before the auction."
     },
     "n_w_taragetter": {
       "label": "Taragetter",
-      "description": "Taragetter. A character from Hunter × Hunter."
+      "description": "An individual Chimera Ant named Taragetter."
     },
     "n_w_ten_dons": {
       "label": "Ten Dons",
@@ -1746,7 +1742,7 @@
     },
     "n_w_teradein_neutral": {
       "label": "Teradein Neutral",
-      "description": "Teradein Neutral. A character from Hunter × Hunter."
+      "description": "A Hunter who appears during the Chairman election."
     },
     "n_w_theta": {
       "label": "Theta",
@@ -1754,43 +1750,43 @@
     },
     "n_w_todo": {
       "label": "Todo",
-      "description": "Todo. A character from Hunter × Hunter."
+      "description": "A wrestler."
     },
     "n_w_togari": {
       "label": "Togari",
-      "description": "Togari. A character from Hunter × Hunter."
+      "description": "A shuriken-wielding Nen user Hisoka killed in the past; appears in flashbacks recounting Hisoka's background."
     },
     "n_w_tokarine": {
       "label": "Tokarine",
-      "description": "Tokarine. A character from Hunter × Hunter."
+      "description": "Hunter affiliated with the Hunter Association; medical staff."
     },
     "n_w_trick_tower": {
       "label": "Trick Tower",
-      "description": "Trick Tower. A character from Hunter × Hunter."
+      "description": "The third-phase venue 'Trick Tower' (classified here as a character for convenience)."
     },
     "n_w_trick_tower_s_3rd_examiner": {
-      "label": "Trick Tower's 3rd examiner",
-      "description": "Trick Tower's 3rd examiner. A character from Hunter × Hunter."
+      "label": "Trick Tower 3rd Examiner",
+      "description": "Hunter Association examiner stationed at Trick Tower."
     },
     "n_w_tsubone": {
       "label": "Tsubone",
-      "description": "Tsubone. A character from Hunter × Hunter."
+      "description": "Butler of the Zoldyck family."
     },
     "n_w_tsukuma": {
       "label": "Tsukuma",
-      "description": "Tsukuma. A character from Hunter × Hunter."
+      "description": "A character appearing in the Chimera Ant arc."
     },
     "n_w_turtle": {
-      "label": "Turtle",
-      "description": "Turtle. A character from Hunter × Hunter."
+      "label": "Turtle-type Chimera Ant",
+      "description": "A turtle-type Chimera Ant."
     },
     "n_w_umori": {
       "label": "Umori",
-      "description": "Umori. A character from Hunter × Hunter."
+      "description": "Youngest of the Amori brothers (Amori, Imori, Umori); 287th Hunter Exam applicant."
     },
     "n_w_underground_clinic_nurse": {
       "label": "Underground Clinic Nurse",
-      "description": "Underground Clinic Nurse. A character from Hunter × Hunter."
+      "description": "Nurse at the underground clinic."
     },
     "n_w_usamen": {
       "label": "Usamen",
@@ -1798,11 +1794,11 @@
     },
     "n_w_vice": {
       "label": "Vice",
-      "description": "Vice. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_whale_island_inhabitants": {
       "label": "Whale Island Inhabitants",
-      "description": "Whale Island Inhabitants. A character from Hunter × Hunter."
+      "description": "Residents of Whale Island."
     },
     "n_w_wong": {
       "label": "Wong",
@@ -1810,11 +1806,11 @@
     },
     "n_w_wong_ho": {
       "label": "Wong Ho",
-      "description": "Wong Ho. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_wong_li": {
       "label": "Wong Li",
-      "description": "Wong Li. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_worm": {
       "label": "Earthworm",
@@ -1822,47 +1818,47 @@
     },
     "n_w_yabibi": {
       "label": "Yabibi",
-      "description": "Yabibi. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_yasuha": {
       "label": "Yasuha",
-      "description": "Yasuha. A character from Hunter × Hunter."
+      "description": "Maid serving the Zoldyck family."
     },
     "n_w_yunju": {
       "label": "Yunju",
-      "description": "Yunju. A character from Hunter × Hunter."
+      "description": "Chimera Ant Squadron Leader."
     },
     "n_w_zebro": {
       "label": "Zebro",
-      "description": "Zebro. A character from Hunter × Hunter."
+      "description": "Gatekeeper and caretaker of the Zoldyck estate (the Testing Gate)."
     },
     "n_w_zeho": {
       "label": "Zeho",
-      "description": "Zeho. A character from Hunter × Hunter."
+      "description": "A Greed Island player."
     },
     "n_w_zenji": {
       "label": "Zenji",
-      "description": "Zenji. A character from Hunter × Hunter."
+      "description": "A Mafia executive of the Ten Dons."
     },
     "n_w_zenju": {
       "label": "Zenju",
-      "description": "Zenju. A character from Hunter × Hunter."
+      "description": "Hunter Association Hunter and Greed Island player."
     },
     "n_w_zepile": {
       "label": "Zepile",
-      "description": "Zepile. A character from Hunter × Hunter."
+      "description": "An antiques dealer."
     },
     "n_w_zetsk_bellam": {
       "label": "Zetsk Bellam",
-      "description": "Zetsk Bellam. A character from Hunter × Hunter."
+      "description": "Hunter affiliated with the Hunter Association."
     },
     "n_w_zigg_zoldyck": {
       "label": "Zigg Zoldyck",
-      "description": "Zigg Zoldyck. A character from Hunter × Hunter."
+      "description": "Assassin of the Zoldyck family."
     },
     "n_w_zoldyck": {
-      "label": "Zoldyck",
-      "description": "Zoldyck. A character from Hunter × Hunter."
+      "label": "Zoldyck Family",
+      "description": "The Zoldyck household — one of the world's foremost assassin clans."
     },
     "n_main_four": {
       "label": "Main Four",
@@ -2814,15 +2810,15 @@
     },
     "n_w_galactic_matron": {
       "label": "Galactic Matron",
-      "description": "Galactic Matron. A character from Hunter × Hunter."
+      "description": "A convict."
     },
     "n_w_juhnde": {
       "label": "Juhnde",
-      "description": "Juhnde. A character from Hunter × Hunter."
+      "description": "A biochemist."
     },
     "n_w_tokharone": {
       "label": "Tokharone",
-      "description": "Tokharone. A character from Hunter × Hunter."
+      "description": "Greed Island player who leads the 'Tokharone Team'."
     },
     "n_k_mandam": {
       "label": "Mandam",
@@ -3035,6 +3031,194 @@
     "n_kakin_kingdom": {
       "label": "Kakin Empire",
       "description": "An Oriental-style monarchy. Origin point of the succession contest and the Dark Continent expedition. Contains multiple layered organizations: 8 Queens, 14 Princes, Royal Army, Justice Bureau, three great mafia families, the three regalia, and more."
+    },
+    "n_luini_die": {
+      "label": "Luini Killed",
+      "description": "On the lower deck, Luini of the Ei-I Family infiltrates the Xi-Yu Family office via portal and tries to enlist three Phantom Troupe members (Nobunaga, Phinks, Feitan); Nobunaga, judging the offer empty bluster, draws his sword to pierce Luini's head and follows up by beheading and bisecting him (ch 392)."
+    },
+    "n_illumi_kalluto_tier3": {
+      "label": "Illumi & Kalluto Infiltrate Tier 3",
+      "description": "Illumi Zoldyck and Kalluto are the only Troupe members to infiltrate Tier 3. They are nearly detained by Royal Guards at the observation deck, but Mizaistom and others intervene and arrange VVIP quarters for them (ch 384)."
+    },
+    "n_badoyu_die": {
+      "label": "Badoyu Killed (vs. Hinrigh)",
+      "description": "On Tier 3, Badoyu of the Ei-I Family and his comrades ambush the seasoned Xi-Yu Family lieutenant Hinrigh Bigandafno, but are wiped out by Hinrigh's ability 'Biohazard (You Are My Sunshine)'."
+    },
+    "n_nasubi_voyage": {
+      "label": "King Nasubi (Voyage)",
+      "description": "King of the Kakin Empire. From departure onward, he resides in the Tier 1 special suite (the King's Chamber) and oversees the Succession War."
+    },
+    "n_benjamin_v": {
+      "label": "Benjamin (Voyage)",
+      "description": "Benjamin is seated in loc_room_1001 at departure."
+    },
+    "n_camilla_v": {
+      "label": "Camilla (Voyage)",
+      "description": "Camilla is seated in loc_room_1002 at departure."
+    },
+    "n_zhang_v": {
+      "label": "Zhang Lei (Voyage)",
+      "description": "Zhang Lei is seated in loc_room_1003 at departure."
+    },
+    "n_tser_v": {
+      "label": "Tserriednich (Voyage)",
+      "description": "Tserriednich is seated in loc_room_1004 at departure."
+    },
+    "n_tubeppa_v": {
+      "label": "Tubeppa (Voyage)",
+      "description": "Tubeppa is seated in loc_room_1005 at departure."
+    },
+    "n_tyson_v": {
+      "label": "Tyson (Voyage)",
+      "description": "Tyson is seated in loc_room_1006 at departure."
+    },
+    "n_luzurus_v": {
+      "label": "Luzurus (Voyage)",
+      "description": "Luzurus is seated in loc_room_1007 at departure."
+    },
+    "n_sale_v": {
+      "label": "Sale-sale (Voyage)",
+      "description": "Sale-sale is seated in loc_room_1008 at departure."
+    },
+    "n_halkenburg_v": {
+      "label": "Halkenburg (Voyage)",
+      "description": "Halkenburg is seated in loc_room_1009 at departure."
+    },
+    "n_kacho_v": {
+      "label": "Kacho (Voyage)",
+      "description": "Kacho is seated in loc_room_1010 at departure."
+    },
+    "n_fugetsu_v": {
+      "label": "Fugetsu (Voyage)",
+      "description": "Fugetsu is seated in loc_room_1011 at departure."
+    },
+    "n_momoze_v": {
+      "label": "Momoze (Voyage)",
+      "description": "Momoze is seated in loc_room_1012 at departure."
+    },
+    "n_marayair_v": {
+      "label": "Marayam (Voyage)",
+      "description": "Marayam is seated in loc_room_1013 at departure."
+    },
+    "n_woble_v": {
+      "label": "Woble (Voyage)",
+      "description": "Woble is seated in loc_room_1014 at departure."
+    },
+    "n_k_duazul_hui_guo_rou_v": {
+      "label": "Queen Duazul (Voyage)",
+      "description": "Queen Duazul is seated in loc_room_1002 at departure."
+    },
+    "n_k_seiko_hui_guo_rou_v": {
+      "label": "Queen Seiko (Voyage)",
+      "description": "Queen Seiko is seated in loc_room_1010 at departure."
+    },
+    "n_k_sevanti_hui_guo_rou_v": {
+      "label": "Queen Sevanti (Voyage)",
+      "description": "Queen Sevanti is seated in loc_room_1013 at departure."
+    },
+    "n_k_swinko_swinko_hui_guo_rou_v": {
+      "label": "Queen Swinko-swinko (Voyage)",
+      "description": "Queen Swinko-swinko is seated in loc_room_1008 at departure."
+    },
+    "n_k_oito_hui_guo_rou_v": {
+      "label": "Queen Oito (Voyage)",
+      "description": "Queen Oito is seated in loc_room_1014 at departure."
+    },
+    "n_k_unma_hui_guo_rou_v": {
+      "label": "Queen Unma (Voyage)",
+      "description": "Queen Unma is seated in loc_king_chamber at departure."
+    },
+    "n_k_tang_zhao_li_hui_guo_rou_v": {
+      "label": "Queen Tang Zhao Li (Voyage)",
+      "description": "Queen Tang Zhao Li is seated in loc_room_1003 at departure."
+    },
+    "n_k_katrono_hui_guo_rou_v": {
+      "label": "Queen Katrono (Voyage)",
+      "description": "Queen Katrono is seated in loc_room_1006 at departure."
+    },
+    "n_kura_v": {
+      "label": "Kurapika (Voyage)",
+      "description": "At departure, assigned to loc_room_1014; a member of Kurapika's bodyguard team."
+    },
+    "n_senritsu_v": {
+      "label": "Melody (Voyage)",
+      "description": "At departure, assigned to loc_room_1010; a member of Kurapika's bodyguard team."
+    },
+    "n_hanzo2_v": {
+      "label": "Hanzo (Voyage)",
+      "description": "At departure, assigned to loc_room_1012; a member of Kurapika's bodyguard team."
+    },
+    "n_bisky2_v": {
+      "label": "Bisky (Voyage)",
+      "description": "At departure, assigned to loc_room_1013; a member of Kurapika's bodyguard team."
+    },
+    "n_basho_york_v": {
+      "label": "Basho (Voyage)",
+      "description": "At departure, assigned to loc_room_1007; a member of Kurapika's bodyguard team."
+    },
+    "n_izunavi2_v": {
+      "label": "Izunavi (Voyage)",
+      "description": "At departure, assigned to loc_room_1006; a member of Kurapika's bodyguard team."
+    },
+    "n_tuffdy_die": {
+      "label": "Tuffdy Executed (by Hanzo)",
+      "description": "Tuffdy, held in detention as the assassin behind Momoze's murder, is reached by Hanzo using 'Hanzo Skill 4: Shadow Clone.' Pretending to recruit him into Benjamin's camp, Hanzo extracts a confession, then snaps his neck with a blanket-wrapped arm. The death is publicly reported as a suicide in detention."
+    },
+    "n_hanzo_bisky_to_marayam": {
+      "label": "Hanzo & Bisky reassigned to Marayam",
+      "description": "On the orders of the 7th Queen Sevanti, Momoze's guards (Hanzo, Bisky, etc.) are reassigned to concentrate on protecting her younger brother, the 13th Prince Marayam — leaving Momoze's security thin."
+    },
+    "n_troupe_xi_yu_meet": {
+      "label": "Phantom Troupe × Xi-Yu Family Meeting",
+      "description": "Day 7: three Phantom Troupe members (Nobunaga, Phinks, Feitan) meet with Xi-Yu Family lieutenant Onior Longbao and second-in-command Tahau, agreeing to cooperate on the search for Hisoka and on hits against the Ei-I Family assassin Luini and Boss Morena."
+    },
+    "n_halken_resolve": {
+      "label": "Halkenburg's Resolve",
+      "description": "Day 7: the 9th Prince Halkenburg renews his commitment to actively participate in the Succession War. Pivoting away from a planned coup against his father Nasubi, he begins coordinating his fourteen retainers and devising strategy based on Nen-power verification (Bow of Aura)."
+    },
+    "n_first_banquet": {
+      "label": "Opening Banquet",
+      "description": "Day 1: opening banquet in the Tier 1 Grand Hall of the Black Whale. The 14 princes, King Nasubi, and the queens attend — the ceremonial start of the Succession War."
+    },
+    "n_halken_first_test": {
+      "label": "Halkenburg's First Ability Test",
+      "description": "Day 5: Halkenburg first verifies his Nen ability 'The Boy Shoots a Cruel Bow.' It is observed that Sumidori's spirit has possessed Shikaku's body, partially revealing the ability's mechanism."
+    },
+    "n_hinrigh_hisoka_search": {
+      "label": "Hinrigh Begins Hisoka Manhunt",
+      "description": "Day 10: Hinrigh Bigandafno and Zakuro Custard of the Xi-Yu Family launch a full manhunt for Hisoka, escalating the lower-deck conflict among the three mafia families, Hisoka, and the Phantom Troupe."
+    },
+    "n_martial_law": {
+      "label": "Special Martial Law",
+      "description": "Day 12: amid mass killings, succession chaos, and Dark Continent transit risks, 'Special Martial Law' is declared aboard the ship. The Royal Army places every tier under its control as the situation tips into a national crisis."
+    },
+    "n_halken_die": {
+      "label": "Halkenburg's Feigned Death",
+      "description": "Night of Day 11: the 9th Prince Halkenburg's 'original body' is found dead in Room 1009. In truth, Halkenburg has used his ability 'Arrow of One Will' to transfer his consciousness into Benjamin's private-army captain Balsamilco Might, leaving his original body empty — a staged death (ch 401)."
+    },
+    "n_halken_funeral": {
+      "label": "Halkenburg Funeral Procession",
+      "description": "Day 12: a large-scale funeral procession carries Halkenburg's body to a Tier 1 King's Chamber capsule. The Phantom Troupe uses the Tier 1 access pass secured on Day 10 and the chaos of the procession to launch their upper-tier infiltration in earnest (ch 402)."
+    },
+    "n_bono_hisoka_disguise": {
+      "label": "Bonolenov's Hisoka Performance",
+      "description": "Late night Day 9 to pre-dawn Day 10: Troupe member Bonolenov disguises himself as Hisoka and contacts the Mafia, obtaining a transit pass to the topmost tier (Tier 1) (ch 404–405). The foothold for Chrollo and the Troupe's infiltration upward."
+    },
+    "n_kura_class1_end": {
+      "label": "Kurapika's First Nen Class Ends",
+      "description": "Day 10 afternoon: Kurapika's first Nen class concludes. Longhi (Tubeppa's 5th-prince retainer) reveals the dark traditions of Kakin (e.g. the 'curse-offering' custom), deepening the backdrop of the Succession War."
+    },
+    "n_halken_vs_balsamilco": {
+      "label": "Halkenburg's Arrow → Balsamilco Possession",
+      "description": "Day 11: the 9th Prince Halkenburg strikes Benjamin's private-army captain Balsamilco Might with his ability 'Arrow of One Will (The Boy Shoots a Cruel Bow),' successfully taking over his mind. From this point on, Balsamilco's body acts under Halkenburg's consciousness (around ch 401)."
+    },
+    "n_kura_class2": {
+      "label": "Kurapika's Second Nen Class Begins",
+      "description": "Day 12, 9 a.m.: Kurapika's second Nen class begins (ch 411). The Succession War strategy is reorganized in parallel with the chaos of the funeral procession."
+    },
+    "n_benjamin_poisoned": {
+      "label": "Benjamin Poisoned",
+      "description": "Day 12: the 1st Prince Benjamin is poisoned — a major incident and one of the triggers behind the declaration of 'Special Martial Law' aboard the ship (ch 410)."
     }
   }
 }
