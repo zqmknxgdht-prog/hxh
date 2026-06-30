@@ -341,6 +341,19 @@ export default function App() {
     [minEpisode, maxEpisode, focusNodeOnStage],
   );
 
+  const navigateToNode = useCallback(
+    (id: string) => {
+      const node = positionedNodes.find((n) => n.id === id);
+      if (!node) return;
+      setActiveArc(null);
+      if (node.episode > maxEpisode) setMaxEpisode(node.episode);
+      if (node.episode < minEpisode) setMinEpisode(node.episode);
+      setSelectedId(id);
+      focusNodeOnStage(node);
+    },
+    [minEpisode, maxEpisode, focusNodeOnStage],
+  );
+
   /** Push the currently-open card onto history, then open the new card.
    *  Used for card-internal navigation (e.g. DayCard → DetailCard). */
   const navigateFromCard = useCallback(
@@ -400,19 +413,6 @@ export default function App() {
       return h.slice(0, -1);
     });
   }, [focusNodeOnStage, focusEdgeOnStage, focusDayOnStage]);
-
-  const navigateToNode = useCallback(
-    (id: string) => {
-      const node = positionedNodes.find((n) => n.id === id);
-      if (!node) return;
-      setActiveArc(null);
-      if (node.episode > maxEpisode) setMaxEpisode(node.episode);
-      if (node.episode < minEpisode) setMinEpisode(node.episode);
-      setSelectedId(id);
-      focusNodeOnStage(node);
-    },
-    [minEpisode, maxEpisode, focusNodeOnStage],
-  );
 
   const deselect = useCallback(() => setSelectedId(null), []);
 
