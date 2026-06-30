@@ -221,7 +221,7 @@ export default function App() {
 
   const panZoom = usePanZoom({ onTap: handleTap });
 
-  const fit = useCallback(() => {
+  const fit = useCallback((options: { initial?: boolean } = {}) => {
     const stage = panZoom.stageRef.current;
     if (!stage) return;
     const bounds = getVisibleBounds(positionedNodes, branches, layout, minEpisode, maxEpisode);
@@ -229,8 +229,14 @@ export default function App() {
     // On mobile, when a bottom sheet is open it covers ~70dvh; subtract that
     // so right-anchored content lands in the visible upper portion.
     const footerH = isMobile && openSheet ? Math.round(stage.clientHeight * 0.7) : 0;
+    // Initial fit: anchor top-right and keep labels readable (Day N labels
+    // visible at the top, latest voyage content in the upper-right corner).
+    // Subsequent fits (episode-range changes, arc focus, "全体表示" button)
+    // keep the existing center+overview behavior.
+    const alignY = options.initial ? 'top' : 'center';
+    const scaleMin = options.initial ? 0.7 : undefined;
     panZoom.applyTransform(
-      computeFitTransform(bounds, stage.clientWidth, stage.clientHeight, 118, 'right', footerH),
+      computeFitTransform(bounds, stage.clientWidth, stage.clientHeight, 118, 'right', footerH, alignY, scaleMin),
     );
   }, [panZoom, minEpisode, maxEpisode, isMobile, openSheet]);
 
@@ -245,7 +251,7 @@ export default function App() {
   useEffect(() => {
     if (initializedRef.current) return;
     initializedRef.current = true;
-    fit();
+    fit({ initial: true });
     const timer = window.setTimeout(() => setShowHint(false), 4200);
     return () => window.clearTimeout(timer);
   }, [fit]);
