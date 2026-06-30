@@ -229,12 +229,16 @@ export default function App() {
     // On mobile, when a bottom sheet is open it covers ~70dvh; subtract that
     // so right-anchored content lands in the visible upper portion.
     const footerH = isMobile && openSheet ? Math.round(stage.clientHeight * 0.7) : 0;
-    // Initial fit: anchor top-right and keep labels readable (Day N labels
-    // visible at the top, latest voyage content in the upper-right corner).
+    // Initial fit: anchor top-right (Day N labels at the top, latest voyage
+    // content in the upper-right corner). On desktop we also raise the scale
+    // floor so node/edge labels are immediately readable; on mobile the
+    // viewport is too narrow to keep the same floor without pushing the
+    // graph off-screen, so we fall back to the standard FIT_MIN_SCALE — the
+    // voyage-day labels stay readable via the LOD overview font-size bump.
     // Subsequent fits (episode-range changes, arc focus, "全体表示" button)
     // keep the existing center+overview behavior.
     const alignY = options.initial ? 'top' : 'center';
-    const scaleMin = options.initial ? 0.7 : undefined;
+    const scaleMin = options.initial && !isMobile ? 0.7 : undefined;
     panZoom.applyTransform(
       computeFitTransform(bounds, stage.clientWidth, stage.clientHeight, 118, 'right', footerH, alignY, scaleMin),
     );
