@@ -376,27 +376,44 @@ export default function App() {
     [focusBoundsOnStage],
   );
 
-  /** Focus the bounding box of nodes for the given voyage day. */
+  /** Focus the "Day N" marker label so the text itself is visible near the
+   *  top of the card-free viewport area. The label sits at
+   *  `(graph minY - 22)` in world space (matches the voyage-day-label
+   *  position in GraphScene). */
   const focusDayOnStage = useCallback(
     (day: number) => {
+      const stage = panZoom.stageRef.current;
+      if (!stage) return;
       const dayNodes = positionedNodes.filter((n) => n.day === day);
       if (dayNodes.length === 0) return;
-      let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
-      for (const n of dayNodes) {
-        if (n.x < minX) minX = n.x;
-        if (n.x > maxX) maxX = n.x;
-        if (n.y < minY) minY = n.y;
-        if (n.y > maxY) maxY = n.y;
+      // All Day-N nodes share the same column (= episode index), so any of
+      // their x values gives the marker x. Use the average for robustness.
+      const x = dayNodes.reduce((a, n) => a + n.x, 0) / dayNodes.length;
+      // World-space y of the voyage-day-label (graph minY - 22; the marker
+      // line spans graph minY - 18 .. maxY + 30 and the label sits at y1 - 4).
+      let graphMinY = Infinity;
+      for (const n of positionedNodes) {
+        if (n.y < graphMinY) graphMinY = n.y;
       }
-      const pad = 100; // world-space padding so the cluster has breathing room
-      focusBoundsOnStage({
-        minX: minX - pad,
-        maxX: maxX + pad,
-        minY: minY - pad,
-        maxY: maxY + pad,
+      const labelY = graphMinY - 22;
+
+      // Anchor the label near the top of the card-free area so it stays
+      // visible above the DayCard / Bottom Sheet.
+      const vw = stage.clientWidth;
+      const headerH = 118;
+      const isWide = vw >= 760;
+      const reservedRight = isWide ? 360 : 0;
+      const usableW = vw - reservedRight;
+      const tgx = reservedRight === 0 ? vw * 0.5 : reservedRight === 360 ? usableW * 0.5 : vw * 0.5;
+      const tgy = headerH + 40;
+      const nextScale = Math.max(panZoom.scale, MIN_READABLE_SCALE);
+      panZoom.applyTransform({
+        scale: nextScale,
+        tx: tgx - x * nextScale,
+        ty: tgy - labelY * nextScale,
       });
     },
-    [focusBoundsOnStage],
+    [panZoom],
   );
 
   const selectNode = useCallback(
