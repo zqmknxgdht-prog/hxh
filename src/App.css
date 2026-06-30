@@ -1473,6 +1473,12 @@ svg {
   vector-effect: non-scaling-stroke;
 }
 
+@media (max-width: 759px) {
+  .edge-hit {
+    stroke-width: 24;
+  }
+}
+
 .edge.hover {
   opacity: 1;
   stroke-width: 4;
