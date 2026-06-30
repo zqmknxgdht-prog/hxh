@@ -457,12 +457,12 @@ export function GraphScene({
           <text x={g.x} y={g.y1 - 4} className="voyage-day-label" textAnchor="middle">
             {g.label}
           </text>
-          {/* invisible hit area for easier clicking */}
+          {/* invisible hit area for easier clicking; sized for finger taps */}
           <rect
             x={g.x - 60}
-            y={g.y1 - 28}
+            y={g.y1 - 30}
             width={120}
-            height={28}
+            height={44}
             fill="transparent"
             pointerEvents="all"
           />
