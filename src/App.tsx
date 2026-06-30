@@ -132,10 +132,22 @@ const groupIdByLabel: Record<string, string> = (() => {
 
 export { normalizeLabel };
 
+type CardSel =
+  | { kind: 'node'; id: string }
+  | { kind: 'edge'; edge: import('./components/EdgeCard').SelectedEdge }
+  | { kind: 'day'; day: number; label: string };
+
+function cardSelLabel(sel: CardSel, nodesById: Record<string, import('./types/graph').GraphNode>): string {
+  if (sel.kind === 'node') return nodesById[sel.id]?.label ?? sel.id;
+  if (sel.kind === 'edge') return sel.edge.title;
+  return sel.label;
+}
+
 export default function App() {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [selectedEdge, setSelectedEdge] = useState<import('./components/EdgeCard').SelectedEdge | null>(null);
   const [selectedDay, setSelectedDay] = useState<{ day: number; label: string } | null>(null);
+  const [cardHistory, setCardHistory] = useState<CardSel[]>([]);
   const [activeArc, setActiveArc] = useState<string | null>(null);
   const [showHint, setShowHint] = useState(true);
   const [minEpisode, setMinEpisode] = useState(1);
@@ -159,6 +171,9 @@ export default function App() {
           if (!id) break;
           // On desktop (hover-capable), a tap goes straight to the detail card.
           if (!isMobile) {
+            setCardHistory([]);
+            setSelectedEdge(null);
+            setSelectedDay(null);
             setSelectedId(id);
             return;
           }
@@ -167,6 +182,9 @@ export default function App() {
           if (tappedIdRef.current === id) {
             tappedIdRef.current = null;
             setHover(null);
+            setCardHistory([]);
+            setSelectedEdge(null);
+            setSelectedDay(null);
             setSelectedId(id);
             return;
           }
@@ -193,6 +211,9 @@ export default function App() {
       }
       tappedIdRef.current = null;
       setHover(null);
+      setCardHistory([]);
+      setSelectedEdge(null);
+      setSelectedDay(null);
       setSelectedId(null);
     },
     [isMobile],
@@ -266,11 +287,66 @@ export default function App() {
     (id: string) => {
       const node = positionedNodes.find((n) => n.id === id);
       if (!node || node.episode > maxEpisode || node.episode < minEpisode) return;
+      setCardHistory([]);
+      setSelectedEdge(null);
+      setSelectedDay(null);
       setSelectedId(id);
       focusNodeOnStage(node);
     },
     [minEpisode, maxEpisode, focusNodeOnStage],
   );
+
+  /** Push the currently-open card onto history, then open the new card.
+   *  Used for card-internal navigation (e.g. DayCard → DetailCard). */
+  const navigateFromCard = useCallback(
+    (next: CardSel) => {
+      const current: CardSel | null = selectedId
+        ? { kind: 'node', id: selectedId }
+        : selectedEdge
+        ? { kind: 'edge', edge: selectedEdge }
+        : selectedDay
+        ? { kind: 'day', day: selectedDay.day, label: selectedDay.label }
+        : null;
+      if (current) setCardHistory((h) => [...h, current]);
+      if (next.kind === 'node') {
+        setSelectedEdge(null);
+        setSelectedDay(null);
+        navigateToNode(next.id);
+      } else if (next.kind === 'edge') {
+        setSelectedId(null);
+        setSelectedDay(null);
+        setSelectedEdge(next.edge);
+      } else {
+        setSelectedId(null);
+        setSelectedEdge(null);
+        setSelectedDay({ day: next.day, label: next.label });
+      }
+    },
+    [selectedId, selectedEdge, selectedDay, navigateToNode],
+  );
+
+  const goBack = useCallback(() => {
+    setCardHistory((h) => {
+      if (h.length === 0) return h;
+      const prev = h[h.length - 1];
+      if (prev.kind === 'node') {
+        setSelectedEdge(null);
+        setSelectedDay(null);
+        const node = positionedNodes.find((n) => n.id === prev.id);
+        setSelectedId(prev.id);
+        if (node) focusNodeOnStage(node);
+      } else if (prev.kind === 'edge') {
+        setSelectedId(null);
+        setSelectedDay(null);
+        setSelectedEdge(prev.edge);
+      } else {
+        setSelectedId(null);
+        setSelectedEdge(null);
+        setSelectedDay({ day: prev.day, label: prev.label });
+      }
+      return h.slice(0, -1);
+    });
+  }, [focusNodeOnStage]);
 
   const navigateToNode = useCallback(
     (id: string) => {
@@ -456,8 +532,8 @@ export default function App() {
               hoverEdgeKey={hoverEdgeKey}
               hasSelection={selectedId !== null}
               onSelectNode={selectNode}
-              onSelectEdge={(e) => { setSelectedId(null); setSelectedDay(null); setSelectedEdge(e); }}
-              onSelectDay={(d, l) => { setSelectedId(null); setSelectedEdge(null); setSelectedDay({ day: d, label: l }); }}
+              onSelectEdge={(e) => { setCardHistory([]); setSelectedId(null); setSelectedDay(null); setSelectedEdge(e); }}
+              onSelectDay={(d, l) => { setCardHistory([]); setSelectedId(null); setSelectedEdge(null); setSelectedDay({ day: d, label: l }); }}
               onHover={handleHover}
             />
           </g>
@@ -485,9 +561,11 @@ export default function App() {
           subgroupsByGroupId={subgroupsByGroupId}
           eventsByParticipantId={eventsByParticipantId}
           open={selectedId !== null}
-          onClose={() => { deselect(); setCameFromList(false); }}
-          onSelectNode={navigateToNode}
-          onBackToList={isMobile && cameFromList ? handleBackToList : undefined}
+          onClose={() => { setCardHistory([]); deselect(); setCameFromList(false); }}
+          onSelectNode={(id) => navigateFromCard({ kind: 'node', id })}
+          onBackToList={isMobile && cameFromList && cardHistory.length === 0 ? handleBackToList : undefined}
+          onBack={cardHistory.length > 0 ? goBack : undefined}
+          backLabel={cardHistory.length > 0 ? cardSelLabel(cardHistory[cardHistory.length - 1], nodesById) : undefined}
         />
       )}
 
@@ -496,8 +574,10 @@ export default function App() {
           edge={selectedEdge}
           nodesById={nodesById}
           open={true}
-          onClose={() => setSelectedEdge(null)}
-          onSelectNode={(id) => { setSelectedEdge(null); navigateToNode(id); }}
+          onClose={() => { setCardHistory([]); setSelectedEdge(null); }}
+          onSelectNode={(id) => navigateFromCard({ kind: 'node', id })}
+          onBack={cardHistory.length > 0 ? goBack : undefined}
+          backLabel={cardHistory.length > 0 ? cardSelLabel(cardHistory[cardHistory.length - 1], nodesById) : undefined}
         />
       )}
 
@@ -507,8 +587,10 @@ export default function App() {
           label={selectedDay.label}
           nodes={rawNodes.filter((n) => n.day === selectedDay.day)}
           open={true}
-          onClose={() => setSelectedDay(null)}
-          onSelectNode={(id) => { setSelectedDay(null); navigateToNode(id); }}
+          onClose={() => { setCardHistory([]); setSelectedDay(null); }}
+          onSelectNode={(id) => navigateFromCard({ kind: 'node', id })}
+          onBack={cardHistory.length > 0 ? goBack : undefined}
+          backLabel={cardHistory.length > 0 ? cardSelLabel(cardHistory[cardHistory.length - 1], nodesById) : undefined}
         />
       )}
 
