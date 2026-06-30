@@ -80,6 +80,53 @@ character ノードに以下の任意フィールドを足せます。すべて 
 - **nen.abilities[].code**: 漫画で kanji + 振り仮名や acronym が併記される場合の片方を入れる
 - **tags**: `data/meta.json` の `tagsCatalog` 内の語のみ。未定義タグは CI で reject
 
+## 継承戦・船上 (voyage) 関連フィールド
+
+ブラックホエール号での継承戦 (ch 358 以降) のキャラ・イベントには、船上の物理位置と何日目かを表す任意フィールドを付けられる。GraphScene 側で voyage location lane と Day マーカーが描画される。
+
+```jsonc
+{
+  "id": "n_k_woble",
+  "kind": "character",
+  // ... 既存フィールド ...
+  "voyageLocation": "loc_room_1014",   // ブラックホエール号上の物理位置 (loc_* branch id)
+  "day": 1                              // 継承戦の Day 1-12 (近似値、canon 明示なし)
+}
+```
+
+### `voyageLocation`
+
+`data/branches.json` の `loc_*` で始まる branch id を指定する。これらは「ブラックホエール号上の物理空間」を表す系譜 (lane) で、通常の系譜とは別扱い。
+
+| プレフィックス | 意味 | 例 |
+|---|---|---|
+| `loc_tier_N` | 第 N 層全体 | `loc_tier_1`, `loc_tier_2` |
+| `loc_room_NNNN` | 個別船室 | `loc_room_1014` (ワブル), `loc_room_1008` (サレサレ) |
+| `loc_<facility>` | その他の施設 | `loc_corridor`, `loc_judiciary` |
+
+新しい `loc_*` branch を `branches.json` に追加する場合:
+
+```jsonc
+{
+  "id": "loc_room_1014",
+  "lane": 18,                       // 縦位置順 (隣接 loc と被らない値に)
+  "color": "#6699CC",               // location lane の線色
+  "name": "Room 1014 (ワブル)"      // 表示名 (DetailCard の所在欄にも出る)
+}
+```
+
+lane の縦方向「高さ」は「同 location の重複ノード数」から自動算出される (adaptive lane height) ので不要だが、`lane` 番号 (順位) は隣接 location と被らない値を割り当てる。
+
+### `day`
+
+継承戦の Day 1〜12 を表す整数。canon に明示されていない部分が多く、chapter からの推定値 (近似)。Day マーカー (画面上部の `Day N` ラベル) クリックで該当日の全ノードを表示する DayCard が開く。
+
+漫画本編で「Day N 目」と明示されている場面 (例: 出航 = Day 1、ハルケンブルク葬儀 = Day 10) を基準に、前後を内挿する形で割り振る。正確な day mapping は今後の audit で調整される可能性あり。
+
+### loc_unknown
+
+物理位置が canon で確定していないキャラ・イベントには `"voyageLocation": "loc_unknown"` を付ける。一覧から漏れにくくし、後の精査対象として残せる。
+
 ## グループ階層 (kind='group')
 
 group ノードは集合論的に親子関係を持てる。`parents[]` で 1 つ以上の親 group を指定すると、その group の member は自動的に親 group の所属とみなされる (UI では「所属 (継承)」として表示)。
