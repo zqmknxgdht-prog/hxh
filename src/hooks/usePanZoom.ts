@@ -132,13 +132,27 @@ export function usePanZoom({ onTap }: UsePanZoomOptions) {
     [onTap],
   );
 
-  const zoomIn = useCallback(() => {
-    setState((s) => ({ ...s, scale: Math.min(7, s.scale * 1.25) }));
+  /** Scale around the stage center so the graph stays in view.
+   *  Without compensating tx/ty, a zoom-only change leaves the graph anchored
+   *  at world-origin, which on small screens can push it off-screen. */
+  const zoomBy = useCallback((factor: number) => {
+    setState((prev) => {
+      const stage = stageRef.current;
+      const nextScale = Math.max(0.1, Math.min(7, prev.scale * factor));
+      if (!stage) return { ...prev, scale: nextScale };
+      const cx = stage.clientWidth / 2;
+      const cy = stage.clientHeight / 2;
+      const k = nextScale / prev.scale;
+      return {
+        scale: nextScale,
+        tx: cx - (cx - prev.tx) * k,
+        ty: cy - (cy - prev.ty) * k,
+      };
+    });
   }, []);
 
-  const zoomOut = useCallback(() => {
-    setState((s) => ({ ...s, scale: Math.max(0.1, s.scale / 1.25) }));
-  }, []);
+  const zoomIn = useCallback(() => zoomBy(1.25), [zoomBy]);
+  const zoomOut = useCallback(() => zoomBy(1 / 1.25), [zoomBy]);
 
   return {
     stageRef,
