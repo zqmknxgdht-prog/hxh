@@ -266,8 +266,14 @@ export default function App() {
     if (node && (node.episode > maxEpisode || node.episode < minEpisode)) setSelectedId(null);
   }, [minEpisode, maxEpisode, selectedId]);
 
-  const focusNodeOnStage = useCallback(
-    (node: PositionedNode) => {
+  /** Minimum on-screen scale that keeps node/edge labels readable.
+   *  Sits just above the LOD `compact` cutoff (0.55) so node labels stay rendered. */
+  const MIN_READABLE_SCALE = 0.7;
+
+  /** Center the given world-space point in the visible area, bumping scale to
+   *  MIN_READABLE_SCALE if currently zoomed out further than that. */
+  const focusPointOnStage = useCallback(
+    (x: number, y: number) => {
       const stage = panZoom.stageRef.current;
       if (!stage) return;
       const vw = stage.clientWidth;
@@ -275,12 +281,49 @@ export default function App() {
       const isWide = vw >= 760;
       const tgx = isWide ? vw * 0.34 : vw * 0.5;
       const tgy = isWide ? vh * 0.5 : vh * 0.36;
-      panZoom.setTransform({
-        tx: tgx - node.x * panZoom.scale,
-        ty: tgy - node.y * panZoom.scale,
+      const nextScale = Math.max(panZoom.scale, MIN_READABLE_SCALE);
+      panZoom.applyTransform({
+        scale: nextScale,
+        tx: tgx - x * nextScale,
+        ty: tgy - y * nextScale,
       });
     },
     [panZoom],
+  );
+
+  const focusNodeOnStage = useCallback(
+    (node: PositionedNode) => focusPointOnStage(node.x, node.y),
+    [focusPointOnStage],
+  );
+
+  /** Focus the visible area on the midpoint of an edge's from/to nodes. */
+  const focusEdgeOnStage = useCallback(
+    (edge: import('./components/EdgeCard').SelectedEdge) => {
+      const from = edge.fromNodeId ? positionedNodes.find((n) => n.id === edge.fromNodeId) : null;
+      const to = edge.toNodeId ? positionedNodes.find((n) => n.id === edge.toNodeId) : null;
+      if (!from && !to) return;
+      const mx = from && to ? (from.x + to.x) / 2 : (from ?? to)!.x;
+      const my = from && to ? (from.y + to.y) / 2 : (from ?? to)!.y;
+      focusPointOnStage(mx, my);
+    },
+    [focusPointOnStage],
+  );
+
+  /** Focus the centroid of nodes for the given voyage day. */
+  const focusDayOnStage = useCallback(
+    (day: number) => {
+      const dayNodes = positionedNodes.filter((n) => n.day === day);
+      if (dayNodes.length === 0) return;
+      let minX = Infinity, maxX = -Infinity, minY = Infinity, maxY = -Infinity;
+      for (const n of dayNodes) {
+        if (n.x < minX) minX = n.x;
+        if (n.x > maxX) maxX = n.x;
+        if (n.y < minY) minY = n.y;
+        if (n.y > maxY) maxY = n.y;
+      }
+      focusPointOnStage((minX + maxX) / 2, (minY + maxY) / 2);
+    },
+    [focusPointOnStage],
   );
 
   const selectNode = useCallback(
@@ -316,13 +359,15 @@ export default function App() {
         setSelectedId(null);
         setSelectedDay(null);
         setSelectedEdge(next.edge);
+        focusEdgeOnStage(next.edge);
       } else {
         setSelectedId(null);
         setSelectedEdge(null);
         setSelectedDay({ day: next.day, label: next.label });
+        focusDayOnStage(next.day);
       }
     },
-    [selectedId, selectedEdge, selectedDay, navigateToNode],
+    [selectedId, selectedEdge, selectedDay, navigateToNode, focusEdgeOnStage, focusDayOnStage],
   );
 
   const goBack = useCallback(() => {
@@ -333,20 +378,26 @@ export default function App() {
         setSelectedEdge(null);
         setSelectedDay(null);
         const node = positionedNodes.find((n) => n.id === prev.id);
+        if (node) {
+          setMinEpisode((min) => Math.min(min, node.episode));
+          setMaxEpisode((max) => Math.max(max, node.episode));
+        }
         setSelectedId(prev.id);
         if (node) focusNodeOnStage(node);
       } else if (prev.kind === 'edge') {
         setSelectedId(null);
         setSelectedDay(null);
         setSelectedEdge(prev.edge);
+        focusEdgeOnStage(prev.edge);
       } else {
         setSelectedId(null);
         setSelectedEdge(null);
         setSelectedDay({ day: prev.day, label: prev.label });
+        focusDayOnStage(prev.day);
       }
       return h.slice(0, -1);
     });
-  }, [focusNodeOnStage]);
+  }, [focusNodeOnStage, focusEdgeOnStage, focusDayOnStage]);
 
   const navigateToNode = useCallback(
     (id: string) => {
@@ -532,8 +583,8 @@ export default function App() {
               hoverEdgeKey={hoverEdgeKey}
               hasSelection={selectedId !== null}
               onSelectNode={selectNode}
-              onSelectEdge={(e) => { setCardHistory([]); setSelectedId(null); setSelectedDay(null); setSelectedEdge(e); }}
-              onSelectDay={(d, l) => { setCardHistory([]); setSelectedId(null); setSelectedEdge(null); setSelectedDay({ day: d, label: l }); }}
+              onSelectEdge={(e) => { setCardHistory([]); setSelectedId(null); setSelectedDay(null); setSelectedEdge(e); focusEdgeOnStage(e); }}
+              onSelectDay={(d, l) => { setCardHistory([]); setSelectedId(null); setSelectedEdge(null); setSelectedDay({ day: d, label: l }); focusDayOnStage(d); }}
               onHover={handleHover}
             />
           </g>
