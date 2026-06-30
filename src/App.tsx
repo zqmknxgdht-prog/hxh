@@ -157,6 +157,11 @@ export default function App() {
   const [openSheet, setOpenSheet] = useState<SheetId>(null);
   const [cameFromList, setCameFromList] = useState(false);
   const initializedRef = useRef(false);
+  // The re-anchor useEffect below watches [minEpisode, maxEpisode, openSheet]
+  // and runs on every dependency change — including the very first mount,
+  // which would otherwise overwrite the initial `fit({ initial: true })`
+  // call with a regular center-anchored fit(). Skip the first run.
+  const skipNextReanchorRef = useRef(true);
   const isMobile = useIsMobile();
 
   const tappedIdRef = useRef<string | null>(null);
@@ -264,6 +269,10 @@ export default function App() {
   // moves or when the mobile bottom sheet opens/closes (the visible viewport
   // changes shape, so the right-anchor target shifts).
   useEffect(() => {
+    if (skipNextReanchorRef.current) {
+      skipNextReanchorRef.current = false;
+      return;
+    }
     if (!initializedRef.current) return;
     fit();
     // intentionally omit `fit` to avoid loops; fit() reads latest state via closure.
