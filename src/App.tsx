@@ -271,7 +271,9 @@ export default function App() {
   const MIN_READABLE_SCALE = 0.7;
 
   /** Center the given world-space point in the visible area, bumping scale to
-   *  MIN_READABLE_SCALE if currently zoomed out further than that. */
+   *  MIN_READABLE_SCALE if currently zoomed out further than that.
+   *  On mobile, the focus target is placed in the upper portion of the screen
+   *  so it stays visible above the 70dvh Bottom Sheet (#card). */
   const focusPointOnStage = useCallback(
     (x: number, y: number) => {
       const stage = panZoom.stageRef.current;
@@ -280,7 +282,7 @@ export default function App() {
       const vh = stage.clientHeight;
       const isWide = vw >= 760;
       const tgx = isWide ? vw * 0.34 : vw * 0.5;
-      const tgy = isWide ? vh * 0.5 : vh * 0.36;
+      const tgy = isWide ? vh * 0.5 : vh * 0.18;
       const nextScale = Math.max(panZoom.scale, MIN_READABLE_SCALE);
       panZoom.applyTransform({
         scale: nextScale,
