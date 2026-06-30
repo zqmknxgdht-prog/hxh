@@ -19,9 +19,13 @@ interface EdgeCardProps {
   open: boolean;
   onClose: () => void;
   onSelectNode: (id: string) => void;
+  /** Optional: when set, render a "back" button that returns to the previous card. */
+  onBack?: () => void;
+  /** Optional label shown on the back button (e.g. previous card's title). */
+  backLabel?: string;
 }
 
-export function EdgeCard({ edge, nodesById, open, onClose, onSelectNode }: EdgeCardProps) {
+export function EdgeCard({ edge, nodesById, open, onClose, onSelectNode, onBack, backLabel }: EdgeCardProps) {
   const fromNode = edge.fromNodeId ? nodesById[edge.fromNodeId] : undefined;
   const toNode = edge.toNodeId ? nodesById[edge.toNodeId] : undefined;
   const fromLabel = fromNode?.label ?? edge.fromLabel;
@@ -33,6 +37,11 @@ export function EdgeCard({ edge, nodesById, open, onClose, onSelectNode }: EdgeC
         <div className="hd">
           <span className="name-ja">{edge.title}</span>
         </div>
+        {onBack && (
+          <button type="button" className="card-back" onClick={onBack} aria-label="前のカードに戻る / Back">
+            ← {backLabel ?? '戻る'}
+          </button>
+        )}
         <button type="button" className="close" onClick={onClose} aria-label="閉じる / Close">
           ✕
         </button>

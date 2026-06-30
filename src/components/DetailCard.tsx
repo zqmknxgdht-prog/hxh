@@ -53,9 +53,13 @@ interface DetailCardProps {
   onSelectNode: (id: string) => void;
   /** When provided, render a "back to list" button (mobile, came-from-list flow). */
   onBackToList?: () => void;
+  /** When provided, render a generic "back" button that returns to the previous card. */
+  onBack?: () => void;
+  /** Optional label shown on the back button (e.g. previous card's title). */
+  backLabel?: string;
 }
 
-export function DetailCard({ node, branch, branches, meta, nodesById, groupsByMemberId, groupIdByLabel, groupAncestors, subgroupsByGroupId, eventsByParticipantId, open, onClose, onSelectNode, onBackToList }: DetailCardProps) {
+export function DetailCard({ node, branch, branches, meta, nodesById, groupsByMemberId, groupIdByLabel, groupAncestors, subgroupsByGroupId, eventsByParticipantId, open, onClose, onSelectNode, onBackToList, onBack, backLabel }: DetailCardProps) {
   const kindLabel = bilingualInline(
     meta.labels.kind[node.kind] ?? node.kind,
     meta.labelsEn?.kind[node.kind],
@@ -79,6 +83,11 @@ export function DetailCard({ node, branch, branches, meta, nodesById, groupsByMe
         {onBackToList && (
           <button type="button" className="back-to-list" onClick={onBackToList} aria-label="一覧へ戻る / Back to list">
             ← 一覧
+          </button>
+        )}
+        {onBack && (
+          <button type="button" className="card-back" onClick={onBack} aria-label="前のカードに戻る / Back">
+            ← {backLabel ?? '戻る'}
           </button>
         )}
         <button type="button" className="close" onClick={onClose} aria-label="閉じる / Close">

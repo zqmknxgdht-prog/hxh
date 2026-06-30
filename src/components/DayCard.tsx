@@ -7,9 +7,13 @@ interface DayCardProps {
   open: boolean;
   onClose: () => void;
   onSelectNode: (id: string) => void;
+  /** Optional: when set, render a "back" button that returns to the previous card. */
+  onBack?: () => void;
+  /** Optional label shown on the back button (e.g. previous card's title). */
+  backLabel?: string;
 }
 
-export function DayCard({ day, label, nodes, open, onClose, onSelectNode }: DayCardProps) {
+export function DayCard({ day, label, nodes, open, onClose, onSelectNode, onBack, backLabel }: DayCardProps) {
   const events = nodes.filter((n) => n.kind === 'event');
   const characters = nodes.filter((n) => n.kind === 'character');
   const others = nodes.filter((n) => n.kind !== 'event' && n.kind !== 'character');
@@ -21,6 +25,11 @@ export function DayCard({ day, label, nodes, open, onClose, onSelectNode }: DayC
         <div className="hd">
           <span className="name-ja">{label}</span>
         </div>
+        {onBack && (
+          <button type="button" className="card-back" onClick={onBack} aria-label="前のカードに戻る / Back">
+            ← {backLabel ?? '戻る'}
+          </button>
+        )}
         <button type="button" className="close" onClick={onClose} aria-label="閉じる / Close">
           ✕
         </button>

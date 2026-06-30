@@ -1384,6 +1384,38 @@ svg {
   color: var(--accent);
 }
 
+.card-back {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  max-width: calc(100% - 80px);
+  height: 30px;
+  padding: 0 12px;
+  border-radius: 15px;
+  background: #eef1f6;
+  border: 1px solid var(--edge);
+  color: var(--fg);
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-back:hover,
+.card-back:active {
+  background: #fff5f6;
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Push card-top content below the back button when it is present so it
+   doesn't overlap with the title (.hd, .eyebrow, etc.). */
+.card-top:has(.card-back) {
+  padding-top: 50px;
+}
+
 .hint {
   position: absolute;
   left: 14px;
